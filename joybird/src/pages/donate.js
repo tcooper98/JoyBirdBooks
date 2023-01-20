@@ -1,9 +1,4 @@
+import React from 'react'
 export default function Donate() {
-    return (
-        <div className="donate">
-            <div className="donate__container">
-                <h1>Donate</h1>
-            </div>
-        </div>
-    )
+    return <h1>Donation</h1>
 }
