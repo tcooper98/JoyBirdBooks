@@ -1,0 +1,71 @@
+.page-spacing {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.author-spotlight {
+    background-color: #306878;
+    color: white;
+}
+
+.past-spotlights {
+    background-color: white;
+    color: black;
+}
+
+.h1 {
+    font-weight: bold;
+}
+
+.subheading {
+
+}
+
+.subheading2 {
+    font-size: 20px;
+    color: #EBC242;
+}
+
+.spacing {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.description {
+    font-size: 15px;
+}
+
+.btn {
+    background-color: #EBC242;
+    border: none;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+/*creates row and col grid*/
+.row {
+    display: flex;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-text {
+    width: 65%;
+    padding-right: 30px;
+}
+
+.col-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
