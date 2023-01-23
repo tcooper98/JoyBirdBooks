@@ -3,8 +3,10 @@ import './Header.css';
 function HeroBanner(){
     return(
         <div className="header-container">
-        <h1>Dive Into</h1>
-        <h2>Something New</h2>
+         <div className="banner">
+          <h1 className="dive">Dive Into</h1>
+          <h1 className="new">Something New</h1>
+         </div>
         </div>
     )
     

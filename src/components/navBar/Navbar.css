@@ -111,6 +111,9 @@ img {
 
 
 @media screen and (max-width: 960px) {
+  .fa-caret-down {
+    display: none;
+  }
   .NavbarItems {
     position: relative;
   }
@@ -133,7 +136,7 @@ img {
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
-    display: flex;
+    
   }
 
   .nav-item {

@@ -34,30 +34,33 @@ function Navbar () {
             <SearchBar/>
             <nav className='navbar'>
 
-                <div className={click ? 'nav-menu active' : 'nav-menu'}>
+               <ul className={click ? 'nav-menu active' : 'nav-menu'}>
 
-                    <p>
+                    <li>
                         <Link to='/' className='nav-item navbar-logo'> 
                             <img src={Logo} alt='logo' />
                         </Link>
                         <div className='menu-icon' onClick={handleClick}> 
                             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                         </div>
-                    </p>
+    
+                    </li>
 
-                    <p className='nav-item'>
+                   
+
+                    <li className='nav-item'>
                         <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
                             PRODUCTS
                         </Link>
-                    </p>
+                    </li>
 
-                    <p className='nav-item'>       
+                    <li className='nav-item'>       
                         <Link to='/donate' className='nav-links' onClick={closeMobileMenu}>
                             DONATE/TRADE
                         </Link>
-                    </p>
+                    </li>
 
-                    <p className='nav-item'
+                    <li className='nav-item'
                         onMouseEnter={onMouseEnter}
                         onMouseLeave={onMouseLeave}
                     >       
@@ -65,9 +68,9 @@ function Navbar () {
                             COMMUNITY <i className='fas fa-caret-down' />
                         </Link>
                         {dropdown && <CommunityDropdown />}
-                    </p>
+                    </li>
 
-                    <p className='nav-item'
+                    <li className='nav-item'
                         onMouseEnter={onMouseEnter}
                         onMouseLeave={onMouseLeave}
                     >       
@@ -75,14 +78,15 @@ function Navbar () {
                            GET CONNECTED <i className='fas fa-caret-down' />
                         </Link>
                         {dropdown && <ConnectedDropdown />}
-                    </p>
+                    </li>
 
-                    <p className='nav-item-last'>       
+                    <li className='nav-item-last'>       
                         <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
                             <i className="fa-solid fa-cart-shopping"></i>
                         </Link>
-                    </p>  
-                </div>
+                    </li>  
+                </ul>
+                
             </nav>
 
             <nav className='navbar greenNav'>
