@@ -7,13 +7,13 @@ import './Navbar.css'
 import Logo from './primarylogo.png';
 
 function Navbar () {
-    // toggle hamburger menu to only be visible on mobile
+   //toggle hamburger menu not visible on desktop
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-
+ // toggle hamburger menu to only be visible on mobile
     const onMouseEnter = () => {
         if (window.innerWidth < 960) {
             setDropdown(false);
@@ -21,7 +21,7 @@ function Navbar () {
             setDropdown(true);
         }
     };
-
+//exit menu for hamburger menu
     const onMouseLeave = () => {
         if (window.innerWidth < 960) {
             setDropdown(false);
@@ -36,7 +36,7 @@ function Navbar () {
             <nav className='navbar'>
 
               
-
+            {/* logo/link to homepage */}
                     <li>
                         <Link to='/' className='nav-item navbar-logo'> 
                             <img src={Logo} alt='logo' />

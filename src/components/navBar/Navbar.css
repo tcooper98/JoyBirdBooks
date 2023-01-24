@@ -131,7 +131,8 @@ img {
   .NavbarItems {
     position: relative;
   }
-
+   
+  /* this one effects items appearing outside of mobile menu */
   .nav-menu {
     display: flex;
     flex-direction: column;
