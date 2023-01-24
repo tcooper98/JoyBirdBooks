@@ -1,0 +1,21 @@
+.image-container1 {
+    align-self: center;
+    float: right;
+    width: 330px;
+    height: 100%;
+  }
+  
+  .about-us-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 5px;
+    margin-top: 5%;
+  }
+  
+  .text-container {
+    align-self: center;
+  }
+  
