@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     background-image: url(/images/hero.png);
-    background-size: cover;
-    background-position: center;
+    background-size: contain;
+    background-position: top;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 600px;
     width: auto;
     
 }

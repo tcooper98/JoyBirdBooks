@@ -1,12 +1,12 @@
-.wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(192px, 256px));
+/* .wrapper{
+    padding: 10px;
+    margin: 60px;
     gap: 32px;
     justify-content: center;
     margin-top: 40px;
     height: 655px;
     
-}
+} */
 
 .description{
     font-family: 'Nunito Sans', sans-serif;
@@ -48,3 +48,4 @@
     height: 472px;
     object-fit: cover;
 }
+
