@@ -7,6 +7,7 @@ import './Navbar.css'
 import Logo from './primarylogo.png';
 
 function Navbar () {
+    // toggle hamburger menu to only be visible on mobile
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false);
 
@@ -34,7 +35,7 @@ function Navbar () {
             <SearchBar/>
             <nav className='navbar'>
 
-               <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              
 
                     <li>
                         <Link to='/' className='nav-item navbar-logo'> 
@@ -45,7 +46,7 @@ function Navbar () {
                         </div>
     
                     </li>
-
+              <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                    
 
                     <li className='nav-item'>

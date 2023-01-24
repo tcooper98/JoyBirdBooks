@@ -114,6 +114,16 @@ img {
   .fa-caret-down {
     display: none;
   }
+  
+.fa-bars{
+  margin-top:35px;
+}
+  
+  .greenNav {
+    display: none;
+  }
+
+  
   .NavbarItems {
     position: relative;
   }
@@ -122,10 +132,10 @@ img {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 600px;
     position: absolute;
-    top: 80px;
-    left: 0;
+    top: 150px;
+    left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
   }
@@ -141,6 +151,7 @@ img {
 
   .nav-item {
     padding-right: 0px;
+    margin-top: 30px;
   }
 
   .nav-links {
@@ -157,7 +168,7 @@ img {
 
   .navbar-logo {
     position: absolute;
-    top: 0;
+    top: 30px;
     left: 0;
     margin-left: 50px;
   }
