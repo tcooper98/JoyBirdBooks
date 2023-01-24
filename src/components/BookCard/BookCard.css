@@ -1,0 +1,42 @@
+.background-home {
+    background-color: #E8E8E8;
+}
+
+.background-blog {
+    background-color: #99BDC8;
+}
+
+.past-spotlights-content {
+    border-right: 15px solid white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.past-spotlights-content-last {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.past-spotlights-text {
+    text-align: left;
+}
+
+/*creates row and col grids*/
+.row {
+    display: flex;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*grid for past spotlight section*/
+.col-past-spotlights {
+    width: 25%;
+    padding-right: 15px;
+    align-content: center;
+}

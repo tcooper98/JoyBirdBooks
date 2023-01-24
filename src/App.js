@@ -12,6 +12,7 @@ import Contact from './pages/contact'
 import About from './pages/about'
 import Partner from './pages/partner'
 import Cart from './pages/cart'
+import Footer from './components/Footer/Footer';
 
 function App() {
  return( 
@@ -29,6 +30,8 @@ function App() {
     <Route exact path='/partner' element={<Partner/>}/>
     <Route exact path='/cart' element={<Cart/>}/>
   </Routes>
+
+  <Footer/>
   </Router>
   );
 }

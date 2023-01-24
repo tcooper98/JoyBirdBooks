@@ -1,4 +1,5 @@
 import React from 'react';
+import BookCard from '../../components/BookCard/BookCard';
 import './blog.css';
 
 export default function Blog() {
@@ -6,11 +7,11 @@ export default function Blog() {
         <>
             <div className="author-spotlight row page-spacing">
                 <div className="col-text">
-                    <h1 className="pt-20">Blog</h1> 
+                    <h1>Blog</h1> 
                     <h2 className='subheading'>Local Author Spotlight</h2>
                     <h2 className='subheading2'>Date Text</h2>
 
-                    <div className="p-20"></div>
+                    <div className="p-10"></div>
 
                     <h2 className='subheading'>Title Text</h2>
                     <p className="description">
@@ -38,6 +39,14 @@ export default function Blog() {
 
             <div className="past-spotlights page-spacing">
                 <h2>See Past Spotlights</h2>
+
+                <div className="pb-30"></div>
+
+                <div>
+                    <BookCard/>
+                </div>
+
+                <div className="pb-40"></div>
             </div>
         </>
     )
