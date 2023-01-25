@@ -68,26 +68,24 @@ function ProductCard() {
   return (
     <>
 
-    {ProductItems.map((item, index) => {
-    return (
-    <li key={index}>
-    <div className="card">
-     <div className="body">
-      <img className="image" src={item.image}/>
-      <h1 className="title">{item.name}</h1>
-      <p className="price">{item.price}</p>
-      <p className="description">{item.description}</p>
+      {ProductItems.map((item, index) => {
+      return (
+      <li key={index}>
+      <div className="card">
+      <div className="body">
+        <img className="image" src={item.image}/>
+        <h1 className="title">{item.name}</h1>
+        <p className="price">{item.price}</p>
+        <p className="description">{item.description}</p>
+        
+        </div>
       
       </div>
-     
-    </div>
-    </li>
+      </li>
     )
     })}
     </>
   )
 }
-
-
 
 export default Product;

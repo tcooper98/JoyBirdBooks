@@ -1,15 +1,24 @@
+input, textarea {
+  font-family: 'Nunito Sans', sans-serif;
+  /* width: 500px; */
+}
+
+textarea {
+  /* width: 500px; */
+}
+
 .contact-heading{
   padding: 20px;
 }
+
 .form-row {
   display: grid;
   grid-template-columns: 50% 50% ; 
- 
 }
 
 .form-input, .form-textarea {
   margin: 3px;
-  padding-left: 05px;
+  padding-left: 5px;
   padding-right:150px;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -18,9 +27,10 @@
   font-size: 10px;
   font-stretch: 50%;
 }
+
 .form-textarea-m{
   margin: 3px;
-  padding-left: 05px;
+  padding-left: 5px;
   padding-right:431px;
   padding-top: 5px;
   padding-bottom: 40px;
@@ -29,23 +39,19 @@
   font-size: 10px;
   font-stretch: 50%;
   transform: translate(-42%, 00%);
-
 }
 
 
 .form-container{
-
   display: flex;
   align-items: center;
   justify-content: center;
   display: grid;
   place-items: center;
-  position: absolute;
-  top: 50%;
+  /* position: absolute; */
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  
-  
+  transform: translate(-50%, -50%); */
 }
 
 .form-textarea{
@@ -55,12 +61,10 @@
   padding-top: 3px;
   padding-bottom: 40px;
 }
+
 .form-column3{
-  
   width:100px;
   height: 110px; 
-  
- 
 }
 
 .max{
@@ -69,7 +73,6 @@
 }
 
 .form-submit-btn{
-  
   width: 200px;
   height: 34px;
   border-width: 1px;
@@ -77,11 +80,12 @@
   background-color: rgb(15, 15, 15);
   align-self: auto;
   
-}.form-submit-btn:hover{
+}
+
+.form-submit-btn:hover{
   width: 200px;
   height: 34px;
   border-width: 0px;
   color: rgb(255, 255, 255);
-  background-color: #F2C202;
-  
+  background-color: #F2C202; 
 }

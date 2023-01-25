@@ -23,6 +23,49 @@
     text-align: left;
 }
 
+.description{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: left;
+    width: 353px;
+    padding: 5px;
+    
+}
+
+.title{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: left;
+    
+}
+
+.card{
+    overflow: hidden;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    height: 655px;
+    width: 353px;
+   
+    
+}
+
+.price{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    text-align: left;
+    
+}
+
+.image{
+    width: 353px;
+    height: 472px;
+    object-fit: cover;
+}
+
 /*creates row and col grids*/
 .row {
     display: flex;

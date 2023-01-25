@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './BookCard.css';
 import { Link, useLocation } from 'react-router-dom';
+import { BookItems } from "./BookItems.js";
 
 function BookCard () {
     let className;
@@ -19,8 +20,27 @@ function BookCard () {
 
     return (
         <>
+            {/*rename the styles here to what i created*/}
+            {BookItems.map((item, index) => {
+                return (
+                    /*sets className variable*/
+                    <li key={index} className={className}>
+                        <div className="card" >
+                            <div className="body">
+
+                                <img className="image" src={item.image}/>
+                                <h1 className="title">{item.name}</h1>
+                                <p className="price">{item.price}</p>
+                                <p className="description">{item.description}</p>
+                                
+                            </div>
+                        </div>
+                    </li>
+                )
+            })}
+
             {/*sets className variable*/}
-            <div className={className}>
+            {/* <div className={className}>
 
                 <div className="row">
                     <div className="col-past-spotlights past-spotlights-content">
@@ -63,7 +83,7 @@ function BookCard () {
                         <p>Month Text</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }
