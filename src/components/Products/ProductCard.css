@@ -1,12 +1,13 @@
-/* .wrapper{
+.wrapper{
     padding: 10px;
     margin: 60px;
-    gap: 32px;
     justify-content: center;
     margin-top: 40px;
-    height: 655px;
+    height: 800px;
+    width: auto;
+    position: relative;
     
-} */
+}
 
 .description{
     font-family: 'Nunito Sans', sans-serif;
@@ -31,7 +32,9 @@
     display: flex;
     cursor: pointer;
     flex-direction: column;
-    
+    height: 655px;
+    width: 353px;
+   
     
 }
 
@@ -48,4 +51,41 @@
     height: 472px;
     object-fit: cover;
 }
+
+/*puts dots outside of the carousel */
+.carousel-item-padding-40-px{
+    padding: 40px;
+}
+
+/* styling the dots */
+.react-multi-carousel-dot button{
+    border-color: black;
+    
+}
+ 
+/* styling the arrows */
+.react-multiple-carousel__arrow{
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 35%;
+  
+}
+
+/*positioning the left arrow*/
+.react-multiple-carousel__arrow--left{
+    left: calc(-2% + 1px);
+}
+
+/*positioning the right arrow*/
+.react-multiple-carousel__arrow--right{
+    right: calc(-2% + 1px);
+}
+
+/* allows arrows to be outside of the carousel */
+.react-multi-carousel-list{
+    position: unset !important;
+}
+
+
 
