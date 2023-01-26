@@ -1,72 +1,76 @@
 import React from 'react'
+import './donate.css'
+
 export default function Donate() {
     return <>
-        <h1>Donation</h1>
-        <form>
-            <h2>What would you like to do today?</h2>
-                <div>
-                    <label>
-                        Donate Books
-                        <input type="radio" value="Donate" name="DonateTrade"></input>
-                    </label>
-                    <label>
-                        Trade Books
-                        <input type="radio" value="Trade" name="DonateTrade"></input>
-                    </label>
-                </div>
-                <h3>Contact Information</h3>
-                <div>
-                    <label>
-                        First Name:
-                        <input type="text" name="FirstName"></input>
-                    </label>
-                    <label>
-                        Last Name:
-                        <input type="text" name="LastName"></input>
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        Email:
-                        <input type="text" name="Email"></input>
-                    </label>
-                </div>
-                <h3>Book Information</h3>
-                <div>
-                    <label>
-                        Book Title:
-                        <input type="text" name="BookTitle"></input>
-                    </label>
-                    <label>
-                        Book Author:
-                        <input type="text" name="BookAuthor"></input>
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        Book Edition/Print:
-                        <input type="text" name="BookEdition"></input>
-                    </label>
-                    <label>
-                        ISBN/LOC Number:
-                        <input type="text" name="ISBN"></input>
-                    </label>
-                </div>
-                <div>
-                    <label>
-                        Item Condition:
-                        <input type="text" name="ItemCondition"></input>
-                    </label>
-                    <label>
-                        Hardcover or Softcover:
-                        <input type="text" name="HardcoverSoftcover"></input>
-                    </label>
-                </div>
-                <div>
-                    <button type="submit">
-                        Submit
-                    </button>
-                </div>
-        </form>
+        <div className="donate-container">
+            <h1>Donation</h1>
+            <form action="" method="" name="donate-form">
+                <h2 class="title">What would you like to do today?</h2>
+                 <dl>
+                    {/*Donate Books Radio Button */}
+                    <dt>
+                        <label for="donateRadio">Donate Books</label>
+                        <input className="DonateTrade" type="radio" value=""></input>
+                    {/*Trade Books Radio Button */}
+                        <label for="donateRadio">Trade Books</label>
+                        <input className="DonateTrade" type="radio" value=""></input>                        
+                    </dt>
+                </dl>
+                <fieldset>
+                    <legend className="title">Contact Information</legend>
+                    <dl>
+                        <dt>
+                            {/*First Name*/}
+                            <label for="firstName">First Name:</label>
+                            <input type="text" className="form-input"></input>
+                            {/*First Name*/}
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" className="form-input"></input>
+                        </dt>
+                        <dt>
+                            {/*Email*/}
+                            <label for="email">Email:</label>
+                            <input type="text" className="form-input"></input>
+                        </dt>
+                    </dl>
+                </fieldset>
+                <fieldset>
+                    <legend className="title">Book Information</legend>
+                    <dl>
+                        <dt>
+                            {/*Book Title*/}
+                            <label for="bookTitle">Book Title:</label>
+                            <input type="text" className="form-input"></input>
+                            {/*Book Author*/}
+                            <label for="bookAuthor">Book Author:</label>
+                            <input type="text" className="form-input"></input>
+                        </dt>
+                        <dt>
+                            {/*Book Edition*/}
+                            <label for="bookEdition">Book Edition/Print:</label>
+                            <input type="text" className="form-input"></input>
+                            {/*Book ISBN*/}
+                            <label for="bookISBN">ISBN/LOC Number:</label>
+                            <input type="text" className="form-input"></input>
+                        </dt>
+                        <dt>
+                            {/*Book Condition*/}
+                            <label for="bookCondition">Book Condtion:</label>
+                            <input type="text" className="form-input"></input>
+                            {/*Hardcover or Softcover*/}
+                            <label for="bookCover">Hardcover or Softcover:</label>
+                            <input type="text" className="form-input"></input>
+                        </dt>
+                    </dl>
+                    <dl>
+                        {/*Submit Button*/}
+                        <dt>
+                            <input type="submit" className="form-submit" value="Submit"></input>
+                        </dt>
+                    </dl>
+                </fieldset>
+            </form>
+        </div>
     </>
 }

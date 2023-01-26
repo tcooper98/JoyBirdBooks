@@ -1,0 +1,28 @@
+.form-input{
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #FFF4DA;
+    width: 300px;
+}
+
+h1{
+    text-align: center;
+}
+
+.form-submit{
+    width: 200px;
+    height: 34px;
+    border-width: 1px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 15, 15);
+    align-self: auto;
+    
+}
+
+.form-submit:hover{
+    width: 200px;
+    height: 34px;
+    border-width: 0px;
+    color: rgb(255, 255, 255);
+    background-color: #F2C202; 
+}
+  
