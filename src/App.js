@@ -3,15 +3,15 @@ import './App.css';
 import Navbar from './components/navBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home/home'
-import Products from './pages/products'
+import Products from './pages/products/products'
 import Donate from './pages/donate/donate'
 import Blog from './pages/blog/blog'
-import Calender from './pages/calender'
-import News from './pages/newsletter'
+import Calender from './pages/calender/calender'
+import News from './pages/newsletter/newsletter'
 import Contact from './pages/contact/contact'
 import About from './pages/about/about'
-import Partner from './pages/partner'
-import Cart from './pages/cart'
+import Partner from './pages/partner/partner'
+import Cart from './pages/cart/cart'
 import Footer from './components/Footer/Footer';
 
 function App() {
