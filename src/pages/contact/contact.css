@@ -14,7 +14,14 @@ input, textarea {
   grid-template-columns: 50% 50% ; 
   width: 610px;
 }
+.form-column{
+ margin:0px 2px;
 
+}
+.form-column1{
+  width: inherit;
+  margin: 0px 2px;
+}
 @media (max-width: 700px) {
   .form-container{
     display: flex;
@@ -33,9 +40,8 @@ input, textarea {
 }
 
 
-.form-column1{
-  width: inherit;
-}
+
+
 .form-input, .form-textarea {
   margin-top: 3px;
   margin-left: 2px;
