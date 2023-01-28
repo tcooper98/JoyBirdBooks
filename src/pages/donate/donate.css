@@ -14,7 +14,7 @@ form{
     gap: 2rem;
 }
 
-input{
+.donate-container input{
     min-width: 100%;
     min-height: 75%;
 }

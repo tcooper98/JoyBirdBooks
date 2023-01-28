@@ -109,8 +109,8 @@
 
 .book-spotlight input[type="radio"]{
     accent-color: #16697a;
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
     transform: scale(1.5);
     margin-right: 30px;
     
@@ -249,6 +249,7 @@
  background-color: #16697A;
  height: 800px;
  padding: 40px;
+
 }
 
 .instagram h2{

@@ -1,0 +1,42 @@
+.filter h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+ 
+.filter legend{
+    font-size: 25px;
+    color: #292727;
+}
+
+.filter input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+       
+}
+
+.filter label{
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.filter select{
+    width: 300px;
+    height: 35px;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    border: 1px solid #292727;
+}
+
+.filter option{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.filter{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
