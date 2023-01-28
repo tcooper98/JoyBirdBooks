@@ -11,28 +11,28 @@ class ContactUs extends Component {
         </div>
         
         <div className="form-row">
-          <div className="form-column1">
+          <div className="form-column">
             <input
               type="text"
               placeholder="First Name"
               className="form-input"
             />
           </div>
-          <div className="form-column1">
+          <div className="form-column">
             <input type="text" placeholder="Last Name" className="form-input" />
           </div>
         </div>
         <div className="form-row">
-          <div className="form-column2">
+          <div className="form-column">
             <input type="email" placeholder="Email" className="form-input" />
           </div>
-          <div className="form-column2">
+          <div className="form-column">
             <input type="text" placeholder="Subject" className="form-input" />
           </div>
         </div>
 
         <div className="form-row">
-          <div className="form-column3">
+          <div className="form-column1">
             <textarea
               placeholder="Message"
               className="form-textarea-m"
@@ -41,13 +41,14 @@ class ContactUs extends Component {
           </div>
           
         </div>
+       
+
+        <div className="form-rowb">
         <div className="max">
           <p>Maximum characters 5000</p>
           </div>
-
-        <div className="form-row">
-          <div className="form-column">
-            <button className="form-submit-btn">Submit</button>
+          <div className="form-columnb">
+            <button className="form-about-submit-btn">Submit</button>
           </div>
         </div>
       </div>

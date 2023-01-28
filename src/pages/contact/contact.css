@@ -3,56 +3,75 @@ input, textarea {
   /* width: 500px; */
 }
 
-textarea {
-  /* width: 500px; */
-}
-
 .contact-heading{
-  padding: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
 .form-row {
   display: grid;
   grid-template-columns: 50% 50% ; 
+  width: 610px;
 }
 
+@media (max-width: 700px) {
+  .form-container{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 100px 200px;
+    
+  }
+  .form-row {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    
+  }
+
+
+}
+
+
+.form-column1{
+  width: inherit;
+}
 .form-input, .form-textarea {
-  margin: 3px;
-  padding-left: 5px;
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 8px;
   padding-right:150px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border: 2px solid #575757;
   border-radius: 2px;
   font-size: 10px;
-  font-stretch: 50%;
+
 }
 
 .form-textarea-m{
-  margin: 3px;
-  padding-left: 5px;
-  padding-right:431px;
-  padding-top: 5px;
+
+  margin-top: 5px;
+  padding-left: 8px;
+  padding-top: 8px;
   padding-bottom: 40px;
   border: 2px solid #575757;
   border-radius: 2px;
   font-size: 10px;
-  font-stretch: 50%;
-  transform: translate(-42%, 00%);
+  width: inherit;
+  
+ 
 }
 
 
 .form-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
   display: grid;
-  place-items: center;
-  /* position: absolute; */
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
+  justify-content: center;
+  margin-top: 75px;
+
 }
+
 
 .form-textarea{
   margin: 3px;
@@ -62,29 +81,37 @@ textarea {
   padding-bottom: 40px;
 }
 
-.form-column3{
-  width:100px;
-  height: 110px; 
-}
+
 
 .max{
-  transform: translate(177%, -180%);
+  display: grid;
+  justify-content: right;
+  margin-bottom: 5px;
+  margin-top: -5px;
   font-size: 10px;
 }
-
-.form-submit-btn{
+.form-rowb{
+  display: grid;
+  justify-content: right;
+}
+.form-columnb{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.form-about-submit-btn{
+  display:inline !important ;
+  text-align: center;
   width: 200px;
   height: 34px;
   border-width: 1px;
   color: rgb(255, 255, 255);
   background-color: rgb(15, 15, 15);
-  align-self: auto;
+  margin-bottom: 125px;
   
 }
 
-.form-submit-btn:hover{
-  width: 200px;
-  height: 34px;
+.form-about-submit-btn:hover{
   border-width: 0px;
   color: rgb(255, 255, 255);
   background-color: #F2C202; 
