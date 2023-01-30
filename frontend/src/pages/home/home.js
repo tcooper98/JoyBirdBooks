@@ -123,7 +123,7 @@ export default function Home() {
 
             </div>
             
-           <div className="location">
+           <div className="locationhome">
             <div className="visit">
                 <h1>Visit Us</h1>
                 <img src="images/map.jpg" alt="location of store on map"/>
