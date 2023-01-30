@@ -6,7 +6,7 @@ export default function Blog() {
     return (
         <>
             <div className="author-spotlight row page-spacing">
-                <div className="col-text">
+                <div className="col-blog-text">
                     <h1>Blog</h1> 
                     <h2 className='subheading'>Local Author Spotlight</h2>
                     <h2 className='subheading2'>Date Text</h2>

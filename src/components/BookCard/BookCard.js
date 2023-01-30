@@ -4,6 +4,14 @@ import { Link, useLocation } from 'react-router-dom';
 import { BookItems } from "./BookItems.js";
 
 function BookCard () {
+    return (
+        <div>
+            <Book/>
+        </div>
+    )
+}
+
+function Book () {
     let className;
 
     //gets page user is currently on
@@ -25,14 +33,17 @@ function BookCard () {
                 return (
                     /*sets className variable*/
                     <li key={index} className={className}>
-                        <div className="card" >
-                            <div className="body">
+                        <div className="row">
+                            <div className="col-past-spotlights past-spotlights-content">
 
                                 <img className="image" src={item.image}/>
                                 <h1 className="title">{item.name}</h1>
                                 <p className="price">{item.price}</p>
                                 <p className="description">{item.description}</p>
-                                
+
+                                <div className="spacing"></div>
+
+                                <p className="date">{item.date}</p>
                             </div>
                         </div>
                     </li>

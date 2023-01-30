@@ -1,0 +1,63 @@
+.background {
+    padding: 40px;
+    background-color: #859C44;
+    color: white;
+}
+
+.p {
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.p:hover {
+    color: #444A33;
+}
+
+.heading-spacing {
+    padding-bottom: 25px;
+}
+
+.body-spacing {
+    padding-bottom: 10px;
+}
+
+.div-spacing {
+    padding: 40px;
+}
+
+.disclaimer {
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.disclaimer-gray {
+    color: #444A33;
+}
+
+/*row and col grid*/
+
+.row {
+    display: flex;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.col-text {
+    padding-right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 25%;
+}
+
+.col-icons {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
