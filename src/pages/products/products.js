@@ -32,11 +32,11 @@ function ProductCard() {
         <li key={index}>
         <div className="card">
         <div className="body">
-          <img className="image" src={item.image}/>
-          <h1 className="title">{item.name}</h1>
-          <h2 className="Rating">{item.rating}</h2>
-          <h2 className="Author">{item.author}</h2>
-          <p className="price">{item.price}</p>
+          <img className="image"key={item.id} src={item.image}/>
+          <h1 className="title" key={item.id}>{item.name}</h1>
+          <h2 className="Rating" key={item.id}>{item.rating}</h2>
+          <h2 className="Author" key={item.id}>{item.author}</h2>
+          <p className="price" key={item.id}>{item.price}</p>
           
           
           </div>

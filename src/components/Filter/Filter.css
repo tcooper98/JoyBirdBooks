@@ -1,23 +1,41 @@
+/* .filter *{
+    flex-direction: column;
+   
+    display: inline;
+} */
+
+.filter h1{
+    font-size: 30px;
+}
+
+.genre h3{
+    font-size: 30px;
+    color: #292727;
+}
+
 .filter h2{
     font-size: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
  
 .filter legend{
     font-size: 25px;
     color: #292727;
+
 }
 
 .filter input[type="checkbox"]{
     width: 20px;
     height: 20px;
     margin-right: 10px;
+    margin-top: 8px;
        
 }
 
 .filter label{
     font-size: 20px;
     font-family: 'Nunito', sans-serif;
+   
 }
 
 .filter select{
@@ -36,7 +54,19 @@
 }
 
 .filter{
-    margin-top: 10px;
+   
+    margin-bottom: 20px;
+    padding: 30px;
+}
+
+.filter button{
+    width: 300px;
+    height: 35px;
+    background-color: #292727;
+    color: white;
+    font-size: 20px;
+    border: 1px solid #292727;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 

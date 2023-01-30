@@ -19,6 +19,7 @@ import RefundPolicy from './pages/refund-policy/refund-policy';
 import ShippingPolicy from './pages/shipping-policy/shipping-policy';
 import ReturnPolicy from './pages/return-item/return-policy';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Solo from './pages/Solo Product/solo';
 
 function App() {
  return( 
@@ -41,6 +42,7 @@ function App() {
       <Route exact path='/refund-policy' element={<RefundPolicy/>}/>
       <Route exact path='/shipping-policy' element={<ShippingPolicy/>}/>
       <Route exact path='/return-policy' element={<ReturnPolicy/>}/>
+      <Route exact path='/product' element={<Solo/>}/>
     </Routes>
 
   <Footer/>

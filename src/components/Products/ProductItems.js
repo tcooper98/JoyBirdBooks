@@ -7,7 +7,7 @@ export const ProductItems =[
         name:'Book Title',
         price:'$12.99',
         author:'Author Name',
-        rating: 4,
+        rating: '4/5 stars',
         category:'Books',
         age:'Adult',
         condition:'New',
