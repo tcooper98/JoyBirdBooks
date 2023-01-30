@@ -9,7 +9,6 @@ form{
     grid-template-columns: 1fr 1fr;
     display: grid;
     box-sizing: border-box;
-    border-radius: 1rem;
     padding: 1rem;
     gap: 2rem;
 }
@@ -21,6 +20,21 @@ form{
 
 .full-width{
     grid-column: span 2;
+}
+
+.sub-title{
+    color: #489fb5;
+}
+
+.required-input::after{
+    content: "*";
+    color: red;
+}
+
+input{
+    background-color: #fffcf4;
+    border: 1px solid;
+    height: 45px;
 }
 
 .form-submit{
@@ -38,5 +52,80 @@ form{
     border-width: 0px;
     color: rgb(255, 255, 255);
     background-color: #F2C202; 
+}
+
+.faq{
+    padding: 2rem 0;
+}
+
+.location{
+    padding: 0 18rem 12em;
+}
+
+.visit{
+    margin-left: 30px;
+}
+
+.visit img{
+    height: 377px;
+    width: 615px;
+    padding: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.visit h1{
+    font-size: 55px;
+    text-align: left;
+}
+
+.address{
+    width: 317px;
+    margin-top: 90px;
+    margin-left: 40px;
+    
+}
+
+.address h2{
+    font-size: 45px;
+    text-align: left;
+}
+
+.address p{
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;;
+    font-weight: 300;
+}
+
+.address button{
+    background-color: #489fb5;
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Nunito', sans-serif;;
+    font-weight: 300;
+    margin-top: 100px;
+}
+
+.hours{
+    width: 377px;
+    margin-top: 90px;
+    margin-left: 40px;
+     
+}
+ 
+.hours h2{
+    font-size: 45px;
+    text-align: left;
+}
+ 
+.hours p{
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;;
+    font-weight: 300;
+    padding: 5px;
 }
   
