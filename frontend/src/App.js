@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import Navbar from './components/navBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -23,7 +23,11 @@ import Solo from './pages/Solo Product/solo';
 import BlogReadMore from './pages/blog-read-more/blog-read-more';
 
 function App() {
- return( 
+  useEffect(() => {
+    fetch('/api/items').then((res) => {
+      console.log(res)})
+    }, []);
+  return( 
   <Router>
     <ScrollToTop/>
     <Navbar />
