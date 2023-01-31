@@ -1,6 +1,6 @@
 .page-spacing {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .author-spotlight {
@@ -21,9 +21,20 @@
     font-weight: bold;
 }
 
+.subheading {
+    font-family: 'Nunito Sans', sans-serif;
+    padding-bottom: 8px;
+}
+
 .subheading2 {
+    font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
     color: #EBC242;
+}
+
+.author-description {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
 }
 
 .spacing {
@@ -34,6 +45,12 @@
 .description {
     width: 100%;
     font-size: 15px;
+}
+
+.img {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: 320px;
 }
 
 .btn {

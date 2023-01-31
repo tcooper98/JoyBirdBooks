@@ -9,9 +9,9 @@ export default function Blog() {
                 <div className="col-blog-text">
                     <h1>Blog</h1> 
                     <h2 className='subheading'>Local Author Spotlight</h2>
-                    <h2 className='subheading2'>Date Text</h2>
+                    <p className='subheading2'>Date Text</p>
 
-                    <div className="p-10"></div>
+                    <div className="p-30"></div>
 
                     <h2 className='subheading'>Title Text</h2>
                     <p className="description">
@@ -25,9 +25,9 @@ export default function Blog() {
                 </div>
 
                 <div className="col-image">
-                    <h2>Author Name</h2>
-                    <p>Author Text</p>
-                    <img src="images/placeholder-image.jpg"/>
+                    <h2 className="subheading">Author Name</h2>
+                    <p className="author-description">Author Text</p>
+                    <img className="img" src="./placeholder.jpg"/>
 
                     <div>
                         <button className="btn">Read More</button>

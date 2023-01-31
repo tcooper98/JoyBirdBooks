@@ -1,5 +1,4 @@
 import React from 'react'
-// import BookCard from '../../components/BookCard/BookCard'
 import HeroBanner from '../../components/Hero/Header'
 import Product from '../../components/Products/ProductCard'
 import './home.css'

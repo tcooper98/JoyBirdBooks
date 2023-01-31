@@ -5,7 +5,7 @@ import { BookItems } from "./BookItems.js";
 
 function BookCard () {
     return (
-        <div>
+        <div className="past-spotlights-content">
             <Book/>
         </div>
     )
@@ -34,11 +34,10 @@ function Book () {
                     /*sets className variable*/
                     <li key={index} className={className}>
                         <div className="row">
-                            <div className="col-past-spotlights past-spotlights-content">
+                            <div className="p-20">
 
                                 <img className="image" src={item.image}/>
                                 <h1 className="title">{item.name}</h1>
-                                <p className="price">{item.price}</p>
                                 <p className="description">{item.description}</p>
 
                                 <div className="spacing"></div>
@@ -49,52 +48,6 @@ function Book () {
                     </li>
                 )
             })}
-
-            {/*sets className variable*/}
-            {/* <div className={className}>
-
-                <div className="row">
-                    <div className="col-past-spotlights past-spotlights-content">
-                        <img src="src/components/images/placeholder-image.jpg"/>
-                        <h3 className="past-spotlights-text">Title 1</h3>
-                        <p className="past-spotlights-text">Description text</p>
-
-                        <div className="spacing"></div>
-
-                        <p>Month Text</p>
-                    </div>
-
-                    <div className="col-past-spotlights past-spotlights-content">
-                        <img src="src/components/images/placeholder-image.jpg"/>
-                        <h3 className="past-spotlights-text">Title 2</h3>
-                        <p className="past-spotlights-text">Description text</p>
-
-                        <div className="spacing"></div>
-
-                        <p>Month Text</p>
-                    </div>
-
-                    <div className="col-past-spotlights past-spotlights-content">
-                        <img src="src/components/images/placeholder-image.jpg"/>
-                        <h3 className="past-spotlights-text">Title 3</h3>
-                        <p className="past-spotlights-text">Description text</p>
-
-                        <div className="spacing"></div>
-
-                        <p>Month Text</p>
-                    </div>
-
-                    <div className="col-past-spotlights past-spotlights-content-last">
-                        <img src="src/components/images/placeholder-image.jpg"/>
-                        <h3 className="past-spotlights-text">Title 4</h3>
-                        <p className="past-spotlights-text">Description text</p>
-
-                        <div className="spacing"></div>
-
-                        <p>Month Text</p>
-                    </div>
-                </div>
-            </div> */}
         </>
     )
 }

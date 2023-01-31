@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import "./footer.css";
 
@@ -69,9 +70,23 @@ function Footer () {
                         </Link>
                     </div>
 
-                    <div className="col-icons">
-                        <h2 className="heading-spacing">FOLLOW US</h2>
-                        <p>Facebook icon</p><p>Instagram icon</p><p>Twitter icon</p>
+                    <div>
+                        <h2 className="heading-icons-spacing">FOLLOW US</h2>
+
+                        <div>
+                            <a className="p body-spacing" target="_blank" href="https://www.facebook.com/joybirdbooks/">
+                                <BsFacebook className="footer-icons"/>
+                            </a>
+
+                            <a className="p body-spacing" target="_blank" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
+                                <BsInstagram className="footer-icons"/>
+                            </a>
+
+                            
+                            {/* <a className="p body-spacing" target="_blank" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
+                                <BsTwitter className="footer-icons"/>
+                            </a> */}
+                        </div>
                     </div>
                 </div>
 

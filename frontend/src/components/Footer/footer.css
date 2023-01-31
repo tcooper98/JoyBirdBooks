@@ -18,6 +18,10 @@
     padding-bottom: 25px;
 }
 
+.heading-icons-spacing {
+    padding-bottom: 8px;
+}
+
 .body-spacing {
     padding-bottom: 10px;
 }
@@ -33,6 +37,15 @@
 }
 
 .disclaimer-gray {
+    color: #444A33;
+}
+
+.footer-icons {
+    font-size: 70px;
+    padding-right: 30px;
+}
+
+.footer-icons:hover {
     color: #444A33;
 }
 
@@ -54,10 +67,4 @@
     flex-direction: column;
     align-content: center;
     width: 25%;
-}
-
-.col-icons {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
 }
