@@ -48,7 +48,7 @@
     text-align: left;
 }
 
-.image{
+.image-card {
     object-fit: cover;
     width: 230px;
     padding-bottom: 20px;
@@ -84,4 +84,12 @@
     content: "";
     display: table;
     clear: both;
+}
+
+@media (max-width: 1242px) {
+    .past-spotlights-content {
+        column-count: 2;
+        width: 50%;
+        column-gap: 15px;
+    }
 }

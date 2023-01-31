@@ -20,7 +20,7 @@ function Book () {
     console.log(location.pathname);
 
     //sets background styling to differ based on what page user is currently on
-    if (location.pathname == "/blog") {
+    if (location.pathname == "/blog" || location.pathname == "/blog-read-more") {
         className = 'background-blog';
     } else if (location.pathname == "/") {
         className = "background-home";
@@ -36,7 +36,7 @@ function Book () {
                         <div className="row">
                             <div className="p-20">
 
-                                <img className="image" src={item.image}/>
+                                <img className="image-card" src={item.image}/>
                                 <h1 className="title">{item.name}</h1>
                                 <p className="description">{item.description}</p>
 

@@ -20,6 +20,7 @@ import ShippingPolicy from './pages/shipping-policy/shipping-policy';
 import ReturnPolicy from './pages/return-item/return-policy';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Solo from './pages/Solo Product/solo';
+import BlogReadMore from './pages/blog-read-more/blog-read-more';
 
 function App() {
  return( 
@@ -32,6 +33,7 @@ function App() {
       <Route exact path='/products' element={<Products/>}/>
       <Route exact path='/donate' element={<Donate/>}/>
       <Route exact path='/blog' element={<Blog/>}/>
+      <Route exact path='/blog-read-more' element={<BlogReadMore/>}/>
       <Route exact path='/calender' element={<Calender/>}/>
       <Route exact path='/newsletter' element={<News/>}/>
       <Route exact path='/contact' element={<Contact/>}/>
