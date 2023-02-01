@@ -19,16 +19,6 @@ export default function Donate() {
             open: false
         }
     ]);
-
-    const toggleFAQ = index => {
-        setfaqs(faqs.map((faq,i) => {
-            if (i === index) {
-                faq.open = !faq.open
-            } else {
-                faq.open = false;
-            }
-            return faq;
-        }))
     }
     return <>
         <div class="hero-banner"></div>
