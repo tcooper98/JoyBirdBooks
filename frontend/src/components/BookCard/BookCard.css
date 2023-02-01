@@ -53,19 +53,8 @@
     font-size: 20px;
 }
 
-/* .card {
-    height: auto;
-} */
-
-.wrapper{
-    padding: 10px;
-    margin: 60px;
-    justify-content: center;
-    margin-top: 40px;
-    height: 800px;
-    width: auto;
-    position: relative;
-    margin-top: 5px;
+.test {
+    row-gap: 50px;
 }
 
 /*creates row and col grids*/
