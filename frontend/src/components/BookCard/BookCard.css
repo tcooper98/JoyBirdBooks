@@ -6,6 +6,14 @@
     background-color: #99BDC8;
 }
 
+.past-spotlights-content {
+    display: flex;
+    padding-right: 15px;
+    align-content: center;
+    padding: 20px;
+    column-gap: 15px;
+}
+
 .past-spotlights-text {
     text-align: left;
 }
