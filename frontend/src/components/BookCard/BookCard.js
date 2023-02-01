@@ -31,7 +31,7 @@ function Book () {
             {/*rename the styles here to what i created*/}
             {BookItems.map((item, index) => {
                 return (
-                    /*sets className variable. every even/other item gets the end of a row when small. if mod2 is 0, then it's an end*/
+                    /*sets className variable. every even/other item gets the end of a row when small. if mod2 is 0, then it's an end. it dumps out 2 at a time*/
                     <li key={index} className={className}>
                         <div className="row">
                             <div className="p-20">
