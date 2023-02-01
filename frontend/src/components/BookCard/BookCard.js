@@ -51,19 +51,17 @@ function Book () {
 
                 return (
                     /*sets className variable. every even/other item gets the end of a row when small. if mod2 is 0, then it's an end. it dumps out 2 at a time*/
-                    <div className="past-spotlights-content">
                         <li key={index} className={className}>
 
-                            <img className="image-card" src={item.image} />
-                            <h1 className="title">{item.name}</h1>
-                            <p className="description">{item.description}</p>
+                        <img className="image-card" src={item.image}/>
+                        <h1 className="title">{item.name}</h1>
+                        <p className="description">{item.description}</p>
 
-                            <div className="spacing"></div>
+                        <div className="spacing"></div>
 
-                            <p className="date">{item.date}</p>
+                        <p className="date">{item.date}</p>
 
-                        </li>
-                    </div>
+                    </li>
                 )
             })}
         </>
