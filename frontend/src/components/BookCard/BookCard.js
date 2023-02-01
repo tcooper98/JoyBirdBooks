@@ -26,6 +26,17 @@ function Book () {
         className = "background-home";
     }
 
+    const [isMobile, setMobile] = useState(window.innerWidth <= 820);
+
+    const updateScreenSize = () => {
+        setMobile(window.innerWidth <= 820);
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", updateScreenSize);
+        return () => window.removeEventListener("resize", updateScreenSize);
+    })
+
     return (
         <>
             {/*rename the styles here to what i created*/}
