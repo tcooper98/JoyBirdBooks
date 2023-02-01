@@ -43,13 +43,8 @@ function Book () {
             {BookItems.map((item, index) => {
                 
                 return (
-
-                    {/*Renders image and text below each other if mobile screen size*/ }
-                    {isMobile ? (
-
                     /*sets className variable. every even/other item gets the end of a row when small. if mod2 is 0, then it's an end. it dumps out 2 at a time*/
                     <li key={index} className={className}>
-                        <div className="row">
                             <div className="p-20">
 
                                 <img className="image-card" src={item.image}/>
