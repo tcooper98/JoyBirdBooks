@@ -26,18 +26,7 @@
     margin: 0px 2px;
 }
 
-.donate-container{
-    padding: 4rem 0;
-    width: 90%;
-}
-.donate-container form{
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-    box-sizing: border-box;
-    padding: 1rem;
-    margin-left: 10rem;
-    gap: 2rem;
-}
+
 
 .donate-container input{
     min-width: 100%;
