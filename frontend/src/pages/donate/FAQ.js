@@ -1,18 +1,15 @@
 import React from 'react'
 
-function FAQ({faq, index}) {
+function FAQ({faq}) {
     return (
-        <div 
-            className="faq"
-            key={index}
-        >
+        <>
             <div className="faq-question">
                 {faq.question}
             </div>
             <div className="faq-answer">
                 {faq.answer}
             </div>
-        </div>
+        </>
     )
 }
 
