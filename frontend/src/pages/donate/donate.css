@@ -134,7 +134,7 @@ input{
 }
 
 .faqs .faq.open .faq-answer{
-    max-height: 1000px;
+    max-height: 100%;
     opacity: 1;
     background-color: white;
 }
