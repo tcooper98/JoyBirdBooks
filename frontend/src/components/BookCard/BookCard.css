@@ -7,7 +7,7 @@
 }
 
 .past-spotlights-content {
-    display: flex;
+    columns: 4 auto;
     padding-right: 15px;
     align-content: center;
     padding: 20px;
