@@ -26,7 +26,10 @@
     margin: 0px 2px;
 }
 
-
+.donateform-column1{
+    width: inherit;
+    margin: 0px 2px;
+}
 
 .donate-container input{
     min-width: 100%;

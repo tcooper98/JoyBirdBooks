@@ -62,7 +62,7 @@ export default function Donate() {
                         <input type="text" placeholder="Last Name" className="lastName"></input>
                     </div>
                 </div>
-                <div className="full-width">
+                <div className="donateform-column1">
                     {/*Email*/}
                     <label for="email" class="required-input">Email</label>
                     <input type="text" placeholder="Email Address" className="email"></input>
