@@ -66,8 +66,8 @@
 
 @media (max-width: 1250px) {
     .past-spotlights-content {
+        grid-template-rows: 
         columns: 2 auto;
-        rows: 2 auto;
         row-gap: 20px;
     }
 }
