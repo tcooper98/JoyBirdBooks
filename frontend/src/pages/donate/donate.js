@@ -17,7 +17,7 @@ export default function Donate() {
             question: "What if my books are not all accepted?",
             answer: "Your books we are unable to accept can either be returned to you or given to the appropriate non-profit entity on your behalf.",
             open: false
-        }
+        },
     ]);
     }
     return <>
