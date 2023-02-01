@@ -1,5 +1,7 @@
+
+//access all items from strapi
 export const ITEM_QUERY = `
-query{
+query ITEMS{
     items{
 
      data{
@@ -28,3 +30,6 @@ query{
    }
    }
 `;
+//access single item from strapi
+
+

@@ -19,9 +19,9 @@ import RefundPolicy from './pages/refund-policy/refund-policy';
 import ShippingPolicy from './pages/shipping-policy/shipping-policy';
 import ReturnPolicy from './pages/return-item/return-policy';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import Solo from './pages/Solo Product/solo';
 import BlogReadMore from './pages/blog-read-more/blog-read-more';
 import { Provider, createClient } from 'urql';
+import SoloProduct from './pages/products/[slug]';
 
 
 //connecting ql client to frontend
@@ -31,11 +31,14 @@ const client = createClient({url: 'http://localhost:1337/graphql'});
 function App() {
   return( 
   <Router>
+
+    {/* ql wrapper */}
     <Provider value={client}>
    
     <ScrollToTop/>
     <Navbar />
-
+    
+    {/* Setting up routes for each page */}
     <Routes>
       <Route exact path='/' element={<Home/>}/>
       <Route exact path='/products' element={<Products/>}/>
@@ -52,7 +55,7 @@ function App() {
       <Route exact path='/refund-policy' element={<RefundPolicy/>}/>
       <Route exact path='/shipping-policy' element={<ShippingPolicy/>}/>
       <Route exact path='/return-policy' element={<ReturnPolicy/>}/>
-      <Route exact path='/product' element={<Solo/>}/>
+      <Route exact path='/product/:slug' element={<SoloProduct/>}/>
     </Routes>
 
   <Footer/>
