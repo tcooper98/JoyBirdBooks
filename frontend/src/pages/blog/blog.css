@@ -119,7 +119,7 @@
 
     .past-spotlights-content {
         flex-direction: column;
-        
+        width: 100%;
     }
 }
 
