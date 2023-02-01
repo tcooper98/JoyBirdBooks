@@ -4,7 +4,8 @@
   "info": {
     "singularName": "item",
     "pluralName": "items",
-    "displayName": "item"
+    "displayName": "item",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -36,17 +37,22 @@
       "type": "string"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "description": {
       "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
     }
   }
 }

@@ -2,6 +2,8 @@ import React from 'react'
 import './products.css'
 import ProductItems from '../../components/Products/ProductItems'
 import Filter from '../../components/Filter/Filter'
+import { ITEM_QUERY } from '../../lib/query'
+import { useQuery } from 'urql';
 
 
 export default function Products() {
@@ -23,28 +25,40 @@ export default function Products() {
 
 
 function ProductCard() {
+
+   //fetch products
+   const[results] = useQuery({ query: ITEM_QUERY });
+     
+   const { data, fetching, error } = results;
+
+   if (fetching) return <p>Loading...</p>;
+      if (error) return <p>Oh no... {error.message}</p>;
+
+      const items = data.items.data;
+      console.log(items);
   
     return (
-      <>
-  
-        {ProductItems.map((item, index) => {
-        return (
-        <li key={index}>
-        <div className="card">
-        <div className="body">
-          <img className="image"key={item.id} src={item.image}/>
-          <h1 className="title" key={item.id}>{item.name}</h1>
-          <h2 className="Rating" key={item.id}>{item.rating}</h2>
-          <h2 className="Author" key={item.id}>{item.author}</h2>
-          <p className="price" key={item.id}>{item.price}</p>
-          
-          
-          </div>
+      <div className='productcontainer'>
+         {items.map((item) => (
+          <div key={item.id} className="product-card">
+           <div className="card">
+          <div className="product-body">
+          <img className="product-image" src={item.attributes.image.data.attributes.formats.medium.url} alt={item.attributes.name}/>
+          <h1 className="product-title">{item.attributes.name}</h1>
+          <h3 className="product-rating">{item.attributes.rating}/5 Stars</h3>
+          <h3 className="product-author">By {item.attributes.author}</h3>
+         <p className="product-price">${item.attributes.price}</p>
+        
         
         </div>
-        </li>
-      )
-      })}
-      </>
+      
+      </div> 
+      </div>
+         ))}
+
+      </div>
     )
+  
   }
+
+  
