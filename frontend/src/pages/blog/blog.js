@@ -97,7 +97,7 @@ export default function Blog() {
                             <p className="author-description">Author Text</p>
                             <img className="img" src="images/Poissant.jpg" />
 
-                            <Link to='/blog-read-more'>
+                            <Link to='/blog-read-more' className="btn">
                                 <p className="btn">Read More</p>
                             </Link>
                         </div>
