@@ -5,9 +5,8 @@ import { BookItems } from "./BookItems.js";
 
 function BookCard () {
     return (
-        <div className="past-spotlights-content">
-            <Book/>
-        </div>
+        
+        <Book/>
     )
 }
 

@@ -6,19 +6,6 @@
     background-color: #99BDC8;
 }
 
-.past-spotlights-content {
-    display: flex;
-    padding-right: 15px;
-    align-content: center;
-    padding: 20px;
-    column-count: 4;
-    column-gap: 15px;
-}
-
-.past-spotlights-content-last {
-    padding: 20px;
-}
-
 .past-spotlights-text {
     text-align: left;
 }
@@ -84,12 +71,4 @@
     content: "";
     display: table;
     clear: both;
-}
-
-@media (max-width: 1242px) {
-    .past-spotlights-content {
-        column-count: 2;
-        width: 50%;
-        column-gap: 15px;
-    }
 }
