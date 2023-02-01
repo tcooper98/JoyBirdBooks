@@ -13,6 +13,12 @@
     font-size: 50px;
 }
 
+.donate-heading{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
 .donate-container{
     padding: 4rem 0;
     width: 90%;
