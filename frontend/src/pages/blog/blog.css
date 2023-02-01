@@ -116,6 +116,10 @@
         margin-left: 0px;
         margin-right: 0px;
     }
+
+    .past-spotlights-content {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 580px) {
