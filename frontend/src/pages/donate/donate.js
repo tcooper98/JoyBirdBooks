@@ -1,13 +1,41 @@
-import React from 'react'
-import './donate.css'
+import React, {useState} from 'react';
+import './donate.css';
+import FAQ from './FAQ'
 
 export default function Donate() {
+    const [faqs, setfaqs] = useState( [
+        {
+            question: "How does store credit work?",
+            answer: "Store credit is given for adult paperbacks and hardcovers at 25% of our selling price. For example: $2.00 in credit per hardcover book sold at $8.00 in store. $1.25 in credit per paperback book sold at $5.00 in store.",
+            open: false
+        },
+        {
+            question: "Does the condition of my books matter?",
+            answer: "Books must be clean (no moldew or mold) and have all their pages, tight bindings, and front/back covers.",
+            open: false
+        },{
+            question: "What if my books are not all accepted?",
+            answer: "Your books we are unable to accept can either be returned to you or given to the appropriate non-profit entity on your behalf.",
+            open: false
+        }
+    ]);
+
+    const toggleFAQ = index => {
+        setfaqs(faqs.map((faq,i) => {
+            if (i === index) {
+                faq.open = !faq.open
+            } else {
+                faq.open = false;
+            }
+            return faq;
+        }))
+    }
     return <>
+        <div class="hero-banner"></div>
         <div className="donate-container">
-            <h1>"Donate & Trade" Hero Banner</h1>
             <form action="" method="" name="donate-form">
                 <div className="full-width">
-                    <h2>What would you like to do today?</h2>
+                    <h1>What would you like to do today?</h1>
                 </div>
                 <div>
                     {/*Donate Books Radio Button */}
@@ -20,7 +48,7 @@ export default function Donate() {
                     <input type="radio" name="donateTrade" id="no" value="no" />
                 </div>
                 <div className="full-width">
-                    <h3 class="sub-title">CONTACT INFORMATION</h3>
+                    <h2 class="sub-title">CONTACT INFORMATION</h2>
                 </div>
                 <div>
                     {/*First Name*/}
@@ -38,7 +66,7 @@ export default function Donate() {
                     <input type="text" placeholder="Email Address" className="email"></input>
                 </div>
                 <div className="full-width">
-                    <h3 class="sub-title">BOOK INFORMATION</h3>
+                    <h2 class="sub-title">BOOK INFORMATION</h2>
                 </div>
                 <div>
                     {/*Book Title*/}
@@ -75,20 +103,16 @@ export default function Donate() {
                     <input type="submit" className="form-submit" value="Submit"></input>
                 </div>
             </form>
-            <div className="faq">
-                <h2>FAQ</h2>
-                <h3>How does store credit work?</h3>
-                <p>Store credit is given for adult paperbacks and hardcovers at 25% of our selling price.</p>
-                <p>For example:</p>
-                <p>$2.00 in credit per hardcover book sold at $8.00 in store.</p>
-                <p>$1.25 in credit per paperback book sold at $5.00 in store.</p>
-                <h3>Does the condition of my books matter?</h3>
-                <p>Books must be clean (no moldew or mold) and have all their pages, tight bindings, and front/back covers.</p>
-                <h3>What if my books are not all accepted?</h3>
-                <p>Your books we are unable to accept can either be returned to you or given to the appropriate non-profit entity on your behalf.</p>
+            <div className="faq-container">
+                <h2 className="faq-title">FAQ</h2>
+                <div className="faqs">
+                    {faqs.map((faq, i) => (
+                        <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ}></FAQ>
+                    ))}
+                </div>
             </div>
         </div>
-            <div className="location">
+            <div className="locationhome">
                 <div className="visit">
                     <h1>Visit Us</h1>
                     <img src="images/map.jpg" alt="location of store on map"/>
