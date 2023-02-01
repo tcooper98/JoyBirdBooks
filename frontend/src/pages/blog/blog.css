@@ -58,6 +58,7 @@
 }
 
 .btn {
+    text-decoration: none;
     background-color: #EBC242;
     border: none;
     text-align: center;
