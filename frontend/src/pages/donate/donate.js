@@ -107,7 +107,7 @@ export default function Donate() {
                 <h2 className="faq-title">FAQ</h2>
                 <div className="faqs">
                     {faqs.map((faq, i) => (
-                        <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ}></FAQ>
+                        <FAQ faq={faq} index={i}></FAQ>
                     ))}
                 </div>
             </div>
