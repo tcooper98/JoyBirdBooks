@@ -35,7 +35,7 @@ export default function Donate() {
         <div className="donate-container">
             <form action="" method="" name="donate-form">
                 <div className="full-width">
-                    <h1 className="donate-heading">What would you like to do today?</h1>
+                    <h1>What would you like to do today?</h1>
                 </div>
                 <div>
                     {/*Donate Books Radio Button */}
@@ -50,21 +50,17 @@ export default function Donate() {
                 <div className="full-width">
                     <h2 class="sub-title">CONTACT INFORMATION</h2>
                 </div>
-                <div className="donateform-row">
-                    <div className="donateform-column">
-                        {/*First Name*/}
-                        <div className="form-input">
-                            <label for="firstName" class="required-input">First Name</label>
-                            <input type="text" placeholder="First Name" className="firstName"></input>
-                        </div>
-                    </div>
-                    <div className="donateform-column">
-                        {/*Last Name*/}
-                        <label for="lastName" class="required-input">Last Name</label>
-                        <input type="text" placeholder="Last Name" className="lastName"></input>
-                    </div>
+                <div>
+                    {/*First Name*/}
+                    <label for="firstName" class="required-input">First Name</label>
+                    <input type="text" placeholder="First Name" className="firstName"></input>
                 </div>
-                <div className="donateform-column1">
+                <div>
+                    {/*Last Name*/}
+                    <label for="lastName" class="required-input">Last Name</label>
+                    <input type="text" placeholder="Last Name" className="lastName"></input>
+                </div>
+                <div className="full-width">
                     {/*Email*/}
                     <label for="email" class="required-input">Email</label>
                     <input type="text" placeholder="Email Address" className="email"></input>
