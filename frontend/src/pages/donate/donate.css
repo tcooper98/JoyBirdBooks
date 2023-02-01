@@ -45,6 +45,11 @@
 
 }
 
+.donate-container {
+    display: grid;
+    justify-content: center;
+    margin-top: 75px;
+}
 
 .sub-title{
     color: #489fb5;
