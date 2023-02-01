@@ -83,7 +83,7 @@
 
 @media (max-width: 1250px) {
     .past-spotlights-content {
-
+        columns: 2 auto;
     }
 }
 
