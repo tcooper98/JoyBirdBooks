@@ -84,9 +84,9 @@ export default function Donate() {
                     <label for="bookCover" class="required-input">Hardcover or Softcover</label>
                     <input type="text" placeholder="Hardcover or Softcover" className="bookCover"></input>
                 </div>
-                <div className="full-width">
+                <div>
                     {/*Submit Button*/}
-                    <input type="submit" className="form-submit" value="Submit"></input>
+                    <button className="form-submit" value="Submit"></button>
                 </div>
             </form>
             <div className="faq-container">
