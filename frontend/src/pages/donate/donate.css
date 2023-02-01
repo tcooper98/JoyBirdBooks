@@ -9,43 +9,30 @@
     width: auto;
 }
 
-.donate-heading{
+.donate-container h1{
     font-size: 50px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
 }
 
-.donateform-row {
+.donate-container{
+    padding: 4rem 0;
+    width: 90%;
+}
+.donate-container form{
+    grid-template-columns: 1fr 1fr;
     display: grid;
-    grid-template-columns: 50% 50%;
-    width: 610px;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-left: 10rem;
+    gap: 2rem;
 }
 
-.donateform-column {
-    margin: 0px 2px;
+.donate-container input{
+    min-width: 100%;
+    min-height: 75%;
 }
 
-.donateform-column1{
-    width: inherit;
-    margin: 0px 2px;
-}
-
-.form-input{
-    margin-top: 3px;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-left: 8px;
-    padding-right: 150px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    font-size: 10px;
-}
-
-.donate-container {
-    display: grid;
-    justify-content: center;
-    margin-top: 75px;
+.full-width{
+    grid-column: span 2;
 }
 
 .sub-title{
@@ -55,6 +42,12 @@
 .required-input::after{
     content: "*";
     color: red;
+}
+
+.donate-container input{
+    background-color: #fffcf4;
+    border: 1px solid;
+    height: 45px;
 }
 
 .form-submit{
