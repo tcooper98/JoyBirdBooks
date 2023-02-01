@@ -58,7 +58,7 @@
 }
 
 .btn {
-    text-decoration: none;
+    text-decoration: none !important;
     background-color: #EBC242;
     border: none;
     text-align: center;
@@ -68,7 +68,6 @@
     padding-bottom: 10px;
     border-radius: 2px;
     font-size: 18px;
-    visibility: visible;
 }
 
 /*creates row and col grids*/
