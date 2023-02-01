@@ -52,20 +52,19 @@
 }
 
 .form-submit {
-    display: inline !important;
-        text-align: center;
-        width: 200px;
-        height: 34px;
-        border-width: 1px;
-        color: rgb(255, 255, 255);
-        background-color: black;
-        margin-bottom: 125px;
+    height: 38px;
+    font-size: 20px;
+    border-width: 1px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 15, 15);
+    align-self: auto;
 }
 
 .form-submit:hover {
+    height: 38px;
     border-width: 0px;
-        color: rgb(255, 255, 255);
-        background-color: #F2C202;
+    color: rgb(255, 255, 255);
+    background-color: #F2C202;
 }
 
 .faq-container {
