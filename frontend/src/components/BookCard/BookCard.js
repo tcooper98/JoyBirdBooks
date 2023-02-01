@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './BookCard.css';
 import { Link, useLocation } from 'react-router-dom';
 import { BookItems } from "./BookItems.js";
@@ -26,25 +26,36 @@ function Book () {
         className = "background-home";
     }
 
+    const [isMobile, setMobile] = useState(window.innerWidth <= 820);
+
+    const updateScreenSize = () => {
+        setMobile(window.innerWidth <= 820);
+    }
+
+    useEffect(() => {
+        window.addEventListener("resize", updateScreenSize);
+        return () => window.removeEventListener("resize", updateScreenSize);
+    })
+
     return (
         <>
             {/*rename the styles here to what i created*/}
             {BookItems.map((item, index) => {
+
                 return (
                     /*sets className variable*/
                     <li key={index} className={className}>
-                        <div className="row">
-                            <div className="p-20">
 
-                                <img className="image-card" src={item.image}/>
-                                <h1 className="title">{item.name}</h1>
-                                <p className="description">{item.description}</p>
+                        <div className="p-20">
+                            <img className="image-card" src={item.image} />
+                            <h1 className="title">{item.name}</h1>
+                            <p className="description">{item.description}</p>
 
-                                <div className="spacing"></div>
+                            <div className="spacing"></div>
 
-                                <p className="date">{item.date}</p>
-                            </div>
+                            <p className="date">{item.date}</p>
                         </div>
+
                     </li>
                 )
             })}

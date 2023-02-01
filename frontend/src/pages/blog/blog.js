@@ -52,16 +52,12 @@ export default function Blog() {
                                     description text description text description text description text description text description text
                                 </p>
 
-                                <Link to='/blog-read-more'>
-                                    <p className="btn">help</p>
+                                <Link to='/blog-read-more' className="btn">
+                                    <p>Read More</p>
                                 </Link>
                             </div>       
                         </div>
                     </div>
-
-                    <div className="p-20"></div>
-
-
 
                     <div className="p-20"></div>
 
@@ -70,9 +66,7 @@ export default function Blog() {
 
                         <div className="pb-30"></div>
 
-                        <div>
-                            <BookCard />
-                        </div>
+                        <BookCard />
 
                         <div className="pb-40"></div>
                     </div>
@@ -103,8 +97,8 @@ export default function Blog() {
                             <p className="author-description">Author Text</p>
                             <img className="img" src="images/Poissant.jpg" />
 
-                            <Link to='/blog-read-more'>
-                                <p className="btn">help</p>
+                            <Link to='/blog-read-more' className="btn">
+                                <p>Read More</p>
                             </Link>
                         </div>
 
@@ -116,9 +110,7 @@ export default function Blog() {
 
                         <div className="pb-30"></div>
 
-                        <div>
-                            <BookCard />
-                        </div>
+                        <BookCard />
 
                         <div className="pb-40"></div>
                     </div>
