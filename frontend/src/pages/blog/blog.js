@@ -98,7 +98,7 @@ export default function Blog() {
                             <img className="img" src="images/Poissant.jpg" />
 
                             <Link to='/blog-read-more' className="btn">
-                                <p className="btn">Read More</p>
+                                <p>Read More</p>
                             </Link>
                         </div>
 
