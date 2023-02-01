@@ -53,7 +53,7 @@ export default function Blog() {
                                 </p>
 
                                 <Link to='/blog-read-more'>
-                                    <p className="btn">help</p>
+                                    <p className="btn">Read More</p>
                                 </Link>
                             </div>       
                         </div>
