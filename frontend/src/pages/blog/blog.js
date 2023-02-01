@@ -66,7 +66,7 @@ export default function Blog() {
 
                         <div className="pb-30"></div>
 
-                        <div>
+                        <div className="past-spotlights-content">
                             <BookCard />
                         </div>
 
