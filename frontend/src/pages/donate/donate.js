@@ -35,7 +35,7 @@ export default function Donate() {
         <div className="donate-container">
             <form action="" method="" name="donate-form">
                 <div className="full-width">
-                    <h1>What would you like to do today?</h1>
+                    <h1 className="donate-heading">What would you like to do today?</h1>
                 </div>
                 <div>
                     {/*Donate Books Radio Button */}
