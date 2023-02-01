@@ -51,12 +51,12 @@ export default function Donate() {
                     <h2 class="sub-title">CONTACT INFORMATION</h2>
                 </div>
                 <div className="donateform-row">
-                    <div>
+                    <div className="donateform-column">
                         {/*First Name*/}
                         <label for="firstName" class="required-input">First Name</label>
                         <input type="text" placeholder="First Name" className="firstName"></input>
                     </div>
-                    <div>
+                    <div className="donateform-column">
                         {/*Last Name*/}
                         <label for="lastName" class="required-input">Last Name</label>
                         <input type="text" placeholder="Last Name" className="lastName"></input>

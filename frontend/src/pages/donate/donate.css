@@ -16,6 +16,16 @@
     text-align: center;
 }
 
+.donateform-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 610px;
+}
+
+.donateform-column {
+    margin: 0px 2px;
+}
+
 .donate-container{
     padding: 4rem 0;
     width: 90%;
