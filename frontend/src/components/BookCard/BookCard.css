@@ -80,3 +80,11 @@
     display: table;
     clear: both;
 }
+
+@media (max-width: 820px) {
+    
+    .past-spotlights-content {
+        flex-direction: column;
+        width: 100%;
+    }
+}
