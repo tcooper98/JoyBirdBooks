@@ -46,11 +46,6 @@ function Book () {
 
     return (
         <>
-            {if (item.id % 2 == 0) {
-
-                }
-
-            }
             {/*rename the styles here to what i created*/}
             {BookItemsRows.map((item, index) => {
 
