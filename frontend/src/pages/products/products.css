@@ -4,13 +4,14 @@
 
 .product-filter{
     width: 500px;
+    margin-left: 25px;
 }
 
 .productcontainer{
     display: grid;
     grid-template-columns: auto auto auto;
     position: relative;
-    padding: 25px;
+    padding: 20px;
 }
 
 .product-card{
@@ -53,4 +54,9 @@
 .product-price{
     font-size: 20px;
     padding: 2px;
+}
+
+.product-container link{
+    text-decoration: none;
+   
 }

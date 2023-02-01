@@ -9,7 +9,7 @@
     width: auto;
 }
 
-h1{
+.donate-container h1{
     font-size: 50px;
 }
 
@@ -17,8 +17,7 @@ h1{
     padding: 4rem 0;
     width: 90%;
 }
-
-form{
+.donate-container form{
     grid-template-columns: 1fr 1fr;
     display: grid;
     box-sizing: border-box;
@@ -45,7 +44,7 @@ form{
     color: red;
 }
 
-input{
+.donate-container input{
     background-color: #fffcf4;
     border: 1px solid;
     height: 45px;
@@ -134,7 +133,7 @@ input{
 }
 
 .faqs .faq.open .faq-answer{
-    max-height: 1000px;
+    max-height: 100%;
     opacity: 1;
     background-color: white;
 }
@@ -142,7 +141,7 @@ input{
 .locationhome{
     display: flex;
     padding: 3px;
-    margin-left: 10rem;
+    
 }
 
 .visit{

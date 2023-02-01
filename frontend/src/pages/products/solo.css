@@ -1,0 +1,82 @@
+.product-details {
+    display: flex;
+
+}
+
+.product-details img {
+    height: 709px;
+    width: 512px;
+    padding: 50px;
+    object-fit: cover;
+}
+
+.product-info {
+    margin-top: 40px;
+    width: 900px;
+    height: auto;
+}
+
+.product-info h1 {
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.product-details h3 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #489fb5;
+}
+
+.product-details p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.product-details h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+.product-details input[type="radio"] {
+    accent-color: #16697a;
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    margin-right: 10px;
+
+}
+
+.product-details label {
+    font-family: 'Nunito', sans-serif;
+    ;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+
+}
+
+.leftbutton {
+    height: 50px;
+    width: 200px;
+    background-color: #292727;
+    color: white;
+    font-family: 'Saira', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.rightbutton {
+    height: 50px;
+    width: 250px;
+    font-family: 'Saira', sans-serif;
+    background-color: #f2c202;
+    color: #292727;
+    font-family: 'Saira', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
