@@ -37,13 +37,6 @@ function Book () {
         return () => window.removeEventListener("resize", updateScreenSize);
     })
 
-    const BookItemsRows = BookItems.reduce(function (rows, key, index) {
-        return (index % 2 == 0 ? rows.push([key])
-            : rows[rows.length - 1].push(key)) && rows;
-    }, []);
-
-    console.log(BookItemsRows);
-
     return (
         <>
             {/*rename the styles here to what i created*/}
@@ -51,15 +44,17 @@ function Book () {
 
                 return (
                     /*sets className variable. every even/other item gets the end of a row when small. if mod2 is 0, then it's an end. it dumps out 2 at a time*/
-                        <li key={index} className={className}>
+                    <li key={index} className={className}>
 
-                        <img className="image-card" src={item.image}/>
-                        <h1 className="title">{item.name}</h1>
-                        <p className="description">{item.description}</p>
+                        <div className="p-30">
+                            <img className="image-card" src={item.image} />
+                            <h1 className="title">{item.name}</h1>
+                            <p className="description">{item.description}</p>
 
-                        <div className="spacing"></div>
+                            <div className="spacing"></div>
 
-                        <p className="date">{item.date}</p>
+                            <p className="date">{item.date}</p>
+                        </div>
 
                     </li>
                 )
