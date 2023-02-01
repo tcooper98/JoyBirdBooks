@@ -110,9 +110,7 @@ export default function Blog() {
 
                         <div className="pb-30"></div>
 
-                        <div>
-                            <BookCard />
-                        </div>
+                        <BookCard />
 
                         <div className="pb-40"></div>
                     </div>
