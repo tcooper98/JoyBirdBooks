@@ -53,8 +53,10 @@ export default function Donate() {
                 <div className="donateform-row">
                     <div className="donateform-column">
                         {/*First Name*/}
-                        <label for="firstName" class="required-input">First Name</label>
-                        <input type="text" placeholder="First Name" className="forminput"></input>
+                        <div className="form-input">
+                            <label for="firstName" class="required-input">First Name</label>
+                            <input type="text" placeholder="First Name" className="firstName"></input>
+                        </div>
                     </div>
                     <div className="donateform-column">
                         {/*Last Name*/}
