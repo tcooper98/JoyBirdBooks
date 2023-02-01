@@ -46,13 +46,15 @@ function Book () {
                     /*sets className variable*/
                     <li key={index} className={className}>
 
-                        <img className="image-card" src={item.image} />
-                        <h1 className="title">{item.name}</h1>
-                        <p className="description">{item.description}</p>
+                        <div className="p-20">
+                            <img className="image-card" src={item.image} />
+                            <h1 className="title">{item.name}</h1>
+                            <p className="description">{item.description}</p>
 
-                        <div className="spacing"></div>
+                            <div className="spacing"></div>
 
-                        <p className="date">{item.date}</p>
+                            <p className="date">{item.date}</p>
+                        </div>
 
                     </li>
                 )
