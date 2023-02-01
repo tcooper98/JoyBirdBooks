@@ -74,7 +74,6 @@
 }
 
 @media (max-width: 820px) {
-
     .past-spotlights-content {
         display: grid;
         grid-template-columns: auto;
