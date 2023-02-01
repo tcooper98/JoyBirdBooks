@@ -55,7 +55,6 @@ function Book () {
 
                                 <p className="date">{item.date}</p>
                             </div>
-                        </div>
                     </li>
                 )
             })}
