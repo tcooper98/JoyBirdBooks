@@ -42,6 +42,8 @@ function Book () {
             : rows[rows.length - 1].push(key)) && rows;
     }, []);
 
+    console.log(BookItemsRows);
+
     return (
         <>
 
