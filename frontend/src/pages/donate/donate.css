@@ -31,14 +31,20 @@
     margin: 0px 2px;
 }
 
-.donate-container input{
-    min-width: 100%;
-    min-height: 75%;
+.form-input{
+    margin-top: 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 8px;
+    padding-right: 150px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #575757;
+    border-radius: 2px;
+    font-size: 10px;
+
 }
 
-.full-width{
-    grid-column: span 2;
-}
 
 .sub-title{
     color: #489fb5;
@@ -47,12 +53,6 @@
 .required-input::after{
     content: "*";
     color: red;
-}
-
-.donate-container input{
-    background-color: #fffcf4;
-    border: 1px solid;
-    height: 45px;
 }
 
 .form-submit{
