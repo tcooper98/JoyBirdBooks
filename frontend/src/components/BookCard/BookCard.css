@@ -53,10 +53,6 @@
     font-size: 20px;
 }
 
-.test {
-    row-gap: 50px;
-}
-
 /*creates row and col grids*/
 .row {
     display: flex;
