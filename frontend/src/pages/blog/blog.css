@@ -21,6 +21,10 @@
     font-weight: bold;
 }
 
+.blog-title {
+    text-align: center;
+}
+
 .subheading {
     font-family: 'Nunito Sans', sans-serif;
     padding-bottom: 8px;
@@ -80,7 +84,6 @@
 /*grids for local author spotlight section*/
 .col-blog-text {
     width: 75%;
-    /* padding-right: 30px; */
 }
 
 .col-image {
@@ -94,14 +97,17 @@
 /*Responsiveness*/
 
 @media (max-width: 820px) {
-    .col-blog-text {
-        width: 100%;
+    .page-spacing {
+        padding-right: 20px;
+        padding-left: 20px;
     }
-    
+
+    .col-blog-text {
+        width: 60%;
+    }
+
     .col-image {
-        background-color: #306878;
-        width: 100%;
-        color: white;
+        width: 40%;
     }
 
     .btn {
@@ -109,5 +115,15 @@
         visibility: visible;
         margin-left: 0px;
         margin-right: 0px;
+    }
+}
+
+@media (max-width: 580px) {
+    .col-blog-text {
+        width: 55%;
+    }
+
+    .col-image {
+        width: 45%;
     }
 }
