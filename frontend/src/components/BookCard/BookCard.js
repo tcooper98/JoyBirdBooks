@@ -39,7 +39,7 @@ function Book () {
 
     const BookItemsRows = BookItems.reduce(function (rows, key, index) {
         return (index % 2 == 0 ? rows.push([key])
-            : rows[rows.length - 1].push(key)) && rows;
+            : rows[rows.length - 1].push(key));
     }, []);
 
     console.log(BookItemsRows);
