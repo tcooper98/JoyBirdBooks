@@ -7,19 +7,15 @@ export default function Donate() {
         {
             question: "How does store credit work?",
             answer: "Store credit is given for adult paperbacks and hardcovers at 25% of our selling price. For example: $2.00 in credit per hardcover book sold at $8.00 in store. $1.25 in credit per paperback book sold at $5.00 in store.",
-            open: false
         },
         {
             question: "Does the condition of my books matter?",
             answer: "Books must be clean (no moldew or mold) and have all their pages, tight bindings, and front/back covers.",
-            open: false
         },{
             question: "What if my books are not all accepted?",
             answer: "Your books we are unable to accept can either be returned to you or given to the appropriate non-profit entity on your behalf.",
-            open: false
         },
     ]);
-    }
     return <>
         <div class="hero-banner"></div>
         <div className="donate-container">

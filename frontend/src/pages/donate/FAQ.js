@@ -3,7 +3,7 @@ import React from 'react'
 function FAQ({faq, index}) {
     return (
         <div 
-            className={"faq" + (faq.open ? 'open' : '')}
+            className="faq"
             key={index}
         >
             <div className="faq-question">
