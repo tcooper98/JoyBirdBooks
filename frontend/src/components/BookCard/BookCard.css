@@ -25,7 +25,6 @@
     text-align: left;
     width: 353px;
     padding: 5px;
-    
 }
 
 .title{
@@ -33,7 +32,6 @@
     font-size: 27px;
     font-weight: 600;
     text-align: left;
-    
 }
 
 .price{
@@ -55,9 +53,9 @@
     font-size: 20px;
 }
 
-.card {
+/* .card {
     height: auto;
-}
+} */
 
 .wrapper{
     padding: 10px;
