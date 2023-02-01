@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import Navbar from './components/navBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -21,14 +21,18 @@ import ReturnPolicy from './pages/return-item/return-policy';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import Solo from './pages/Solo Product/solo';
 import BlogReadMore from './pages/blog-read-more/blog-read-more';
+import { Provider, createClient } from 'urql';
+
+
+//connecting ql client to frontend
+const client = createClient({url: 'http://localhost:1337/graphql'});
+
 
 function App() {
-  useEffect(() => {
-    fetch('/api/items').then((res) => {
-      console.log(res)})
-    }, []);
   return( 
   <Router>
+    <Provider value={client}>
+   
     <ScrollToTop/>
     <Navbar />
 
@@ -52,6 +56,9 @@ function App() {
     </Routes>
 
   <Footer/>
+
+ 
+  </Provider>
   </Router>
   );
 }
