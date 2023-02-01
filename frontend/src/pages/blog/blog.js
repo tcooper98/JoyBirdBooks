@@ -61,10 +61,6 @@ export default function Blog() {
 
                     <div className="p-20"></div>
 
-
-
-                    <div className="p-20"></div>
-
                     <div className="past-spotlights page-spacing">
                         <h2>See Past Spotlights</h2>
 
