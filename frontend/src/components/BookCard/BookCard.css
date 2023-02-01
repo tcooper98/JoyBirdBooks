@@ -12,6 +12,7 @@
     align-content: center;
     padding: 20px;
     column-gap: 15px;
+    columns: 2;
 }
 
 .past-spotlights-text {
@@ -81,8 +82,14 @@
     clear: both;
 }
 
+@media (max-width: 1250px) {
+    .past-spotlights-content {
+
+    }
+}
+
 @media (max-width: 820px) {
-    
+
     .past-spotlights-content {
         flex-direction: column;
         width: 100%;
