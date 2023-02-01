@@ -37,9 +37,14 @@ function Book () {
         return () => window.removeEventListener("resize", updateScreenSize);
     })
 
+    const BookItemsRows = BookItems.reduce(function (rows, key, index) {
+        return (index % 2 == 0 ? rows.push([key])
+            : rows[rows.length - 1].push(key)) && rows;
+    }, []);
+
     return (
         <>
-        
+
             {/*rename the styles here to what i created*/}
             {BookItems.map((item, index) => {
                 
