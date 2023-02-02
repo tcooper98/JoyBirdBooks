@@ -87,6 +87,7 @@ export default function Donate() {
                     <button className="donate-submitbutton" value="Submit">Submit</button>
                 </div>
             </form>
+            
             <div className="faq-container">
                 <h2 className="faq-title">FAQ</h2>
                 <div className="faqs">
