@@ -82,7 +82,7 @@ export default function Donate() {
                     <label for="bookCover" class="required-input">Hardcover or Softcover</label>
                     <input type="text" placeholder="Hardcover or Softcover" className="bookCover"></input>
                 </div>
-                <div className="donate-columnb">
+                <div className="full-width">
                     {/*Submit Button*/}
                     <button className="donate-submitbutton" value="Submit">Submit</button>
                 </div>
