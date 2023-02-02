@@ -36,6 +36,24 @@
     grid-column: span 2;
 }
 
+@media (max-width: 700px) {
+    .donate-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px 200px;
+
+    }
+
+    .form-row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+    }
+
+
+}
+
 .sub-title {
     color: #489fb5;
 }
