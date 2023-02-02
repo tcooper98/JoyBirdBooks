@@ -1,4 +1,43 @@
 import React from 'react'
+import Button from '@mui/material/Button';
+
 export default function Community() {
-    return <h1>commnuity</h1>
+    return (
+        <>
+               <Button 
+        variant="outlined" 
+         style={{
+         width: "500px",
+        backgroundColor: "#16697a",
+        padding: "18px 36px",
+        fontSize: "18px",
+        color: "#ffffff"
+    }}
+        href="/blog">Blog</Button><br/>
+
+           <Button 
+        variant="outlined" 
+         style={{
+         width: "500px",
+        backgroundColor: "#16697a",
+        padding: "18px 36px",
+        fontSize: "18px",
+        color: "#ffffff"
+    }}
+        href="/calender">Calender</Button><br/>
+
+          <Button 
+        variant="outlined" 
+         style={{
+        width: "500px",
+        backgroundColor: "#16697a",
+        padding: "18px 36px",
+        fontSize: "18px",
+        color: "#ffffff"
+    }}
+        href="/newsletter">Newsletter</Button><br/>
+
+        </>
+    )
 }
+

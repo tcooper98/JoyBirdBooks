@@ -22,6 +22,8 @@ import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import BlogReadMore from './pages/blog-read-more/blog-read-more';
 import { Provider, createClient } from 'urql';
 import SoloProduct from './pages/products/[slug]';
+import Community from './pages/community/community';
+import Connected from './pages/connected/connected';
 
 
 //connecting ql client to frontend
@@ -56,6 +58,8 @@ function App() {
       <Route exact path='/shipping-policy' element={<ShippingPolicy/>}/>
       <Route exact path='/return-policy' element={<ReturnPolicy/>}/>
       <Route exact path='/product/:slug' element={<SoloProduct/>}/>
+      <Route exact path='/community' element={<Community/>}/>
+      <Route exact path='/connected' element={<Connected/>}/>
     </Routes>
 
   <Footer/>
