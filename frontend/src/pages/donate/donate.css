@@ -43,15 +43,13 @@
         margin: 100px 200px;
 
     }
-
-    .form-row {
+    
+    .donate-row {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
 
     }
-
-
 }
 
 .sub-title {
