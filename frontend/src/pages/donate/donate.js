@@ -18,12 +18,10 @@ export default function Donate() {
     ]);
     return <>
         <div class="hero-banner"></div>
+        <h1 className="donate-header">What would you like to do today?</h1>
         <div className="donate-container">
             <form action="" method="" name="donate-form">
                 <div>
-                    <h1>What would you like to do today?</h1>
-                </div>
-                <div className="donate-row">
                     {/*Donate Books Radio Button */}
                     <label for="donate">Donate Books</label>
                     <input type="radio" name="donateTrade" id="yes" value="yes" />
@@ -36,7 +34,7 @@ export default function Donate() {
                 <div className="full-width">
                     <h2 class="sub-title">CONTACT INFORMATION</h2>
                 </div>
-                <div className="donate-row">
+                <div>
                     {/*First Name*/}
                     <label for="firstName" class="required-input">First Name</label>
                     <input type="text" placeholder="First Name" className="firstName"></input>
