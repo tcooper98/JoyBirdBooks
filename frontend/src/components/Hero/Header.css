@@ -10,6 +10,19 @@
     
 }
 
+@media (max-width: 480px) {
+    .banner {
+            margin: 0;
+            padding: 0;
+            background-image: url(/images/mobilecover.png);
+            background-size: contain;
+            background-position: top;
+            background-repeat: no-repeat;
+            height: 200px;
+            width: auto;
+}
+}
+
 h1{
     font-size: 72px;
     font-family: 'Saira', sans-serif;

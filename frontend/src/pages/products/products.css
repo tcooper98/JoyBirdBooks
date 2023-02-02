@@ -60,3 +60,81 @@
     text-decoration: none;
    
 }
+
+@media (max-width: 501px) {
+    
+     .products h1{
+        font-size: 35px;
+        float: left;
+     }
+    
+        .product-filter {
+            width: 500px;
+            margin-left: 25px;
+        }
+    
+        .productcontainer {
+            display: block;
+            position: relative;
+            padding: 20px;
+        }
+    
+        .product-card {
+            margin-left: auto;
+            margin-right: 30px;
+            padding: 15px;
+            height: 550px;
+            width: 300px;
+        }
+    
+        .product-image {
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+        }
+    
+        .product-title {
+            text-overflow: ellipsis;
+            font-size: 20px;
+            font-weight: 400;
+            padding: 2px;
+        }
+    
+    
+        .product-author {
+            font-size: 18px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 300;
+            color: #82C0cc;
+            padding: 2px;
+    
+        }
+    
+        .product-rating {
+            font-size: 18px;
+            font-family: 'Nunito Sans', sans-serif;
+            font-weight: 300;
+            padding: 2px;
+    
+        }
+    
+        .product-price {
+            font-size: 20px;
+            padding: 2px;
+        }
+    
+        .product-container link {
+            text-decoration: none;
+    
+        }
+
+}
+
+@media (max-width: 890px) {
+    .productcontainer {
+            display: grid;
+            grid-template-columns: auto auto;
+            position: relative;
+            padding: 20px;
+        }
+}

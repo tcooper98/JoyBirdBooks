@@ -228,3 +228,89 @@
    padding: 20px;
    margin-top: 30px;
 }
+
+/* mobile styling */
+@media (max-width: 501px) {
+    .product-details {
+            display: block;
+    
+        }
+    
+        .product-details img {
+            height: 490px;
+            width: 360px;
+        }
+    
+        .product-info {
+            width: 450px;
+            height: auto;
+        }
+    
+        .product-info h1 {
+            font-size: 30px;
+        }
+    
+        .product-details p {
+            font-size: 15px;
+          
+        }
+    
+        .product-details h2 {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    
+    
+        .product-details input[type="radio"] {
+            display: none;
+    
+        }
+    
+        .product-details label {
+            display: none;
+    
+        }
+    
+        .leftbutton {
+            height: 25px;
+            width: 100px;
+        }
+    
+        .rightbutton {
+            height: 25px;
+            width: 100px;
+        }
+    
+        .reviews {
+            display: none;
+    
+        }
+    
+        .donate-link {
+            display: none;
+            
+        }
+    
+        .similar h2 {
+            font-size: 25px;
+            text-align: center;
+            
+            
+}
+}
+
+/* tablet styling */
+@media (max-width: 1234px) {
+    .donatebutton {
+            height: 80px;
+            width: 200px;
+            
+        }
+    
+        .tradebutton {
+            height: 80px;
+            width: 200px;
+           
+        }
+
+}
