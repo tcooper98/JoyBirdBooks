@@ -46,13 +46,6 @@
         margin: 100px 200px;
 
     }
-
-    .donate-row {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-
-    }
 }
 
 .sub-title {
