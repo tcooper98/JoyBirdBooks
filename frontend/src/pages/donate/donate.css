@@ -21,6 +21,12 @@
     font-weight: bold;
 }
 
+input[type="radio"]{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0.5rem;
+}
+
 .donate-header{
     font-size: 50px;
     padding-top: 25px;
