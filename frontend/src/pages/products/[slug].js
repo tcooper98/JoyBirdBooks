@@ -4,6 +4,7 @@ import Product from '../../components/Products/ProductCard';
 import Rating from '@mui/material/Rating';
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
+import { Link } from 'react-router-dom';
 
 //This is the model for how the page that displays the individual book
 
@@ -167,8 +168,12 @@ function SoloProduct () {
                 We are happy to accept your books to share them with the community.
             </p>
 
+             <Link to={`/donate`} style={{ textDecoration: 'none', color: 'inherit'}}>
             <button className='donatebutton'>Donate</button>
+            </Link>
+            <Link to={`/donate`} style={{ textDecoration: 'none', color: 'inherit'}}>
                 <button className='tradebutton'>Trade</button>
+              </Link>
 
 
         </div>

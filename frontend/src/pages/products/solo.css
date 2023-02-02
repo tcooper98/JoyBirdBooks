@@ -417,4 +417,18 @@
     
 }
 
+.donatebutton{
+    margin-right: 300px;
+    margin-left: 300px;
+    margin-bottom: 30px;
+    text-align: center;
 }
+
+}
+
+@media (max-width: 1920px) {
+ .donate-link{
+    display: none;
+ }
+}
+

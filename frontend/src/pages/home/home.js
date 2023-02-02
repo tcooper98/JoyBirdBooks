@@ -2,8 +2,12 @@ import React from 'react'
 import HeroBanner from '../../components/Hero/Header'
 import Product from '../../components/Products/ProductCard'
 import './home.css'
+import { Link } from 'react-router-dom'
 
 export default function Home() {
+    const handleClick = () => {
+        window.location.href = 'https://www.google.com/maps/dir//joybird+books/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88e76fa80d58a57d:0xcb3e5d096693157b?sa=X&ved=2ahUKEwi3sti11vb8AhVdTTABHa5sDYkQ9Rd6BAhWEAU';
+    };
     return (
     <>
         <HeroBanner>
@@ -27,7 +31,9 @@ export default function Home() {
                 and lives in Orlando with his wife and daughters. His debut novel, Lake Life will be published by Simon & Schuster on July 7, 2020.
                </p>
                <div className="learn">
-               <button>Learn More</button>
+                <Link to={`/blog`} style={{ textDecoration: 'none', color: 'inherit'}}>
+               <button >Learn More</button>
+               </Link>
                </div>
              </div>
             </div>
@@ -109,13 +115,13 @@ export default function Home() {
                
                <div className='instaposts'>
                <iframe src="https://www.instagram.com/p/CnFDthIOc-H/embed" 
-               width="400" height="400" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+               width="400" height="400" frameborder="0" scrolling="no" allowtransparency="true" title='insta1'></iframe>
 
               <iframe src="https://www.instagram.com/p/CmM0m6xOszI/embed" 
-               width="400" height="400" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+               width="400" height="400" frameborder="0" scrolling="no" allowtransparency="true" title='insta2'></iframe>
 
                <iframe src="https://www.instagram.com/p/CmHrvoQuDOU/embed" 
-               width="400" height="400" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+               width="400" height="400" frameborder="0" scrolling="no" allowtransparency="true" title='insta3'></iframe>
 
 
                </div>
@@ -137,7 +143,9 @@ export default function Home() {
                     <br/>
                     407 951-5436
                 </p>
-                <button>Get Directions</button>
+                
+                
+                <button onClick={handleClick}>Get Directions</button>
             </div>
             <div className='hours'>
                 <h2>Working Hours</h2>

@@ -131,79 +131,115 @@ input[type="radio"]{
 }
 
 
-/* 
-.locationhome {
-    display: flex;
-    padding: 3px;
 
+@media (max-width: 1886px) {
+.hero-banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/hero.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: auto;
+    
+}
 }
 
-.visit {
-    margin-left: 30px;
+@media (max-width: 1887px) {
+.hero-banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/donatetrade.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: auto;
+    
+}
 }
 
-.visit img {
-    height: 377px;
-    width: 615px;
-    padding: 10px;
-    margin-top: 10px;
-    object-fit: cover;
+@media (max-width: 1094px) {
+.hero-banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/donatetrade.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: auto;
+    
+}
 }
 
-.visit h1 {
-    font-size: 55px;
-    text-align: left;
+@media (max-width: 1002px) {
+.hero-banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/donatetrade.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: auto;
+    
+}
 }
 
-.address {
-    width: 317px;
-    margin-top: 90px;
-    margin-left: 40px;
-
+@media (max-width: 900px) {
+.hero-banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/donatetrade.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: auto;
+    
+}
 }
 
-.address h2 {
-    font-size: 45px;
-    text-align: left;
+@media (max-width: 1382px) {
+.hero-banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/donatetrade.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+    
+}
 }
 
-.address p {
-    font-size: 25px;
-    text-align: left;
-    font-family: 'Nunito', sans-serif;
-    ;
-    font-weight: 300;
+@media (min-width: 1888px) {
+    .hero-banner {
+            margin: 0;
+            padding: 0;
+            background-image: url('../../images/donatetrade.png');
+            background-size: contain;
+            background-position: top;
+            background-repeat: no-repeat;
+            height: 850px;
+            width: auto;
+}
 }
 
-.address button {
-    background-color: #489fb5;
-    width: 200px;
-    height: 55px;
-    font-size: 20px;
-    color: white;
-    font-family: 'Nunito', sans-serif;
-    ;
-    font-weight: 300;
-    margin-top: 100px;
+
+
+@media (max-width: 480px) {
+   .hero-banner {
+            margin: 0;
+            padding: 0;
+            background-image: url('../../images/donatetrade.png');
+            background-size: contain;
+            background-position: top;
+            background-repeat: no-repeat;
+            height: 200px;
+            width: auto;
 }
-
-.hours {
-    width: 377px;
-    margin-top: 90px;
-    margin-left: 40px;
-
 }
-
-.hours h2 {
-    font-size: 45px;
-    text-align: left;
-}
-
-.hours p {
-    font-size: 25px;
-    text-align: left;
-    font-family: 'Nunito', sans-serif;
-    ;
-    font-weight: 300;
-    padding: 5px;
-} */

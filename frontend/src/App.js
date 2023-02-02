@@ -19,14 +19,14 @@ import ShippingPolicy from './pages/shipping-policy/shipping-policy';
 import ReturnPolicy from './pages/return-item/return-policy';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import BlogReadMore from './pages/blog-read-more/blog-read-more';
-import { Provider, createClient } from 'urql';
+// import { Provider, createClient } from 'urql';
 import SoloProduct from './pages/products/[slug]';
 import Community from './pages/community/community';
 import Connected from './pages/connected/connected';
 
 
 //connecting ql client to frontend
-const client = createClient({url: 'http://localhost:1337/graphql'});
+// const client = createClient({url: 'http://localhost:1337/graphql'});
 
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
   <Router>
 
     {/* ql wrapper */}
-    <Provider value={client}>
+    {/* <Provider value={client}> */}
    
     <ScrollToTop/>
     <Navbar />
@@ -65,7 +65,7 @@ function App() {
   <Footer/>
 
  
-  </Provider>
+  {/* </Provider> */}
   </Router>
   );
 }

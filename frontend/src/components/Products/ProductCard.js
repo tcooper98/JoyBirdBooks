@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { ProductItems } from "./ProductItems.js";
 import "./ProductCard.css";
+import { Link } from "react-router-dom";
 
 // this determines how many items on page by screen size
 const responsive = {
@@ -77,12 +78,16 @@ function ProductCard() {
       return (
       <li key={index}>
       <div className="card">
+      
       <div className="body">
+         <Link to={`/product}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
         <img className="image" src={item.image}/>
         <h1 className="title">{item.name}</h1>
         <p className="price">{item.price}</p>
+         </Link>
         <p className="description">{item.description}</p>
         
+       
         </div>
       
       </div>

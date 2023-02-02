@@ -1033,3 +1033,32 @@
     }
 }
 
+@media screen and (max-width: 1728px) {
+
+    .spotlight p{
+        width: 1000px;
+        font-size: 30PX;
+    }
+
+    .book-spotlight P{
+        width: 900px;
+        font-size: 30PX;
+    }
+
+    .book-spotlight button{
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    .newsletter h1{
+        font-size: 40px;
+    }
+
+    .visit img{
+        width:500px;
+        height: 500px;
+    }
+
+    
+}
