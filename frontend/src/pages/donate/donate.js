@@ -37,17 +37,17 @@ export default function Donate() {
                 <div>
                     {/*First Name*/}
                     <label for="firstName" class="required-input">First Name</label>
-                    <input type="text" placeholder="First Name" className="firstName"></input>
+                    <input type="text" placeholder="First Name" className="donate-input"></input>
                 </div>
                 <div>
                     {/*Last Name*/}
                     <label for="lastName" class="required-input">Last Name</label>
-                    <input type="text" placeholder="Last Name" className="lastName"></input>
+                    <input type="text" placeholder="Last Name" className="donate-input"></input>
                 </div>
                 <div className="full-width">
                     {/*Email*/}
                     <label for="email" class="required-input">Email</label>
-                    <input type="text" placeholder="Email Address" className="email"></input>
+                    <input type="text" placeholder="Email Address" className="donate-input"></input>
                 </div>
                 <div className="full-width">
                     <h2 class="sub-title">BOOK INFORMATION</h2>
@@ -55,32 +55,32 @@ export default function Donate() {
                 <div>
                     {/*Book Title*/}
                     <label for="bookTitle" class="required-input">Book Title</label>
-                    <input type="text" placeholder="Book Title" className="bookTitle"></input>
+                    <input type="text" placeholder="Book Title" className="donate-input"></input>
                 </div>
                 <div>
                     {/*Book Author*/}
                     <label for="bookAuthor" class="required-input">Book Author</label>
-                    <input type="text" placeholder="Book Author" className="bookAuthor"></input>
+                    <input type="text" placeholder="Book Author" className="donate-input"></input>
                 </div>
                 <div>
                     {/*Book Edition*/}
                     <label for="bookEdition" class="required-input">Book Edition/Print</label>
-                    <input type="text" placeholder="Book Edition/Print" className="bookEdition"></input>
+                    <input type="text" placeholder="Book Edition/Print" className="donate-input"></input>
                 </div>        
                 <div>
                     {/*Book ISBN*/}
                     <label for="bookISBN" class="required-input">ISBN/LOC Number</label>
-                    <input type="text" placeholder="Book ISBN/LOC Number" className="bookISBN"></input>
+                    <input type="text" placeholder="Book ISBN/LOC Number" className="donate-input"></input>
                 </div>
                 <div>
                     {/*Book Condition*/}
                     <label for="bookCondition" class="required-input">Book Condtion</label>
-                    <input type="text" placeholder="Book Condition" className="bookCondition"></input>
+                    <input type="text" placeholder="Book Condition" className="donate-input"></input>
                 </div>
                 <div>
                     {/*Hardcover or Softcover*/}
                     <label for="bookCover" class="required-input">Hardcover or Softcover</label>
-                    <input type="text" placeholder="Hardcover or Softcover" className="bookCover"></input>
+                    <input type="text" placeholder="Hardcover or Softcover" className="donate-input"></input>
                 </div>
                 <div className="full-width">
                     {/*Submit Button*/}
