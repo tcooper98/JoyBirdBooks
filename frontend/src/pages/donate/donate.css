@@ -27,6 +27,10 @@ input[type="radio"]{
     margin-left: 0.5rem;
 }
 
+#accent-color{
+    accent-color: red;
+}
+
 .donate-header{
     font-size: 50px;
     padding-top: 25px;
