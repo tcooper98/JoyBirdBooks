@@ -82,13 +82,10 @@
 
 
 .faq-container {
+    padding: 1rem 3rem;
+    margin-left: 10rem;
     background-color: #82c0cc;
     border-radius: 5px;
-
-    display: flex;
-    flex-wrap: wrap;
-    margin: 100px 200px;
-    justify-content: center;
 }
 
 .faq-title {
