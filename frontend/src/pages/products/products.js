@@ -5,6 +5,7 @@ import Filter from '../../components/Filter/Filter'
 import { ITEM_QUERY } from '../../lib/query'
 import { useQuery } from 'urql';
 import { Link } from 'react-router-dom'
+import Rating from '@mui/material/Rating';
 
 
 //what is displayed on the products page
@@ -53,7 +54,7 @@ function ProductCard() {
           <div className="product-body">
           <img className="product-image" src={item.attributes.image.data.attributes.formats.medium.url} alt={item.attributes.name}/>
           <h1 className="product-title">{item.attributes.name}</h1>
-          <h3 className="product-rating">{item.attributes.rating}/5 Stars</h3>
+          <Rating name="size-small" defaultValue={5} size="small"/>
           <h3 className="product-author">By {item.attributes.author}</h3>
          <p className="product-price">${item.attributes.price}</p>
         
