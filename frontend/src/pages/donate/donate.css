@@ -1,4 +1,4 @@
-.hero-banner{
+.hero-banner {
     margin: 0;
     padding: 0;
     background-image: url(/images/donatetrade.png);
@@ -9,78 +9,108 @@
     width: auto;
 }
 
-h1{
+.donate-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 200px;
+    justify-content: center;
+}
+
+.donate-radiobuttons{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input[type="radio"]{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    vertical-align: sub;
+}
+
+#accent-color{
+    accent-color: #7e9e32;
+}
+
+.donate-header{
     font-size: 50px;
+    padding-top: 25px;
+    text-align: center;
 }
 
-.donate-container{
-    padding: 4rem 0;
-    width: 90%;
-}
-
-form{
-    grid-template-columns: 1fr 1fr;
+.donate-container form {
     display: grid;
-    box-sizing: border-box;
-    padding: 1rem;
-    margin-left: 10rem;
-    gap: 2rem;
+    grid-template-columns: 50% 50%;
+    width: 1000px;
+    gap: 1rem;
 }
 
-.donate-container input{
+.donate-input {
     min-width: 100%;
     min-height: 75%;
 }
 
-.full-width{
+.full-width {
     grid-column: span 2;
 }
 
-.sub-title{
+@media (max-width: 700px) {
+    .donate-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px 200px;
+
+    }
+}
+
+.sub-title {
     color: #489fb5;
 }
 
-.required-input::after{
+.required-input::after {
     content: "*";
     color: red;
 }
 
-input{
-    background-color: #fffcf4;
+.donate-input{
+    background-color: #ffffff;
     border: 1px solid;
     height: 45px;
 }
 
-.form-submit{
-    height: 38px;
-    font-size: 20px;
+.donate-submitbutton {
+    text-align: center;
+    width: 200px;
+    height: 34px;
     border-width: 1px;
     color: rgb(255, 255, 255);
     background-color: rgb(15, 15, 15);
-    align-self: auto;
+    margin-bottom: 125px;
+
 }
 
-.form-submit:hover{
-    height: 38px;
+.donate-submitbutton:hover {
     border-width: 0px;
     color: rgb(255, 255, 255);
-    background-color: #F2C202; 
+    background-color: #F2C202;
 }
 
-.faq-container{
-    padding: 1rem 3rem;
-    margin-left: 10rem;
+
+
+.faq-container {
+    width: 1000px;
     background-color: #82c0cc;
     border-radius: 5px;
 }
 
-.faq-title{
+.faq-title {
     text-align: center;
-    padding: 1rem;
+    padding: 20px;
     color: white;
 }
 
-.faqs{
+.faqs {
     margin: 15px;
     padding: 15px;
     background-color: white;
@@ -88,68 +118,31 @@ input{
     border-radius: 5px;
 }
 
-.faqs .faq{
-    border: 2px solid #489fb5;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 .faq-question{
-    background-color: white;
     position: relative;
     font-size: 20px;
-    padding-right: 80px;
-    transition: all 0.4s ease;
-    cursor: pointer;
+    font-weight: bold;
 }
 
-.faq-question::after{
-    content:'';
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-image: url('./chevron.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: all 0.4s ease-out;
+.faq-answer{
+    position: relative;
+    font-size: 15px;
+    padding-bottom: 25px;
 }
 
-.faqs .faq .faq-answer{
-    background-color: white;
-    opacity: 0;
-    max-height: 0;
-    overflow-y: hidden;
-}
 
-.faqs .faq.open .faq-question{
-    margin-bottom: 15px;
-}
-
-.faqs .faq.open .faq-question::after{
-    transform: rotate(180deg);
-}
-
-.faqs .faq.open .faq-answer{
-    max-height: 1000px;
-    opacity: 1;
-    background-color: white;
-}
-
-.locationhome{
+/* 
+.locationhome {
     display: flex;
     padding: 3px;
-    margin-left: 10rem;
+
 }
 
-.visit{
+.visit {
     margin-left: 30px;
 }
 
-.visit img{
+.visit img {
     height: 377px;
     width: 615px;
     padding: 10px;
@@ -157,58 +150,60 @@ input{
     object-fit: cover;
 }
 
-.visit h1{
+.visit h1 {
     font-size: 55px;
     text-align: left;
 }
 
-.address{
-   width: 317px;
-   margin-top: 90px;
+.address {
+    width: 317px;
+    margin-top: 90px;
     margin-left: 40px;
-    
+
 }
 
-.address h2{
+.address h2 {
     font-size: 45px;
     text-align: left;
 }
 
-.address p{
+.address p {
     font-size: 25px;
     text-align: left;
-    font-family: 'Nunito', sans-serif;;
+    font-family: 'Nunito', sans-serif;
+    ;
     font-weight: 300;
 }
 
-.address button{
+.address button {
     background-color: #489fb5;
     width: 200px;
     height: 55px;
     font-size: 20px;
     color: white;
-    font-family: 'Nunito', sans-serif;;
+    font-family: 'Nunito', sans-serif;
+    ;
     font-weight: 300;
     margin-top: 100px;
 }
 
-.hours{
+.hours {
     width: 377px;
     margin-top: 90px;
-     margin-left: 40px;
-     
- }
- 
- .hours h2{
-     font-size: 45px;
-     text-align: left;
- }
- 
- .hours p{
-     font-size: 25px;
-     text-align: left;
-     font-family: 'Nunito', sans-serif;;
-     font-weight: 300;
-     padding: 5px;
- }
-  
+    margin-left: 40px;
+
+}
+
+.hours h2 {
+    font-size: 45px;
+    text-align: left;
+}
+
+.hours p {
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    ;
+    font-weight: 300;
+    padding: 5px;
+} */

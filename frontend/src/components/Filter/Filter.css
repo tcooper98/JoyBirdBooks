@@ -70,3 +70,16 @@
     margin-bottom: 20px;
 }
 
+@media (max-width: 501px) {
+    .filter  {
+        display: none;
+    }
+}
+
+@media (max-width: 890px) {
+    .filter {
+        display: none;
+    }
+    
+}
+
