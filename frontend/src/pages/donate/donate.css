@@ -82,8 +82,7 @@
 
 
 .faq-container {
-    padding: 1rem 3rem;
-    margin-left: 10rem;
+    width: 1000px;
     background-color: #82c0cc;
     border-radius: 5px;
 }
