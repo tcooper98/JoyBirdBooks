@@ -10,8 +10,6 @@
 }
 
 .donate-container {
-    padding: 4rem 0;
-    width: 90%;
 }
 
 .donate-container h1 {
@@ -23,7 +21,6 @@
     display: grid;
     box-sizing: border-box;
     padding: 1rem;
-    margin-left: 10rem;
     gap: 2rem;
 }
 
