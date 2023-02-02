@@ -1,3 +1,365 @@
+
+    
+
+
+@media only screen and (max-width: 2500px) {
+    .fresh-off-press h2{
+    text-align: center;
+    font-size: 50px;
+    padding: 0;
+}
+
+
+.turner h2{
+    margin-top: 55px;
+    font-size: 50px;
+    color: #16697A;
+}
+
+.spotlight{
+    background-color: #292727;
+   display: flex;
+   height: 593px;
+}
+
+.spotlight img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    padding: 20px;
+    margin-top: 55px;
+    margin-left: 70px;
+}
+
+.spotlight h1{
+    color: #f2c202;
+    font-size: 60px;
+    padding: 0;
+    margin-left: 40px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+.spotlight p{
+    color: white;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    margin-left: 40px;
+    font-family: 'Nunito', sans-serif;;
+    font-weight: 200;
+    text-align: left;
+    width: 1300px;
+}
+
+.spotlight button{
+    background-color: #489fb5;
+    width: 315px;
+    height: 87px;
+    font-size: 34px;
+    color: white;
+}
+
+.book-spotlight{
+    background-color: white;
+   display: flex;
+   margin-top: 70px;
+   padding: 50px;
+   
+}
+
+.book-spotlight img{
+    height: 740px;
+    width: 589px;
+    object-fit: cover;
+    margin: 30px;
+    margin-right: 70px;
+    
+}
+
+.book-spotlight h1{
+    color: #292727;
+    font-size: 45px;
+    padding: 0;
+    text-align: left;
+}
+
+.book-spotlight h2{
+    color: #489fb5;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.book-spotlight p{
+    color: black;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;;
+    font-weight: 200;
+    text-align: left;
+    width: 1100px;
+    margin-bottom: 80px;
+}
+
+.book-spotlight button{
+       background-color: #489fb5;
+    width: 308px;
+    height: 99px;
+    font-size: 30px;
+    color: white;
+    margin-right: 200px;
+    float: left;
+
+}
+
+.pickup{
+    margin-top: 35px;
+}
+
+.book-spotlight input[type="radio"]{
+    accent-color: #16697a;
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+    margin-right: 30px;
+    
+}
+
+.book-spotlight label{
+    font-family: 'Nunito', sans-serif;;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+   
+}
+
+.testimonials{
+    height: 400px;
+    padding: 40px;
+    display: flex;
+    padding: 40px;
+}
+
+.testimonials p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    padding: 10px;
+}
+
+.testimonials1{
+    width: 660px;
+    height: 349px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f2c202;
+    margin-right: 20px;
+    margin-left: 30px;
+   
+}
+
+.testimonials2{
+    width: 660px;
+    height: 349px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #7e9e32;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.testimonials3{
+    width: 660px;
+    height: 349px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #16697A;
+    margin-left: 20px;
+}
+
+.learn {
+    padding: 25px;
+}
+
+.community{
+    background-color: #16697A;
+   display: flex;
+   height: 973px;
+}
+
+.community img{
+    width: 741px;
+    height: 776px;
+    object-fit: cover;
+    padding: 20px;
+    margin-top: 95px;
+    margin-left: 80px;
+}
+
+.community h1{
+    color: #f2c202;
+    font-size: 65px;
+    padding: 0;
+    margin-left: 80px;
+    margin-top: 95px;
+    text-align: left;
+}
+
+.community p{
+    color: white;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    margin-left: 80px;
+    font-family: 'Nunito', sans-serif;;
+    font-weight: 600;
+    text-align: left;
+    width: 797px;
+    height: 520px;
+}
+
+.community button{
+    background-color: #489fb5;
+    width: 315px;
+    height: 87px;
+    font-size: 34px;
+    color: white;
+}
+
+.newsletter{
+    background-color: #292727;
+    color: #fff4da;
+    display: flex;
+    height: 213px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.newsletter h1{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-right: 100px;
+   
+}
+
+.newsletter input{
+    height: 60px;
+    width: 491px;
+    margin-top: 25px;
+    
+}
+
+.newsletter button{
+    height: 60px;
+    width: 200px;
+    margin-top: 25px;
+    font-size: 35px;
+    background-color: grey;
+    
+}
+
+.instagram{
+ background-color: #16697A;
+ padding: 40px;
+   
+
+}
+
+.instagram h2{
+    font-size: 50px;
+    color: #f2c202;
+}
+
+.instaposts{
+    padding: 20px;
+    margin: 40px;
+  
+
+}
+
+.locationhome{
+    display: flex;
+    padding: 3px;
+}
+
+.visit{
+    
+    margin-left: 40px;
+}
+
+.visit img{
+    height: 477px;
+    width: 834px;
+    padding: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.visit h1{
+    font-size: 55px;
+    margin-left: 40px;
+}
+
+.address{
+   width: 350px;
+   margin-top: 90px;
+    margin-left: 70px;
+    
+}
+
+.address h2{
+    font-size: 65px;
+    text-align: left;
+}
+
+.address p{
+    font-size: 35px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;;
+    font-weight: 300;
+}
+
+.address button{
+    background-color: #489fb5;
+    width: 300px;
+    height: 75px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Nunito', sans-serif;;
+    font-weight: 300;
+    margin-top: 85px;
+    margin-bottom: 50px;
+}
+
+.hours{
+    width: 500px;
+    margin-top: 90px;
+     margin-left: 40px;
+     
+ }
+ 
+ .hours h2{
+     font-size: 65px;
+     text-align: left;
+ }
+ 
+ .hours p{
+     font-size: 35px;
+     text-align: left;
+     font-family: 'Nunito', sans-serif;;
+     font-weight: 300;
+     padding: 5px;
+     margin-left: 35px;
+ }
+}
+
+
+
+
+@media (max-width: 1500px) {
 .fresh-off-press h2{
     text-align: center;
     font-size: 50px;
@@ -333,7 +695,7 @@
      font-family: 'Nunito', sans-serif;;
      font-weight: 300;
      padding: 5px;
- }
+ }}
  
 
 

@@ -6,8 +6,13 @@ import "./ProductCard.css";
 
 // this determines how many items on page by screen size
 const responsive = {
+    superLargeDesktop: {
+    breakpoint: { max: 4000, min: 2240 },
+    items: 4,
+    slidesToSlide: 4 // optional, default to 1
+  },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+    breakpoint: { max: 2239, min: 1024 },
     items: 3,
     slidesToSlide: 3 // optional, default to 1.
   },

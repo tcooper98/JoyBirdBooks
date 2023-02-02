@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Navbar from './components/navBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { withRouter } from "react-router-dom";
 import Home from './pages/home/home'
 import Products from './pages/products/products'
 import Donate from './pages/donate/donate'
@@ -57,7 +56,8 @@ function App() {
       <Route exact path='/refund-policy' element={<RefundPolicy/>}/>
       <Route exact path='/shipping-policy' element={<ShippingPolicy/>}/>
       <Route exact path='/return-policy' element={<ReturnPolicy/>}/>
-      <Route exact path='/product/:slug' element={<SoloProduct/>}/>
+      <Route exact path='/product}' element={<SoloProduct/>}/>
+       {/* <Route exact path='/product/:slug' element={<SoloProduct/>}/> */}
       <Route exact path='/community' element={<Community/>}/>
       <Route exact path='/connected' element={<Connected/>}/>
     </Routes>

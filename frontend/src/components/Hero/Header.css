@@ -1,7 +1,8 @@
+@media (max-width: 1886px) {
 .banner{
     margin: 0;
     padding: 0;
-    background-image: url(/images/hero.png);
+    background-image: url('../../images/hero.png');
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
@@ -9,12 +10,98 @@
     width: auto;
     
 }
+}
+
+@media (max-width: 1887px) {
+.banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/hero.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 700px;
+    width: auto;
+    
+}
+}
+
+@media (max-width: 1094px) {
+.banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/hero.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: auto;
+    
+}
+}
+
+@media (max-width: 1002px) {
+.banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/hero.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: auto;
+    
+}
+}
+
+@media (max-width: 900px) {
+.banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/hero.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 150px;
+    width: auto;
+    
+}
+}
+
+@media (max-width: 1382px) {
+.banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/hero.png');
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: auto;
+    
+}
+}
+
+@media (min-width: 1888px) {
+    .banner {
+            margin: 0;
+            padding: 0;
+            background-image: url('../../images/hero.png');
+            background-size: contain;
+            background-position: top;
+            background-repeat: no-repeat;
+            height: 850px;
+            width: auto;
+}
+}
+
+
 
 @media (max-width: 480px) {
     .banner {
             margin: 0;
             padding: 0;
-            background-image: url(/images/mobilecover.png);
+            background-image: url('../../images/mobilecover.png');
             background-size: contain;
             background-position: top;
             background-repeat: no-repeat;

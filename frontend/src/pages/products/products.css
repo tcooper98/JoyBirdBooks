@@ -7,8 +7,16 @@
     margin-left: 25px;
 }
 
-.productcontainer{
+/* use once data is imported */
+/* .productcontainer{
     display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    padding: 20px;
+} */
+
+.products-container{
+    display:grid;
     grid-template-columns: auto auto auto;
     position: relative;
     padding: 20px;
@@ -137,4 +145,46 @@
             position: relative;
             padding: 20px;
         }
+}
+
+@media (max-width: 2500px) {
+    .product-card{
+    padding: 15px;
+    height: 650px;
+    width: 400px;
+}
+.product-image{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+}
+.product-title{
+    text-overflow: ellipsis;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 2px;
+}
+
+
+.product-author{
+    font-size: 28px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    color: #82C0cc;
+    padding: 2px;
+
+}
+
+.product-rating{
+    font-size: 28px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+    padding: 2px;
+   
+}
+
+.product-price{
+    font-size: 30px;
+    padding: 2px;
+}
 }
