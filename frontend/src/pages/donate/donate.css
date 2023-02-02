@@ -70,7 +70,7 @@
     height: 45px;
 }
 
-.form-about-submit-btn {
+.donate-submitbutton {
     display: inline !important;
     text-align: center;
     width: 200px;
@@ -82,11 +82,13 @@
 
 }
 
-.form-about-submit-btn:hover {
+.donate-submitbutton:hover {
     border-width: 0px;
     color: rgb(255, 255, 255);
     background-color: #F2C202;
 }
+
+
 
 .faq-container {
     padding: 1rem 3rem;
@@ -124,6 +126,8 @@
     padding-right: 80px;
     padding-bottom: 25px;
 }
+
+
 
 .locationhome {
     display: flex;
