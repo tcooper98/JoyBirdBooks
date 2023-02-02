@@ -96,6 +96,13 @@ export default function Donate() {
                     ))}
                 </div>
             </div>
+            <div className="faq-container">
+                <h3>How does store credit work?</h3>
+                <p>Store credit is given for adult paperbacks and hardcovers at 25% of our selling price.</p>
+                <p>For example:</p>
+                <p>$2.00 in credit per hardcover book sold at $8.00 in store.</p>
+                <p>$1.25 in credit per paperback book sold at $5.00 in store.</p>
+            </div>
         </div>
             <div className="locationhome">
                 <div className="visit">
