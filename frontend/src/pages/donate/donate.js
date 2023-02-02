@@ -23,12 +23,12 @@ export default function Donate() {
             <form action="" method="" name="donate-form">
                 <div>
                     {/*Donate Books Radio Button */}
-                    <label for="donate" className="sub-title">Donate Books</label>
+                    <label for="donate" className="donate-radiobuttons">Donate Books</label>
                     <input type="radio" name="donateTrade" id="yes" value="yes" />
                 </div>
                 <div>
                     {/*Trade Books Radio Button */}
-                    <label for="trade">Trade Books</label>                      
+                    <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
                     <input type="radio" name="donateTrade" id="no" value="no" />
                 </div>
                 <div className="full-width">
