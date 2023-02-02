@@ -10,9 +10,10 @@
 }
 
 .donate-container {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 200px;
     justify-content: center;
-    margin-top: 75px;
 }
 
 .donate-container h1 {

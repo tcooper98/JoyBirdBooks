@@ -19,9 +19,11 @@ export default function Donate() {
     return <>
         <div class="hero-banner"></div>
         <div className="donate-container">
-            <h1>What would you like to do today?</h1>
             <form action="" method="" name="donate-form">
-                <div className="">
+                <div>
+                    <h1>What would you like to do today?</h1>
+                </div>
+                <div className="donate-row">
                     {/*Donate Books Radio Button */}
                     <label for="donate">Donate Books</label>
                     <input type="radio" name="donateTrade" id="yes" value="yes" />
