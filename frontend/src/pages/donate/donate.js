@@ -3,7 +3,7 @@ import './donate.css';
 import FAQ from './FAQ'
 
 export default function Donate() {
-    const [faqs, setfaqs] = useState( [
+    const [faqs] = useState( [
         {
             question: "How does store credit work?",
             answer: "Store credit is given for adult paperbacks and hardcovers at 25% of our selling price. For example: $2.00 in credit per hardcover book sold at $8.00 in store. $1.25 in credit per paperback book sold at $5.00 in store.",
@@ -23,14 +23,17 @@ export default function Donate() {
 
             <h2 class="donate-heading">What would you like to do today?</h2>
 
-            <div className="donate-radiobuttons">
-                {/*Donate Books Radio Button */}
-                <label for="donate">Donate Books</label>
-                <input type="radio" name="donateTrade" id="accent-color" value="yes" />
-                
-                {/*Trade Books Radio Button */}
-                <label for="trade">Trade Books</label>                      
-                <input type="radio" name="donateTrade" id="accent-color" value="no" />
+            <div className="donate-form-row">
+                <div className="donate-form-column">
+                    {/*Donate Books Radio Button */}
+                    <label for="donate" className="donate-radiobuttons">Donate Books</label>
+                    <input type="radio" name="donateTrade" id="accent-color" value="yes" />
+                </div>
+                <div className="donate-form-column">
+                    {/*Trade Books Radio Button */}
+                    <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
+                    <input type="radio" name="donateTrade" id="accent-color" value="no" />
+                </div>
             </div>
 
             <h2 className="donate-sub-title">CONTACT INFORMATION</h2>
