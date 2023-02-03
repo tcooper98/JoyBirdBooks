@@ -134,6 +134,12 @@
         font-size: 20px;
         width: 250px;
     }
+
+    .book-spotlight img {
+        height: 420px;
+        width: 560px;
+        margin-right: 50px;
+    }
 }
 
 @media screen and (max-width: 580px) {
