@@ -103,6 +103,10 @@
         font-size: 35px;
     }
 
+    .subheading2 {
+        font-size: 26px;
+    }
+
     .row {
         align-items: center;
     }
@@ -127,10 +131,6 @@
 }
 
 @media (max-width: 580px) {
-
-    .subheading2 {
-        font-size: 30px;
-    }
 
     .row {
         align-items: center;
