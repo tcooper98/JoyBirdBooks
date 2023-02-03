@@ -19,7 +19,7 @@ export default function BookSpotlight() {
         <>
             {isMobile ? (
                 <>  
-                    <div className="book-spotlight">
+                    <div className="book-spotlight-mobile">
 
                         <div className="container-spotlight">
                             <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />

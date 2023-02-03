@@ -102,6 +102,12 @@
 }
 
 /*grid for mobile spotlight*/
+.book-spotlight-mobile {
+    background-color: white;
+    display: grid;
+    margin-top: 70px;
+    padding: 50px;
+}
 
 .container-spotlight {
     display: grid;
@@ -130,10 +136,6 @@
 }
 
 @media screen and (max-width: 1020) {
-    .book-spotlight {
-        display: grid !important;
-    }
-
     .book-spotlight p {
         font-size: 18px;
     }
@@ -145,12 +147,6 @@
 }
 
 @media screen and (max-width: 580px) {
-
-    .book-spotlight {
-        background-color: white;
-        display: flex;
-        margin-top: 50px;
-    }
 
     .book-spotlight-img {
         height: 200px;
