@@ -78,4 +78,16 @@
         width: 50%;
         margin-bottom: 30px;
     }
+
+    .div-spacing {
+        padding: 30px;
+    }
+
+    .heading-spacing {
+        padding-bottom: 20px;
+    }
+
+    .heading-icons-spacing {
+
+    }
 }
