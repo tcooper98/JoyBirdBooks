@@ -52,7 +52,7 @@ export default function BookSpotlight() {
                                 </div>
 
                                 <div>
-                                    <button>ADD TO CART</button>
+                                    <p className="">ADD TO CART</p>
                                     <button className="book-spotlight-button-last">BUY NOW</button>
                                 </div>
 
