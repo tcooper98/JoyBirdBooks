@@ -74,7 +74,7 @@
         font-size: 20px;
     }
 
-    .background .row {
-        justify-content: space-between;
+    .col-text {
+        width: 50%;
     }
 }
