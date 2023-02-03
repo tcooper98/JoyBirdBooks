@@ -5,7 +5,7 @@ export const CommunityItems = [
         cName: 'nav-links'
     },
     {
-        title: 'CALENDER',
+        title: 'CALENDAR',
         path: '/calender',
         cName: 'nav-links'
     },
