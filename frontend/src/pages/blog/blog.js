@@ -36,7 +36,6 @@ export default function Blog() {
                             </div>
                         </div>
 
-                        <div className="row">
 
                             <div className="col-blog-text">
 
@@ -55,7 +54,6 @@ export default function Blog() {
                                     <p className="btn">Read More</p>
                                 </Link>
                             </div>       
-                        </div>
                     </div>
 
                     <div className="p-20"></div>
