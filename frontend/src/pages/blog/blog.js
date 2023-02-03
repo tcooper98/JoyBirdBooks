@@ -25,7 +25,7 @@ export default function Blog() {
                         <h1 className="blog-title">Blog</h1>
                     </div>
 
-                    <div className="author-spotlight page-spacing">
+                    <div className="author-spotlight row page-spacing">
 
 
                             <div className="col-image">
