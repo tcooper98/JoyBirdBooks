@@ -53,11 +53,9 @@
       "last 1 safari version"
     ]
   },
-   "comments": {
+  "comments": {
     "dependencies": "Once we move into backend please add the pro xy here",
     "description": "pro xy can be fond in git push minor",
     "license": "Don't forget to add"
   }
-
 }
-
