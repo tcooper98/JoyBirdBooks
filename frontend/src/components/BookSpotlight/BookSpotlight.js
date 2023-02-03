@@ -12,7 +12,7 @@ export default function BookSpotlight() {
                 <div>
                     <h1>Lake Life</h1>
                     <h2>By David James Possiant</h2>
-                    <p>The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
+                    <p className="book-spotlight-img"> The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
                         Their son, a salesperson, lives in Dallas, with his elementary school teacher wife, Diane. Michael's brother, Thad, an aspiring poet makes
                         his home in New York City with his famous painter boyfriend, Jake. For years they've traveled to North Carolina to share a summer vacation
                         at the family's lake house. The tradition is coming to an end, as Richard and Lisa have decided to sell the lake house. But what should be

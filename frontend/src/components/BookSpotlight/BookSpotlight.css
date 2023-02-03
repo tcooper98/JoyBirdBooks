@@ -5,7 +5,7 @@
     padding: 50px;
 }
 
-.book-spotlight img {
+.book-spotlight-img {
     height: 550px;
     width: 733px;
     object-fit: cover;
@@ -56,7 +56,6 @@
     font-weight: 600;
     font-size: 20px;
     position: relative;
-
 }
 
 .book-spotlight {
@@ -109,7 +108,7 @@
 }
 
 @media screen and (max-width: 1260px) {
-    .book-spotlight img {
+    .book-spotlight-img {
         height: 450px;
         width: 600px;
         margin-right: 50px;
@@ -134,14 +133,6 @@
         font-size: 20px;
         width: 250px;
     }
-
-    .book-spotlight img {
-        height: 200px;
-        width: 125px;
-        object-fit: cover;
-        margin: 30px;
-        margin-right: 70px;
-    }
 }
 
 @media screen and (max-width: 580px) {
@@ -152,7 +143,7 @@
         margin-top: 50px;
     }
 
-    .book-spotlight img {
+    .book-spotlight-img {
         height: 200px;
         width: 125px;
         object-fit: cover;
