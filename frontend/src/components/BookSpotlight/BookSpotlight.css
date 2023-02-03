@@ -162,6 +162,10 @@
 }
 
 @media screen and (max-width: 850px) {
+    .col-spotlight {
+        flex-direction: column;
+    }
+
     .book-spotlight-img {
         height: 350px;
         width: 262px;
