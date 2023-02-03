@@ -3,7 +3,7 @@ import './donate.css';
 import FAQ from './FAQ'
 
 export default function Donate() {
-    const [faqs, setfaqs] = useState( [
+    const [faqs] = useState( [
         {
             question: "How does store credit work?",
             answer: "Store credit is given for adult paperbacks and hardcovers at 25% of our selling price. For example: $2.00 in credit per hardcover book sold at $8.00 in store. $1.25 in credit per paperback book sold at $5.00 in store.",
