@@ -22,7 +22,7 @@ export default function BookSpotlight() {
                     <div className="book-spotlight">
 
                         <div className="row">
-                            <div className="col">
+                            <div className="col-spotlight">
                                 <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
 
                                 <div>
@@ -40,16 +40,22 @@ export default function BookSpotlight() {
                         </div>
 
                         <div className="row">
-                            <div className="pickup">
-                                <input className="ship" type="radio" value=""></input>
-                                <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br /> <br />
-                                <input className="buy" type="radio" value=""></input>
-                                <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label>
-                            </div>
+                            <div className="col-pickup">
 
-                            <div>
-                                <button>ADD TO CART</button>
-                                <button className="book-spotlight-button-last">BUY NOW</button>
+                                <div className="pickup">
+
+                                    <input className="ship" type="radio" value=""></input>
+                                    <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br /> <br />
+                                    <input className="buy" type="radio" value=""></input>
+                                    <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label>
+
+                                </div>
+
+                                <div>
+                                    <button>ADD TO CART</button>
+                                    <button className="book-spotlight-button-last">BUY NOW</button>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

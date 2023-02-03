@@ -103,13 +103,18 @@
 
 /*grid for mobile spotlight*/
 
-.container-spotlight {
-    /* display: grid;
-    grid-template-rows: auto auto; */
+.col-spotlight {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }
 
-.container-pickup {
-    /* display: grid; */
+.col-pickup {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
 }
 
 @media screen and (max-width: 1260px) {
