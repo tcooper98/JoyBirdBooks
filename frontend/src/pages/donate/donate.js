@@ -19,20 +19,17 @@ export default function Donate() {
     return <>
         <div class="hero-banner"></div>
         <div className="donate-container">
-
-    <div className="donate-container">
-      
-                          <div>
-                    {/*Donate Books Radio Button */}
-                    <label for="donate" className="donate-radiobuttons">Donate Books</label>
-                    <input type="radio" name="donateTrade" id="accent-color" value="yes" />
-                </div>
-                <div>
-                    {/*Trade Books Radio Button */}
-                    <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
-                    <input type="radio" name="donateTrade" id="accent-color" value="no" />
-                </div>
-        <div>
+            <h2 class="donate-heading">What would you like to do today?</h2>
+            <div>
+                {/*Donate Books Radio Button */}
+                <label for="donate" className="donate-radiobuttons">Donate Books</label>
+                <input type="radio" name="donateTrade" id="accent-color" value="yes" />
+            </div>
+            <div>
+                {/*Trade Books Radio Button */}
+                <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
+                <input type="radio" name="donateTrade" id="accent-color" value="no" />
+            </div>
           <h2 className="donate-sub-title">CONTACT INFORMATION</h2>
           <div className="donate-form-row">
             <div className="donate-form-column">
@@ -91,7 +88,6 @@ export default function Donate() {
             </div>
           </div>
         </div>
-        </div>
 
 
         <div className="donate-form-column2">
@@ -109,7 +105,6 @@ export default function Donate() {
                     ))}
                 </div>
             </div>
-        </div>
             <div className="locationhome">
                 <div className="visit">
                     <h1>Visit Us</h1>
