@@ -28,16 +28,19 @@
 .subheading {
     font-family: 'Nunito Sans', sans-serif;
     padding-bottom: 8px;
+    font-weight: 200px;
 }
 
 .subheading2 {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 20px;
+    font-weight: 400px;
     color: #EBC242;
 }
 
 .author-description {
     font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200px;
     font-size: 15px;
 }
 
@@ -47,8 +50,9 @@
 }
 
 .description {
+    font-weight: 200px;
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .img {
@@ -157,6 +161,12 @@
 }
 
 @media (max-width: 580px) {
+
+    .description {
+        font-weight: 200px;
+        width: 100%;
+        font-size: 15px;
+    }
 
     .row {
         align-items: center;

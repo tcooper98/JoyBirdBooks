@@ -18,16 +18,17 @@ export default function BookSpotlight() {
                         at the family's lake house. The tradition is coming to an end, as Richard and Lisa have decided to sell the lake house. But what should be
                         joyous farewell takes a nightmarish turn when the family witnesses a tragedy that triggers a series of dramatic revelation among the
                         Starlings-alcoholism, infidelity, and a shocking secret that will change the family forever. </p>
-                    <div className="pickup">
 
+                    <div className="pickup">
                         <input className="ship" type="radio" value=""></input>
-                        <label for="ship">Ship This Item - Qualifies fir Free Shipping</label> <br /> <br />
+                        <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br /> <br />
                         <input className="buy" type="radio" value=""></input>
                         <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label>
                     </div>
-                    <div className="cartbutton">
+
+                    <div>
                         <button>ADD TO CART</button>
-                        <button>BUY NOW</button>
+                        <button className="book-spotlight-button-last">BUY NOW</button>
                     </div>
                 </div>
             </div>
