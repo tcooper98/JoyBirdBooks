@@ -9,7 +9,7 @@ export default function BookSpotlight() {
         <>
             <div className="book-spotlight">
                 <img src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
-                <div className="book-text">
+                <div>
                     <h1>Lake Life</h1>
                     <h2>By David James Possiant</h2>
                     <p>The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
