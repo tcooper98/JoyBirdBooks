@@ -46,10 +46,6 @@ export default function BlogReadMore() {
                                     description text description text description text description text description text description text
                                     description text description text description text description text description text description text
                                 </p>
-
-                                <Link to='/blog-read-more'>
-                                    <p className="btn">Read More</p>
-                                </Link>
                             </div>
                         </div>
                     </div>
