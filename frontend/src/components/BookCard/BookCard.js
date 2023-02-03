@@ -47,8 +47,8 @@ function Book () {
                     <li key={index} className={className}>
 
                         <div className="p-20">
-                            
-                            <Link to={`/product}`}>
+
+                            <Link to={`/product}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <img className="image-card" src={item.image} />
                                 <h1 className="title">{item.name}</h1>
                                 <p className="description">{item.description}</p>
