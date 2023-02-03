@@ -27,8 +27,6 @@ export default function Donate() {
                 {/*Donate Books Radio Button */}
                 <label for="donate" className="donate-radiobuttons">Donate Books</label>
                 <input type="radio" name="donateTrade" id="accent-color" value="yes" />
-            </div>
-            <div>
                 {/*Trade Books Radio Button */}
                 <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
                 <input type="radio" name="donateTrade" id="accent-color" value="no" />
