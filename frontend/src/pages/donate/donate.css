@@ -121,7 +121,7 @@ textarea {
     border: 2px solid #575757;
     border-radius: 2px;
     font-size: 10px;
-    min-width: 105%;
+    min-width: 100%;
 }
 
 
@@ -145,7 +145,7 @@ textarea {
     border-width: 1px;
     color: rgb(255, 255, 255);
     background-color: rgb(15, 15, 15);
-    margin-bottom: 125px;
+    margin-bottom: 40px;
 }
 
 .donate-form-submit-btn:hover {
@@ -161,6 +161,7 @@ textarea {
     justify-content: center;
     background-color: #82c0cc;
     border-radius: 5px;
+    margin-bottom: 60px;
 }
 
 .faq-title {
