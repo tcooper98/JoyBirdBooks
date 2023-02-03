@@ -21,7 +21,7 @@ export default function BookSpotlight() {
                 <>  
 
 
-                        <div className="row">
+                        <div className="row book-spotlight">
                             <div className="col-spotlight">
                                 <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
 
@@ -39,7 +39,7 @@ export default function BookSpotlight() {
                             </div>
                         </div>
 
-                        <div className="row">
+                        <div className="row book-spotlight">
                             <div className="col-pickup">
 
                                 <div className="pickup">
