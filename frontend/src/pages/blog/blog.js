@@ -47,8 +47,8 @@ export default function Blog() {
                                     description text description text description text description text description text description text
                                 </p>
 
-                                <Link to='/blog-read-more'>
-                                    <p className="btn">Read More</p>
+                                <Link to='/blog-read-more' className="btn">
+                                    <p>Read More</p>
                                 </Link>
                         </div>
                 
