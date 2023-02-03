@@ -99,8 +99,6 @@ function Footer () {
                             </div>
                         </div>
 
-                        </div>
-
                         <div className="div-spacing"></div>
 
                         <div className="pb-20">
@@ -108,7 +106,7 @@ function Footer () {
                             <p className="disclaimer disclaimer-gray">Accessibility, User Agreement, Privacy, Cookies.</p>
                             <p className="disclaimer">Do not sell my personal information and AdChoice</p>
                         </div>
-
+                    </div>
                 </>
             ) : (
                     <>
