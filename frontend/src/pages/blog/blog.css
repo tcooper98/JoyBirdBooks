@@ -99,13 +99,6 @@
 /*Responsiveness*/
 
 @media (max-width: 820px) {
-    .text-span {
-        column-span: all;
-    }
-
-    .row {
-        align-items: center;
-    }
 
     .page-spacing {
         padding-right: 35px;
@@ -127,9 +120,6 @@
 }
 
 @media (max-width: 580px) {
-    .text-span {
-        column-span: all;
-    }
 
     .col-blog-text {
         width: 55%;

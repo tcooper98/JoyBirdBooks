@@ -27,8 +27,8 @@ export default function Blog() {
 
                     <div className="author-spotlight page-spacing">
                         <div>
-                            <h2 className='subheading text-span'>Local Author Spotlight</h2>
-                            <p className="subheading text-span">Author Name</p>
+                            <h2 className='subheading'>Local Author Spotlight</h2>
+                            <p className="subheading">Author Name</p>
                         </div>
                         
                         <div className="row">
