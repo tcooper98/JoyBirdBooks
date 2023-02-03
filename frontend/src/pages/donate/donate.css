@@ -66,6 +66,40 @@ input[type="radio"]{
     grid-column: span 2;
 }
 
+@media (max-width: 700px) {
+    .donate-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px 200px;
+    }
+
+    .faq-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px 200px;
+    }
+
+    .donate-submitbutton{
+        min-width: 100%;
+    }
+}
+
+.donate-submitbutton {
+    text-align: center;
+    width: 200px;
+    height: 34px;
+    border-width: 1px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 15, 15);
+    margin-bottom: 125px;
+}
+
+.donate-submitbutton:hover {
+    border-width: 0px;
+    color: rgb(255, 255, 255);
+    background-color: #F2C202;
+}
+
 .faq-container {
     display: flex;
     flex-wrap: wrap;
@@ -99,40 +133,6 @@ input[type="radio"]{
     position: relative;
     font-size: 15px;
     padding-bottom: 25px;
-}
-
-@media (max-width: 700px) {
-    .donate-container{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 100px 200px;
-    }
-
-    .faq-container{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 100px 200px;
-    }
-
-    .donate-submitbutton{
-        min-width: 100%;
-    }
-}
-
-.donate-submitbutton {
-    text-align: center;
-    width: 200px;
-    height: 34px;
-    border-width: 1px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(15, 15, 15);
-    margin-bottom: 125px;
-}
-
-.donate-submitbutton:hover {
-    border-width: 0px;
-    color: rgb(255, 255, 255);
-    background-color: #F2C202;
 }
 
 @media (max-width: 1886px) {
