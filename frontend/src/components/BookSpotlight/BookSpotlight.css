@@ -105,7 +105,6 @@
 
 .container-spotlight {
     display: grid;
-    grid-template-columns: auto auto;
 }
 
 .container-pickup {
