@@ -73,4 +73,8 @@
     .background h2 {
         font-size: 20px;
     }
+
+    .background .row {
+        justify-content: space-between;
+    }
 }
