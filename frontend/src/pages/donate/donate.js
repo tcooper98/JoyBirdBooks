@@ -49,7 +49,7 @@ export default function Donate() {
                     <div className="donate-form-column1">
                         {/*Email*/}
                         <label class="required-input">Email</label>
-                        <input type="text" placeholder="Email" className="form-input-long"></input>
+                        <input type="text" placeholder="Email" className="donate-form-input-long"></input>
                     </div>
                 </div>
 

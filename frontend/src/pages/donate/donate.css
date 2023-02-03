@@ -121,7 +121,7 @@ input[type="radio"]{
 
 }
 
-.form-input-long {
+.donate-form-input-long {
     margin-top: 2px;
     padding-left: 8px;
     padding-top: 8px;
@@ -133,19 +133,17 @@ input[type="radio"]{
 }
 
 
-.form-container {
+.donate-container {
     display: grid;
     justify-content: center;
     margin-top: 75px;
 }
 
-.form-column2 {
+.donate-form-column2 {
     display: flex;
     justify-content: center;
     margin-top: 25px;
 }
-
-
 
 .faq-container {
     display: flex;
