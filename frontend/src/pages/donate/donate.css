@@ -47,7 +47,9 @@ input[type="radio"]{
 
 .donate-input {
     min-width: 100%;
-    min-height: 75%;
+    min-height: 80%;
+    background-color: #ffffff;
+    border: 1px solid;
 }
 
 .full-width {
@@ -73,6 +75,14 @@ input[type="radio"]{
     margin: 15px;
     padding: 15px;
     background-color: white;
+    .sub-title {
+        color: #489fb5;
+    }
+    
+    .required-input::after {
+        content: "*";
+        color: red;
+    }
     color: #489fb5;
     border-radius: 5px;
 }
@@ -107,20 +117,6 @@ input[type="radio"]{
     }
 }
 
-.sub-title {
-    color: #489fb5;
-}
-
-.required-input::after {
-    content: "*";
-    color: red;
-}
-
-.donate-input{
-    background-color: #ffffff;
-    border: 1px solid;
-    height: 45px;
-}
 
 .donate-submitbutton {
     text-align: center;
