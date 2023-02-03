@@ -55,6 +55,37 @@ input[type="radio"]{
     grid-column: span 2;
 }
 
+.faq-container {
+    background-color: #82c0cc;
+    border-radius: 5px;
+}
+
+.faq-title {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.faqs {
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    color: #489fb5;
+    border-radius: 5px;
+}
+
+.faq-question {
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    position: relative;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
+
 @media (max-width: 700px) {
     .donate-container{
         display: flex;
@@ -100,42 +131,6 @@ input[type="radio"]{
     color: rgb(255, 255, 255);
     background-color: #F2C202;
 }
-
-
-
-.faq-container {
-    width: 1000px;
-    background-color: #82c0cc;
-    border-radius: 5px;
-}
-
-.faq-title {
-    text-align: center;
-    padding: 20px;
-    color: white;
-}
-
-.faqs {
-    margin: 15px;
-    padding: 15px;
-    background-color: white;
-    color: #489fb5;
-    border-radius: 5px;
-}
-
-.faq-question{
-    position: relative;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.faq-answer{
-    position: relative;
-    font-size: 15px;
-    padding-bottom: 25px;
-}
-
-
 
 @media (max-width: 1886px) {
 .hero-banner{
