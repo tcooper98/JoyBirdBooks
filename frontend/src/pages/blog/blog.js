@@ -26,15 +26,14 @@ export default function Blog() {
                     </div>
 
                     <div className="author-spotlight row page-spacing">
-
-                        <div className="col-image">
+                        <div>
                             <h2 className='subheading text-span'>Local Author Spotlight</h2>
                             <p className="subheading text-span">Author Name</p>
-
+                        </div>
+                        
+                        <div className="col-image">
                             <img className="img" src="images/Poissant.jpg" />
                         </div>
-
-
 
                         <div className="col-blog-text">
 
