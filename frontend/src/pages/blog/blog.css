@@ -133,7 +133,8 @@
 
     .btn {
         text-decoration: none;
-        padding-left: 
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
