@@ -34,6 +34,9 @@ export default function Donate() {
                 <div className="full-width">
                     <h2 class="sub-title">CONTACT INFORMATION</h2>
                 </div>
+        
+
+
                 <div>
                     {/*First Name*/}
                     <label for="firstName" class="required-input">First Name</label>
