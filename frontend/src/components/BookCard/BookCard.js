@@ -47,9 +47,12 @@ function Book () {
                     <li key={index} className={className}>
 
                         <div className="p-20">
-                            <img className="image-card" src={item.image} />
-                            <h1 className="title">{item.name}</h1>
-                            <p className="description">{item.description}</p>
+                            
+                            <Link to={`/product}`}>
+                                <img className="image-card" src={item.image} />
+                                <h1 className="title">{item.name}</h1>
+                                <p className="description">{item.description}</p>
+                            </Link>
 
                             <div className="spacing"></div>
 
