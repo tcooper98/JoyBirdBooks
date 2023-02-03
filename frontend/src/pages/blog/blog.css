@@ -110,10 +110,16 @@
 
     .subheading2 {
         font-size: 26px;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
     }
 
     .row {
+        align-items: center;
+    }
+
+    .col-blog-text {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
@@ -134,6 +140,7 @@
     .btn {
         text-decoration: none;
         width: 200px;
+        margin-top: 20px;
     }
 }
 
