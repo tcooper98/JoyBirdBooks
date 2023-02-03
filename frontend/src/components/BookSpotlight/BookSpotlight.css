@@ -213,4 +213,16 @@
     .book-spotlight label {
         display: none;
     }
+
+    .book-spotlight-button {
+        font-size: 18px;
+        padding: 10px;
+        width: 180px;
+    }
+
+    .book-spotlight-button-last {
+        font-size: 18px;
+        padding: 10px;
+        width: 180px;
+    }
 }
