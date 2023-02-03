@@ -155,11 +155,6 @@
 }
 
 @media screen and (max-width: 1020px) {
-    .book-spotlight {
-        background-color: white;
-        display: flex;
-        padding: 50px;
-    }
 
     .book-spotlight p {
         font-size: 18px;
