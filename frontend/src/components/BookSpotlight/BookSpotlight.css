@@ -3,7 +3,6 @@
     display: flex;
     margin-top: 70px;
     padding: 50px;
-
 }
 
 .book-spotlight img {
@@ -13,7 +12,6 @@
     margin-bottom: 30px;
     margin-left: 30px;
     margin-right: 70px;
-
 }
 
 .book-spotlight h1 {
@@ -38,17 +36,6 @@
     font-weight: 200;
     text-align: left;
     margin-bottom: 60px;
-}
-
-.book-spotlight button {
-    background-color: #489fb5;
-    width: 308px;
-    height: 99px;
-    font-size: 30px;
-    color: white;
-    margin-right: 200px;
-    float: left;
-
 }
 
 .pickup {
