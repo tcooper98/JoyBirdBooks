@@ -18,7 +18,7 @@ export default function Donate() {
     ]);
     return <>
         <div class="hero-banner"></div>
-        <h1 className="donate-header">What would you like to do today?</h1>
+        <h2 className="donate-header">What would you like to do today?</h2>
         <div className="donate-container">
             <form action="" method="" name="donate-form">
                 <div>
