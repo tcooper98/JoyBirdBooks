@@ -93,11 +93,6 @@ function Footer () {
                                     <a className="p body-spacing" target="_blank" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
                                         <BsInstagram className="footer-icons"/>
                                     </a>
-
-                                    
-                                    {/* <a className="p body-spacing" target="_blank" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
-                                        <BsTwitter className="footer-icons"/>
-                                    </a> */}
                                 </div>
                             </div>
                         </div>
@@ -187,11 +182,6 @@ function Footer () {
                                         <a className="p body-spacing" target="_blank" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
                                             <BsInstagram className="footer-icons" />
                                         </a>
-
-
-                                        {/* <a className="p body-spacing" target="_blank" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
-                                        <BsTwitter className="footer-icons"/>
-                                    </a> */}
                                     </div>
                                 </div>
                             </div>
