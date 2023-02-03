@@ -23,12 +23,10 @@ export default function Donate() {
 
             <h2 class="donate-heading">What would you like to do today?</h2>
 
-            <div>
+            <div className="donate-form-column2">
                 {/*Donate Books Radio Button */}
                 <label for="donate" className="donate-radiobuttons">Donate Books</label>
                 <input type="radio" name="donateTrade" id="accent-color" value="yes" />
-            </div>
-            <div>
                 {/*Trade Books Radio Button */}
                 <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
                 <input type="radio" name="donateTrade" id="accent-color" value="no" />
