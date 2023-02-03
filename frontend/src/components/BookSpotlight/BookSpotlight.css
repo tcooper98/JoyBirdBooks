@@ -104,6 +104,7 @@
 /*grid for mobile spotlight*/
 
 .col-spotlight {
+    width: 50%;
     display: flex;
 }
 
