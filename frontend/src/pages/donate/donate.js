@@ -18,8 +18,11 @@ export default function Donate() {
     ]);
     return <>
         <div class="hero-banner"></div>
+
         <div className="donate-container">
+
             <h2 class="donate-heading">What would you like to do today?</h2>
+
             <div>
                 {/*Donate Books Radio Button */}
                 <label for="donate" className="donate-radiobuttons">Donate Books</label>
@@ -30,108 +33,106 @@ export default function Donate() {
                 <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
                 <input type="radio" name="donateTrade" id="accent-color" value="no" />
             </div>
-          <h2 className="donate-sub-title">CONTACT INFORMATION</h2>
-          <div className="donate-form-row">
-            <div className="donate-form-column">
-                {/*First Name*/}
-              <label class="donate-required-input">First Name</label>
-              <input type="text" placeholder="First Name" className="donate-form-input" />
+
+            <h2 className="donate-sub-title">CONTACT INFORMATION</h2>
+            <div className="donate-form-row">
+                <div className="donate-form-column">
+                    {/*First Name*/}
+                    <label class="donate-required-input">First Name</label>
+                    <input type="text" placeholder="First Name" className="donate-form-input" />
+                </div>
+                <div className="donate-form-column">
+                    {/*Last Name*/}
+                    <label class="donate-required-input">Last Name</label>
+                    <input type="text" placeholder="Last Name" className="donate-form-input" />
+                </div>
             </div>
-            <div className="donate-form-column">
-                {/*Last Name*/}
-              <label class="donate-required-input">Last Name</label>
-              <input type="text" placeholder="Last Name" className="donate-form-input" />
-            </div>
-          </div>
-          <div className="donate-form-row">
-            <div className="donate-form-column1">
-                {/*Email*/}
-              <label class="donate-required-input">Email</label>
-              <input type="text" placeholder="Email" className="donate-form-input-long"></input>
-            </div>
+            <div className="donate-form-row">
+                <div className="donate-form-column1">
+                    {/*Email*/}
+                    <label class="donate-required-input">Email</label>
+                    <input type="text" placeholder="Email" className="donate-form-input-long"></input>
+                </div>
           </div>
 
           <h2 className="donate-sub-title">BOOK INFORMATION</h2>
           <div className="donate-form-row">
             <div className="donate-form-column">
                 {/*Book Title*/}
-              <label class="donate-required-input">Book Title</label>
-              <input type="text" placeholder="Book Title" className="donate-form-input" />
+                <label class="donate-required-input">Book Title</label>
+                <input type="text" placeholder="Book Title" className="donate-form-input" />
             </div>
             <div className="donate-form-column">
                 {/*Book Author*/}
-              <label class="donate-required-input">Book Author</label>
-              <input type="text" placeholder="Book Author" className="donate-form-input" />
+                <label class="donate-required-input">Book Author</label>
+                <input type="text" placeholder="Book Author" className="donate-form-input" />
             </div>
           </div>
           <div className="donate-form-row">
             <div className="donate-form-column">
                 {/*Book Edition*/}
-              <label class="donate-required-input">Book Edition/Print</label>
-              <input type="text" placeholder="BBook Edition/Print" className="donate-form-input" />
+                <label class="donate-required-input">Book Edition/Print</label>
+                <input type="text" placeholder="BBook Edition/Print" className="donate-form-input" />
             </div>
             <div className="donate-form-column">
                 {/*Book ISBN*/}
-              <label class="donate-required-input">ISBN/LOC Number</label>
-              <input type="text" placeholder="ISBN/LOC Number" className="donate-form-input" />
+                <label class="donate-required-input">ISBN/LOC Number</label>
+                <input type="text" placeholder="ISBN/LOC Number" className="donate-form-input" />
             </div>
-          </div><div className="donate-form-row">
+          </div>
+          <div className="donate-form-row">
             <div className="donate-form-column">
                 {/*Book Condition*/}
-              <label class="donate-required-input">Book Condtion</label>
-              <input type="text" placeholder="Book Condtion" className="donate-form-input" />
+                <label class="donate-required-input">Book Condtion</label>
+                <input type="text" placeholder="Book Condtion" className="donate-form-input" />
             </div>
             <div className="donate-form-column">
                 {/*Hardcover or Softcover*/}
-              <label class="donate-required-input">Hardcover or Softcover</label>
-              <input type="text" placeholder="Hardcover or Softcover" className="donate-form-input" />
+                <label class="donate-required-input">Hardcover or Softcover</label>
+                <input type="text" placeholder="Hardcover or Softcover" className="donate-form-input" />
             </div>
-          </div>
+           </div>
         </div>
-
 
         <div className="donate-form-column2">
           <button className="donate-form-submit-btn">Submit</button>
         </div>
 
-
-            
-            
-            <div className="faq-container">
-                <h2 className="faq-title">FAQ</h2>
-                <div className="faqs">
-                    {faqs.map((faq, i) => (
-                        <FAQ faq={faq} index={i}></FAQ>
-                    ))}
-                </div>
+        <div className="faq-container">
+            <h2 className="faq-title">FAQ</h2>
+            <div className="faqs">
+                {faqs.map((faq, i) => (
+                    <FAQ faq={faq} index={i}></FAQ>
+                ))}
             </div>
-            <div className="locationhome">
-                <div className="visit">
-                    <h1>Visit Us</h1>
-                    <img src="images/map.jpg" alt="location of store on map"/>
-                </div>
-                <div className="address">
-                    <h2>Address</h2>
-                    <p>Joybird Books LLC
-                        <br/>
-                        3018 Corrine Drive
-                        <br/>
-                        Orlando, FL 32803
-                        <br/>
-                        407 951-5436
-                    </p>
-                    <button>Get Directions</button>
-                </div>
-                <div className='hours'>
-                    <h2>Working Hours</h2>
-                    <p>Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                    <p>Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                    <p>Wednesday &nbsp;&nbsp;10AM - 5PM</p>
-                    <p>Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                    <p>Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                    <p>Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                    <p>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                </div>     
+        </div>
+        <div className="locationhome">
+            <div className="visit">
+                <h1>Visit Us</h1>
+                <img src="images/map.jpg" alt="location of store on map"/>
             </div>
+            <div className="address">
+                <h2>Address</h2>
+                <p>Joybird Books LLC
+                    <br/>
+                    3018 Corrine Drive
+                    <br/>
+                    Orlando, FL 32803
+                    <br/>
+                    407 951-5436
+                </p>
+                <button>Get Directions</button>
+            </div>
+            <div className='hours'>
+                <h2>Working Hours</h2>
+                <p>Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
+                <p>Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
+                <p>Wednesday &nbsp;&nbsp;10AM - 5PM</p>
+                <p>Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
+                <p>Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
+                <p>Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
+                <p>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
+            </div>     
+        </div>
     </>
 }
