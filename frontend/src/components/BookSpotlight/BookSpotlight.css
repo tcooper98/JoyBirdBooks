@@ -171,6 +171,7 @@
         width: 262px;
         margin-right: 40px;
         margin-left: 0px;
+        text-align: center;
     }
 
     .book-spotlight p {
@@ -180,6 +181,10 @@
 
     .book-spotlight input[type="radio"] {
         margin-left: 0px;
+    }
+
+    .col-buttons {
+       margin-bottom: 50px;
     }
 }
 
