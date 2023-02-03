@@ -108,14 +108,6 @@
     margin-right: 30px;
 }
 
-.book-spotlight label {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    position: relative;
-
-}
-
 @media screen and (max-width: 1260px) {
     .book-spotlight img {
         height: 450px;
@@ -127,7 +119,13 @@
         font-size: 25px;
         width: 250px;
     }
+
+    .book-spotlight label {
+        font-size: 18px;
+    }
 }
+
+@media screen and (max-width: )
 
 @media screen and (max-width: 580px) {
 
@@ -176,17 +174,13 @@
         font-size: 30px;
         color: white;
         margin: 30px;
-
     }
-
 
     .book-spotlight input[type="radio"] {
         display: none;
-
     }
 
     .book-spotlight label {
         display: none;
-
     }
 }
