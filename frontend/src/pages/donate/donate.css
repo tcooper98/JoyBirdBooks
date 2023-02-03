@@ -15,6 +15,23 @@
     text-align: center;
 }
 
+.sub-title{
+    color: #489fb5;
+}
+
+.form-row{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 616px;
+    gap: 20px;
+    margin-top: 5px;
+}
+
+.form-column1{
+    width: inherit;
+    margin: 0px 2px;
+}
+
 .donate-radiobuttons{
     font-size: 20px;
     font-weight: bold;
