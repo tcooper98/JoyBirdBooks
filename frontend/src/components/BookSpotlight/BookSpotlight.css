@@ -200,7 +200,11 @@
 }
 
 @media screen and (max-width: 580px) {
-    
+    .pickup {
+        margin: 0px;
+        padding: 0px;
+        display: none;
+    }
 
     .book-spotlight input[type="radio"] {
         display: none;
