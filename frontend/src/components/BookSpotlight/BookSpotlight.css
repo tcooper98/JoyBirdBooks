@@ -101,12 +101,22 @@
     margin-right: 30px;
 }
 
+/*grid for spotlight*/
+
 .container-spotlight {
     display: grid;
 }
 
 .container-pickup {
     display: grid;
+}
+
+.item1 {
+    grid-column-start: 
+}
+
+.item2 {
+
 }
 
 @media screen and (max-width: 1260px) {
