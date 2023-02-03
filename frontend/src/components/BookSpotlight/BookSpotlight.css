@@ -138,10 +138,12 @@
 
     .book-spotlight-button  {
         font-size: 20px;
+        padding: 6px;
     }
 
     .book-spotlight-button-last {
         font-size: 20px;
+        padding: 6px;
     }
 
     .book-spotlight label {
