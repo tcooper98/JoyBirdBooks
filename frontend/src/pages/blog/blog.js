@@ -66,7 +66,7 @@ export default function Blog() {
 
                         <div className="pb-30"></div>
 
-                        <BookCard />
+                        <BookCard/>
 
                         <div className="pb-40"></div>
                     </div>
