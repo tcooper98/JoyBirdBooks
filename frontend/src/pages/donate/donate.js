@@ -19,12 +19,19 @@ export default function Donate() {
     return <>
         <div class="hero-banner"></div>
         <div className="donate-container">
-        <h2 className="donate-heading">What would you like to do today?</h2>
 
     <div className="donate-container">
       
-          <h2 className="donate-heading">What would you like to do today?</h2>
-          
+                          <div>
+                    {/*Donate Books Radio Button */}
+                    <label for="donate" className="donate-radiobuttons">Donate Books</label>
+                    <input type="radio" name="donateTrade" id="accent-color" value="yes" />
+                </div>
+                <div>
+                    {/*Trade Books Radio Button */}
+                    <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
+                    <input type="radio" name="donateTrade" id="accent-color" value="no" />
+                </div>
         <div>
           <h2 className="donate-sub-title">CONTACT INFORMATION</h2>
           <div className="donate-form-row">
@@ -79,21 +86,12 @@ export default function Donate() {
 
 
         <div className="donate-form-column2">
-          <button className="donate-form-submit-btn">Submit</button>
+          <button className="form-donate-submit-btn">Submit</button>
         </div>
 
 
             <form action="" method="" name="donate-form">
-                <div>
-                    {/*Donate Books Radio Button */}
-                    <label for="donate" className="donate-radiobuttons">Donate Books</label>
-                    <input type="radio" name="donateTrade" id="accent-color" value="yes" />
-                </div>
-                <div>
-                    {/*Trade Books Radio Button */}
-                    <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
-                    <input type="radio" name="donateTrade" id="accent-color" value="no" />
-                </div>
+               
 
                 <h2 className="sub-title">CONTACT INFORMATION</h2>
                 <div className="donate-form-row">
