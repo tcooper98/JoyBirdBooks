@@ -20,21 +20,24 @@ export default function BookSpotlight() {
             {isMobile ? (
                 <>  
                     <div className="book-spotlight">
-                        <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
 
-                        <div>
-                            <h1>Lake Life</h1>
-                            <h2>By David James Possiant</h2>
-                            <p> The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
-                                Their son, a salesperson, lives in Dallas, with his elementary school teacher wife, Diane. Michael's brother, Thad, an aspiring poet makes
-                                his home in New York City with his famous painter boyfriend, Jake. For years they've traveled to North Carolina to share a summer vacation
-                                at the family's lake house. The tradition is coming to an end, as Richard and Lisa have decided to sell the lake house. But what should be
-                                joyous farewell takes a nightmarish turn when the family witnesses a tragedy that triggers a series of dramatic revelation among the
-                                Starlings-alcoholism, infidelity, and a shocking secret that will change the family forever. 
-                            </p>
+                        <div className="row">
+                            <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
+
+                            <div>
+                                <h1>Lake Life</h1>
+                                <h2>By David James Possiant</h2>
+                                <p> The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
+                                    Their son, a salesperson, lives in Dallas, with his elementary school teacher wife, Diane. Michael's brother, Thad, an aspiring poet makes
+                                    his home in New York City with his famous painter boyfriend, Jake. For years they've traveled to North Carolina to share a summer vacation
+                                    at the family's lake house. The tradition is coming to an end, as Richard and Lisa have decided to sell the lake house. But what should be
+                                    joyous farewell takes a nightmarish turn when the family witnesses a tragedy that triggers a series of dramatic revelation among the
+                                    Starlings-alcoholism, infidelity, and a shocking secret that will change the family forever.
+                                </p>
+                            </div>
                         </div>
 
-                        <div>
+                        <div className="row">
                             <div className="pickup">
                                 <input className="ship" type="radio" value=""></input>
                                 <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br /> <br />
