@@ -64,8 +64,6 @@ function Footer () {
                         </div>
 
                         <div class="row">
-                            
-                        </div>
                             <div className="col-text">
                                 <h2 className="heading-spacing">ORDER</h2>
 
@@ -91,14 +89,16 @@ function Footer () {
 
                                 <div>
                                     <a className="p body-spacing" target="_blank" href="https://www.facebook.com/joybirdbooks/">
-                                        <BsFacebook className="footer-icons"/>
+                                        <BsFacebook className="footer-icons" />
                                     </a>
 
                                     <a className="p body-spacing" target="_blank" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
-                                        <BsInstagram className="footer-icons"/>
+                                        <BsInstagram className="footer-icons" />
                                     </a>
                                 </div>
                             </div>
+                        </div>
+
                         </div>
 
                         <div className="div-spacing"></div>
