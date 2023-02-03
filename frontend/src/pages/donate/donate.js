@@ -31,8 +31,17 @@ export default function Donate() {
                     <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
                     <input type="radio" name="donateTrade" id="accent-color" value="no" />
                 </div>
-                <div className="full-width">
-                    <h2 class="sub-title">CONTACT INFORMATION</h2>
+
+                <h2 class="sub-title">CONTACT INFORMATION</h2>
+                <div class="form-row">
+                    <div class="form-column">
+                        <label class="required-input-contact">First Name</label>
+                        <input type="text" placeholder="First Name" class="form-input" />
+                    </div>
+                    <div class="form-column">
+                        <label class="required-input-contact">Last Name</label>
+                        <input type="text" placeholder="Last Name" class="form-input" />
+                    </div>
                 </div>
         
 
