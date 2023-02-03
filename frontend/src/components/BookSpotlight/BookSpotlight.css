@@ -169,9 +169,8 @@
     .book-spotlight-img {
         height: 350px;
         width: 262px;
-        margin-right: 40px;
-        margin-left: 0px;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .book-spotlight p {
@@ -189,47 +188,6 @@
 }
 
 @media screen and (max-width: 580px) {
-
-    .book-spotlight-img {
-        height: 200px;
-        width: 125px;
-        object-fit: cover;
-        margin: 30px;
-        margin-right: 70px;
-    }
-
-    .book-spotlight h1 {
-        color: #292727;
-        font-size: 20px;
-        padding: 0;
-        text-align: left;
-    }
-
-    .book-spotlight h2 {
-        color: #489fb5;
-        font-size: 15px;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 400;
-        text-align: left;
-    }
-
-    .book-spotlight p {
-        color: black;
-        font-size: 12px;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 200;
-        text-align: left;
-        margin-bottom: 10px;
-    }
-
-    .book-spotlight-button {
-        background-color: #489fb5;
-        width: 90px;
-        height: 23px;
-        font-size: 30px;
-        color: white;
-        margin: 30px;
-    }
 
     .book-spotlight input[type="radio"] {
         display: none;
