@@ -99,9 +99,6 @@
 /*Responsiveness*/
 
 @media (max-width: 820px) {
-    .text-span {
-        column-span: all;
-    }
 
     .row {
         align-items: center;
@@ -127,8 +124,8 @@
 }
 
 @media (max-width: 580px) {
-    .text-span {
-        column-span: all;
+    .row {
+        align-items: center;
     }
 
     .col-blog-text {
