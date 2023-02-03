@@ -4,10 +4,10 @@ import './BookSpotlight.css';
 import { Link } from 'react-router-dom';
 
 export default function BookSpotlight() {
-    const [isMobile, setMobile] = useState(window.innerWidth <= 820);
+    const [isMobile, setMobile] = useState(window.innerWidth <= 1190);
 
     const updateScreenSize = () => {
-        setMobile(window.innerWidth <= 1020);
+        setMobile(window.innerWidth <= 1190);
     }
 
     useEffect(() => {
