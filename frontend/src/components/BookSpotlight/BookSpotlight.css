@@ -105,18 +105,11 @@
 
 .container-spotlight {
     display: grid;
+    grid-template-columns: auto auto;
 }
 
 .container-pickup {
     display: grid;
-}
-
-.item1 {
-    grid-column-start: 
-}
-
-.item2 {
-
 }
 
 @media screen and (max-width: 1260px) {
