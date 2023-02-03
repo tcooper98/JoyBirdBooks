@@ -50,8 +50,8 @@ export default function BookSpotlight() {
                             </div>
 
                             <div>
-                                <p className="book-spotlight-button">ADD TO CART</p>
-                                <p className="book-spotlight-button-last">BUY NOW</p>
+                                <h1 className="book-spotlight-button">ADD TO CART</h1>
+                                <h1 className="book-spotlight-button-last">BUY NOW</h1>
                             </div>
 
                         </div>
