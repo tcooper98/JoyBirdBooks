@@ -56,12 +56,16 @@ function Footer () {
                                 <a className="p body-spacing" target="_blank" href="https://www.google.com/maps/dir/28.5868032,-81.2023808/3018+Corrine+Dr,+Orlando,+FL+32803/@28.5641678,-81.3398926,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88e77ab3d8af9ff7:0x70b098f8fba3fee5!2m2!1d-81.3453983!2d28.5676165">
                                     LOCATION
                                 </a>
-                                
+
                                 <Link to='/contact' className="p body-spacing">
                                     CONTACT US
                                 </Link>
                             </div>
+                        </div>
 
+                        <div class="row">
+                            
+                        </div>
                             <div className="col-text">
                                 <h2 className="heading-spacing">ORDER</h2>
 
@@ -104,7 +108,7 @@ function Footer () {
                             <p className="disclaimer disclaimer-gray">Accessibility, User Agreement, Privacy, Cookies.</p>
                             <p className="disclaimer">Do not sell my personal information and AdChoice</p>
                         </div>
-                    </div>
+
                 </>
             ) : (
                     <>
