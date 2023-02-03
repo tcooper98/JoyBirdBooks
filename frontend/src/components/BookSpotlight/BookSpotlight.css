@@ -76,7 +76,6 @@
     background-color: white;
     display: flex;
     margin-top: 50px;
-
 }
 
 .book-spotlight h1 {
@@ -101,7 +100,6 @@
     font-size: 30px;
     color: white;
     margin: 30px;
-
 }
 
 .pickup {
@@ -114,7 +112,6 @@
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     margin-right: 30px;
-
 }
 
 .book-spotlight label {
@@ -126,7 +123,11 @@
 }
 
 @media screen and (max-width: 1330px) {
-
+    .book-spotlight img {
+        height: 200px;
+        width: 125px;
+        margin-right: 50px;
+    }
 }
 
 @media screen and (max-width: 580px) {
@@ -135,7 +136,6 @@
         background-color: white;
         display: flex;
         margin-top: 50px;
-
     }
 
     .book-spotlight img {
@@ -144,7 +144,6 @@
         object-fit: cover;
         margin: 30px;
         margin-right: 70px;
-
     }
 
     .book-spotlight h1 {
