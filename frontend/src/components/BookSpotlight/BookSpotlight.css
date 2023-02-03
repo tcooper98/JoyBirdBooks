@@ -129,7 +129,11 @@
     }
 }
 
-@media screen and (max-width: 1000) {
+@media screen and (max-width: 1020) {
+    .book-spotlight {
+        display: grid;
+    }
+
     .book-spotlight p {
         font-size: 18px;
     }
