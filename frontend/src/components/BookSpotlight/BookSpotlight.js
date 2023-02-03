@@ -25,10 +25,10 @@ export default function BookSpotlight() {
                         <input className="buy" type="radio" value=""></input>
                         <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label>
                     </div>
-                    
-                    <div className="cartbutton">
+
+                    <div>
                         <button>ADD TO CART</button>
-                        <button>BUY NOW</button>
+                        <button className="book-spotlight-button-last">BUY NOW</button>
                     </div>
                 </div>
             </div>
