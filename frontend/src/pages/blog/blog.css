@@ -52,7 +52,7 @@
 .description {
     font-weight: 200px;
     width: 100%;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .img {
@@ -161,6 +161,12 @@
 }
 
 @media (max-width: 580px) {
+
+    .description {
+        font-weight: 200px;
+        width: 100%;
+        font-size: 15px;
+    }
 
     .row {
         align-items: center;
