@@ -9,6 +9,12 @@
     width: auto;
 }
 
+.donate-heading {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
 .donate-radiobuttons{
     font-size: 20px;
     font-weight: bold;
@@ -30,13 +36,6 @@ input,
 textarea {
     font-family: 'Nunito Sans', sans-serif;
     /* width: 500px; */
-}
-
-
-.donate-heading {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
 }
 
 .donate-sub-title {
