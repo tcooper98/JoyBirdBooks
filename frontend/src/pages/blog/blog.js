@@ -38,8 +38,6 @@ export default function Blog() {
 
                             <div className="col-blog-text">
 
-                                <div className="p-30"></div>
-
                                 <p className="description">
                                     Description text description text description text description text description text description text
                                     description text description text description text description text description text description text
