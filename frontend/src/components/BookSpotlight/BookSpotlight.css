@@ -92,7 +92,6 @@
     background-color: #489fb5;
     width: 290px;
     height: 50px;
-    font-size: 30px;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-right: 0px !important;
@@ -100,7 +99,7 @@
 }
 
 .book-spotlight-button h1 {
-    text-decoration: none;
+    font-size: 30px;
 }
 
 .pickup {
