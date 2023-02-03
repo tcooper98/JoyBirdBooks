@@ -129,6 +129,11 @@
     .book-spotlight p {
         font-size: 18px;
     }
+
+    .book-spotlight button {
+        font-size: 20px;
+        width: 250px;
+    }
 }
 
 @media screen and (max-width: 580px) {
