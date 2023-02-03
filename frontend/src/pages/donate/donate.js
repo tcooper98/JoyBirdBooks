@@ -90,6 +90,9 @@ export default function Donate() {
                         <input type="text" placeholder="Hardcover or Softcover" className="form-input" />
                     </div>
                 </div>
+                <div className="form-column2">
+                    <button className="form-about-submit-btn">Submit</button>
+                </div>
             </form>
             
             <div className="faq-container">
