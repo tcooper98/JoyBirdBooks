@@ -19,7 +19,7 @@ export default function BookSpotlight() {
         <>
             {isMobile ? (
                 <>  
-                    <div className="book-spotlight">
+
 
                         <div className="row">
                             <div className="col-spotlight">
@@ -55,10 +55,10 @@ export default function BookSpotlight() {
                                     <button>ADD TO CART</button>
                                     <button className="book-spotlight-button-last">BUY NOW</button>
                                 </div>
-                                
+
                             </div>
                         </div>
-                    </div>
+
                 </>
             ) : (
                 <>
