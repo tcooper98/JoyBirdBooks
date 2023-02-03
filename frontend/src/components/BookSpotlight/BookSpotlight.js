@@ -53,8 +53,8 @@ export default function BookSpotlight() {
                                 <Link className="book-spotlight-button">
                                     <h3>ADD TO CART</h3>
                                 </Link>
-                                <Link to="/cart">
-                                    <h3 className="book-spotlight-button-last">BUY NOW</h3>
+                                <Link to="/cart" className="book-spotlight-button-last">
+                                    <h3>BUY NOW</h3>
                                 </Link>
                             </div>
 
@@ -83,11 +83,11 @@ export default function BookSpotlight() {
                             </div>
 
                             <div className="col-buttons">
-                                <Link>
-                                    <h3 className="book-spotlight-button">ADD TO CART</h3>
+                                <Link className="book-spotlight-button">
+                                    <h3>ADD TO CART</h3>
                                 </Link>
-                                <Link to="/cart">
-                                    <h3 className="book-spotlight-button-last">BUY NOW</h3>
+                                <Link to="/cart" className="book-spotlight-button-last">
+                                    <h3>BUY NOW</h3>
                                 </Link>
                             </div>
                         </div>
