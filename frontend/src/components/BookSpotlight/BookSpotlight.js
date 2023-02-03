@@ -49,7 +49,7 @@ export default function BookSpotlight() {
 
                             </div>
 
-                            <div>
+                            <div className="col-buttons">
                                 <Link>
                                     <h3 className="book-spotlight-button">ADD TO CART</h3>
                                 </Link>
@@ -82,7 +82,7 @@ export default function BookSpotlight() {
                                 <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label>
                             </div>
 
-                            <div>
+                            <div className="col-buttons">
                                 <Link>
                                     <h3 className="book-spotlight-button">ADD TO CART</h3>
                                 </Link>
