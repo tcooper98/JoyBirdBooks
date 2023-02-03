@@ -109,7 +109,7 @@
 
 @media screen and (max-width: 1260px) {
     .book-spotlight-img {
-        height: 450px;
+        height: 400px;
         width: 600px;
         margin-right: 50px;
     }
@@ -125,6 +125,12 @@
 }
 
 @media screen and (max-width: 1095) {
+    .book-spotlight-img {
+        height: 100px;
+        width: 600px;
+        margin-right: 50px;
+    }
+
     .book-spotlight p {
         font-size: 18px;
     }
