@@ -93,6 +93,8 @@ export default function BlogReadMore() {
                         </div>
                     </div>
 
+                    <BookSpotlight />
+
                     <div className="past-spotlights page-spacing">
                         <h2>See Past Spotlights</h2>
 
