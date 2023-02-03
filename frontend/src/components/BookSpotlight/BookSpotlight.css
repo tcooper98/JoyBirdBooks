@@ -157,6 +157,10 @@
         font-size: 20px;
         width: 250px;
     }
+
+    .book-spotlight-button h1 {
+        
+    }
 }
 
 @media screen and (max-width: 580px) {
