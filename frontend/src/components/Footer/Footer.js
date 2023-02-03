@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import "./footer.css";
 
 function Footer () {
-    const [isMobile, setMobile] = useState(window.innerWidth <= 1190);
+    const [isMobile, setMobile] = useState(window.innerWidth <= 850);
 
     const updateScreenSize = () => {
-        setMobile(window.innerWidth <= 1190);
+        setMobile(window.innerWidth <= 850);
     }
 
     useEffect(() => {
