@@ -53,44 +53,42 @@ export default function Donate() {
                     </div>
                 </div>
 
-
-         
-                <div className="full-width">
-                    <h2 class="sub-title">BOOK INFORMATION</h2>
+                <h2 className="sub-title">BOOK INFORMATION</h2>
+                <div className="form-row">
+                    <div className="form-column">
+                        {/*Book Title*/}
+                        <label class="required-input-contact">Book Title</label>
+                        <input type="text" placeholder="Book Title" className="form-input" />
+                    </div>
+                    <div className="form-column">
+                        {/*Book Author*/}
+                        <label class="required-input-contact">Book Author</label>
+                        <input type="text" placeholder="Book Author" className="form-input" />
+                    </div>
                 </div>
-                <div>
-                    {/*Book Title*/}
-                    <label for="bookTitle" class="required-input">Book Title</label>
-                    <input type="text" placeholder="Book Title" className="donate-input"></input>
+                <div className="form-row">
+                    <div className="form-column">
+                        {/*Book Edition*/}
+                        <label class="required-input-contact">Book Edition/Print</label>
+                        <input type="text" placeholder="BBook Edition/Print" className="form-input" />
+                    </div>
+                    <div className="form-column">
+                        {/*Book ISBN*/}
+                    <label class="required-input-contact">ISBN/LOC Number</label>
+                    <input type="text" placeholder="ISBN/LOC Number" className="form-input" />
+                    </div>
                 </div>
-                <div>
-                    {/*Book Author*/}
-                    <label for="bookAuthor" class="required-input">Book Author</label>
-                    <input type="text" placeholder="Book Author" className="donate-input"></input>
-                </div>
-                <div>
-                    {/*Book Edition*/}
-                    <label for="bookEdition" class="required-input">Book Edition/Print</label>
-                    <input type="text" placeholder="Book Edition/Print" className="donate-input"></input>
-                </div>        
-                <div>
-                    {/*Book ISBN*/}
-                    <label for="bookISBN" class="required-input">ISBN/LOC Number</label>
-                    <input type="text" placeholder="Book ISBN/LOC Number" className="donate-input"></input>
-                </div>
-                <div>
-                    {/*Book Condition*/}
-                    <label for="bookCondition" class="required-input">Book Condtion</label>
-                    <input type="text" placeholder="Book Condition" className="donate-input"></input>
-                </div>
-                <div>
-                    {/*Hardcover or Softcover*/}
-                    <label for="bookCover" class="required-input">Hardcover or Softcover</label>
-                    <input type="text" placeholder="Hardcover or Softcover" className="donate-input"></input>
-                </div>
-                <div className="full-width">
-                    {/*Submit Button*/}
-                    <button className="donate-submitbutton" value="Submit">Submit</button>
+                <div className="form-row">
+                    <div className="form-column">
+                        {/*Book Condition*/}
+                        <label class="required-input-contact">Book Condtion</label>
+                        <input type="text" placeholder="Book Condtion" className="form-input" />
+                    </div>
+                    <div className="form-column">
+                        {/*Hardcover or Softcover*/}
+                        <label class="required-input-contact">Hardcover or Softcover</label>
+                        <input type="text" placeholder="Hardcover or Softcover" className="form-input" />
+                    </div>
                 </div>
             </form>
             
