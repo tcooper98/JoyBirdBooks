@@ -97,7 +97,6 @@ export default function Blog() {
                             </Link>
                         </div>
 
-                        <div className="p-20"></div>
                     </div>
 
                     <div className="past-spotlights page-spacing">
