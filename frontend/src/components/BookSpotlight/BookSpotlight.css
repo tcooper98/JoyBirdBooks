@@ -170,9 +170,11 @@
         height: 350px;
         width: 262px;
         margin-right: 40px;
+        margin-left: 0px;
     }
 
     .book-spotlight p {
+        margin-bottom: 
         font-size: 18px;
     }
 }
