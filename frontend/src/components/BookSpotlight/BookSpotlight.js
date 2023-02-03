@@ -22,13 +22,10 @@ export default function BookSpotlight() {
                     <div className="row book-spotlight pt-70">
                         <div className="col-spotlight">
                             <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
-
+                    
                             <div>
-                                <h1>Lake Life</h1>
+                                <h1>Mobile</h1>
                                 <h2>By David James Possiant</h2>
-                            </div>
-                            
-                            <div>
                                 <p> The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
                                     Their son, a salesperson, lives in Dallas, with his elementary school teacher wife, Diane. Michael's brother, Thad, an aspiring poet makes
                                     his home in New York City with his famous painter boyfriend, Jake. For years they've traveled to North Carolina to share a summer vacation
