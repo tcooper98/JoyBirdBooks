@@ -99,6 +99,9 @@
 /*Responsiveness*/
 
 @media (max-width: 820px) {
+    .subheading {
+        font-size: 25px;
+    }
 
     .row {
         align-items: center;
