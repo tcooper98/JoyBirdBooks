@@ -104,12 +104,12 @@
 /*grid for mobile spotlight*/
 
 .container-spotlight {
-    display: grid;
-    grid-template-rows: auto auto;
+    /* display: grid;
+    grid-template-rows: auto auto; */
 }
 
 .container-pickup {
-    display: grid;
+    /* display: grid; */
 }
 
 @media screen and (max-width: 1260px) {
