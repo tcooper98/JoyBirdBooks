@@ -60,7 +60,12 @@ input[type="radio"]{
         display: flex;
         flex-wrap: wrap;
         margin: 100px 200px;
+    }
 
+    .faq-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px 200px;
     }
 }
 
