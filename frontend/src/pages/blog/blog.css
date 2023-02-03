@@ -117,6 +117,10 @@
         align-items: center;
     }
 
+    .col-blog-text {
+        display: flex;
+    }
+
     .page-spacing {
         padding-right: 35px;
         padding-left: 35px;
