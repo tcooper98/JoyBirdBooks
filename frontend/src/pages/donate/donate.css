@@ -102,6 +102,10 @@ input[type="radio"]{
         flex-wrap: wrap;
         margin: 100px 200px;
     }
+
+    .donate-submitbutton{
+        min-width: 100%;
+    }
 }
 
 .sub-title {
