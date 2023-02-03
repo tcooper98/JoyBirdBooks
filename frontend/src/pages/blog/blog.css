@@ -162,16 +162,12 @@
         align-items: center;
     }
 
-    .col-blog-text {
-        /* width: 55%; */
-    }
-
     .col-image {
         width: 52%;
     }
 
     .img {
-        height: 350px;
-        width: 180px;
+        height: 380px;
+        width: 160px;
     }
 }
