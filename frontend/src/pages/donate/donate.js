@@ -32,35 +32,29 @@ export default function Donate() {
                     <input type="radio" name="donateTrade" id="accent-color" value="no" />
                 </div>
 
-                <h2 class="sub-title">CONTACT INFORMATION</h2>
-                <div class="form-row">
-                    <div class="form-column">
+                <h2 className="sub-title">CONTACT INFORMATION</h2>
+                <div className="form-row">
+                    <div className="form-column">
+                        {/*First Name*/}
                         <label class="required-input-contact">First Name</label>
-                        <input type="text" placeholder="First Name" class="form-input" />
+                        <input type="text" placeholder="First Name" className="form-input" />
                     </div>
-                    <div class="form-column">
+                    <div className="form-column">
+                        {/*Last Name*/}
                         <label class="required-input-contact">Last Name</label>
-                        <input type="text" placeholder="Last Name" class="form-input" />
+                        <input type="text" placeholder="Last Name" className="form-input" />
                     </div>
                 </div>
-        
+                <div className="form-row">
+                    <div className="form-column1">
+                        {/*Email*/}
+                        <label class="required-input-contact">Email</label>
+                        <input type="text" placeholder="Email" className="form-input-long"></input>
+                    </div>
+                </div>
 
 
-                <div>
-                    {/*First Name*/}
-                    <label for="firstName" class="required-input">First Name</label>
-                    <input type="text" placeholder="First Name" className="donate-input"></input>
-                </div>
-                <div>
-                    {/*Last Name*/}
-                    <label for="lastName" class="required-input">Last Name</label>
-                    <input type="text" placeholder="Last Name" className="donate-input"></input>
-                </div>
-                <div className="full-width">
-                    {/*Email*/}
-                    <label for="email" class="required-input">Email</label>
-                    <input type="text" placeholder="Email Address" className="donate-input"></input>
-                </div>
+         
                 <div className="full-width">
                     <h2 class="sub-title">BOOK INFORMATION</h2>
                 </div>
