@@ -107,6 +107,14 @@
     margin-right: 30px;
 }
 
+.container-spotlight {
+    display: grid;
+}
+
+.container-pickup {
+    display: grid;
+}
+
 @media screen and (max-width: 1260px) {
     .book-spotlight-img {
         height: 400px;
