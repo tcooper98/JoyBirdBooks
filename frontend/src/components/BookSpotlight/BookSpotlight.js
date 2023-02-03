@@ -19,7 +19,7 @@ export default function BookSpotlight() {
         <>
             {isMobile ? (
                 <>  
-                    <div className="row book-spotlight">
+                    <div className="row book-spotlight pt-70">
                         <div className="col-spotlight">
                             <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
 
@@ -63,7 +63,7 @@ export default function BookSpotlight() {
                 </>
             ) : (
                 <>
-                    <div className="book-spotlight">
+                    <div className="book-spotlight pt-70">
                         <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
                         <div>
                             <h1>Lake Life</h1>
