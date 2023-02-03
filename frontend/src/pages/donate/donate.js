@@ -35,10 +35,12 @@ export default function Donate() {
                 <h2 class="sub-title">CONTACT INFORMATION</h2>
                 <div class="form-row">
                     <div class="form-column">
+                        {/*First Name*/}
                         <label class="required-input-contact">First Name</label>
                         <input type="text" placeholder="First Name" class="form-input" />
                     </div>
                     <div class="form-column">
+                        {/*Last Name*/}
                         <label class="required-input-contact">Last Name</label>
                         <input type="text" placeholder="Last Name" class="form-input" />
                     </div>
@@ -46,16 +48,7 @@ export default function Donate() {
         
 
 
-                <div>
-                    {/*First Name*/}
-                    <label for="firstName" class="required-input">First Name</label>
-                    <input type="text" placeholder="First Name" className="donate-input"></input>
-                </div>
-                <div>
-                    {/*Last Name*/}
-                    <label for="lastName" class="required-input">Last Name</label>
-                    <input type="text" placeholder="Last Name" className="donate-input"></input>
-                </div>
+                
                 <div className="full-width">
                     {/*Email*/}
                     <label for="email" class="required-input">Email</label>
