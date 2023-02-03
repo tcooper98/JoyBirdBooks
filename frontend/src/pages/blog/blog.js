@@ -25,32 +25,35 @@ export default function Blog() {
                         <h1 className="blog-title">Blog</h1>
                     </div>
 
-                    <div className="author-spotlight row page-spacing">
+                    <div className="author-spotlight page-spacing">
                         <div>
                             <h2 className='subheading text-span'>Local Author Spotlight</h2>
                             <p className="subheading text-span">Author Name</p>
                         </div>
                         
-                        <div className="col-image">
-                            <img className="img" src="images/Poissant.jpg" />
+                        <div className="row">
+                            <div className="col-image">
+                                <img className="img" src="images/Poissant.jpg" />
+                            </div>
+
+                            <div className="col-blog-text">
+
+                                <div className="p-30"></div>
+
+                                <p className="description">
+                                    Description text description text description text description text description text description text
+                                    description text description text description text description text description text description text
+                                    description text description text description text description text description text description text
+                                    description text description text description text description text description text description text
+                                    description text description text description text description text description text description text
+                                    description text description text description text description text description text description text
+                                </p>
+
+                                <Link to='/blog-read-more'>
+                                    <p className="btn">Read More</p>
+                                </Link>
                         </div>
-
-                        <div className="col-blog-text">
-
-                            <div className="p-30"></div>
-
-                            <p className="description">
-                                Description text description text description text description text description text description text
-                                description text description text description text description text description text description text
-                                description text description text description text description text description text description text
-                                description text description text description text description text description text description text
-                                description text description text description text description text description text description text
-                                description text description text description text description text description text description text
-                            </p>
-
-                            <Link to='/blog-read-more'>
-                                <p className="btn">Read More</p>
-                            </Link>
+                
                         </div>       
                     </div>
 
