@@ -1,6 +1,6 @@
 .book-spotlight {
     background-color: white;
-    /* display: flex; */
+    display: flex;
     margin-top: 70px;
     padding: 50px;
 }
