@@ -174,8 +174,12 @@
     }
 
     .book-spotlight p {
-        margin-bottom: 
+        margin-bottom: 10px;
         font-size: 18px;
+    }
+
+    .book-spotlight input[type="radio"] {
+        margin-left: 0px;
     }
 }
 
