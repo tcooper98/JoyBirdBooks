@@ -25,12 +25,11 @@ export default function Donate() {
                 <label for="donate" className="donate-radiobuttons">Donate Books</label>
                 <input type="radio" name="donateTrade" id="accent-color" value="yes" />
             </div>
-                <div>
-                    {/*Trade Books Radio Button */}
-                    <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
-                    <input type="radio" name="donateTrade" id="accent-color" value="no" />
-                </div>
-        <div>
+            <div>
+                {/*Trade Books Radio Button */}
+                <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
+                <input type="radio" name="donateTrade" id="accent-color" value="no" />
+            </div>
           <h2 className="donate-sub-title">CONTACT INFORMATION</h2>
           <div className="donate-form-row">
             <div className="donate-form-column">
@@ -88,7 +87,6 @@ export default function Donate() {
               <input type="text" placeholder="Hardcover or Softcover" className="donate-form-input" />
             </div>
           </div>
-        </div>
         </div>
 
 
