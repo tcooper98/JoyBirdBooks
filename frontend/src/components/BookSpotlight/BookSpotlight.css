@@ -58,12 +58,6 @@
     position: relative;
 }
 
-.book-spotlight {
-    background-color: white;
-    /* display: flex; */
-    margin-top: 50px;
-}
-
 .book-spotlight h1 {
     color: #292727;
     font-size: 35px;
