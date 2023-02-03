@@ -105,15 +105,10 @@
 
 .col-spotlight {
     display: flex;
-    flex-basis: 100%;
-    flex: 1;
 }
 
 .col-pickup {
     display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
 }
 
 @media screen and (max-width: 1260px) {
