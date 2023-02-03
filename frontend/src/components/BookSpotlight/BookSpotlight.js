@@ -21,7 +21,7 @@ export default function BookSpotlight() {
                 <>  
                     <div className="book-spotlight">
 
-                        <div className="container-spotlight row">
+                        <div className="row">
                             <div className="col">
                                 <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
 
@@ -39,7 +39,7 @@ export default function BookSpotlight() {
                             </div>
                         </div>
 
-                        <div className="container-pickup row">
+                        <div className="row">
                             <div className="pickup">
                                 <input className="ship" type="radio" value=""></input>
                                 <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br /> <br />
