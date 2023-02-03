@@ -112,10 +112,6 @@ export default function BlogReadMore() {
                             <h2 className="subheading">Author Name</h2>
                             <p className="author-description">Author Text</p>
                             <img className="img" src="images/Poissant.jpg" />
-
-                            <Link to='/blog-read-more' className="btn">
-                                <p>Read More</p>
-                            </Link>
                         </div>
                     </div>
 
