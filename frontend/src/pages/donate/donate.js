@@ -34,13 +34,7 @@ export default function Donate() {
                 <div className="full-width">
                     <h2 class="sub-title">CONTACT INFORMATION</h2>
                 </div>
-                
-                <div className="form-row">
-                    <div className="form-column">
-                        <label class="required-input-contact">First Name</label>
-                        <input type="text" placeholder="First Name" class="form-input" />
-                    </div>  
-                </div>
+        
 
 
                 <div>
