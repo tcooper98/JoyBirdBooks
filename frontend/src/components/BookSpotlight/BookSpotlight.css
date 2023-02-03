@@ -101,7 +101,7 @@
     margin-right: 30px;
 }
 
-/*grid for spotlight*/
+/*grid for mobile spotlight*/
 
 .container-spotlight {
     display: grid;
@@ -131,7 +131,7 @@
 
 @media screen and (max-width: 1020) {
     .book-spotlight {
-        display: grid;
+        display: grid !important;
     }
 
     .book-spotlight p {
