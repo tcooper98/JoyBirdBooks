@@ -127,7 +127,6 @@
     display: flex;
 }
 
-
 @media screen and (max-width: 1260px) {
     .book-spotlight-img {
         height: 400px;
