@@ -1,0 +1,76 @@
+.book-spotlight {
+    background-color: white;
+    display: flex;
+    margin-top: 70px;
+    padding: 50px;
+
+}
+
+.book-spotlight img {
+    height: 740px;
+    width: 589px;
+    object-fit: cover;
+    margin: 30px;
+    margin-right: 70px;
+
+}
+
+.book-spotlight h1 {
+    color: #292727;
+    font-size: 45px;
+    padding: 0;
+    text-align: left;
+}
+
+.book-spotlight h2 {
+    color: #489fb5;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+
+.book-spotlight p {
+    color: black;
+    font-size: 35px;
+    font-family: 'Nunito', sans-serif;
+    ;
+    font-weight: 200;
+    text-align: left;
+    width: 1100px;
+    margin-bottom: 80px;
+}
+
+.book-spotlight button {
+    background-color: #489fb5;
+    width: 308px;
+    height: 99px;
+    font-size: 30px;
+    color: white;
+    margin-right: 200px;
+    float: left;
+
+}
+
+.pickup {
+    margin-top: 35px;
+}
+
+.book-spotlight input[type="radio"] {
+    accent-color: #16697a;
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    margin-right: 30px;
+
+}
+
+.book-spotlight label {
+    font-family: 'Nunito', sans-serif;
+    ;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+
+}
+
