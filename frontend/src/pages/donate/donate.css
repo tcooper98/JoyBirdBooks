@@ -65,18 +65,32 @@ input[type="radio"]{
         margin: 100px 200px;
     }
 
+    .donate-form-row{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        grid-gap: 0px;
+        gap: 0px;
+        margin-top: 5px;
+    }
+
+    .form-donate-submit-btn{
+        min-width: 100%;
+    }
+    
+    .donate-form-column1{
+        width: inherit;
+        margin: 0px 2px;
+    }
+
     .faq-container{
         display: flex;
         flex-wrap: wrap;
         margin: 100px 200px;
     }
-
-    .donate-submitbutton{
-        min-width: 100%;
-    }
 }
 
-.donate-submitbutton {
+.form-donate-submit-btn{
     text-align: center;
     width: 200px;
     height: 34px;
@@ -86,11 +100,52 @@ input[type="radio"]{
     margin-bottom: 125px;
 }
 
-.donate-submitbutton:hover {
+.form-donate-submit-btn{
     border-width: 0px;
     color: rgb(255, 255, 255);
     background-color: #F2C202;
 }
+
+.donate-form-input {
+    margin-top: 2px;
+    margin-bottom: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-left: 8px;
+    padding-right: 185px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #575757;
+    border-radius: 2px;
+    font-size: 10px;
+
+}
+
+.form-input-long {
+    margin-top: 2px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid #575757;
+    border-radius: 2px;
+    font-size: 10px;
+    min-width: 102.7%;
+}
+
+
+.form-container {
+    display: grid;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+.form-column2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+
 
 .faq-container {
     display: flex;
