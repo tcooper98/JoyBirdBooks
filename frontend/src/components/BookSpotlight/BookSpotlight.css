@@ -185,9 +185,22 @@
     .col-buttons {
        margin-bottom: 50px;
     }
+
+    .book-spotlight-button {
+        font-size: 20px;
+        padding: 6px;
+        width: 200px;
+    }
+
+    .book-spotlight-button-last {
+        font-size: 20px;
+        padding: 6px;
+        width: 200px;
+    }
 }
 
 @media screen and (max-width: 580px) {
+    
 
     .book-spotlight input[type="radio"] {
         display: none;
