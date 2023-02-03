@@ -86,7 +86,7 @@ export default function Donate() {
 
 
         <div className="donate-form-column2">
-          <button className="form-donate-submit-btn">Submit</button>
+          <button className="donate-form-submit-btn">Submit</button>
         </div>
 
 
