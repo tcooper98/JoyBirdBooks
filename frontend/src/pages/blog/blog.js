@@ -31,7 +31,7 @@ export default function Blog() {
                             <p className="subheading2">Author Name</p>
                         </div>
                         
-                        <div className="row">
+                        <div className="row author-spotlight-row">
                             <div className="col-image">
                                 <img className="img" src="images/Poissant.jpg" />
                             </div>
@@ -68,7 +68,7 @@ export default function Blog() {
                 </>
             ) : (
                 <>
-                    <div className="author-spotlight row page-spacing">
+                        <div className="author-spotlight row author-spotlight-row page-spacing">
                         <div className="col-blog-text">
                             <h1>Blog</h1>
                             <h2 className='subheading'>Local Author Spotlight</h2>
