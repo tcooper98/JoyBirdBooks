@@ -110,7 +110,7 @@
 
     .subheading2 {
         font-size: 26px;
-        padding-bottom: 10px;
+        padding-bottom: 40px;
     }
 
     .row {
@@ -141,6 +141,11 @@
         text-decoration: none;
         width: 200px;
         margin-top: 20px;
+    }
+
+    .img {
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
 
