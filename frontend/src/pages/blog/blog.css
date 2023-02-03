@@ -151,6 +151,8 @@
     .img {
         padding-top: 0px;
         padding-bottom: 0px;
+        height: 350px;
+        width: 200px;
     }
 }
 
@@ -166,5 +168,10 @@
 
     .col-image {
         width: 45%;
+    }
+
+    .img {
+        height: 350px;
+        width: 200px;
     }
 }
