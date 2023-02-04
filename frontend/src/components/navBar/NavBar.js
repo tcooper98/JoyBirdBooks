@@ -36,17 +36,16 @@ function Navbar () {
             <nav className='navbarcontainer'>
 
              
+
                  {/* logo/link to homepage */}
                  <div className='logo'>
-                    <li>
+                    
                         <Link to='/' className='nav-item navbar-logo'> 
                             <img src={Logo} alt='logo' />
                         </Link>
-                        <div className='menu-icon' onClick={handleClick}> 
-                            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-                        </div>
+                       
     
-                    </li>
+                    
                     </div>
                 
         
@@ -68,6 +67,10 @@ function Navbar () {
 
             <div className='nav-container'>
             <div className='navbar'>
+
+                 <div className='menu-icon' onClick={handleClick}> 
+                            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                        </div>
 
               
           
