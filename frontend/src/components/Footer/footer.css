@@ -68,3 +68,22 @@
     align-content: center;
     width: 25%;
 }
+
+@media (max-width: 850px) {
+    .background h2 {
+        font-size: 20px;
+    }
+
+    .col-text {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .div-spacing {
+        padding: 30px;
+    }
+
+    .heading-spacing {
+        padding-bottom: 20px;
+    }
+}

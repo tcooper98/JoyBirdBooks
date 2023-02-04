@@ -4,10 +4,10 @@ import './BookSpotlight.css';
 import { Link } from 'react-router-dom';
 
 export default function BookSpotlight() {
-    const [isMobile, setMobile] = useState(window.innerWidth <= 820);
+    const [isMobile, setMobile] = useState(window.innerWidth <= 1190);
 
     const updateScreenSize = () => {
-        setMobile(window.innerWidth <= 1020);
+        setMobile(window.innerWidth <= 1190);
     }
 
     useEffect(() => {
@@ -19,12 +19,12 @@ export default function BookSpotlight() {
         <>
             {isMobile ? (
                 <>  
-                    <div className="row book-spotlight">
+                    <div className="row book-spotlight pt-70">
                         <div className="col-spotlight">
                             <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
-
+                    
                             <div>
-                                <h1>Mobile</h1>
+                                <h1>Lake Life</h1>
                                 <h2>By David James Possiant</h2>
                                 <p> The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
                                     Their son, a salesperson, lives in Dallas, with his elementary school teacher wife, Diane. Michael's brother, Thad, an aspiring poet makes
@@ -63,7 +63,7 @@ export default function BookSpotlight() {
                 </>
             ) : (
                 <>
-                    <div className="book-spotlight">
+                    <div className="book-spotlight pt-70">
                         <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
                         <div>
                             <h1>Lake Life</h1>

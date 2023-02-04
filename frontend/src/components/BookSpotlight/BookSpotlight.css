@@ -1,8 +1,8 @@
 .book-spotlight {
     background-color: white;
     display: flex;
-    margin-top: 70px;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .book-spotlight-img {
@@ -80,7 +80,7 @@
 .book-spotlight-button {
     background-color: #489fb5;
     width: 290px;
-    height: 50px;
+    height: 55px;
     font-size: 30px;
     margin-top: 30px;
     margin-bottom: 28px;
@@ -92,7 +92,7 @@
 .book-spotlight-button-last {
     background-color: #489fb5;
     width: 290px;
-    height: 50px;
+    height: 55px;
     font-size: 28px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -128,6 +128,9 @@
     display: flex;
 }
 
+.pt-70 {
+    padding-top: 70px;
+}
 
 @media screen and (max-width: 1260px) {
     .book-spotlight-img {
@@ -151,59 +154,56 @@
     }
 }
 
-@media screen and (max-width: 1020) {
-    .book-spotlight {
-        background-color: white;
-        display: flex;
-        padding: 50px;
-    }
+@media screen and (max-width: 1020px) {
 
     .book-spotlight p {
         font-size: 18px;
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 850px) {
+    .col-spotlight {
+        flex-direction: column;
+    }
 
     .book-spotlight-img {
-        height: 200px;
-        width: 125px;
-        object-fit: cover;
-        margin: 30px;
-        margin-right: 70px;
-    }
-
-    .book-spotlight h1 {
-        color: #292727;
-        font-size: 20px;
-        padding: 0;
-        text-align: left;
-    }
-
-    .book-spotlight h2 {
-        color: #489fb5;
-        font-size: 15px;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 400;
-        text-align: left;
+        height: 350px;
+        width: 262px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .book-spotlight p {
-        color: black;
-        font-size: 12px;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 200;
-        text-align: left;
         margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .book-spotlight input[type="radio"] {
+        margin-left: 0px;
+    }
+
+    .col-buttons {
+       margin-bottom: 50px;
     }
 
     .book-spotlight-button {
-        background-color: #489fb5;
-        width: 90px;
-        height: 23px;
-        font-size: 30px;
-        color: white;
-        margin: 30px;
+        font-size: 20px;
+        padding: 6px;
+        width: 200px;
+    }
+
+    .book-spotlight-button-last {
+        font-size: 20px;
+        padding: 6px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .pickup {
+        margin: 0px;
+        padding: 0px;
+        display: none;
     }
 
     .book-spotlight input[type="radio"] {
@@ -212,5 +212,17 @@
 
     .book-spotlight label {
         display: none;
+    }
+
+    .book-spotlight-button {
+        font-size: 18px;
+        padding: 10px;
+        width: 180px;
+    }
+
+    .book-spotlight-button-last {
+        font-size: 18px;
+        padding: 10px;
+        width: 180px;
     }
 }
