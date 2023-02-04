@@ -432,3 +432,178 @@
  }
 }
 
+@media (max-width: 480px) {
+    .product-details {
+        display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 50%);
+            grid-column-gap: 0px;
+            grid-row-gap: 0px;
+    
+        }
+    
+        .product-details img {
+            height: 309px;
+            width: 252px;
+            align-content: center;
+            padding: 0;
+            padding-top: 20px;
+            margin-left: 6%;
+        }
+    
+    
+        .product-info h1 {
+            font-size: 30px;
+            padding-left: 1%;
+        }
+    
+        .product-details h3 {
+            font-size: 25px;
+            padding-left: 1%;
+
+        }
+    
+        .product-details p {
+            width: 400px;
+            font-size: 15px;
+            padding-left: 1%;
+        }
+    
+        .product-details h2 {
+            margin-top: 15px;
+            margin-bottom: 0px;
+            padding-left: 1%;
+        }
+
+
+    
+    
+        .product-details input[type="radio"] {
+           display: none;
+    
+        }
+    
+        .product-details label {
+            display: none;
+    
+        }
+    
+        .leftbutton {
+            height: 50px;
+            width: 150px;
+            font-size: 15px;
+            margin-right: 30px;
+        }
+    
+        .rightbutton {
+            height: 50px;
+            width: 150px;
+            font-weight: 700;
+            font-size: 15px;
+        }
+    
+        .reviews {
+            display: grid;
+    
+        }
+    
+        .review-menu {
+            width: 400px;
+            padding: 0px;
+        }
+
+        .review-menu button {
+            height: 50px;
+            width: 300px;
+        }
+    
+        .review-info {
+            width: 1300px;
+            margin-right: 100px;
+        }
+    
+    
+    
+        .review-info select {
+            width: 200px;
+            height: 35px;
+    
+    
+        }
+    
+    
+        .review-content {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+    
+        .review-info p {
+            font-size: 20px;
+            width: 300px;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+    
+        .review-date {
+            font-size: 15px;
+            font-weight: 300;
+            color: gray;
+            float: right;
+        }
+    
+        .donate-link {
+            background-color: #FFF4DA;
+            height: 486px;
+        }
+    
+        .donate-link h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #292727;
+            padding: 40px;
+        }
+    
+        .donate-link p {
+            text-align: center;
+            font-size: 25px;
+            color: #292727;
+    
+        }
+    
+        .donatebutton {
+            height: 80px;
+            width: 400px;
+            background-color: #16697a;
+            color: white;
+            font-family: 'Saira', sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            margin-top: 30px;
+            margin-right: 200px;
+            margin-left: 200px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    
+        .tradebutton {
+            height: 80px;
+            width: 400px;
+            background-color: #f2c202;
+            color: #292727;
+            font-family: 'Saira', sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            margin-top: 30px;
+            margin-right: 30px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    
+        .similar h2 {
+            font-size: 45px;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+}
+

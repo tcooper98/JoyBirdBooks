@@ -1,8 +1,278 @@
+@media (max-width: 1500px) {
+    .fresh-off-press h2 {
+        text-align: center;
+        font-size: 50px;
+        padding: 0;
+    }
 
+    .turner h2 {
+        margin-top: 55px;
+        font-size: 50px;
+        color: #16697A;
+    }
+
+    .spotlight {
+        background-color: #292727;
+        display: flex;
+        height: 593px;
+    }
+
+    .spotlight img {
+        width: 478px;
+        height: 478px;
+        object-fit: cover;
+        padding: 20px;
+        margin-top: 55px;
+    }
+
+    .spotlight h1 {
+        color: #f2c202;
+        font-size: 60px;
+        padding: 0;
+        margin-left: 40px;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .spotlight p {
+        color: white;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        margin-left: 40px;
+        font-family: 'Nunito', sans-serif;
+        ;
+        font-weight: 200;
+        text-align: left;
+    }
+
+    .spotlight button {
+        background-color: #489fb5;
+        width: 315px;
+        height: 87px;
+        font-size: 34px;
+        color: white;
+    }
+
+    .testimonials {
+        height: 400px;
+        padding: 40px;
+        display: flex;
+    }
+
+    .testimonials p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 32px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .testimonials1 {
+        width: 560px;
+        height: 300px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #f2c202;
+        margin-right: 20px;
+
+    }
+
+    .testimonials2 {
+        width: 560px;
+        height: 300px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #7e9e32;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .testimonials3 {
+        width: 560px;
+        height: 300px;
+        border-style: solid;
+        border-width: 3px;
+        border-color: #16697A;
+        margin-left: 20px;
+    }
+
+    .learn {
+        padding: 25px;
+    }
+
+    .community {
+        background-color: #16697A;
+        display: flex;
+        height: 593px;
+    }
+
+    .community img {
+        width: 478px;
+        height: 478px;
+        object-fit: cover;
+        padding: 20px;
+        margin-top: 55px;
+    }
+
+    .community h1 {
+        color: #f2c202;
+        font-size: 60px;
+        padding: 0;
+        margin-left: 40px;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .community p {
+        color: white;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        margin-left: 40px;
+        font-family: 'Nunito', sans-serif;
+        ;
+        font-weight: 600;
+        text-align: left;
+        width: 797px;
+        height: 520px;
+    }
+
+    .community button {
+        background-color: #489fb5;
+        width: 315px;
+        height: 87px;
+        font-size: 34px;
+        color: white;
+    }
+
+    .newsletter {
+        background-color: black;
+        color: #fff4da;
+        display: flex;
+        height: 100px;
+        justify-content: center;
+
+    }
+
+    .newsletter h1 {
+        font-size: 40px;
+        margin-top: 20px;
+        margin-right: 100px;
+
+    }
+
+    .newsletter input {
+        height: 50px;
+        width: 300px;
+        margin-top: 25px;
+
+    }
+
+    .newsletter button {
+        height: 50px;
+        width: 125px;
+        margin-top: 25px;
+        font-size: 35px;
+
+    }
+
+    .instagram {
+        background-color: #16697A;
+        padding: 40px;
+
+    }
+
+    .instagram h2 {
+        font-size: 50px;
+        color: #f2c202;
+    }
+
+    .instaposts {
+        padding: 20px;
+        margin: 40px;
+
+    }
+
+    .locationhome {
+        display: flex;
+        padding: 3px;
+    }
+
+    .visit {
+
+        margin-left: 30px;
+    }
+
+    .visit img {
+        height: 377px;
+        width: 615px;
+        padding: 10px;
+        margin-top: 10px;
+        object-fit: cover;
+    }
+
+    .visit h1 {
+        font-size: 55px;
+        text-align: left;
+    }
+
+    .address {
+        width: 317px;
+        margin-top: 90px;
+        margin-left: 40px;
+
+    }
+
+    .address h2 {
+        font-size: 45px;
+        text-align: left;
+    }
+
+    .address p {
+        font-size: 25px;
+        text-align: left;
+        font-family: 'Nunito', sans-serif;
+        ;
+        font-weight: 300;
+    }
+
+    .address button {
+        background-color: #489fb5;
+        width: 200px;
+        height: 55px;
+        font-size: 20px;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        ;
+        font-weight: 300;
+        margin-top: 100px;
+    }
+
+    .hours {
+        width: 377px;
+        margin-top: 90px;
+        margin-left: 40px;
+
+    }
+
+    .hours h2 {
+        font-size: 45px;
+        text-align: left;
+    }
+
+    .hours p {
+        font-size: 25px;
+        text-align: left;
+        font-family: 'Nunito', sans-serif;
+        ;
+        font-weight: 300;
+        padding: 5px;
+    }
+}
     
 
 
-@media only screen and (max-width: 2500px) {
+@media only screen and (max-width: 2500px) and (min-width: 1600px) {
     .fresh-off-press h2{
     text-align: center;
     font-size: 50px;
@@ -282,274 +552,193 @@
  }
 }
 
+@media (max-width: 918px) and (min-width: 481px){
+.fresh-off-press h2 {
+        font-size: 30px;
+        margin-top: 5px;
+    }
 
-
-
-@media (max-width: 1500px) {
-.fresh-off-press h2{
-    text-align: center;
-    font-size: 50px;
-    padding: 0;
-}
-
-.turner h2{
-    margin-top: 55px;
-    font-size: 50px;
-    color: #16697A;
-}
-
-.spotlight{
-    background-color: #292727;
-   display: flex;
-   height: 593px;
-}
-
-.spotlight img{
-    width: 478px;
-    height: 478px;
-    object-fit: cover;
-    padding: 20px;
-    margin-top: 55px;
-}
-
-.spotlight h1{
-    color: #f2c202;
-    font-size: 60px;
-    padding: 0;
-    margin-left: 40px;
-    margin-top: 50px;
-    text-align: left;
-}
-
-.spotlight p{
-    color: white;
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
-    margin-left: 40px;
-    font-family: 'Nunito', sans-serif;;
-    font-weight: 200;
-    text-align: left;
-}
-
-.spotlight button{
-    background-color: #489fb5;
-    width: 315px;
-    height: 87px;
-    font-size: 34px;
-    color: white;
-}
-
-.testimonials{
-    height: 400px;
-    padding: 40px;
-    display: flex;
-}
-
-.testimonials p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 32px;
-    text-align: center;
-    padding: 10px;
-}
-
-.testimonials1{
-    width: 560px;
-    height: 300px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #f2c202;
-    margin-right: 20px;
-   
-}
-
-.testimonials2{
-    width: 560px;
-    height: 300px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #7e9e32;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.testimonials3{
-    width: 560px;
-    height: 300px;
-    border-style: solid;
-    border-width: 3px;
-    border-color: #16697A;
-    margin-left: 20px;
-}
-
-.learn {
-    padding: 25px;
-}
-
-.community{
-    background-color: #16697A;
-   display: flex;
-   height: 593px;
-}
-
-.community img{
-    width: 478px;
-    height: 478px;
-    object-fit: cover;
-    padding: 20px;
-    margin-top: 55px;
-}
-
-.community h1{
-    color: #f2c202;
-    font-size: 60px;
-    padding: 0;
-    margin-left: 40px;
-    margin-top: 50px;
-    text-align: left;
-}
-
-.community p{
-    color: white;
-    font-size: 30px;
-    padding: 0;
-    margin: 0;
-    margin-left: 40px;
-    font-family: 'Nunito', sans-serif;;
-    font-weight: 600;
-    text-align: left;
-    width: 797px;
-    height: 520px;
-}
-
-.community button{
-    background-color: #489fb5;
-    width: 315px;
-    height: 87px;
-    font-size: 34px;
-    color: white;
-}
-
-.newsletter{
-    background-color: black;
-    color: #fff4da;
-    display: flex;
-    height: 100px;
-    justify-content: center;
+    .turner h2 {
+        margin-top: 5px;
+        font-size: 30px;
     
+    }
+
+    .spotlight {
+        height: 345px;
+    }
+
+    .spotlight img {
+        width: 235px;
+        height: 276px;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .spotlight h1 {
+        font-size: 35px;
+        margin-left: 5px;
+        margin-top: 30px;
+    }
+
+    .spotlight p {
+        color: white;
+        font-size: 18px;
+        margin-left: 5px;
+      
+    }
+
+    .spotlight button {
+        width: 153px;
+        height: 33px;
+        font-size: 22px;
+    }
+
+    .testimonials {
+        height: 400px;
+        padding: 40px;
+        display: table-row;
+
+
+    }
+
+    .testimonials p {
+        font-family: 'Nunito', sans-serif;
+        font-size: 14px;
+        text-align: center;
+
+    }
+
+    .testimonials1 {
+        width: 870px;
+        height: 112px;
+        margin-bottom: 20px;
+
+
+
+    }
+
+    .testimonials2 {
+        width: 870px;
+        height: 112px;
+        margin-bottom: 20px;
+
+    }
+
+    .testimonials3 {
+        width: 870px;
+        height: 112px;
+        margin-bottom: 20px;
+
+    }
+
+    .learn {
+        padding: 25px;
+    }
+
+    .community {
+        height: 345px;
+    }
+
+    .community img {
+        width: 283px;
+        height: 283px;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .community h1 {
+        color: #f2c202;
+        font-size: 35px;
+        text-align: left;
+    }
+
+    .community p {
+        color: white;
+        font-size: 22px;
+        width: 550px;
+        text-align: left;
+
+    }
+
+
+    .newsletter {
+     display: none;
+       
+    }
+
+
+
+
+    .instagram {
+        display: none;
+
+    }
+
+    .visit img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .visit h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+
+
+    .address h2 {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .address p {
+        font-size: 25px;
+        text-align: left;
+        font-family: 'Nunito', sans-serif;
+        ;
+        font-weight: 300;
+    }
+
+    .address button {
+        background-color: #489fb5;
+        width: 90px;
+        height: 23px;
+        font-size: 10px;
+        color: white;
+        font-family: 'Nunito', sans-serif;
+        ;
+        font-weight: 300;
+
+    }
+
+    .hours {
+        width: 377px;
+        margin-top: 90px;
+        margin-left: 40px;
+
+    }
+
+    .hours h2 {
+        font-size: 30px;
+        text-align: left;
+    }
+
+    .hours p {
+        font-size: 25px;
+        text-align: left;
+        font-family: 'Nunito', sans-serif;
+        ;
+        font-weight: 300;
+
+    }
+
 }
 
-.newsletter h1{
-    font-size: 40px;
-    margin-top: 20px;
-    margin-right: 100px;
-   
-}
-
-.newsletter input{
-    height: 50px;
-    width: 300px;
-    margin-top: 25px;
-    
-}
-
-.newsletter button{
-    height: 50px;
-    width: 125px;
-    margin-top: 25px;
-    font-size: 35px;
-    
-}
-
-.instagram{
- background-color: #16697A;
- padding: 40px;
-
-}
-
-.instagram h2{
-    font-size: 50px;
-    color: #f2c202;
-}
-
-.instaposts{
-    padding: 20px;
-    margin: 40px;
-
-}
-
-.locationhome{
-    display: flex;
-    padding: 3px;
-}
-
-.visit{
-    
-    margin-left: 30px;
-}
-
-.visit img{
-    height: 377px;
-    width: 615px;
-    padding: 10px;
-    margin-top: 10px;
-    object-fit: cover;
-}
-
-.visit h1{
-    font-size: 55px;
-    text-align: left;
-}
-
-.address{
-   width: 317px;
-   margin-top: 90px;
-    margin-left: 40px;
-    
-}
-
-.address h2{
-    font-size: 45px;
-    text-align: left;
-}
-
-.address p{
-    font-size: 25px;
-    text-align: left;
-    font-family: 'Nunito', sans-serif;;
-    font-weight: 300;
-}
-
-.address button{
-    background-color: #489fb5;
-    width: 200px;
-    height: 55px;
-    font-size: 20px;
-    color: white;
-    font-family: 'Nunito', sans-serif;;
-    font-weight: 300;
-    margin-top: 100px;
-}
-
-.hours{
-    width: 377px;
-    margin-top: 90px;
-     margin-left: 40px;
-     
- }
- 
- .hours h2{
-     font-size: 45px;
-     text-align: left;
- }
- 
- .hours p{
-     font-size: 25px;
-     text-align: left;
-     font-family: 'Nunito', sans-serif;;
-     font-weight: 300;
-     padding: 5px;
- }}
  
 
 
@@ -592,7 +781,7 @@
 
     .spotlight p {
         color: white;
-        font-size: 12px;
+        font-size: 10px;
         padding: 0;
         margin: 0;
         margin-left: 5px;
@@ -602,13 +791,13 @@
         text-align: left;
     }
 
-    .spotlight button {
-        background-color: #489fb5;
-        width: 93px;
-        height: 23px;
-        font-size: 12px;
-        color: white;
-    }
+          .spotlight button{
+              width: 100px;
+              height: 30px;
+              font-size: 15px;
+          }
+
+    
 
     .testimonials {
         height: 400px;
@@ -626,7 +815,7 @@
     }
 
     .testimonials1 {
-        width: 420px;
+        width: 400px;
         height: 112px;
         border-style: solid;
         border-width: 3px;
@@ -638,7 +827,7 @@
     }
 
     .testimonials2 {
-        width: 420px;
+        width: 400px;
         height: 112px;
         border-style: solid;
         border-width: 3px;
@@ -648,7 +837,7 @@
     }
 
     .testimonials3 {
-        width: 420px;
+        width: 400px;
         height: 112px;
         border-style: solid;
         border-width: 3px;
@@ -792,9 +981,9 @@
 
     .address button {
         background-color: #489fb5;
-        width: 90px;
-        height: 23px;
-        font-size: 10px;
+        width: 290px;
+        height: 33px;
+        font-size: 20px;
         color: white;
         font-family: 'Nunito', sans-serif;
         ;
@@ -824,7 +1013,7 @@
     }
 }
 
-@media screen and (max-width: 1728px) {
+@media screen and (min-width: 1728px) and (max-width: 1600px) {
 
     .spotlight p{
         width: 1000px;
