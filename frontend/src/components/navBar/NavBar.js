@@ -32,11 +32,12 @@ function Navbar () {
 
     return(
         <>
-            <SearchBar/>
-            <nav className='navbar'>
+            
+            <nav className='navbarcontainer'>
 
-              
-            {/* logo/link to homepage */}
+             
+                 {/* logo/link to homepage */}
+                 <div className='logo'>
                     <li>
                         <Link to='/' className='nav-item navbar-logo'> 
                             <img src={Logo} alt='logo' />
@@ -46,6 +47,30 @@ function Navbar () {
                         </div>
     
                     </li>
+                    </div>
+                
+        
+           <div className='searchwrapper'>
+            <div className='searchcontainer'>
+            <input
+                className="searchbar"
+                type="search"
+                placeholder="Search by Title, ISBN, Tag, Keyword...">
+             </input>  
+
+            <button className="searchbutton" type="submit">
+                <i className="fas fa-search"></i>
+            </button>
+         </div>
+         </div>
+
+       
+
+            <div className='nav-container'>
+            <div className='navbar'>
+
+              
+          
               <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                    
 
@@ -86,9 +111,12 @@ function Navbar () {
                             <i className="fa-solid fa-cart-shopping"></i>
                         </Link>
                     </li>  
+
                 </ul>
-                
+            </div>
+            </div>
             </nav>
+              
 
             <nav className='navbar greenNav'>
                 <h2 className='nav-item green-nav-item'>OFFERS</h2>

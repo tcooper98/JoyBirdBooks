@@ -78,7 +78,7 @@ export default function Home() {
               
               <label>
                         
-                        <input type="text" name="email"></input>
+                        <input type="text" name="email" placeholder="enter your email"></input>
                </label>
 
                 <button>SEND</button>
