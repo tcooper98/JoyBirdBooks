@@ -1,4 +1,4 @@
-@media (max-width: 1500px) {
+@media (max-width: 1504px) {
     .fresh-off-press h2 {
         text-align: center;
         font-size: 50px;
@@ -272,7 +272,7 @@
     
 
 
-@media only screen and (max-width: 2500px) and (min-width: 1600px) {
+@media only screen and (max-width: 2500px) and (min-width: 1505px) {
     .fresh-off-press h2{
     text-align: center;
     font-size: 50px;
