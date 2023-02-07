@@ -10,11 +10,10 @@
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 
-
 }
 
 .nav-container {
-grid-area: 2 / 2 / 3 / 3;
+  grid-area: 2 / 2 / 3 / 3;
 }
 
 
@@ -25,7 +24,7 @@ grid-area: 2 / 2 / 3 / 3;
 }
 
 .navbar {
-  
+
   /* height: 100px; */
   display: flex;
   justify-content: left;
@@ -110,7 +109,7 @@ grid-area: 2 / 2 / 3 / 3;
   display: none;
 }
 
-.searchwrapper{
+.searchwrapper {
   grid-area: 1 / 2 / 2 / 3;
 }
 
@@ -139,9 +138,9 @@ grid-area: 2 / 2 / 3 / 3;
 }
 
 @media screen and (max-width: 1410px) {
-   .logo img{
+  .logo img {
     width: 175px;
-   }
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -162,23 +161,23 @@ grid-area: 2 / 2 / 3 / 3;
     font-size: 37px;
   }
 
-    .searchbar {
-      width: 600px;
-      height: 31px;
-  
-    }
-  
-    .searchbutton {
-      height: 30px;
-      width: 30px;
-  
-    }
+  .searchbar {
+    width: 600px;
+    height: 31px;
 
-        .logo img {
-          width: 150px;
-        }
+  }
 
-  
+  .searchbutton {
+    height: 30px;
+    width: 30px;
+
+  }
+
+  .logo img {
+    width: 150px;
+  }
+
+
 }
 
 @media screen and (max-width: 1070px) {
@@ -191,14 +190,14 @@ grid-area: 2 / 2 / 3 / 3;
     font-size: 35px;
   }
 
-        .logo img {
-          width: 125px;
-          margin-right: 20px;
-        }
+  .logo img {
+    width: 125px;
+    margin-right: 20px;
+  }
 
-   
 
-  
+
+
 }
 
 
@@ -220,13 +219,13 @@ grid-area: 2 / 2 / 3 / 3;
     position: relative;
   }
 
-  .navbarcontainer{
+  .navbarcontainer {
     height: 150px;
   }
 
-  .logo img{
+  .logo img {
     width: 150px;
-    
+
   }
 
   /* this one effects items appearing outside of mobile menu */
@@ -315,7 +314,7 @@ grid-area: 2 / 2 / 3 / 3;
     display: none;
   }
 
-  .searchcontainer{
+  .searchcontainer {
     display: none;
   }
 }
