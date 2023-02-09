@@ -92,6 +92,7 @@
 }
 
 .green-nav-item {
+  display: flex;
   font-size: 20px;
   color: white;
   padding-left: 10px;
