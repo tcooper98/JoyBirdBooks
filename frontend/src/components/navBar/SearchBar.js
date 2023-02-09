@@ -13,7 +13,7 @@ function SearchBar() {
                 </input>
 
                 <button className="searchbutton" type="submit">
-                    <i className="fas fa-search"></i>
+                    <i className="s fas fa-search"></i>
                 </button>
 
             </div>
