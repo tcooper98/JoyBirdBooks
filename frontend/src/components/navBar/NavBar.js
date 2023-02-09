@@ -102,12 +102,10 @@ function Navbar() {
                                     <i className="fa-solid fa-cart-shopping"></i>
                                 </Link>
                             </li>
-
                         </ul>
                     </div>
                 </div>
             </nav>
-
 
             <nav className='navbar greenNav'>
                 <h2 className='green-nav-item'>OFFERS</h2>
