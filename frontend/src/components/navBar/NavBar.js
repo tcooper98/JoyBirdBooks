@@ -97,14 +97,14 @@ function Navbar() {
                                 {dropdown && <ConnectedDropdown />}
                             </li>
                         </ul>
-                    </div>
 
-                    <div className='nav-cart'>
+                        <div className='nav-cart'>
 
-                        <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
-                            <i className="fa-solid fa-cart-shopping"></i>
-                        </Link>
+                            <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
+                                <i className="fa-solid fa-cart-shopping"></i>
+                            </Link>
 
+                        </div>
                     </div>
                 </div>
             </nav>
