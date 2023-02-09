@@ -129,14 +129,14 @@
   height: 30px;
   padding: 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .searchbutton {
   background-color: #f2c202;
   height: 30px;
   width: 30px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 1410px) {
