@@ -16,7 +16,6 @@
   grid-area: 2 / 2 / 3 / 3;
 }
 
-
 .logo {
   margin-top: 20px;
   margin-left: 30px;
@@ -207,7 +206,6 @@
     display: none;
   }
 
-
   .NavbarItems {
     position: relative;
   }
@@ -216,9 +214,12 @@
     height: 150px;
   }
 
+  .logo {
+    margin-left: 20px;
+  }
+
   .logo img {
     width: 150px;
-
   }
 
   /* this one effects items appearing outside of mobile menu */
