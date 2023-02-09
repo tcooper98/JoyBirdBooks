@@ -110,7 +110,7 @@ function Navbar() {
             </nav>
 
 
-            <nav className='navbar greenNav'>
+            <nav className='greenNav'>
                 <h2 className='nav-item green-nav-item'>OFFERS</h2>
                 <div className='nav-item green-nav-item'> - </div>
                 <h2 className='nav-item green-nav-item'>PROMO CODE</h2>
