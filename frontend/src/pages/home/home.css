@@ -16,6 +16,10 @@
         display: flex;
     }
 
+    .spotlight-text {
+        padding-right: 20px;
+    }
+
     .spotlight img {
         width: 478px;
         height: 478px;
@@ -274,7 +278,6 @@
         font-size: 50px;
         padding: 0;
     }
-
 
     .turner h2 {
         margin-top: 55px;
