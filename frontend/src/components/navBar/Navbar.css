@@ -43,7 +43,6 @@
 
 .greenNav {
   display: flex;
-  /* align-items: center; */
   height: 60px;
   background-color: #859C44;
   justify-content: center;
@@ -68,7 +67,6 @@
 
 .fa-cart-shopping {
   font-size: 40px;
-  margin-bottom: 10px;
 }
 
 .nav-item {
@@ -76,7 +74,6 @@
   align-items: center;
   padding-right: 45px;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 
 .nav-item-last {
