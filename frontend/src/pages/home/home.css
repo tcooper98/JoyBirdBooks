@@ -14,7 +14,6 @@
     .spotlight {
         background-color: #292727;
         display: flex;
-        height: 593px;
     }
 
     .spotlight img {
@@ -41,7 +40,6 @@
         margin: 0;
         margin-left: 40px;
         font-family: 'Nunito', sans-serif;
-        ;
         font-weight: 200;
         text-align: left;
     }
@@ -289,7 +287,6 @@
     .spotlight {
         background-color: #292727;
         display: flex;
-        height: 593px;
     }
 
     .spotlight img {
@@ -317,10 +314,8 @@
         margin: 0;
         margin-left: 40px;
         font-family: 'Nunito', sans-serif;
-        ;
         font-weight: 200;
         text-align: left;
-        width: 1300px;
     }
 
     .spotlight button {
@@ -569,10 +564,6 @@
 
     }
 
-    .spotlight {
-        height: 345px;
-    }
-
     .spotlight img {
         width: 235px;
         height: 276px;
@@ -764,7 +755,6 @@
     .spotlight {
         background-color: #292727;
         display: flex;
-        height: 245px;
     }
 
     .spotlight img {
@@ -791,7 +781,6 @@
         margin: 0;
         margin-left: 5px;
         font-family: 'Nunito', sans-serif;
-        ;
         font-weight: 200;
         text-align: left;
     }
@@ -802,21 +791,16 @@
         font-size: 15px;
     }
 
-
-
     .testimonials {
         height: 400px;
         padding: 40px;
         display: table-row;
-
-
     }
 
     .testimonials p {
         font-family: 'Nunito', sans-serif;
         font-size: 14px;
         text-align: center;
-
     }
 
     .testimonials1 {
@@ -1021,8 +1005,7 @@
 @media screen and (min-width: 1728px) and (max-width: 1600px) {
 
     .spotlight p {
-        width: 1000px;
-        font-size: 30PX;
+        font-size: 30px;
     }
 
     .newsletter h1 {
