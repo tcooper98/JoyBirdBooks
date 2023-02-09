@@ -87,7 +87,7 @@ function Navbar() {
                                 {dropdown && <CommunityDropdown />}
                             </li>
 
-                            <li className='nav-item'
+                            <li className='nav-item-last'
                                 onMouseEnter={onMouseEnter}
                                 onMouseLeave={onMouseLeave}
                             >
@@ -96,15 +96,19 @@ function Navbar() {
                                 </Link>
                                 {dropdown && <ConnectedDropdown />}
                             </li>
-
-                            <li className='nav-item-last'>
-                                <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
-                                    <i className="fa-solid fa-cart-shopping"></i>
-                                </Link>
-                            </li>
-
                         </ul>
                     </div>
+                </div>
+
+                <div className='logo'>
+
+                    {/* <Link to='/' className='nav-item navbar-logo'>
+                        <img src={Logo} alt='logo' />
+                    </Link> */}
+
+                    <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
+                        <i className="fa-solid fa-cart-shopping"></i>
+                    </Link>
                 </div>
             </nav>
 
