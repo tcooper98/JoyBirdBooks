@@ -138,6 +138,9 @@
 }
 
 @media screen and (max-width: 1250px) {
+  .searchbar {
+    width: 800px;
+  }
 
   .nav-item {
     font-size: 23px;
