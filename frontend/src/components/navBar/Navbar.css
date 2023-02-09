@@ -171,8 +171,6 @@
   .logo img {
     width: 150px;
   }
-
-
 }
 
 @media screen and (max-width: 1070px) {
@@ -190,9 +188,9 @@
     margin-right: 20px;
   }
 
-
-
-
+  .searchbar {
+    width: 630px;
+  }
 }
 
 
