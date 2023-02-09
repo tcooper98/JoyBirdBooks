@@ -117,8 +117,6 @@
   padding-top: 20px;
   padding-bottom: 0px;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   margin-left: 5%;
 
 }
@@ -126,7 +124,7 @@
 .searchbar {
   width: 700px;
   font-size: 15px;
-  height: 30px;
+  height: 35px;
   padding: 10px;
   border: none;
   border-radius: 2px 0px 0px 2px;
@@ -134,7 +132,7 @@
 
 .searchbutton {
   background-color: #f2c202;
-  height: 30px;
+  height: 35px;
   width: 30px;
   border-radius: 0px 2px 2px 0px;
 }
