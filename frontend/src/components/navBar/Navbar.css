@@ -159,14 +159,13 @@
   }
 
   .searchbar {
-    width: 600px;
+    font-size: 14px;
+    width: 690px;
     height: 30px;
   }
 
   .searchbutton {
     height: 30px;
-    width: 30px;
-
   }
 
   .logo img {
