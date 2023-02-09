@@ -1,29 +1,23 @@
 import React, { useState } from 'react';
 import './Searchbar.css'
 
-
-
-function SearchBar () {
+function SearchBar() {
     return (
         <>
-        <div className='searchbar-place'>
-        
-            <input
-                className="searchbar"
-                type="search"
-                placeholder="Search by Title, ISBN, Tag, Keyword...">
-             </input>  
+            <div className='searchbar-place'>
 
-            <button className="searchbutton" type="submit">
-                <i className="fas fa-search"></i>
-            </button>
+                <input
+                    className="searchbar"
+                    type="search"
+                    placeholder="Search by Title, ISBN, Tag, Keyword...">
+                </input>
 
+                <button className="searchbutton" type="submit">
+                    <i className="fas fa-search"></i>
+                </button>
 
-
-         
-        </div>  
+            </div>
         </>
-        
     )
 }
 
