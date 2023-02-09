@@ -110,11 +110,11 @@ function Navbar() {
 
 
             <nav className='navbar greenNav'>
-                <h2 className='nav-item green-nav-item'>OFFERS</h2>
-                <div className='nav-item green-nav-item'> - </div>
-                <h2 className='nav-item green-nav-item'>PROMO CODE</h2>
-                <div className='nav-item green-nav-item'> - </div>
-                <h2 className='nav-item green-nav-item'>ANNOUNCEMENTS</h2>
+                <h2 className='green-nav-item'>OFFERS</h2>
+                <div className='green-nav-item'> - </div>
+                <h2 className='green-nav-item'>PROMO CODE</h2>
+                <div className='green-nav-item'> - </div>
+                <h2 className='green-nav-item'>ANNOUNCEMENTS</h2>
             </nav>
         </>
     )
