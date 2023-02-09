@@ -131,10 +131,6 @@
   border-radius: 0px 2px 2px 0px;
 }
 
-.search-icon {
-  font-size: 20px;
-}
-
 @media screen and (max-width: 1410px) {
   .logo img {
     width: 175px;

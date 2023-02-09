@@ -12,8 +12,8 @@ function SearchBar() {
                     placeholder="Search by Title, ISBN, Tag, Keyword...">
                 </input>
 
-                <button className="searchbutton" type="submit">
-                    <i className="s fas fa-search"></i>
+                <button className="searchbutton search-icon" type="submit">
+                    <i className="fas fa-search"></i>
                 </button>
 
             </div>
