@@ -100,7 +100,7 @@ function Navbar() {
                     </div>
                 </div>
 
-                <div className='cart'>
+                <div className='nav-cart'>
 
                     {/* <Link to='/' className='nav-item navbar-logo'>
                         <img src={Logo} alt='logo' />
