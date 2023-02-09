@@ -87,7 +87,7 @@ function Navbar() {
                                 {dropdown && <CommunityDropdown />}
                             </li>
 
-                            <li className='nav-item-last'
+                            <li className='nav-item'
                                 onMouseEnter={onMouseEnter}
                                 onMouseLeave={onMouseLeave}
                             >
