@@ -47,6 +47,7 @@
 }
 
 .greenNav {
+  display: flex;
   height: 60px;
   background-color: #859C44;
   justify-content: center;
