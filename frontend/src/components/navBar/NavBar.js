@@ -43,22 +43,17 @@ function Navbar() {
 
                 </div>
 
+                <div className='searchcontainer'>
+                    <input
+                        className="searchbar"
+                        type="search"
+                        placeholder="Search by Title, ISBN, Tag, Keyword...">
+                    </input>
 
-                <div className='searchwrapper'>
-                    <div className='searchcontainer'>
-                        <input
-                            className="searchbar"
-                            type="search"
-                            placeholder="Search by Title, ISBN, Tag, Keyword...">
-                        </input>
-
-                        <button className="searchbutton" type="submit">
-                            <i className="fas fa-search"></i>
-                        </button>
-                    </div>
+                    <button className="searchbutton" type="submit">
+                        <i className="fas fa-search"></i>
+                    </button>
                 </div>
-
-
 
                 <div className='nav-container'>
                     <div className='navbar'>
