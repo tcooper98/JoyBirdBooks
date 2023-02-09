@@ -96,26 +96,25 @@ function Navbar() {
                                 </Link>
                                 {dropdown && <ConnectedDropdown />}
                             </li>
+
+                            <li className='nav-item-last'>
+                                <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
+                                    <i className="fa-solid fa-cart-shopping"></i>
+                                </Link>
+                            </li>
+
                         </ul>
-
-                        <div className='nav-cart'>
-
-                            <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
-                                <i className="fa-solid fa-cart-shopping"></i>
-                            </Link>
-
-                        </div>
                     </div>
                 </div>
             </nav>
 
 
-            <nav className='greenNav'>
-                <h2 className='green-nav-item'>OFFERS</h2>
-                <div className='green-nav-item'> - </div>
-                <h2 className='green-nav-item'>PROMO CODE</h2>
-                <div className='green-nav-item'> - </div>
-                <h2 className='green-nav-item'>ANNOUNCEMENTS</h2>
+            <nav className='navbar greenNav'>
+                <h2 className='nav-item green-nav-item'>OFFERS</h2>
+                <div className='nav-item green-nav-item'> - </div>
+                <h2 className='nav-item green-nav-item'>PROMO CODE</h2>
+                <div className='nav-item green-nav-item'> - </div>
+                <h2 className='nav-item green-nav-item'>ANNOUNCEMENTS</h2>
             </nav>
         </>
     )
