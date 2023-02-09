@@ -108,17 +108,11 @@
   display: none;
 }
 
-.searchwrapper {
-  display: grid;
-  grid-area: 1 / 2 / 2 / 3;
-}
-
 .searchcontainer {
   padding-top: 20px;
   padding-bottom: 0px;
   display: flex;
-  margin-left: 5%;
-
+  /* margin-left: 5%; */
 }
 
 .searchbar {
