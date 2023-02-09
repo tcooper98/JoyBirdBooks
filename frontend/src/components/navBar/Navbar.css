@@ -112,11 +112,10 @@
   padding-top: 20px;
   padding-bottom: 0px;
   display: flex;
-  /* margin-left: 5%; */
 }
 
 .searchbar {
-  width: 700px;
+  width: 70%;
   font-size: 15px;
   height: 35px;
   padding: 10px;
