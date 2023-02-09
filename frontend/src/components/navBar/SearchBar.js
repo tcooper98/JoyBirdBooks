@@ -12,7 +12,7 @@ function SearchBar() {
                     placeholder="Search by Title, ISBN, Tag, Keyword...">
                 </input>
 
-                <button className="searchbutton search-icon" type="submit">
+                <button className="searchbutton" type="submit">
                     <i className="fas fa-search"></i>
                 </button>
 
