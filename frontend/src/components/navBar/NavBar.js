@@ -32,7 +32,6 @@ function Navbar() {
 
     return (
         <>
-
             <nav className='navbarcontainer'>
 
                 {/* logo/link to homepage */}
