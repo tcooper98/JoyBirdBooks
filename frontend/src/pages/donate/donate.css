@@ -1,5 +1,5 @@
 .slide-content .scroller {
-    width: 1024px;
+    width: 700px;
 }
 
 * {
@@ -294,6 +294,9 @@ textarea {
         width: auto;
     }
 
+    .visit-donate h1{
+
+    }
     .visit-donate img {
         padding: 0px;
         margin-left: 0;
