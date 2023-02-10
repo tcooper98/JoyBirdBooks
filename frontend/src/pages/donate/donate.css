@@ -271,6 +271,7 @@ textarea {
         margin: 100px;
         margin-top: 0px;
         margin-bottom: 50px;
+        width: fit-content;
     }
 
     .visit-donate {
@@ -281,7 +282,7 @@ textarea {
     .visit-donate img {
         padding: 0px;
         margin-left: 0;
-        width: 200px;
+        width: 100px;
         height: auto;
     }
 
