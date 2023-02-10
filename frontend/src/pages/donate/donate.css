@@ -274,18 +274,19 @@ textarea {
     }
 
     .visit-donate {
-        margin-left: auto;
+        margin-left: 0;
         padding-top: 40px;
     }
 
     .visit-donate img {
         padding: 0px;
-        margin-left: auto;
-        width: 100px;
+        margin-left: 0;
+        width: 200px;
+        height: auto;
     }
 
     .visit-donate h1{
-        text-align: center;
+        text-align: left;
     }
 
     .address-donate {
