@@ -268,15 +268,15 @@ textarea {
     .location-donate {
         display: flex;
         flex-wrap: wrap;
-        margin: 100px;
         margin-top: 0px;
+        margin-left: 0;
         margin-bottom: 50px;
-        width: fit-content;
     }
 
     .visit-donate {
         margin-left: 0px;
         padding-top: 40px;
+        width: auto;
     }
 
     .visit-donate img {
@@ -287,9 +287,8 @@ textarea {
     }
 
     .address-donate {
-        margin-left: auto;
+        margin-left: 0px;
         margin-top: 30px;
-        width: auto;
     }
 
     .hours-donate {
