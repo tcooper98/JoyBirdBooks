@@ -87,6 +87,10 @@ textarea {
         margin-top: 5px;
     }
 
+    .donate-radiobuttons {
+        align-items: center;
+    }
+
     .donate-form-submit-btn {
         min-width: 100%;
     }
