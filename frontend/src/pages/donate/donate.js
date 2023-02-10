@@ -104,10 +104,9 @@ export default function Donate() {
             <div className="faqs">
                 {faqs.map((faq, i) => (
                     <FAQ faq={faq} index={i}></FAQ>
-                ))}
+                    ))}
             </div>
         </div>
 
-        
     </>
 }
