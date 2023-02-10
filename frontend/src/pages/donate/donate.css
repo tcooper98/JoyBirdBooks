@@ -37,7 +37,6 @@ input[type="radio"]{
 input,
 textarea {
     font-family: 'Nunito Sans', sans-serif;
-    /* width: 500px; */
 }
 
 .donate-sub-title {
@@ -64,7 +63,7 @@ textarea {
 }
 
 .donate-required-input {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .donate-required-input::after {

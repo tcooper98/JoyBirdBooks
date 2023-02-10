@@ -74,7 +74,7 @@ export default function Donate() {
             <div className="donate-form-column">
                 {/*Book Edition*/}
                 <label class="donate-required-input">Book Edition/Print</label>
-                <input type="text" placeholder="BBook Edition/Print" className="donate-form-input" />
+                <input type="text" placeholder="Book Edition/Print" className="donate-form-input" />
             </div>
             <div className="donate-form-column">
                 {/*Book ISBN*/}
