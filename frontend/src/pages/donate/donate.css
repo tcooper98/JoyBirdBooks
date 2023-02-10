@@ -192,17 +192,13 @@ textarea {
     padding-bottom: 25px;
 }
 
-
-
-
 .location-donate {
     display: flex;
-    padding: 3px;
+    margin: 100px;
 }
 
 .visit-donate{
-
-    margin-left: 30px;
+    margin-left: 100px;
 }
 
 .visit-donate img {
@@ -214,19 +210,18 @@ textarea {
 }
 
 .visit-donate h1 {
-    font-size: 55px;
+    font-size: 40px;
     text-align: left;
 }
 
 .address-donate {
     width: 317px;
     margin-top: 90px;
-    margin-left: 40px;
-
+    margin-left: 100px;
 }
 
-.address-donate h2 {
-    font-size: 45px;
+.address-donate h1 {
+    font-size: 30px;
     text-align: left;
 }
 
@@ -234,7 +229,6 @@ textarea {
     font-size: 25px;
     text-align: left;
     font-family: 'Nunito', sans-serif;
-    ;
     font-weight: 300;
 }
 
@@ -245,20 +239,18 @@ textarea {
     font-size: 20px;
     color: white;
     font-family: 'Nunito', sans-serif;
-    ;
     font-weight: 300;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .hours-donate {
     width: 377px;
     margin-top: 90px;
-    margin-left: 40px;
-
+    margin-left: 90px;
 }
 
-.hours-donate h2 {
-    font-size: 45px;
+.hours-donate h1 {
+    font-size: 30px;
     text-align: left;
 }
 
@@ -266,19 +258,9 @@ textarea {
     font-size: 25px;
     text-align: left;
     font-family: 'Nunito', sans-serif;
-    ;
     font-weight: 300;
-    padding: 5px;
+    padding: 3px;
 }
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1886px) {
 .hero-banner{

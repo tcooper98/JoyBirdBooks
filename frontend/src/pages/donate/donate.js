@@ -119,7 +119,7 @@ export default function Donate() {
                 <img src="images/map.jpg" alt="location of store on map"/>
             </div>
             <div className="address-donate">
-                <h2>Address</h2>
+                <h1>Address</h1>
                 <p>Joybird Books LLC
                    <br/>
                     3018 Corrine Drive
@@ -132,9 +132,9 @@ export default function Donate() {
             </div>
 
             <div className='hours-donate'>
-                <h2>Working Hours</h2>
-                <p>Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
+                <h1>Working Hours</h1>
+                <p>Monday-Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
+                <p>Saturday-Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
                 <p>Wednesday &nbsp;&nbsp;10AM - 5PM</p>
                 <p>Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
                 <p>Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
