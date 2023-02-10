@@ -282,20 +282,18 @@ textarea {
     .visit-donate img {
         padding: 0px;
         margin-left: 0;
-        width: 100px;
+        width: 200px;
         height: auto;
     }
 
     .address-donate {
         margin-left: auto;
         margin-top: 30px;
-        margin-bottom: 30px;
         width: auto;
     }
 
     .hours-donate {
         margin-left: 0px;
-        padding-top: 0px;
         width: auto;
     }
 
