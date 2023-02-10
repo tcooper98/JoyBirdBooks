@@ -75,6 +75,7 @@ textarea {
         display: flex;
         flex-wrap: wrap;
         margin: 100px;
+        margin-top: 0px;
     }
 
     .donate-form-row {
