@@ -287,20 +287,9 @@ textarea {
 
     .address-donate {
         margin-left: auto;
-        width: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .address-donate button {
-        background-color: #489fb5;
-        width: 200px;
-        height: 55px;
-        font-size: 20px;
-        color: white;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 300;
         margin-top: 30px;
+        margin-bottom: 30px;
+        width: auto;
     }
 
     .hours-donate {
