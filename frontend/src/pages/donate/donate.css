@@ -75,7 +75,6 @@ textarea {
         display: flex;
         flex-wrap: wrap;
         margin: 100px 200px;
-
     }
 
     .donate-form-row {
@@ -85,7 +84,6 @@ textarea {
         grid-gap: 0px;
         gap: 0px;
         margin-top: 5px;
-
     }
 
     .donate-form-submit-btn {
@@ -128,7 +126,6 @@ textarea {
 .donate-container {
     display: grid;
     justify-content: center;
-    margin-top: 75px;
 }
 
 .donate-form-column2 {
