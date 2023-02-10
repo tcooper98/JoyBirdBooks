@@ -286,22 +286,24 @@ textarea {
         margin-top: 0px;
         margin-left: 0;
         margin-bottom: 50px;
+        width: fit-content;
     }
 
     .visit-donate {
         margin-left: 0px;
         padding-top: 40px;
-        width: auto;
+        width: fit-content;
     }
 
     .visit-donate h1{
-
+        width: fit-content;
     }
+
     .visit-donate img {
         padding: 0px;
         margin-left: 0;
+        width: 20px;
         height: auto;
-        width: 20%;
     }
 
     .address-donate {
