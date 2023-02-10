@@ -96,8 +96,9 @@ textarea {
     }
 
     .faq-container{
-        
-        width:fit-content;
+        width:75%;
+        height: auto;
+        display: inline-block;
     }
 }
 
