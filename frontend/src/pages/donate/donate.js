@@ -113,12 +113,12 @@ export default function Donate() {
             </div>
         </div>
 
-        <div className="locationhome">
-            <div className="visit">
+        <div className="location-donate">
+            <div className="visit-donate">
                 <h1>Visit Us</h1>
                 <img src="images/map.jpg" alt="location of store on map"/>
             </div>
-            <div className="address">
+            <div className="address-donate">
                 <h2>Address</h2>
                 <p>Joybird Books LLC
                    <br/>
@@ -131,7 +131,7 @@ export default function Donate() {
                 <button onClick={handleClick}>Get Directions</button>
             </div>
 
-            <div className='hours'>
+            <div className='hours-donate'>
                 <h2>Working Hours</h2>
                 <p>Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
                 <p>Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>

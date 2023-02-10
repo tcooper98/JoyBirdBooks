@@ -192,6 +192,94 @@ textarea {
     padding-bottom: 25px;
 }
 
+
+
+
+.location-donate {
+    display: flex;
+    padding: 3px;
+}
+
+.visit-donate{
+
+    margin-left: 30px;
+}
+
+.visit-donate img {
+    height: 377px;
+    width: 615px;
+    padding: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.visit-donate h1 {
+    font-size: 55px;
+    text-align: left;
+}
+
+.address-donate {
+    width: 317px;
+    margin-top: 90px;
+    margin-left: 40px;
+
+}
+
+.address-donate h2 {
+    font-size: 45px;
+    text-align: left;
+}
+
+.address-donate p {
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    ;
+    font-weight: 300;
+}
+
+.address-donate button {
+    background-color: #489fb5;
+    width: 200px;
+    height: 55px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    ;
+    font-weight: 300;
+    margin-top: 100px;
+}
+
+.hours-donate {
+    width: 377px;
+    margin-top: 90px;
+    margin-left: 40px;
+
+}
+
+.hours-donate h2 {
+    font-size: 45px;
+    text-align: left;
+}
+
+.hours-donate p {
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    ;
+    font-weight: 300;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1886px) {
 .hero-banner{
     margin: 0;
