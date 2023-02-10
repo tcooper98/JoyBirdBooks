@@ -70,6 +70,7 @@ textarea {
     color: red;
 }
 
+@media (max-width: 700px) {
     .donate-container {
         display: flex;
         flex-wrap: wrap;
@@ -101,6 +102,81 @@ textarea {
         margin: 0;
     }
 
+        .location-donate {
+            display: table-row;
+            padding: 3px;
+        }
+    
+        .visit-donate {
+    
+            margin-left: 30px;
+        }
+    
+        .visit-donate img {
+            max-width: 100%;
+            height: auto;
+            width: auto\9;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        .visit-donate h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+    
+    
+    
+        .address-donate h1 {
+            font-size: 30px;
+            text-align: left;
+        }
+    
+        .address-donate p {
+            font-size: 25px;
+            text-align: left;
+            font-family: 'Nunito', sans-serif;
+            ;
+            font-weight: 300;
+        }
+    
+        .address-donate button {
+            background-color: #489fb5;
+            width: 290px;
+            height: 33px;
+            font-size: 20px;
+            color: white;
+            font-family: 'Nunito', sans-serif;
+            ;
+            font-weight: 300;
+    
+        }
+    
+        .hours-donate {
+            width: 377px;
+            margin-top: 90px;
+            margin-left: 40px;
+    
+        }
+    
+        .hours-donate h1 {
+            font-size: 30px;
+            text-align: left;
+        }
+    
+        .hours-donate p {
+            font-size: 25px;
+            text-align: left;
+            font-family: 'Nunito', sans-serif;
+            ;
+            font-weight: 300;
+    
+        }
+
+
+
+
+}
 
 .donate-form-input {
     margin-top: 2px;
@@ -191,51 +267,50 @@ textarea {
     padding-bottom: 25px;
 }
 
-@media (max-width: 1504px) {
-    .location-donate {
-        display: flex;
-        margin-left: 100px;
-        margin-bottom: 50px;
-    }
-    
-    .visit-donate{
-        margin-left: 100px;
-    }
-    
-    .visit-donate img {
-        height: 377px;
-        width: 615px;
-        padding: 10px;
-        margin-top: 10px;
-        object-fit: cover;
-    }
+.location-donate {
+    display: flex;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
 
-    .visit-donate h1 {
-        font-size: 40px;
-        text-align: left;
-    }
-    
-    .address-donate {
-        width: 317px;
-        margin-top: 90px;
-        margin-left: 100px;
-    }
-    
-    .address-donate h1 {
-        font-size: 30px;
-        text-align: left;
-    }
-    
-    .address-donate p {
-        font-size: 25px;
-        text-align: left;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 300;
-    }
-    
-    .address-donate button {
-        background-color: #489fb5;
-        width: 200px;
+.visit-donate{
+    margin-left: 100px;
+}
+
+.visit-donate img {
+    height: 377px;
+    width: 615px;
+    padding: 10px;
+    margin-top: 10px;
+    object-fit: cover;
+}
+
+.visit-donate h1 {
+    font-size: 40px;
+    text-align: left;
+}
+
+.address-donate {
+    width: 317px;
+    margin-top: 90px;
+    margin-left: 100px;
+}
+
+.address-donate h1 {
+    font-size: 30px;
+    text-align: left;
+}
+
+.address-donate p {
+    font-size: 25px;
+    text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+}
+
+.address-donate button {
+    background-color: #489fb5;
+    width: 200px;
     height: 55px;
     font-size: 20px;
     color: white;
@@ -262,13 +337,12 @@ textarea {
     font-weight: 300;
     padding: 3px;
 }
-}
 
 @media (max-width: 1886px) {
-    .hero-banner{
-        margin: 0;
-        padding: 0;
-        background-image: url('../../images/hero.png');
+.hero-banner{
+    margin: 0;
+    padding: 0;
+    background-image: url('../../images/hero.png');
     background-size: contain;
     background-position: top;
     background-repeat: no-repeat;
