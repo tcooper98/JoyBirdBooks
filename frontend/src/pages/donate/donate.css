@@ -269,7 +269,7 @@ textarea {
     .location-donate {
         flex-wrap: wrap;
         margin-top: 0px;
-        margin-left: 0;
+        margin-left: 10px;
         margin-bottom: 50px;
         width: fit-content;
     }
