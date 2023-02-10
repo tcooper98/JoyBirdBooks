@@ -99,7 +99,6 @@ textarea {
         display: flex;
         flex-direction: column;
         width:fit-content;
-        justify-content: center;
     }
 }
 
