@@ -194,6 +194,8 @@ textarea {
 
 .location-donate {
     display: flex;
+    margin-left: 100px;
+    margin-bottom: 50px;
 }
 
 .visit-donate{
