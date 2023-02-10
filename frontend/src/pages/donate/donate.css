@@ -130,7 +130,6 @@ textarea {
     min-width: 100%;
 }
 
-
 .donate-container {
     display: grid;
     justify-content: center;
@@ -172,6 +171,7 @@ textarea {
     text-align: center;
     padding: 40px;
     color: white;
+    margin: 0 150px;
 }
 
 .faqs {
