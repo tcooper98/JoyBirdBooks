@@ -282,8 +282,8 @@ textarea {
     .visit-donate img {
         padding: 0px;
         margin-left: 0;
-        width: 200px;
         height: auto;
+        width: 20%;
     }
 
     .address-donate {
