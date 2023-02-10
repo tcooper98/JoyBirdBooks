@@ -98,10 +98,10 @@ textarea {
     }
 
     .faq-container{
-        width:100%;
+        width: 90%;
         height: auto;
         display: inline-block;
-        margin-left: auto;
+        align-items: center;
     }
 }
 

@@ -94,10 +94,9 @@ export default function Donate() {
                 <input type="text" placeholder="Hardcover or Softcover" className="donate-form-input" />
             </div>
            </div>
-        </div>
-
-        <div className="donate-form-column2">
-          <button className="donate-form-submit-btn">Submit</button>
+            <div className="donate-form-column2">
+                <button className="donate-form-submit-btn">Submit</button>
+            </div>
         </div>
 
         <div className="faq-container">
@@ -108,6 +107,7 @@ export default function Donate() {
                 ))}
             </div>
         </div>
+
         <div className="locationhome">
             <div className="visit">
                 <h1>Visit Us</h1>
