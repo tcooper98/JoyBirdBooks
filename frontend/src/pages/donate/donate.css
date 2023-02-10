@@ -274,18 +274,23 @@ textarea {
     }
 
     .visit-donate {
-        margin-left: 0px;
+        margin-left: auto;
+        padding-top: 40px;
     }
 
     .visit-donate img {
         padding: 0px;
-        margin-left: 0px;
+        margin-left: auto;
+        width: 100px;
     }
 
-
+    .visit-donate h1{
+        text-align: center;
+    }
 
     .address-donate {
         margin-top: 90px;
+        margin-left: auto;
     }
 
     .address-donate h1 {
@@ -313,6 +318,7 @@ textarea {
 
     .hours-donate {
         margin-top: 40px;
+        margin-left: auto;
     }
 
     .hours-donate h1 {
