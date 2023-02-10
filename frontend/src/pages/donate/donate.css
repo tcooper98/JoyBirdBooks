@@ -268,7 +268,7 @@ textarea {
 
     .location-donate {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         margin-top: 0px;
         margin-left: 10px;
         margin-bottom: 50px;
