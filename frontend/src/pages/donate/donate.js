@@ -17,7 +17,9 @@ export default function Donate() {
         },
     ]);
     return <>
-        <div class="hero-banner"></div><div className="donate-container">
+        <div class="hero-banner"></div>
+        
+        <div className="donate-container">
 
             <h2 class="donate-heading">What would you like to do today?</h2>
 
