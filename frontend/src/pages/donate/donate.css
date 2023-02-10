@@ -54,7 +54,6 @@ textarea {
 
 .donate-form-column {
     margin: 0px 2px;
-
 }
 
 .donate-form-column1 {
@@ -85,10 +84,6 @@ textarea {
         grid-gap: 0px;
         gap: 0px;
         margin-top: 5px;
-    }
-
-    .donate-radiobuttons {
-        align-items: center;
     }
 
     .donate-form-submit-btn {
