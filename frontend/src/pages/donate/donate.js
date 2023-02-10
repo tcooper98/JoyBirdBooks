@@ -108,33 +108,6 @@ export default function Donate() {
             </div>
         </div>
 
-        <div className="locationhome">
-            <div className="visit">
-                <h1>Visit Us</h1>
-                <img src="images/map.jpg" alt="location of store on map"/>
-            </div>
-            <div className="address">
-                <h2>Address</h2>
-                <p>Joybird Books LLC
-                    <br/>
-                    3018 Corrine Drive
-                    <br/>
-                    Orlando, FL 32803
-                    <br/>
-                    407 951-5436
-                </p>
-                <button>Get Directions</button>
-            </div>
-            <div className='hours'>
-                <h2>Working Hours</h2>
-                <p>Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Wednesday &nbsp;&nbsp;10AM - 5PM</p>
-                <p>Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-            </div>     
-        </div>
+        
     </>
 }
