@@ -94,6 +94,10 @@ textarea {
         width: inherit;
         margin: 0px 2px;
     }
+
+    .faqs{
+        background-color: #82c0cc;
+    }
 }
 
 .donate-form-input {
