@@ -293,20 +293,13 @@ textarea {
     }
 
     .hours-donate {
-        margin-top: 40px;
-        margin-left: auto;
-    }
-
-    .hours-donate h1 {
-        font-size: 30px;
-        text-align: left;
+        margin-left: 0px;
+        padding-top: 0px;
+        width: auto;
     }
 
     .hours-donate p {
         font-size: 25px;
-        text-align: left;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 300;
         padding: 3px;
     }
 }
