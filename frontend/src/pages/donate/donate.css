@@ -274,7 +274,7 @@ textarea {
     }
 
     .visit-donate {
-        margin-left: 0;
+        margin-left: 0px;
         padding-top: 40px;
     }
 
@@ -290,8 +290,9 @@ textarea {
     }
 
     .address-donate {
-        margin-top: 90px;
         margin-left: auto;
+        width: auto;
+        padding-top: 5px;
     }
 
     .address-donate h1 {
