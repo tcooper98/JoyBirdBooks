@@ -95,8 +95,11 @@ textarea {
         margin: 0px 2px;
     }
 
-    .faqs{
-        background-color: #82c0cc;
+    .faq-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        justify-content: center;
     }
 }
 
