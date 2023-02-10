@@ -267,6 +267,7 @@ textarea {
     }
 
     .location-donate {
+        display: flex;
         flex-wrap: wrap;
         margin-top: 0px;
         margin-left: 10px;
@@ -289,7 +290,7 @@ textarea {
     .visit-donate img {
         padding: 0px;
         margin-left: 0;
-        width: 100px;
+        width: 100%;
         height: auto;
     }
 
