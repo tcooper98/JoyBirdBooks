@@ -99,7 +99,7 @@ textarea {
         width:75%;
         height: auto;
         display: inline-block;
-        left: 20%;
+        margin-left: auto;
     }
 }
 
@@ -161,7 +161,6 @@ textarea {
 .faq-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 200px;
     justify-content: center;
     background-color: #82c0cc;
     border-radius: 5px;
