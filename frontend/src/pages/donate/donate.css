@@ -117,7 +117,6 @@ textarea {
     border: 2px solid #575757;
     border-radius: 2px;
     font-size: 10px;
-
 }
 
 .donate-form-input-long {
@@ -171,7 +170,7 @@ textarea {
 
 .faq-title {
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     color: white;
 }
 
