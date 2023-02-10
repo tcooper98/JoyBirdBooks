@@ -76,6 +76,7 @@ textarea {
         flex-wrap: wrap;
         margin: 100px;
         margin-top: 0px;
+        margin-bottom: 50px;
     }
 
     .donate-form-row {
@@ -99,6 +100,10 @@ textarea {
     .faq-container{
         width: 100%;
         margin: 0;
+    }
+
+    .faq-title{
+        margin-bottom: 10px;
     }
 }
 
