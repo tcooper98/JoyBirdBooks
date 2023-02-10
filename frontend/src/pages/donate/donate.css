@@ -70,7 +70,6 @@ textarea {
     color: red;
 }
 
-@media (max-width: 700px) {
     .donate-container {
         display: flex;
         flex-wrap: wrap;
@@ -101,7 +100,7 @@ textarea {
         width: 100%;
         margin: 0;
     }
-}
+
 
 .donate-form-input {
     margin-top: 2px;
