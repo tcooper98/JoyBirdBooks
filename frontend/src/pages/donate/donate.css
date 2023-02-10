@@ -285,26 +285,11 @@ textarea {
         height: auto;
     }
 
-    .visit-donate h1{
-        text-align: left;
-    }
-
     .address-donate {
         margin-left: auto;
         width: auto;
-        padding-top: 5px;
-    }
-
-    .address-donate h1 {
-        font-size: 30px;
-        text-align: left;
-    }
-
-    .address-donate p {
-        font-size: 25px;
-        text-align: left;
-        font-family: 'Nunito', sans-serif;
-        font-weight: 300;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     .address-donate button {
