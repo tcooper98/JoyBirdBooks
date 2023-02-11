@@ -48,11 +48,20 @@
           display: flex;
           flex-wrap: wrap;
           margin: 100px 10px;  
-      
+          margin-bottom: 40px;
         }
         
+        .h1-aboutus{
+          text-align: center;        
+        }
+
+        .p-aboutus{
+          align-items: center;
+        }
+
         .image-container1{
           margin-top: auto;
+          margin-bottom: 50px;
         }
 
         .img-aboutus{
