@@ -414,6 +414,8 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 730px) and (mim-width: ) {
-
+@media (max-width: 730px) {
+   .donate-visitimg {
+    width: auto;
+   }
 }

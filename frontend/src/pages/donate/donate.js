@@ -116,7 +116,7 @@ export default function Donate() {
         <div className="location-donate">
             <div className="visit-donate">
                 <h1>Visit Us</h1>
-                <img src="images/map.jpg" alt="location of store on map"/>
+                <img src="images/map.jpg" alt="location of store on map" className="donate-visitimg"/>
             </div>
             <div className="address-donate">
                 <h1>Address</h1>
