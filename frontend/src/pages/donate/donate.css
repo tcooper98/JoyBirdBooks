@@ -70,8 +70,6 @@ textarea {
     color: red;
 }
 
-
-
 .donate-form-input {
     margin-top: 2px;
     margin-bottom: 5px;
@@ -306,8 +304,6 @@ textarea {
     }
 }
 
-
-
 @media (max-width: 1886px) {
     .hero-banner {
         margin: 0;
@@ -405,8 +401,6 @@ textarea {
     }
 }
 
-
-
 @media (max-width: 480px) {
     .hero-banner {
         margin: 0;
@@ -418,4 +412,8 @@ textarea {
         height: 200px;
         width: auto;
     }
+}
+
+@media only screen and (max-width: 1610px) and (min-width: 701px) {
+
 }
