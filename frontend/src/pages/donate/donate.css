@@ -16,13 +16,13 @@
     padding-bottom: 40px;
 }
 
-.donate-radiobuttons{
+.donate-radiobuttons {
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
 }
 
-input[type="radio"]{
+input[type="radio"] {
     height: 1.5rem;
     width: 1.5rem;
     margin-left: 1rem;
@@ -30,7 +30,7 @@ input[type="radio"]{
     vertical-align: sub;
 }
 
-#accent-color{
+#accent-color {
     accent-color: #7e9e32;
 }
 
@@ -168,7 +168,7 @@ textarea {
     margin-bottom: 50px;
 }
 
-.visit-donate{
+.visit-donate {
     margin-left: 100px;
 }
 
@@ -261,10 +261,17 @@ textarea {
         margin: 0px 2px;
     }
 
+
+
+
+    
     .faq-container {
         width: 100%;
         margin: 0;
     }
+
+
+
 
     .location-donate {
         display: flex;
@@ -312,113 +319,113 @@ textarea {
 
 
 @media (max-width: 1886px) {
-.hero-banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/hero.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: auto;
-    
-}
+    .hero-banner {
+        margin: 0;
+        padding: 0;
+        background-image: url('../../images/hero.png');
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 600px;
+        width: auto;
+
+    }
 }
 
 @media (max-width: 1887px) {
-.hero-banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/donatetrade.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 700px;
-    width: auto;
-    
-}
+    .hero-banner {
+        margin: 0;
+        padding: 0;
+        background-image: url('../../images/donatetrade.png');
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 700px;
+        width: auto;
+
+    }
 }
 
 @media (max-width: 1094px) {
-.hero-banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/donatetrade.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 400px;
-    width: auto;
-    
-}
+    .hero-banner {
+        margin: 0;
+        padding: 0;
+        background-image: url('../../images/donatetrade.png');
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: auto;
+
+    }
 }
 
 @media (max-width: 1002px) {
-.hero-banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/donatetrade.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 350px;
-    width: auto;
-    
-}
+    .hero-banner {
+        margin: 0;
+        padding: 0;
+        background-image: url('../../images/donatetrade.png');
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 350px;
+        width: auto;
+
+    }
 }
 
 @media (max-width: 900px) {
-.hero-banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/donatetrade.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 150px;
-    width: auto;
-    
-}
+    .hero-banner {
+        margin: 0;
+        padding: 0;
+        background-image: url('../../images/donatetrade.png');
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 150px;
+        width: auto;
+
+    }
 }
 
 @media (max-width: 1382px) {
-.hero-banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/donatetrade.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: auto;
-    
-}
+    .hero-banner {
+        margin: 0;
+        padding: 0;
+        background-image: url('../../images/donatetrade.png');
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: auto;
+
+    }
 }
 
 @media (min-width: 1888px) {
     .hero-banner {
-            margin: 0;
-            padding: 0;
-            background-image: url('../../images/donatetrade.png');
-            background-size: contain;
-            background-position: top;
-            background-repeat: no-repeat;
-            height: 850px;
-            width: auto;
-}
+        margin: 0;
+        padding: 0;
+        background-image: url('../../images/donatetrade.png');
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 850px;
+        width: auto;
+    }
 }
 
 
 
 @media (max-width: 480px) {
-   .hero-banner {
-            margin: 0;
-            padding: 0;
-            background-image: url('../../images/donatetrade.png');
-            background-size: contain;
-            background-position: top;
-            background-repeat: no-repeat;
-            height: 200px;
-            width: auto;
-}
+    .hero-banner {
+        margin: 0;
+        padding: 0;
+        background-image: url('../../images/donatetrade.png');
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 200px;
+        width: auto;
+    }
 }
