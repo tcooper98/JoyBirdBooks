@@ -6,6 +6,10 @@
   float: right;
   transform: scale(1.5);
   }
+
+  .img-aboutus {
+    width: 400px;
+  }
   
   .about-us-container {
     display: grid;

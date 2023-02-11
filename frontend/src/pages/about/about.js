@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="about-us-container">
       <div className="image-container1">
-        <img src={require("./joybirdaboutus.jpg")} alt="About Us" />
+        <img src={require("./joybirdaboutus.jpg")} alt="About Us" className="img-aboutus"/>
       </div>
       <div className="text-container">
         <h1>About Us</h1>
