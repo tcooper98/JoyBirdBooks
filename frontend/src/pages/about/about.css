@@ -51,8 +51,12 @@
           margin-bottom: 40px;
         }
         
-        .text-container{
-          align-items: center;
+        .h1-aboutus{
+          text-align: center;        
+        }
+
+        .p-aboutus{
+          margin-left: 20px;
         }
 
         .image-container1{
