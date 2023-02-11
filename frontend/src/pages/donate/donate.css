@@ -415,5 +415,8 @@ textarea {
 }
 
 @media only screen and (max-width: 1610px) and (min-width: 701px) {
-
+    .location-donate{
+        display: flex;
+        flex-direction: column;
+    }
 }
