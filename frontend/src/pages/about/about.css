@@ -26,6 +26,16 @@
     display: flex;
     flex-wrap: wrap;
     margin: 150px 200px;  
+    margin-bottom: 50px;
+  }
+
+  .image-container1 {
+    margin-bottom: 100px;
+    margin-top: auto;
+  }
+
+  .h1-aboutus {
+    text-align: center;
   }
 }
 
@@ -34,7 +44,6 @@
     display: flex;
     flex-wrap: wrap;
     margin: 150px 100px;  
-    
   }
 }
 
@@ -43,6 +52,7 @@
     display: flex;
     flex-wrap: wrap;
     margin: 100px 60px;  
+    margin-bottom: 50px;
   }
     
   .img-aboutus {
