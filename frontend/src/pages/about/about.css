@@ -22,7 +22,7 @@
 }
 @media only screen and (max-width: 1800px) and (min-width: 1237px) {
   .about-us-container{
-    margin: auto;
+    margin: 50px 150px;
   }
   
   .image-container1{
