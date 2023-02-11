@@ -48,6 +48,15 @@
   .img-aboutus {
     width: 250px;
   }
+
+  .image-container1{
+    margin-bottom: 70px;
+    margin-top: auto;
+  }
+
+  .h1-aboutus {
+    text-align: center;
+  }
 }
 
 @media (max-width: 420px) {
