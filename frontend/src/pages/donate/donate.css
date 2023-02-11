@@ -265,43 +265,31 @@ textarea {
         display: flex;
         flex-direction: column;
         margin-top: 0px;
-        margin-left: 10px;
         margin-bottom: 50px;
     }
 
     .visit-donate {
-        margin-left: 0px;
         padding-top: 40px;
     }
 
-    .address-donate p {
-        padding-left: 20px;
-    }
+   
 
-    .address-donate button {
-        margin-left: 20px;
-    }
 
     .visit-donate img {
         padding: 0px;
-        margin-left: 0;
         width: 100px;
         height: auto;
     }
 
     .address-donate {
-        margin-left: 0px;
         margin-top: 30px;
     }
 
     .hours-donate {
-        margin-left: 0px;
         margin-top: 30px;
     }
 
-    .hours-donate p {
-        padding-left: 20px;
-    }
+    
 }
 
 @media (max-width: 1886px) {
