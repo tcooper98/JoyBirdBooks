@@ -419,8 +419,10 @@ textarea {
     }
 }
 
-@media (max-width: 730px) {
-   .donate-visitimg {
-    width: auto;
-   }
+@media only screen and (max-width: 1610px) and (min-width: 620px) {
+.visit-donate img {
+        padding: 0px;
+        width: 500px;
+        height: auto;
+    }
 }
