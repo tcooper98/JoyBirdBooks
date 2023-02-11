@@ -239,7 +239,7 @@ textarea {
         margin: 0 auto;
         margin-top: 0px;
         margin-bottom: 50px;
-        width:min-content
+        width: min-content;
     }
 
     .donate-form-row {
