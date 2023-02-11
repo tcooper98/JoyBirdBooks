@@ -427,7 +427,7 @@ textarea {
     }
 }
 
-@media only screen and (max-width: 619px) and (min-width: 400px) {
+@media only screen and (max-width: 619px) and (min-width: 480px) {
     .visit-donate img {
         padding: 0px;
         width: 400px;
