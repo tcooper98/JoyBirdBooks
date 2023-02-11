@@ -241,6 +241,7 @@ textarea {
         margin: 100px;
         margin-top: 0px;
         margin-bottom: 50px;
+        width: 350px;
     }
 
     .donate-form-row {
@@ -261,17 +262,10 @@ textarea {
         margin: 0px 2px;
     }
 
-
-
-
-    
     .faq-container {
-        width: 100%;
-        margin: 0;
+        width: 350px;
+        margin: 0 auto;
     }
-
-
-
 
     .location-donate {
         display: flex;
