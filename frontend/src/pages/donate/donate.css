@@ -266,6 +266,7 @@ textarea {
         flex-direction: column;
         margin-top: 0px;
         margin-bottom: 50px;
+        margin-left: auto;
     }
 
     .visit-donate {
