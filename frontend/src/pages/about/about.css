@@ -21,10 +21,14 @@
   align-self: center;
 }
 @media only screen and (max-width: 1800px) and (min-width: 1237px) {
+  .about-us-container{
+    margin: auto;
+  }
+  
   .image-container1{
     transform: none;
   }
-  
+
   .img-aboutus{
     width: 400px;
   }
