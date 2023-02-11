@@ -37,7 +37,12 @@
         flex-wrap: wrap;
         margin: 100px 60px;  
     
-      }}
+      }
+    
+      .img-aboutus {
+        width: 250px;
+      }
+    }
       @media (max-width: 420px) {
         .about-us-container{
           display: flex;
