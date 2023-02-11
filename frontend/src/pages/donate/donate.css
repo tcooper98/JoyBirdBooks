@@ -236,9 +236,7 @@ textarea {
 
 @media (max-width: 700px) {
     .donate-container {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 100px;
+        margin: 0 auto;
         margin-top: 0px;
         margin-bottom: 50px;
         width: 350px;
@@ -247,19 +245,17 @@ textarea {
     .donate-form-row {
         display: flex;
         flex-wrap: wrap;
-        width: 100%;
-        grid-gap: 0px;
+        width: auto;
         gap: 0px;
         margin-top: 5px;
     }
 
     .donate-form-submit-btn {
-        min-width: 100%;
+        min-width: 90%;
     }
 
     .donate-form-column1 {
-        width: inherit;
-        margin: 0px 2px;
+        width: 100%;
     }
 
     .faq-container {
