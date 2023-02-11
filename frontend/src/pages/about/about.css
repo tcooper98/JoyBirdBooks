@@ -5,72 +5,74 @@
   margin-top: 50px;
   float: right;
   transform: scale(1.5);
-  }
+}
 
+.img-aboutus {
+  width: 400px;
+}
+  
+.about-us-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 150px 300px; 
+}
+
+.text-container {
+  align-self: center;
+}
+
+@media (max-width: 1237px) {
+  .about-us-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 150px 200px;  
+  }
+}
+
+@media (max-width: 900px) {
+  .about-us-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 150px 100px;  
+    
+  }
+}
+
+@media (max-width: 710px) {
+  .about-us-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 60px;  
+  }
+    
   .img-aboutus {
-    width: 400px;
+    width: 250px;
   }
-  
-  .about-us-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 150px 300px; 
-  }
+}
 
-  @media (max-width: 1237px) {
-    .about-us-container{
-      display: flex;
-      flex-wrap: wrap;
-      margin: 150px 200px;  
-  
-    }}
-    @media (max-width: 900px) {
-      .about-us-container{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 150px 100px;  
-    
-      }}
-    @media (max-width: 710px) {
-      .about-us-container{
-        display: flex;
-        flex-wrap: wrap;
-        margin: 100px 60px;  
-    
-      }
-    
-      .img-aboutus {
-        width: 250px;
-      }
-    }
-      @media (max-width: 420px) {
-        .about-us-container{
-          display: flex;
-          flex-wrap: wrap;
-          margin: 100px 10px;  
-          margin-bottom: 40px;
-        }
+@media (max-width: 420px) {
+  .about-us-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px 10px;  
+    margin-bottom: 40px;
+  }
         
-        .h1-aboutus{
-          text-align: center;        
-        }
-
-        .p-aboutus{
-          margin-left: 20px;
-        }
-
-        .image-container1{
-          margin-top: auto;
-          margin-bottom: 50px;
-        }
-
-        .img-aboutus{
-          width: 250px;
-        }
-
+  .h1-aboutus{
+    text-align: center;        
   }
-  
-  .text-container {
-    align-self: center;
+
+  .p-aboutus{
+    margin-left: 20px;
   }
+
+  .image-container1{
+    margin-top: auto;
+    margin-bottom: 50px;
+  }
+
+  .img-aboutus{
+    width: 250px;
+  }
+}
   
