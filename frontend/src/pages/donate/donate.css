@@ -272,9 +272,6 @@ textarea {
         padding-top: 40px;
     }
 
-   
-
-
     .visit-donate img {
         padding: 0px;
         width: 100px;
@@ -287,9 +284,7 @@ textarea {
 
     .hours-donate {
         margin-top: 30px;
-    }
-
-    
+    }   
 }
 
 @media (max-width: 1886px) {
