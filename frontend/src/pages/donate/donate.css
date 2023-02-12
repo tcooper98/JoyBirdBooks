@@ -399,6 +399,7 @@ textarea {
         background-repeat: no-repeat;
         height: 200px;
         width: auto;
+        margin-bottom: 5px;
     }
 }
 
