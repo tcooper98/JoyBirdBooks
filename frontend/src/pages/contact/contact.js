@@ -62,6 +62,7 @@ class ContactUs extends Component {
         <div className="form-columnb">
           <button className="form-about-submit-btn">Submit</button>
         </div>
+        <h5 className="h5-contact">For business inquires check out of Partnership Page</h5>
       </div>
     );
   }
