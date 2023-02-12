@@ -79,3 +79,33 @@
     margin-right: 100px;
   }
 }
+
+@media only screen and (max-width: 1460px) and (min-width: 1200px) {
+  .about-img-container {
+    margin-right: 80px;
+  }
+
+  .img-partner {
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 200px) {
+  .about-img-container {
+    margin-left: auto;
+  }
+
+  .img-partner {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 1054) and (min-width: 200px) {
+  .about-img-container {
+    margin-left: auto;
+  }
+
+  .img-partner {
+    width: 200px;
+  }
+}
