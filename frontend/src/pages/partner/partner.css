@@ -64,6 +64,10 @@
     flex-wrap: wrap;
     margin: 100px 75px;
   }
+
+  .img-partner{
+    width: 150px;
+  }
 }
 
 @media (max-width: 600px) {
