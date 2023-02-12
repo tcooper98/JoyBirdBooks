@@ -8,6 +8,7 @@ class ContactUs extends Component {
 
         <div className="contact-heading">
           <h2>Contact us</h2>
+          <h5>Submit the from below if you have any general questions!</h5>
         </div>
 
 
