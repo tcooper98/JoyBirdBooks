@@ -16,9 +16,8 @@ function Partner() {
             <p>-Local event manager</p>
             <p>-Local Vendor</p>
             <p>Please contact either of us individually at:</p>
-            <a href="andrew@joybirdbooks.com" rel="noreferrer">andrew@joybirdbooks.com</a>
-            <p>Andrew Walker (He/Him): co-owner, andrew@joybirdbooks.com</p>
-            <p>Ollie Bird (They/Them): co-owner, ollie@joybirdbooks.com</p>
+            <p>Andrew Walker (He/Him): co-owner, <a href="mailto:andrew@joybirdbooks.com">andrew@joybirdbooks.com</a></p>
+            <p>Ollie Bird (They/Them): co-owner, <a href="mailto:ollie@joybirdbooks.com">ollie@joybirdbooks.com</a></p>
           </div>
         </div>
       </div>
