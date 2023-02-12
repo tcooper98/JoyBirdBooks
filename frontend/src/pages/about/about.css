@@ -20,6 +20,7 @@
 .text-container {
   align-self: center;
 }
+
 @media only screen and (max-width: 1800px) and (min-width: 1237px) {
   .about-us-container{
     margin: 50px 150px;
@@ -33,7 +34,6 @@
     width: 400px;
   }
 }
-
 
 @media (max-width: 1237px) {
   .about-us-container{
