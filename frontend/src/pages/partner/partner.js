@@ -5,7 +5,7 @@ function Partner() {
     <>
       <div className="partner-container">
         <div className="about-img-container">
-          <img src={require("./joybirdpartner.jpg")} alt="partner" />
+          <img src={require("./joybirdpartner.jpg")} alt="partner" className="img-partner"/>
         </div>
         <div className="partner-text-container">
           <h2>Partner with us</h2>
