@@ -175,9 +175,71 @@
       height: 50px;
       width: 125px;
       margin-top: 25px;
-      font-size: 35px;
+      font-size: 30px;
       background-color: grey;
     }
+}
+
+@media (max-width: 1400px) {
+  .newsletter-aboutus {
+    background-color: #292727;
+    color: #fff4da;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+  }
+
+  .newsletter-aboutus h1 {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-right: 100px;
+  }
+
+  .newsletter-aboutus input {
+    height: 50px;
+    width: 300px;
+    margin-top: 25px;
+    font-size: 15px;
+  }
+
+  .newsletter-aboutus button {
+    height: 50px;
+    width: 125px;
+    margin-top: 25px;
+    font-size: 25px;
+    background-color: grey;
+  }
+}
+
+@media (max-width: 1150px) {
+  .newsletter-aboutus {
+    background-color: #292727;
+    color: #fff4da;
+    display: flex;
+    height: 90px;
+    justify-content: center;
+  }
+
+  .newsletter-aboutus h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-right: 100px;
+  }
+
+  .newsletter-aboutus input {
+    height: 50px;
+    width: 300px;
+    margin-top: 25px;
+    font-size: 15px;
+  }
+
+  .newsletter-aboutus button {
+    height: 50px;
+    width: 125px;
+    margin-top: 25px;
+    font-size: 25px;
+    background-color: grey;
+  }
 }
 
 @media (max-width: 480px) {
