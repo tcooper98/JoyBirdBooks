@@ -1,3 +1,5 @@
+The purpose of this README is to provide an overview of Group 5’s website redesign of Joybird Books. This project is a continuation of Group 5's work on Joybird Books' redesign from the UCF Fall 2022 semester. Members are now bringing the proposed website to life based on the groundwork from the previous semester. 
+
 JoyBirdBooks Guide
 
 **Guide to frontend**
