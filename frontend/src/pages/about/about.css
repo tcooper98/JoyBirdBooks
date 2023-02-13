@@ -112,7 +112,7 @@
 
 
 
-@media (min-width: 1895px) {
+@media (min-width: 1900px) {
   .newsletter-aboutus {
     background-color: #292727;
     color: #fff4da;
@@ -135,6 +135,7 @@
     height: 60px;
     width: 491px;
     margin-top: 25px;
+    font-size: 25px;
 
   }
 
@@ -148,28 +149,26 @@
   }
 }
 
-@media (max-width: 1894px) {
+@media (max-width: 1899px) {
   .newsletter-aboutus {
       background-color: #292727;
       color: #fff4da;
       display: flex;
       height: 100px;
       justify-content: center;
-  
     }
   
     .newsletter-aboutus h1 {
       font-size: 40px;
       margin-top: 20px;
       margin-right: 100px;
-  
     }
   
     .newsletter-aboutus input {
       height: 50px;
       width: 300px;
       margin-top: 25px;
-  
+      font-size: 20px;
     }
   
     .newsletter-aboutus button {
@@ -177,7 +176,7 @@
       width: 125px;
       margin-top: 25px;
       font-size: 35px;
-  
+      background-color: grey;
     }
 }
 
