@@ -112,12 +112,12 @@
 
 
 
-@media only screen and (max-width: 2500px) and (min-width: 1895px) {
+@media (min-width: 1895px) {
   .newsletter-aboutus {
     background-color: #292727;
     color: #fff4da;
     display: flex;
-    height: 213px;
+    height: 200px;
     justify-content: center;
     align-items: center;
 
