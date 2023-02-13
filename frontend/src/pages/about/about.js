@@ -24,7 +24,7 @@ function About() {
         </div>
       </div>
 
-      <div className="newsletter">
+      <div className="newsletter-aboutus">
         <h1>SUBSCRIBE TO OUR NEWSLETTER!</h1>    
         <label>              
           <input type="text" name="email" placeholder="enter your email"></input>
