@@ -208,9 +208,6 @@
   }
 }
 
-
-
-
 @media (max-width: 1150px) {
   .newsletter-aboutus {
     background-color: #292727;
@@ -221,17 +218,17 @@
   }
 
   .newsletter-aboutus h1 {
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 20px;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 30px;
     margin-bottom: 10px;
   }
 
   .newsletter-aboutus input {
     height: 50px;
     width: 500px;
-    margin-top: 10px;
+    margin-top: 40px;
     font-size: 15px;
     margin-bottom: 10px;
   }
@@ -239,9 +236,38 @@
   .newsletter-aboutus button {
     height: 50px;
     width: 125px;
-    margin-top: 0;
-    font-size: 25px;
+    margin-top: 40px;
+    font-size: 20px;
     background-color: grey;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .newsletter-aboutus input {
+    height: 50px;
+    width: 400px;
+    margin-top: 40px;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .newsletter-aboutus h1{
+    font-size: 15px;
+  }
+
+  .newsletter-aboutus input {
+    height: 50px;
+    width: 300px;
+    margin-top: 40px;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-aboutus button{
+    font-size: 15px;
   }
 }
 
@@ -249,23 +275,26 @@
   .newsletter-aboutus {
       background-color: #292727;
       color: #fff4da;
-      width: 480px;
+      width: auto;
       justify-content: center;
-      display: flex;  
+      display: flex; 
     }
   
     .newsletter-aboutus h1 {
       font-size: 15px;
       text-align: center;
+      margin-top: 20px;
     }
   
     .newsletter-aboutus input {
-      height: 20px;
-      width: 190px;
+      width: auto;
+      font-size: 12px;
+      margin-top: 20px;
     }
   
     .newsletter-aboutus button {
-      height: 20px;
-      width: 30px;
+      margin-top: 20px;
+      width: auto;
+      font-size: 15px;
     }
 }
