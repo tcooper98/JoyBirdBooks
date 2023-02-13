@@ -211,17 +211,18 @@
   }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 1400px) {
   .newsletter-aboutus {
     background-color: #292727;
     color: #fff4da;
     display: flex;
+    flex-direction: column;
     height: 90px;
     justify-content: center;
   }
 
   .newsletter-aboutus h1 {
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 20px;
     margin-right: 100px;
   }
