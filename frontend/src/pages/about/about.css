@@ -226,8 +226,9 @@
 
   .newsletter-aboutus h1 {
     font-size: 35px;
-    margin-top: 20px;
-    margin-right: 100px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .newsletter-aboutus input {
