@@ -219,7 +219,7 @@
     background-color: #292727;
     color: #fff4da;
     display: flex;
-    display: table-row;
+    flex-direction: row;
     height: 150px;
     justify-content: center;
   }
