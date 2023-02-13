@@ -112,9 +112,45 @@
 
 
 
-@media (max-width: 1504px) {
+@media only screen and (max-width: 2500px) and (min-width: 1895px) {
   .newsletter-aboutus {
-      background-color: black;
+    background-color: #292727;
+    color: #fff4da;
+    display: flex;
+    height: 213px;
+    justify-content: center;
+    align-items: center;
+
+
+  }
+
+  .newsletter-aboutus h1 {
+    font-size: 60px;
+    margin-top: 20px;
+    margin-right: 100px;
+
+  }
+
+  .newsletter-aboutus input {
+    height: 60px;
+    width: 491px;
+    margin-top: 25px;
+
+  }
+
+  .newsletter-aboutus button {
+    height: 60px;
+    width: 200px;
+    margin-top: 25px;
+    font-size: 35px;
+    background-color: grey;
+
+  }
+}
+
+@media (max-width: 1894px) {
+  .newsletter-aboutus {
+      background-color: #292727;
       color: #fff4da;
       display: flex;
       height: 100px;
@@ -141,42 +177,6 @@
       width: 125px;
       margin-top: 25px;
       font-size: 35px;
-  
-    }
-}
-
-@media only screen and (max-width: 2500px) and (min-width: 1505px) {
-  .newsletter-aboutus {
-      background-color: #292727;
-      color: #fff4da;
-      display: flex;
-      height: 213px;
-      justify-content: center;
-      align-items: center;
-  
-  
-    }
-  
-    .newsletter-aboutus h1 {
-      font-size: 60px;
-      margin-top: 20px;
-      margin-right: 100px;
-  
-    }
-  
-    .newsletter-aboutus input {
-      height: 60px;
-      width: 491px;
-      margin-top: 25px;
-  
-    }
-  
-    .newsletter-aboutus button {
-      height: 60px;
-      width: 200px;
-      margin-top: 25px;
-      font-size: 35px;
-      background-color: grey;
   
     }
 }
