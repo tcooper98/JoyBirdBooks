@@ -211,13 +211,16 @@
   }
 }
 
-@media (max-width: 1400px) {
+
+
+
+@media (max-width: 1150px) {
   .newsletter-aboutus {
     background-color: #292727;
     color: #fff4da;
     display: flex;
-    flex-direction: column;
-    height: 90px;
+    display: table-row;
+    height: 150px;
     justify-content: center;
   }
 
@@ -245,33 +248,25 @@
 
 @media (max-width: 480px) {
   .newsletter-aboutus {
-      /* background-color: black;
-          color: #fff4da;
-          width: 480px;
-          justify-content: center;
-          display: table-row; */
-      display: none;
-  
+      background-color: #292727;
+      color: #fff4da;
+      width: 480px;
+      justify-content: center;
+      display: table-row;  
     }
   
     .newsletter-aboutus h1 {
       font-size: 15px;
       text-align: center;
-  
-  
     }
   
     .newsletter-aboutus input {
       height: 20px;
       width: 190px;
-  
-  
     }
   
     .newsletter-aboutus button {
       height: 20px;
       width: 30px;
-  
-  
     }
 }
