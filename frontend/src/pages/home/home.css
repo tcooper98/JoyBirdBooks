@@ -635,7 +635,7 @@
     }
 
     .community {
-        height: 450px;
+        height: auto;
         width: auto;
     }
 
@@ -656,7 +656,7 @@
     .community p {
         color: white;
         font-size: 22px;
-        width: 550px;
+        width: auto;
         height: auto;
         text-align: left;
     }
@@ -667,6 +667,7 @@
         font-size: 22px;
         margin-left: 40px;
         margin-top: 25px;
+        margin-bottom: 20px;
     }
 
     .instagram {
