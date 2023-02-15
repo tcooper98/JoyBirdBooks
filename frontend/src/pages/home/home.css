@@ -596,8 +596,7 @@
     .community p {
         color: white;
         font-size: 18px;
-        width: auto;
-        height: auto;
+        width: fit-content;
         padding: 0;
         padding-bottom: 20px;
         margin: 0;
