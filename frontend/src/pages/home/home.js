@@ -57,7 +57,7 @@ export default function Home() {
                 </div>
 
                 <div className='testimonials3'>
-                <p>"This is a testimonial"</p>
+                <p>"This is a testimonial This is a testimonial This is a testimonial This is a testimonial This is a testimonial"</p>
                 </div>
             </div>
 
