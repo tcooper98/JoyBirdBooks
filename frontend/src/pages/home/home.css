@@ -869,10 +869,11 @@
 
     .community button {
         background-color: #489fb5;
-        width: 315px;
-        height: 87px;
-        font-size: 34px;
         color: white;
+        width: 150px;
+        height: 35px;
+        font-size: 20px;
+        margin-top: 0;
     }
 
     .instagram {

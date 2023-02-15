@@ -69,6 +69,7 @@ export default function Home() {
                 the spirit of art, literacy, and community in a collaborative space. View our calender for events such as book readings, live music,
                 and vendor street festivals.
                </p>
+               <button>Calendar</button>
                {/* <button>CALENDER</button> */}
                </div>
             </div>
