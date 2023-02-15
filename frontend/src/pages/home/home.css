@@ -743,30 +743,24 @@
         margin-top: 20px;
     }
 
-    .turner h2 {
-        margin-top: 20px;
-        font-size: 20px;
-        color: #16697A;
-    }
-
     .spotlight {
         background-color: #292727;
         display: flex;
     }
 
     .spotlight img {
-        width: 135px;
-        height: 176px;
+        width: 200px;
+        height: 300px;
         object-fit: cover;
         padding: 20px;
-        margin-top: 30px;
+        margin-top: 55px;
     }
 
     .spotlight h1 {
         color: #f2c202;
         font-size: 25px;
         padding: 0;
-        margin-left: 5px;
+        margin-left: 0;
         margin-top: 30px;
         text-align: left;
     }
@@ -776,7 +770,7 @@
         font-size: 18px;
         padding: 0;
         margin: 0;
-        margin-left: 5px;
+        margin-left: 0;
         margin-right: 10px;
         font-family: 'Nunito', sans-serif;
         font-weight: 200;
@@ -787,6 +781,16 @@
         width: 150px;
         height: 35px;
         font-size: 20px;
+    }
+
+    .learn {
+        padding-left: 40px;
+    }
+
+    .turner h2 {
+        margin-top: 20px;
+        font-size: 20px;
+        color: #16697A;
     }
 
     .testimonials {
@@ -828,9 +832,6 @@
         margin: 20px;
     }
 
-    .learn {
-        padding: 25px;
-    }
 
     .community {
         background-color: #16697A;
