@@ -598,6 +598,7 @@
 
     .testimonials {
         height: 400px;
+        width: auto;
         padding: 40px;
         display: table-row;
     }
@@ -609,21 +610,21 @@
     }
 
     .testimonials1 {
-        width: 870px;
+        width: auto;
         height: 112px;
         margin-bottom: 20px;
         margin-left: 20px;
     }
 
     .testimonials2 {
-        width: 870px;
+        width: auto;
         height: 112px;
         margin-bottom: 20px;
         margin-left: 20px;
     }
 
     .testimonials3 {
-        width: 870px;
+        width: auto;
         height: 112px;
         margin-bottom: 20px;
         margin-left: 20px;
