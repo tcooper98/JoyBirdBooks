@@ -880,6 +880,7 @@
 
     .instagram {
         display: table-cell;
+        padding: 20px;
     }
 
     .instagram h2 {
@@ -888,8 +889,11 @@
 
     .instaposts {
         padding: 0;
-        margin-left: 0;
+        margin-top: 20px;
+    }
 
+    .instaposts iframe{
+        margin-bottom: 20px;
     }
 }
 
