@@ -659,6 +659,7 @@
         width: auto;
         height: auto;
         text-align: left;
+        margin-right: 5px;
     }
 
     .community button{
@@ -786,7 +787,8 @@
     .community {
         background-color: #16697A;
         display: flex;
-        height: 500px;
+        width: auto;
+        height: auto;
     }
 
     .community img {
@@ -809,7 +811,7 @@
     .community p {
         color: white;
         font-size: 18px;
-        width: 210px;
+        width: auto;
         height: auto;
         padding: 0;
         padding-bottom: 20px;
