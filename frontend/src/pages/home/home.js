@@ -103,14 +103,14 @@ export default function Home() {
                </div>
 
             </div>
-            
-           <div className="locationhome">
-            <div className="visit">
+                        
+            <div className="location-donate">
+            <div className="visit-donate">
                 <h1>Visit Us</h1>
-                <img src="images/map.jpg" alt="location of store on map"/>
-                </div>
-            <div className="address">
-                <h2>Address</h2>
+                <img src="images/map.jpg" alt="location of store on map" className="donate-visitimg"/>
+            </div>
+            <div className="address-donate">
+                <h1>Address</h1>
                 <p>Joybird Books LLC
                    <br/>
                     3018 Corrine Drive
@@ -119,22 +119,18 @@ export default function Home() {
                     <br/>
                     407 951-5436
                 </p>
-                
-                
                 <button onClick={handleClick}>Get Directions</button>
             </div>
-            <div className='hours'>
-                <h2>Working Hours</h2>
-                <p>Monday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Tuesday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Wednesday &nbsp;&nbsp;10AM - 5PM</p>
-                <p>Thursday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Friday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Saturday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-                <p>Sunday &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;10AM - 5PM</p>
-            </div>     
-             </div>
-            
+
+            <div className='hours-donate'>
+                <h1>Working Hours</h1>
+                <p>Monday Closed</p>
+                <p>Tuesday-Saturday 11AM - 7PM</p>
+                <p>Sunday 12AM - 6PM</p>
+            </div>   
+        </div>
+
+
 
             </div>
       
