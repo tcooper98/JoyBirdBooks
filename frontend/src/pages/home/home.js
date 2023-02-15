@@ -88,7 +88,7 @@ export default function Home() {
             
             {/* I need to find a way to embed instagram feed without access to token maybe a widget or something */}
             <div className="instagram">
-               <h2>Instagram feed</h2>
+               <h2>INSTAGRAM FEED</h2>
                
                <div className='instaposts'>
                <iframe src="https://www.instagram.com/p/CnFDthIOc-H/embed" 

@@ -879,13 +879,14 @@
     }
 
     .instagram {
-        display: none;
+        display: table-cell;
 
     }
 
     .instagram h2 {
-        font-size: 50px;
+        font-size: 20px;
         color: #f2c202;
+        text-align: center;
     }
 
     .instaposts {
