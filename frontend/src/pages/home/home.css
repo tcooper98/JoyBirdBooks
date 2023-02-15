@@ -564,6 +564,9 @@
         margin: 20px;
     }
 
+    .community-container {
+        width: 1300px;
+    }
 
     .community {
         background-color: #16697A;
