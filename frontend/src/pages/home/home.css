@@ -316,6 +316,7 @@
         padding: 0;
         margin: 0;
         margin-left: 40px;
+        margin-right: 20px;
         font-family: 'Nunito', sans-serif;
         font-weight: 200;
         text-align: left;
@@ -326,6 +327,7 @@
         width: 315px;
         height: 87px;
         font-size: 34px;
+        margin-left: 15px;
         color: white;
     }
 
@@ -351,7 +353,6 @@
         border-color: #f2c202;
         margin-right: 20px;
         margin-left: 30px;
-
     }
 
     .testimonials2 {
@@ -408,7 +409,6 @@
         margin: 0;
         margin-left: 80px;
         font-family: 'Nunito', sans-serif;
-        ;
         font-weight: 600;
         text-align: left;
         width: 797px;
