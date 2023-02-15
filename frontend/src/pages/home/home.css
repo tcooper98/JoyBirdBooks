@@ -567,7 +567,6 @@
 
     .community {
         background-color: #16697A;
-        display: flex;
         width: auto;
         height: auto;
     }
@@ -627,9 +626,7 @@
     }
 }
 
-@media (max-width: px) {
-    
-}
+
 
 
 
