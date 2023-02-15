@@ -564,15 +564,12 @@
         margin: 20px;
     }
 
-    .community-container {
-        width: 1300px;
-    }
 
     .community {
         background-color: #16697A;
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: auto;
         height: auto;
     }
 
@@ -581,7 +578,7 @@
         height: 250px;
         object-fit: cover;
         padding: 20px;
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     .community h1 {
@@ -596,11 +593,11 @@
     .community p {
         color: white;
         font-size: 18px;
-        width: min-content;
+        width: auto;
+        height: auto;
         padding: 0;
         padding-bottom: 20px;
         margin: 0;
-        margin-right: 3px;
         font-family: 'Nunito', sans-serif;
         font-weight: 300;
         text-align: left;
@@ -613,6 +610,7 @@
         height: 35px;
         font-size: 20px;
         margin-top: 0;
+        margin-bottom: 10px;
     }
 
     .instagram {

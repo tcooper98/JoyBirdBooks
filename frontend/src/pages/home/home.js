@@ -61,7 +61,6 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className='community-container'>
             <div className="community">
               <img src="images/community.jpg" alt="Band playing at community event"/>
               <div className="communitytext">
@@ -73,7 +72,6 @@ export default function Home() {
                <button>Calendar</button>
                {/* <button>CALENDER</button> */}
                </div>
-            </div>
             </div>
 
             <div className="newsletter">
