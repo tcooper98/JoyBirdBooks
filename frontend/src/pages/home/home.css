@@ -880,18 +880,18 @@
 
     .instagram {
         display: table-cell;
-
     }
 
     .instagram h2 {
         font-size: 20px;
         color: #f2c202;
         text-align: center;
+        padding-top: 0;
     }
 
     .instaposts {
-        padding: 20px;
-        margin: 40px;
+        padding: 0;
+        margin-left: 0;
 
     }
 }
