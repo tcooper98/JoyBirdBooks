@@ -635,6 +635,7 @@
 
     .community {
         height: 450px;
+        width: auto;
     }
 
     .community img {
