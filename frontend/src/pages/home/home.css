@@ -268,6 +268,12 @@
     }
 }
 
+
+
+
+
+
+
 @media only screen and (max-width: 2500px) and (min-width: 1505px) {
     .fresh-off-press h2 {
         text-align: center;
@@ -549,6 +555,10 @@
     }
 }
 
+
+
+
+
 @media (max-width: 918px) and (min-width: 481px) {
     .fresh-off-press h2 {
         font-size: 30px;
@@ -558,7 +568,6 @@
     .turner h2 {
         margin-top: 5px;
         font-size: 30px;
-
     }
 
     .spotlight img {
@@ -578,7 +587,7 @@
         color: white;
         font-size: 18px;
         margin-left: 5px;
-
+        margin-right: 10px;
     }
 
     .spotlight button {
@@ -732,9 +741,6 @@
 
 }
 
-
-
-
 @media (max-width: 480px) {
     .fresh-off-press h2 {
         text-align: center;
@@ -883,18 +889,20 @@
         padding: 20px;
     }
 
-    .instagram h2 {
-    }
-
     .instaposts {
-        padding: 0;
+        padding: 20px;
         margin-top: 20px;
+        margin: auto;
     }
 
     .instaposts iframe{
         margin-bottom: 20px;
     }
 }
+
+
+
+
 
 @media screen and (min-width: 1728px) and (max-width: 1600px) {
 
