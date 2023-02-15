@@ -836,12 +836,12 @@
     .community {
         background-color: #16697A;
         display: flex;
-        height: 245px;
+        height: 350px;
     }
 
     .community img {
-        width: 183px;
-        height: 183px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         padding: 20px;
         margin-top: 55px;
