@@ -49,15 +49,15 @@ export default function Home() {
             <h2>TESTIMONIALS</h2>
             <div className="testimonials">
                 <div className='testimonials1'>
-                <p>"This is a testimonial"</p>
+                <p>"This is a testimonial This is a testimonial"</p>
                 </div>
                 
                 <div className='testimonials2'>
-                <p>"This is a testimonial"</p>
+                <p>"This is a testimonial This is a testimonial"</p>
                 </div>
 
                 <div className='testimonials3'>
-                <p>"This is a testimonial This is a testimonial This is a testimonial This is a testimonial This is a testimonial"</p>
+                <p>"This is a testimonial This is a testimonial"</p>
                 </div>
             </div>
 
