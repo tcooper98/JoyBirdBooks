@@ -860,7 +860,9 @@
         color: white;
         font-size: 18px;
         width: 210px;
+        height: auto;
         padding: 0;
+        padding-bottom: 20px;
         margin: 0;
         font-family: 'Nunito', sans-serif;
         font-weight: 300;
