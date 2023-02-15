@@ -875,37 +875,6 @@
         color: white;
     }
 
-    .newsletter {
-        /* background-color: black;
-        color: #fff4da;
-        width: 480px;
-        justify-content: center;
-        display: table-row; */
-        display: none;
-
-    }
-
-    .newsletter h1 {
-        font-size: 15px;
-        text-align: center;
-
-
-    }
-
-    .newsletter input {
-        height: 20px;
-        width: 190px;
-
-
-    }
-
-    .newsletter button {
-        height: 20px;
-        width: 30px;
-
-
-    }
-
     .instagram {
         display: none;
 
