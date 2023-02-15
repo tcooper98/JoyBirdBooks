@@ -421,47 +421,15 @@
         height: 87px;
         font-size: 34px;
         color: white;
-    }
-
-    .newsletter {
-        background-color: #292727;
-        color: #fff4da;
-        display: flex;
-        height: 213px;
-        justify-content: center;
-        align-items: center;
-
-
-    }
-
-    .newsletter h1 {
-        font-size: 60px;
-        margin-top: 20px;
-        margin-right: 100px;
-
-    }
-
-    .newsletter input {
-        height: 60px;
-        width: 491px;
-        margin-top: 25px;
-
-    }
-
-    .newsletter button {
-        height: 60px;
-        width: 200px;
-        margin-top: 25px;
-        font-size: 35px;
-        background-color: grey;
-
+        margin-top: 120px;
+        margin-left: 80px;
     }
 
     .instagram {
+        display: flex;
+        flex-direction: column;
         background-color: #16697A;
         padding: 40px;
-
-
     }
 
     .instagram h2 {
@@ -472,86 +440,10 @@
     .instaposts {
         padding: 20px;
         margin: 40px;
-
-
     }
-
-    .locationhome {
-        display: flex;
-        padding: 3px;
-    }
-
-    .visit {
-
-        margin-left: 40px;
-    }
-
-    .visit img {
-        height: 477px;
-        width: 834px;
+    
+    .instaposts iframe {
         padding: 10px;
-        margin-top: 10px;
-        object-fit: cover;
-    }
-
-    .visit h1 {
-        font-size: 55px;
-        margin-left: 40px;
-    }
-
-    .address {
-        width: 350px;
-        margin-top: 90px;
-        margin-left: 70px;
-
-    }
-
-    .address h2 {
-        font-size: 65px;
-        text-align: left;
-    }
-
-    .address p {
-        font-size: 35px;
-        text-align: left;
-        font-family: 'Nunito', sans-serif;
-        ;
-        font-weight: 300;
-    }
-
-    .address button {
-        background-color: #489fb5;
-        width: 300px;
-        height: 75px;
-        font-size: 30px;
-        color: white;
-        font-family: 'Nunito', sans-serif;
-        ;
-        font-weight: 300;
-        margin-top: 85px;
-        margin-bottom: 50px;
-    }
-
-    .hours {
-        width: 500px;
-        margin-top: 90px;
-        margin-left: 40px;
-
-    }
-
-    .hours h2 {
-        font-size: 65px;
-        text-align: left;
-    }
-
-    .hours p {
-        font-size: 35px;
-        text-align: left;
-        font-family: 'Nunito', sans-serif;
-        ;
-        font-weight: 300;
-        padding: 5px;
-        margin-left: 35px;
     }
 }
 
