@@ -568,7 +568,8 @@
     .community {
         background-color: #16697A;
         display: flex;
-        width: auto;
+        flex-direction: row;
+        width: min-content;
         height: auto;
     }
 
