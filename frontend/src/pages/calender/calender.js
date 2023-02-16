@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
-import Calendar from 'react-awesome-calendar';
+import React, { useState } from 'react';
+import "react-calendar/dist/Calendar.css";
+import Calendar from "react-calendar";
 
-
- //events are hardcoded for now, will be fetched from backend
 const events = [{
     id: 1,
     color: '#7e9e32',
@@ -51,22 +50,29 @@ const events = [{
     title: 'Open Mic & Poetry Slam'
 }];
 
-
 export default function Calender() {
-    const [value, setValue] = useState(new Date())
-    
+    const [value, onChange] = useState(new Date());
+
+    function isSameDay(d1, d2) {
+        return d1.getFullYear() === d2.getFullYear() && d1.getMonth() === d2.getMonth() && d1.getDate() === d2.getDate();
+    }
+
+    function handleDateClick(date) {
+        events.forEach(event => {
+            if (isSameDay(date, new Date(event.from))) {
+                highlightCell(date, event.color);
+            }
+        });
+    }
+
+    function highlightCell(date, color) {
+        const cell = document.querySelector(`[aria-label="${date.toDateString()}"]`);
+        cell.style.backgroundColor = color;
+    }
+
     return (
-        <>
-            <Calendar
-                events={events}
-            />
-            <div className="newsletter">
-                <h1>SUBSCRIBE TO OUR NEWSLETTER!</h1>    
-                <label>              
-                <input type="text" name="email" placeholder="Enter Your Email"></input>
-                </label>
-                <button>SEND</button>
-            </div> 
-        </>
-    )
+        <div className="calender">
+            <Calendar onChange={onChange} value={value} onClickDay={handleDateClick} />
+        </div>
+    );
 }
