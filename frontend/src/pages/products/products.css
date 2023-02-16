@@ -1,11 +1,14 @@
-.container{
+.container {
     display: flex;
 }
 
-.product-filter{
+.product-filter {
+
     width: 500px;
     margin-left: 25px;
+
 }
+
 
 /* use once data is imported */
 /* .productcontainer{
@@ -15,26 +18,50 @@
     padding: 20px;
 } */
 
-.products-container{
-    display:grid;
-    grid-template-columns: auto auto auto;
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
     position: relative;
-    padding: 20px;
+
+    justify-content: left;
+
 }
 
-.product-card{
+@media (max-width:960px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .products-container {
+        justify-content: center;
+        margin: auto;
+    }
+
+    .product-filter {
+        display: grid;
+        justify-content: end;
+        width: 917px;
+    }
+
+}
+
+
+
+.product-card {
     padding: 15px;
     height: 550px;
     width: 300px;
 }
 
-.product-image{
+.product-image {
     width: 250px;
     height: 350px;
     object-fit: cover;
 }
 
-.product-title{
+.product-title {
     text-overflow: ellipsis;
     font-size: 20px;
     font-weight: 400;
@@ -42,7 +69,7 @@
 }
 
 
-.product-author{
+.product-author {
     font-size: 18px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
@@ -51,157 +78,153 @@
 
 }
 
-.product-rating{
+.product-rating {
     font-size: 18px;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: 300;
     padding: 2px;
-   
+
 }
 
-.product-price{
+.product-price {
     font-size: 20px;
     padding: 2px;
 }
 
-.product-container link{
+.product-container link {
     text-decoration: none;
-   
+
 }
 
 @media (max-width: 501px) {
-    
-     .products h1{
+
+    .products h1 {
         font-size: 35px;
         float: left;
-     }
-    
-        .product-filter {
-            width: 500px;
-            margin-left: 25px;
-        }
-    
-        .productcontainer {
-            display: block;
-            position: relative;
-            padding: 20px;
-        }
-    
-        .product-card {
-            margin-left: auto;
-            margin-right: 30px;
-            padding: 15px;
-            height: 550px;
-            width: 300px;
-        }
-    
-        .product-image {
-            width: 250px;
-            height: 350px;
-            object-fit: cover;
-        }
-    
-        .product-title {
-            text-overflow: ellipsis;
-            font-size: 20px;
-            font-weight: 400;
-            padding: 2px;
-        }
-    
-    
-        .product-author {
-            font-size: 18px;
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: 300;
-            color: #82C0cc;
-            padding: 2px;
-    
-        }
-    
-        .product-rating {
-            font-size: 18px;
-            font-family: 'Nunito Sans', sans-serif;
-            font-weight: 300;
-            padding: 2px;
-    
-        }
-    
-        .product-price {
-            font-size: 20px;
-            padding: 2px;
-        }
-    
-        .product-container link {
-            text-decoration: none;
-    
-        }
+    }
 
-}
+    .product-filter {
+        width: 500px;
+        margin-left: 25px;
+    }
 
-@media (max-width: 890px) {
     .productcontainer {
-            display: grid;
-            grid-template-columns: auto auto;
-            position: relative;
-            padding: 20px;
-        }
-}
+        display: block;
+        position: relative;
+        padding: 20px;
+    }
 
-@media (max-width: 2500px) {
-    .product-card{
-    padding: 15px;
-    height: 650px;
-    width: 400px;
-}
-.product-image{
-    width: 350px;
-    height: 450px;
-    object-fit: cover;
-}
-.product-title{
-    text-overflow: ellipsis;
-    font-size: 30px;
-    font-weight: 400;
-    padding: 2px;
-}
+    .product-card {
+        margin-left: auto;
+        margin-right: 30px;
+        padding: 15px;
+        height: 550px;
+        width: 300px;
+    }
+
+    .product-image {
+        width: 250px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .product-title {
+        text-overflow: ellipsis;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 2px;
+    }
 
 
-.product-author{
-    font-size: 28px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-    color: #82C0cc;
-    padding: 2px;
+    .product-author {
+        font-size: 18px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 300;
+        color: #82C0cc;
+        padding: 2px;
 
-}
+    }
 
-.product-rating{
-    font-size: 28px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-weight: 300;
-    padding: 2px;
-   
-}
+    .product-rating {
+        font-size: 18px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 300;
+        padding: 2px;
 
-.product-price{
-    font-size: 30px;
-    padding: 2px;
-}
-}
+    }
 
-@media (max-width: 480px) {
-    .container {
+    .product-price {
+        font-size: 20px;
+        padding: 2px;
+    }
+
+    .product-container link {
+        text-decoration: none;
+
+    }
+
+
+
+
+    .product-card {
+        padding: 15px;
+        height: 650px;
+        width: 400px;
+    }
+
+    .product-image {
+        width: 350px;
+        height: 450px;
+        object-fit: cover;
+    }
+
+    .product-title {
+        text-overflow: ellipsis;
+        font-size: 30px;
+        font-weight: 400;
+        padding: 2px;
+    }
+
+
+    .product-author {
+        font-size: 28px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 300;
+        color: #82C0cc;
+        padding: 2px;
+
+    }
+
+    .product-rating {
+        font-size: 28px;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 300;
+        padding: 2px;
+
+    }
+
+    .product-price {
+        font-size: 30px;
+        padding: 2px;
+    }
+
+
+
+
+    @media (max-width: 480px) {
+        .container {
             display: row;
         }
-    .products h1{
-        display: none;
-    }
-    
+
+        .products h1 {
+            display: none;
+        }
+
         .product-filter {
             display: none;
         }
-    
-    
+
+
         .products-container {
             display: grid;
             grid-template-columns: auto;
@@ -209,52 +232,54 @@
             margin-left: auto;
             margin-right: auto;
         }
-    
+
         .product-card {
             padding: 15px;
             height: 550px;
             width: 300px;
         }
-    
+
         .product-image {
             width: 250px;
             height: 350px;
             object-fit: cover;
         }
-    
+
         .product-title {
             text-overflow: ellipsis;
             font-size: 20px;
             font-weight: 400;
             padding: 2px;
         }
-    
-    
+
+
         .product-author {
             font-size: 18px;
             font-family: 'Nunito Sans', sans-serif;
             font-weight: 300;
             color: #82C0cc;
             padding: 2px;
-    
+
         }
-    
+
         .product-rating {
             font-size: 18px;
             font-family: 'Nunito Sans', sans-serif;
             font-weight: 300;
             padding: 2px;
-    
+
         }
-    
+
         .product-price {
             font-size: 20px;
             padding: 2px;
         }
-    
+
         .product-container link {
             text-decoration: none;
-    
+
         }
-  
+
+
+    }
 }
