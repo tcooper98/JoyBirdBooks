@@ -8,8 +8,8 @@ query ITEMS{
        id
        attributes{
          price
-         category
-         condition
+         categories
+         condit
          age
          rating
          author

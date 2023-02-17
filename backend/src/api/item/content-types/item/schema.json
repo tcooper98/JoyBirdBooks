@@ -4,7 +4,7 @@
   "info": {
     "singularName": "item",
     "pluralName": "items",
-    "displayName": "item",
+    "displayName": "items",
     "description": ""
   },
   "options": {
@@ -13,28 +13,24 @@
   "pluginOptions": {},
   "attributes": {
     "name": {
-      "type": "string"
-    },
-    "price": {
-      "type": "decimal"
+      "type": "string",
+      "required": true,
+      "unique": true
     },
     "author": {
       "type": "string"
     },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
     "rating": {
       "type": "integer"
     },
-    "category": {
-      "type": "string"
-    },
-    "age": {
-      "type": "string"
-    },
-    "condition": {
-      "type": "string"
-    },
-    "shipping": {
-      "type": "string"
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
     },
     "image": {
       "type": "media",
@@ -47,13 +43,48 @@
         "audios"
       ]
     },
+    "categories": {
+      "type": "enumeration",
+      "enum": [
+        "books",
+        "magazine",
+        "stickers",
+        "merchandise "
+      ]
+    },
     "description": {
       "type": "text"
     },
-    "slug": {
-      "type": "uid",
-      "required": true,
-      "targetField": "name"
+    "age": {
+      "type": "enumeration",
+      "enum": [
+        "youngadult",
+        "children ",
+        "adult",
+        "teen"
+      ]
+    },
+    "condit": {
+      "type": "enumeration",
+      "enum": [
+        "new",
+        "used",
+        "antique ",
+        "vintage",
+        "rare"
+      ]
+    },
+    "genre": {
+      "type": "enumeration",
+      "enum": [
+        "fiction ",
+        "nonfiction ",
+        "fantasy ",
+        "sciencefiction ",
+        "mystery",
+        "romance",
+        "horror"
+      ]
     }
   }
 }

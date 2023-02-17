@@ -6,6 +6,9 @@
     "@apollo/client": "^3.7.6",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@fortawesome/free-regular-svg-icons": "^6.3.0",
+    "@fortawesome/free-solid-svg-icons": "^6.3.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/material": "^5.11.7",
     "@mui/styled-engine-sc": "^5.11.0",
     "@testing-library/jest-dom": "^5.16.5",
@@ -17,6 +20,7 @@
     "react": "^18.2.0",
     "react-awesome-calendar": "^1.0.14",
     "react-bootstrap": "^2.7.0",
+    "react-calendar": "^4.0.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-multi-carousel": "^2.8.2",
@@ -53,9 +57,5 @@
       "last 1 safari version"
     ]
   },
-  "comments": {
-    "dependencies": "Once we move into backend please add the pro xy here",
-    "description": "pro xy can be fond in git push minor",
-    "license": "Don't forget to add"
-  }
+  "proxy": "http://localhost:1337"
 }
