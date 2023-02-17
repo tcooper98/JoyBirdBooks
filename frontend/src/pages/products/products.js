@@ -1,6 +1,5 @@
 import React from 'react'
 import './products.css'
-import ProductItems from '../../components/Products/ProductItems'
 import Filter from '../../components/Filter/Filter'
 import { ITEM_QUERY } from '../../lib/query'
 import { useQuery } from 'urql';

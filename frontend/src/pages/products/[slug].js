@@ -5,6 +5,9 @@ import Rating from '@mui/material/Rating';
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
 import { Link } from 'react-router-dom';
+import { ITEM_QUERY } from '../../lib/query'
+import { useQuery } from 'urql';
+
 
 //This is the model for how the page that displays the individual book
 
@@ -14,7 +17,8 @@ function SoloProduct () {
     return (
         <>
         <div className='soloproduct'>
-            
+        <SoloProductCard/>
+{/*             
             <div className="product-details">
              <img src="https://images.urbndata.com/is/image/UrbanOutfitters/80218514_000_b?$xlarge$&fit=constrain&qlt=80&wid=640" alt="book"/>
              <div className="product-info">
@@ -38,7 +42,7 @@ function SoloProduct () {
                 <button className='leftbutton'>Add to Cart</button>
                 <button className='rightbutton'>Buy Now</button>
             </div>
-            </div>
+            </div> */}
         </div>  
 
         <div className='reviews'>
@@ -185,6 +189,49 @@ function SoloProduct () {
         </>
     )
 }
+
+
+function SoloProductCard() {
+
+   //fetch products from strapi
+   const[results] = useQuery({ query: ITEM_QUERY });
+     
+   const { data, fetching, error } = results;
+
+   if (fetching) return <p>Loading...</p>;
+      if (error) return <p>Oh no... {error.message}</p>;
+
+      const items = data.items.data;
+      console.log(items);
+   
+    //formatting how products are displayed 
+    return (
+      <div className='soloproduct'>
+         {items.map((item) => (
+          <div key={item.attributes.slug} className="product-details">
+          <img src={item.attributes.image.data.attributes.formats.medium.url} alt={item.attributes.name}/>
+          <div className="product-info">
+          <h1>{item.attributes.name}</h1>
+          <h3>By {item.attributes.author}</h3>
+          <Rating name="size-small" defaultValue={item.attributes.rating} size="small"/>
+         <p>{item.attributes.description}</p>
+         <h2>${item.attributes.price}</h2>
+          <input className="ship" type="radio" value=""></input>
+                        <label for="ship">Ship This Item - Qualifies fir Free Shipping</label> <br/> <br/>
+                        <input className="buy" type="radio" value=""></input>   
+                        <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
+              
+                <button className='leftbutton'>Add to Cart</button>
+                <button className='rightbutton'>Buy Now</button>
+        
+        </div>
+      </div>
+         ))}
+
+      </div>
+    )
+  
+  }
 
 
 export default SoloProduct;

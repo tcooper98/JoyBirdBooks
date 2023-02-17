@@ -8,11 +8,6 @@ export const CommunityItems = [
         title: 'CALENDAR',
         path: '/calender',
         cName: 'nav-links'
-    },
-    {
-        title: 'NEWSLETTER',
-        path: '/newsletter',
-        cName: 'nav-links'
     }
 ]
 

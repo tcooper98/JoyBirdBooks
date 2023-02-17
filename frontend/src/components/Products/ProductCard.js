@@ -4,6 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import { ProductItems } from "./ProductItems.js";
 import "./ProductCard.css";
 import { Link } from "react-router-dom";
+import { ITEM_QUERY } from '../../lib/query'
+import { useQuery } from 'urql';
 
 // this determines how many items on page by screen size
 const responsive = {
@@ -55,9 +57,6 @@ function Product() {
           <ProductCard/>
           <ProductCard/>
           <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
            </Carousel>
         
           
@@ -70,6 +69,8 @@ function Product() {
 
 //Building model for product card so it can be populated with data later on refer to ProductItems.js for data structure
 function ProductCard() {
+
+  
   
   return (
     <>
@@ -80,7 +81,7 @@ function ProductCard() {
       <div className="card">
       
       <div className="body">
-         <Link to={`/product}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+          <Link to={`/product/}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
         <img className="image" src={item.image}/>
         <h1 className="title">{item.name}</h1>
         <p className="price">{item.price}</p>
@@ -97,5 +98,46 @@ function ProductCard() {
     </>
   )
 }
+
+
+// function ProductCard() {
+
+//      //fetch products from strapi
+//    const[results] = useQuery({ query: ITEM_QUERY });
+     
+//    const { data, fetching, error } = results;
+
+//    if (fetching) return <p>Loading...</p>;
+//       if (error) return <p>Oh no... {error.message}</p>;
+
+//       const items = data.items.data;
+//       console.log(items);
+  
+//   return (
+//     <>
+
+//       {items.map((item) => {
+//       return (
+//       <div key={item.attributes.slug}>
+//       <div className="card">
+      
+//       <div className="body">
+//           <Link to={`/product/${item.attributes.slug}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+//         <img className="image" src={item.attributes.image.data.attributes.formats.medium.url} alt={item.attributes.name}/>
+//         <h1 className="title">{item.attributes.name}</h1>
+//         <p className="price">{item.attributes.price}</p>
+//          </Link>
+//         <p className="description">{item.attributes.description}</p>
+        
+       
+//         </div>
+      
+//       </div>
+//       </div>
+//     )
+//     })}
+//     </>
+//   )
+// }
 
 export default Product;
