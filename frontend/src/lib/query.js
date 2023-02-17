@@ -31,5 +31,37 @@ query ITEMS{
    }
 `;
 //access single item from strapi
+export const SINGLE_ITEM_QUERY = `
+query ITEM{
+    item(filters: {slug: {contains: $slug)}}{
+
+     data{
+       id
+       attributes{
+         price
+         categories
+         condit
+         age
+         rating
+         author
+         name
+         description
+         slug
+         image{
+           data{
+             attributes{
+               formats
+             }
+           }
+         }
+       }
+   
+     
+     }
+   }
+   }
+
+}
+`;
 
 

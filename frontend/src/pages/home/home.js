@@ -69,7 +69,9 @@ export default function Home() {
                 the spirit of art, literacy, and community in a collaborative space. View our calender for events such as book readings, live music,
                 and vendor street festivals.
                </p>
+               <Link to={`/calender`} style={{ textDecoration: 'none', color: 'inherit'}}>
                <button>Calendar</button>
+               </Link>
                {/* <button>CALENDER</button> */}
                </div>
             </div>

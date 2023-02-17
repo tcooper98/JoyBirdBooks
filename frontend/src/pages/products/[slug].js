@@ -9,6 +9,7 @@ import { ITEM_QUERY } from '../../lib/query'
 import { useQuery } from 'urql';
 
 
+
 //This is the model for how the page that displays the individual book
 
 function SoloProduct () {
@@ -193,7 +194,7 @@ function SoloProduct () {
 
 function SoloProductCard() {
 
-   //fetch products from strapi
+  //  fetch products from strapi
    const[results] = useQuery({ query: ITEM_QUERY });
      
    const { data, fetching, error } = results;
