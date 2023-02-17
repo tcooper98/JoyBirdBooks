@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import "react-calendar/dist/Calendar.css";
 import Calendar from "react-calendar";
+import "./calender.css"
+
+
 
 const events = [{
     id: 1,
@@ -69,10 +72,20 @@ export default function Calender() {
         const cell = document.querySelector(`[aria-label="${date.toDateString()}"]`);
         cell.style.backgroundColor = color;
     }
+    
 
     return (
+        <div className='calender-container'>
         <div className="calender">
             <Calendar onChange={onChange} value={value} onClickDay={handleDateClick} />
+               
+        </div>
+        <div className='events'>
+
+
+        </div>
         </div>
     );
 }
+
+

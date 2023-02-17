@@ -91,9 +91,14 @@
     cursor: pointer;
 }
 
+
+
 @media (min-width: 960px) {
     .close-button {
 
+        display: none;
+    }
+    .filter-icon-container{
         display: none;
     }
 }

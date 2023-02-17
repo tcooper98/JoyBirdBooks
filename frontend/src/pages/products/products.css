@@ -1,5 +1,6 @@
 .container {
     display: flex;
+    margin-top: 15px;
 }
 
 .product-filter {
@@ -7,6 +8,9 @@
     width: 500px;
     margin-left: 25px;
 
+}
+.products-page-title {
+    margin-right: 15px
 }
 
 

@@ -18,7 +18,9 @@ export default function Products() {
             </div>
           {/* class for products please look below for formatting */}
             <div className='products'>
+            <div className='products-page-title'>
             <h1>Products</h1>
+            </div>
             <div className='products-container'>
             <ProductCard/>
             <ProductCard/>
