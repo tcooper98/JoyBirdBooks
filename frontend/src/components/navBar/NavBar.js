@@ -42,6 +42,9 @@ function Navbar() {
                     </Link>
 
                 </div>
+                <div className='nav-bar-mid'>
+
+                
 
                 <div className='searchcontainer'>
                     <input
@@ -87,7 +90,7 @@ function Navbar() {
                                 {dropdown && <CommunityDropdown />}
                             </li>
 
-                            <li className='nav-item'
+                            <li className='nav-item-end'
                                 onMouseEnter={onMouseEnter}
                                 onMouseLeave={onMouseLeave}
                             >
@@ -97,13 +100,17 @@ function Navbar() {
                                 {dropdown && <ConnectedDropdown />}
                             </li>
 
-                            <li className='nav-item-last'>
-                                <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
-                                    <i className="fa-solid fa-cart-shopping"></i>
-                                </Link>
-                            </li>
+                            
                         </ul>
                     </div>
+                </div>
+                </div>
+                <div className='cart-icon'>
+                    <li className='nav-item-last'>
+                        <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
+                            <i className="fa-solid fa-cart-shopping"></i>
+                        </Link>
+                    </li>
                 </div>
             </nav>
 
