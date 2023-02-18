@@ -1,6 +1,9 @@
 .navbar li {
   list-style-type: none;
 }
+.nav-bar-mid{
+  margin-left: 50px;
+}
 
 .navbarcontainer {
   background-color: #292727;
