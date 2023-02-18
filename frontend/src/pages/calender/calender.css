@@ -1,10 +1,11 @@
 .react-calendar__tile--active {
-    background-color: #EAC342;
+    background-color: none;
 }
 
-.calender-container {
+.calendar-container  {
     display: flex;
     flex-wrap: wrap;
+    flex-shrink: var();
     margin: 50px;
     justify-content: center;
 }
@@ -12,8 +13,23 @@
 .events {
     width: 500px;
     height: 500px;
-    background-color: aqua;
+    background-color: #16697A;
 
+}
+.event-title{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+    color: #F2C102;
+    
+}
+.event-list{
+    display: flex;
+    
+    margin-left: 30px;
+    color: white;
+    margin-top: 350px;
+    
 }
 
 
