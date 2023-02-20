@@ -41,6 +41,8 @@
     .products-container {
         justify-content: center;
         margin: auto;
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     .product-filter {

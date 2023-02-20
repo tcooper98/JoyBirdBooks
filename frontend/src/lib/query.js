@@ -33,7 +33,7 @@ query ITEMS{
 //access single item from strapi
 export const SINGLE_ITEM_QUERY = `
 query ITEM{
-    item(filters: {slug: {contains: $slug)}}{
+    item(filters: {slug: {eq:$slug)}}{
 
      data{
        id

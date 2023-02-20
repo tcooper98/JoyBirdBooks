@@ -10,7 +10,6 @@ import { useQuery } from 'urql';
 
 
 
-//This is the model for how the page that displays the individual book
 
 function SoloProduct () {
    
@@ -218,7 +217,7 @@ function SoloProductCard() {
          <p>{item.attributes.description}</p>
          <h2>${item.attributes.price}</h2>
           <input className="ship" type="radio" value=""></input>
-                        <label for="ship">Ship This Item - Qualifies fir Free Shipping</label> <br/> <br/>
+                        <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br/> <br/>
                         <input className="buy" type="radio" value=""></input>   
                         <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
               
