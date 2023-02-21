@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useRef } from 'react';
+// import { useRef } from 'react';
 import BookCard from '../../components/BookCard/BookCard';
 import "./blog-read-more.css"
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import BookSpotlight from '../../components/BookSpotlight/BookSpotlight';
 
 export default function BlogReadMore() {
@@ -34,7 +34,7 @@ export default function BlogReadMore() {
 
                         <div className="row">
                             <div className="col-image">
-                                <img className="img" src="images/Poissant.jpg" />
+                                <img className="img" src="images/Poissant.jpg" alt="book"/>
                             </div>
 
                             <div className="col-blog-text">
@@ -89,7 +89,7 @@ export default function BlogReadMore() {
                         <div className="col-image">
                             <h2 className="subheading">Author Name</h2>
                             <p className="author-description">Author Text</p>
-                            <img className="img" src="images/Poissant.jpg" />
+                            <img className="img" src="images/Poissant.jpg" alt="book" />
                         </div>
                     </div>
 

@@ -28,10 +28,13 @@ export default function Products() {
            
         </div>
     )
+    
 }
+
 
 // waiting to figure out where to host database
 function ProductCard() {
+  
 
    //fetch products from strapi
    const[results] = useQuery({ query: ITEM_QUERY });
@@ -53,9 +56,10 @@ function ProductCard() {
           
            <div className="product_container" >
             {/* linking to individual product page */}
+          
            <Link to={`/product/${item.attributes.slug}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
           <div className="product-body">
-          <img className="product-image" src={item.attributes.image.data.attributes.formats.medium.url} alt={item.attributes.name}/>
+          <img className="product-image" src={item.attributes.image.data.attributes.formats.large.url} alt={item.attributes.name}/>
           <h1 className="product-title">{item.attributes.name}</h1>
           <Rating name="size-small" defaultValue={item.attributes.rating} size="small"/>
           <h3 className="product-author">By {item.attributes.author}</h3>
@@ -64,6 +68,7 @@ function ProductCard() {
         
         </div>
          </Link>
+         
       </div> 
       </div>
          ))}

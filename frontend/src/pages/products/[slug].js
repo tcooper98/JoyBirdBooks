@@ -43,6 +43,7 @@ function SoloProduct () {
                 <button className='rightbutton'>Buy Now</button>
             </div>
             </div> */}
+            
         </div>  
 
         <div className='reviews'>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './BookCard.css';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { BookItems } from "./BookItems.js";
 
 function BookCard () {
@@ -20,13 +20,13 @@ function Book () {
     console.log(location.pathname);
 
     //sets background styling to differ based on what page user is currently on
-    if (location.pathname == "/blog" || location.pathname == "/blog-read-more") {
+    if (location.pathname === "/blog" || location.pathname === "/blog-read-more") {
         className = 'background-blog';
-    } else if (location.pathname == "/") {
+    } else if (location.pathname === "/") {
         className = "background-home";
     }
 
-    const [isMobile, setMobile] = useState(window.innerWidth <= 820);
+    const [setMobile] = useState(window.innerWidth <= 820);
 
     const updateScreenSize = () => {
         setMobile(window.innerWidth <= 820);
@@ -48,11 +48,11 @@ function Book () {
 
                         <div className="p-20">
 
-                            <Link to={`/product}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                <img className="image-card" src={item.image} />
+                            {/* <Link to={`/product}`} style={{ textDecoration: 'none', color: 'inherit' }}> */}
+                                <img className="image-card" src={item.image} alt="book"/>
                                 <h1 className="title">{item.name}</h1>
                                 <p className="description">{item.description}</p>
-                            </Link>
+                            {/* </Link> */}
 
                             <div className="spacing"></div>
 

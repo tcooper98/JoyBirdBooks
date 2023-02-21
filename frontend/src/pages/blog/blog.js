@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useRef } from 'react';
+// import { useRef } from 'react';
 import BookCard from '../../components/BookCard/BookCard';
 import './blog.css';
 import { Link } from 'react-router-dom';
@@ -33,7 +33,7 @@ export default function Blog() {
                         
                         <div className="row author-spotlight-row">
                             <div className="col-image">
-                                <img className="img" src="images/Poissant.jpg" />
+                                <img className="img" src="images/Poissant.jpg" alt="author" />
                             </div>
 
                             <div className="col-blog-text">
@@ -90,7 +90,7 @@ export default function Blog() {
                         <div className="col-image">
                             <h2 className="subheading">Author Name</h2>
                             <p className="author-description">Author Text</p>
-                            <img className="img" src="images/Poissant.jpg" />
+                            <img className="img" src="images/Poissant.jpg" alt="author" />
 
                             <Link to='/blog-read-more' className="btn">
                                 <p>Read More</p>

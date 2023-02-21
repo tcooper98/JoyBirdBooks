@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import CommunityDropdown from './CommunityDropdown';
 import ConnectedDropdown from './ConnectedDropdown';
-import SearchBar from './SearchBar';
 import './Navbar.css'
 import Logo from './primarylogo.png';
 

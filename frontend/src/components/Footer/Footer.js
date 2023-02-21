@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BsFacebook, BsInstagram, BsTwitter } from "react-icons/bs";
+import { BsFacebook, BsInstagram } from "react-icons/bs";
 import { Link } from 'react-router-dom';
 import "./footer.css";
 
@@ -53,7 +53,7 @@ function Footer () {
                                     BLOG
                                 </Link>
 
-                                <a className="p body-spacing" target="_blank" href="https://www.google.com/maps/dir/28.5868032,-81.2023808/3018+Corrine+Dr,+Orlando,+FL+32803/@28.5641678,-81.3398926,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88e77ab3d8af9ff7:0x70b098f8fba3fee5!2m2!1d-81.3453983!2d28.5676165">
+                                <a className="p body-spacing" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/28.5868032,-81.2023808/3018+Corrine+Dr,+Orlando,+FL+32803/@28.5641678,-81.3398926,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88e77ab3d8af9ff7:0x70b098f8fba3fee5!2m2!1d-81.3453983!2d28.5676165">
                                     LOCATION
                                 </a>
 
@@ -88,11 +88,11 @@ function Footer () {
                                 <h2 className="heading-icons-spacing">FOLLOW US</h2>
 
                                 <div>
-                                    <a className="p body-spacing" target="_blank" href="https://www.facebook.com/joybirdbooks/">
+                                    <a className="p body-spacing" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/joybirdbooks/">
                                         <BsFacebook className="footer-icons" />
                                     </a>
 
-                                    <a className="p body-spacing" target="_blank" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
+                                    <a className="p body-spacing" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
                                         <BsInstagram className="footer-icons" />
                                     </a>
                                 </div>
@@ -144,7 +144,7 @@ function Footer () {
                                         BLOG
                                     </Link>
 
-                                    <a className="p body-spacing" target="_blank" href="https://www.google.com/maps/dir/28.5868032,-81.2023808/3018+Corrine+Dr,+Orlando,+FL+32803/@28.5641678,-81.3398926,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88e77ab3d8af9ff7:0x70b098f8fba3fee5!2m2!1d-81.3453983!2d28.5676165">
+                                    <a className="p body-spacing" target="_blank" rel="noopener noreferrer" href="https://www.google.com/maps/dir/28.5868032,-81.2023808/3018+Corrine+Dr,+Orlando,+FL+32803/@28.5641678,-81.3398926,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x88e77ab3d8af9ff7:0x70b098f8fba3fee5!2m2!1d-81.3453983!2d28.5676165">
                                         LOCATION
                                     </a>
 
@@ -177,11 +177,11 @@ function Footer () {
                                     <h2 className="heading-icons-spacing">FOLLOW US</h2>
 
                                     <div>
-                                        <a className="p body-spacing" target="_blank" href="https://www.facebook.com/joybirdbooks/">
+                                        <a className="p body-spacing" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/joybirdbooks/">
                                             <BsFacebook className="footer-icons" />
                                         </a>
 
-                                        <a className="p body-spacing" target="_blank" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
+                                        <a className="p body-spacing" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/joybirdbooks/?utm_source=ig_embed&ig_rid=e1d6889d-5db3-46b0-9b74-5fa531cdf8e4">
                                             <BsInstagram className="footer-icons" />
                                         </a>
                                     </div>
