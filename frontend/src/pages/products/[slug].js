@@ -7,8 +7,7 @@ import Box from '@mui/material/Box';
 import { Link } from 'react-router-dom';
 import { ITEM_QUERY } from '../../lib/query'
 import { useQuery } from 'urql';
-
-
+import {SINGLE_ITEM_QUERY} from '../../lib/query'
 
 
 function SoloProduct () {
@@ -202,11 +201,12 @@ function SoloProductCard() {
    if (fetching) return <p>Loading...</p>;
       if (error) return <p>Oh no... {error.message}</p>;
 
-      const items = data.items.data;
-      console.log(items);
+      const items = data.items.data[0];
+      // console.log(items);
    
     //formatting how products are displayed 
     return (
+      
       <div className='soloproduct'>
          {items.map((item) => (
           <div key={item.attributes.slug} className="product-details">

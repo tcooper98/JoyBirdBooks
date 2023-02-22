@@ -33,9 +33,11 @@ export default function Products() {
 
 
 // waiting to figure out where to host database
-function ProductCard() {
+export function ProductCard() {
   
-
+   const handleClick= (item) => {
+    console.log((item));
+  };
    //fetch products from strapi
    const[results] = useQuery({ query: ITEM_QUERY });
      
@@ -45,7 +47,7 @@ function ProductCard() {
       if (error) return <p>Oh no... {error.message}</p>;
 
       const items = data.items.data;
-      console.log(items);
+      // console.log(items);
    
     //formatting how products are displayed 
     return (
@@ -57,7 +59,7 @@ function ProductCard() {
            <div className="product_container" >
             {/* linking to individual product page */}
           
-           <Link to={`/product/${item.attributes.slug}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+           <Link onClick={() => handleClick(item)} to={`/product/${item.attributes.slug}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
           <div className="product-body">
           <img className="product-image" src={item.attributes.image.data.attributes.formats.large.url} alt={item.attributes.name}/>
           <h1 className="product-title">{item.attributes.name}</h1>
