@@ -8,6 +8,7 @@ import { Link, useParams } from 'react-router-dom';
 import { ITEM_QUERY } from '../../lib/query'
 import { useQuery } from 'urql';
 import Query from '../../Query';
+import useFetch from '../../hooks/useFetch';
 
 
 
@@ -198,32 +199,67 @@ export default function SoloProduct () {
 
 
 
-function SoloProductCard() {
+// function SoloProductCard() {
 
-  //  fetch products from strapi
-   const[results] = useQuery({ query: ITEM_QUERY });
+//   //  fetch products from strapi
+//    const[results] = useQuery({ query: ITEM_QUERY });
      
-   const { data, fetching, error } = results;
+//    const { data, fetching, error } = results;
 
-   if (fetching) return <p>Loading...</p>;
-      if (error) return <p>Oh no... {error.message}</p>;
+//    if (fetching) return <p>Loading...</p>;
+//       if (error) return <p>Oh no... {error.message}</p>;
 
-      const items = data.items.data;
-      // console.log(items);
+//       const items = data.items.data;
+//       // console.log(items);
    
-    //formatting how products are displayed 
-    return (
+//     //formatting how products are displayed 
+//     return (
       
-      <div className='soloproduct'>
-         {items.map((item) => (
-          <div key={item.attributes.slug} className="product-details">
-          <img src={item.attributes.image.data.attributes.formats.medium.url} alt={item.attributes.name}/>
+      // <div className='soloproduct'>
+      //    {items.map((item) => (
+      //     <div key={item.attributes.slug} className="product-details">
+      //     <img src={item.attributes.image.data.attributes.formats.medium.url} alt={item.attributes.name}/>
+      //     <div className="product-info">
+      //     <h1>{item.attributes.name}</h1>
+      //     <h3>By {item.attributes.author}</h3>
+      //     <Rating name="size-small" defaultValue={item.attributes.rating} size="small"/>
+      //    <p>{item.attributes.description}</p>
+      //    <h2>${item.attributes.price}</h2>
+      //     <input className="ship" type="radio" value=""></input>
+      //                   <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br/> <br/>
+      //                   <input className="buy" type="radio" value=""></input>   
+      //                   <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
+              
+      //           <button className='leftbutton'>Add to Cart</button>
+      //           <button className='rightbutton'>Buy Now</button>
+        
+      //   </div>
+      // </div>
+      //    ))}
+
+      // </div>
+//     )
+  
+//   }
+ function SoloProductCard() {
+  const { slug } = useParams();
+  const { name }  = useParams();
+  const { loading, error, data } = useFetch('http://localhost:1337/api/items/' + slug, { method: 'GET'})
+
+  if (loading) return <div>Loading...</div>
+  if (error) return <div>Oh no... {error.message}</div>
+  console.log(data)
+  return (
+    <div className='soloproduct'>
+         
+          <div key={data.data.attributes.slug} className="product-details">
+          {/* <img src={data.data.image.data.attributes.formats.medium.url} alt={data.data.attributes.name}/> */}
           <div className="product-info">
-          <h1>{item.attributes.name}</h1>
-          <h3>By {item.attributes.author}</h3>
-          <Rating name="size-small" defaultValue={item.attributes.rating} size="small"/>
-         <p>{item.attributes.description}</p>
-         <h2>${item.attributes.price}</h2>
+          <h1>{data.data.attributes.name}</h1>
+          <h3>By {data.data.attributes.author}</h3>
+          <Rating name="size-small" defaultValue={data.data.attributes.rating} size="small"/>
+         <p>{data.data.attributes.description}</p>
+         <h2>${data.data.attributes.price}</h2>
           <input className="ship" type="radio" value=""></input>
                         <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br/> <br/>
                         <input className="buy" type="radio" value=""></input>   
@@ -234,11 +270,9 @@ function SoloProductCard() {
         
         </div>
       </div>
-         ))}
 
       </div>
-    )
-  
-  }
+  )
+ }
 
 
