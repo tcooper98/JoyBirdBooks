@@ -64,7 +64,7 @@ query ITEMS{
 // }
 // `;
 
-export const SINGLE_ITEM_QUERY = gql`
+export const SINGLE_ITEM_QUERY = `
   query Item($slug: String!) {
     items(filters: { slug: { eq: $slug } }) {
        attributes{
@@ -85,6 +85,33 @@ export const SINGLE_ITEM_QUERY = gql`
            }
          }
        }
+    }
+  }
+`;
+
+export const SINGLE_ITEM_QUERY2 = `
+  query Item($slug: String!) {
+    items(filters: { slug: { eq: $slug } }) {
+      data {
+       attributes{
+         price
+         categories
+         condit
+         age
+         rating
+         author
+         name
+         description
+         slug
+         image{
+           data{
+             attributes{
+               formats
+             }
+           }
+         }
+       }
+      }
     }
   }
 `;
