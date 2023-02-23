@@ -4,13 +4,15 @@ import Product from '../../components/Products/ProductCard';
 import Rating from '@mui/material/Rating';
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { ITEM_QUERY } from '../../lib/query'
 import { useQuery } from 'urql';
-import {SINGLE_ITEM_QUERY} from '../../lib/query'
+import Query from '../../Query';
 
 
-function SoloProduct () {
+
+
+export default function SoloProduct () {
    
  
     return (
@@ -191,6 +193,11 @@ function SoloProduct () {
 }
 
 
+
+
+
+
+
 function SoloProductCard() {
 
   //  fetch products from strapi
@@ -201,7 +208,7 @@ function SoloProductCard() {
    if (fetching) return <p>Loading...</p>;
       if (error) return <p>Oh no... {error.message}</p>;
 
-      const items = data.items.data[0];
+      const items = data.items.data;
       // console.log(items);
    
     //formatting how products are displayed 
@@ -235,4 +242,3 @@ function SoloProductCard() {
   }
 
 
-export default SoloProduct;

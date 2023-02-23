@@ -19,22 +19,24 @@ import ShippingPolicy from './pages/shipping-policy/shipping-policy';
 import ReturnPolicy from './pages/return-item/return-policy';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import BlogReadMore from './pages/blog-read-more/blog-read-more';
-import { Provider, createClient } from 'urql';
 import SoloProduct from './pages/products/[slug]';
 import Community from './pages/community/community';
 import Connected from './pages/connected/connected';
+import { ApolloProvider } from "@apollo/react-hooks";
+import client from "./utils/apolloClient";
 
 
 // connecting ql client to frontend
-const client = createClient({url: 'http://localhost:1337/graphql'});
+// const client = createClient({url: 'http://localhost:1337/graphql'});
+//connects backend server to frontend
 
 
 function App() {
   return( 
   <Router>
 
-    {/* ql wrapper */}
-    <Provider value={client}>
+    {/* apollo wrapper */}
+    <ApolloProvider client={client}>
    
     <ScrollToTop/>
     <Navbar />
@@ -65,8 +67,10 @@ function App() {
   <Footer/>
 
  
-  </Provider>
+  </ApolloProvider>
   </Router>
+ 
+ 
   );
 }
 

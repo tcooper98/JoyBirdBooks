@@ -1,6 +1,7 @@
+import gql from "graphql-tag";
 
 //access all items from strapi
-export const ITEM_QUERY = `
+export const ITEM_QUERY = gql`
 query ITEMS{
     items{
 
@@ -31,12 +32,41 @@ query ITEMS{
    }
 `;
 //access single item from strapi
-export const SINGLE_ITEM_QUERY = `
-query ITEM ($slug: String!){
-    item(filters: {slug: {eq: $slug)}}{
+// export const SINGLE_ITEM_QUERY = gql `
+// query ITEM($slug: String!){
+//     items(filters: { slug: { eq: $slug } }){
 
-     data{
-       id
+//      data{
+//        attributes{
+//          price
+//          categories
+//          condit
+//          age
+//          rating
+//          author
+//          name
+//          description
+//          slug
+//          image{
+//            data{
+//              attributes{
+//                formats
+//              }
+//            }
+//          }
+//        }
+   
+     
+//      }
+//    }
+//    }
+
+// }
+// `;
+
+export const SINGLE_ITEM_QUERY = gql`
+  query Item($slug: String!) {
+    items(filters: { slug: { eq: $slug } }) {
        attributes{
          price
          categories
@@ -55,13 +85,8 @@ query ITEM ($slug: String!){
            }
          }
        }
-   
-     
-     }
-   }
-   }
-
-}
+    }
+  }
 `;
 
 
