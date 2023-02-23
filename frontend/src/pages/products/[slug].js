@@ -205,14 +205,14 @@ function SoloProductCard() {
   
    //fetch products from strapi
    //const[results] = useQuery({ query: ITEM_QUERY });
-   const[results] = useQuery({ query: SINGLE_ITEM_QUERY2, variables: { slug: "the-hating-game" } });
+   const[results] = useQuery({ query: SINGLE_ITEM_QUERY2, variables: {slug} });
      
    const { data, fetching, error } = results;
 
    if (fetching) return <p>Loading...</p>;
       if (error) return <p>Oh no... {error.message}</p>;
 
-      console.log('the hating game', data);
+     
 
       const items = data.items.data;
    
@@ -223,7 +223,7 @@ function SoloProductCard() {
          {items.map((item) => (
           
           <div key={item.attributes.slug} className="product-details">
-          <img src={item.attributes.image.data.attributes.formats.medium.url} alt={item.attributes.name}/>
+          <img src={item.attributes.image.data.attributes.formats.large.url} alt={item.attributes.name}/>
           <div className="product-info">
           <h1>{item.attributes.name}</h1>
           <h3>By {item.attributes.author}</h3>

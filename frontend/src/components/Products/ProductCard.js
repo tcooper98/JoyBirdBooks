@@ -4,8 +4,8 @@ import "react-multi-carousel/lib/styles.css";
 import { ProductItems } from "./ProductItems.js";
 import "./ProductCard.css";
 import { Link } from "react-router-dom";
-// import { ITEM_QUERY } from '../../lib/query'
-// import { useQuery } from 'urql';
+import { SINGLE_ITEM_QUERY2, ITEM_QUERY } from '../../lib/query'
+import { useQuery } from 'urql';
 
 // this determines how many items on page by screen size
 const responsive = {
@@ -33,7 +33,76 @@ const responsive = {
 
 function Product() {
     return (
-        <div className="wrapper">
+      <div>
+          <ProductCard/>
+       </div> 
+    )
+}
+
+
+
+
+//Building model for product card so it can be populated with data later on refer to ProductItems.js for data structure
+// function ProductCard() {
+   //fetch products from strapi
+   //const[results] = useQuery({ query: ITEM_QUERY });
+  //  const[results] = useQuery({ query: SINGLE_ITEM_QUERY2, variables: {slug: "the-hating-game"} });
+     
+  //  const { data, fetching, error } = results;
+
+  //  if (fetching) return <p>Loading...</p>;
+  //     if (error) return <p>Oh no... {error.message}</p>;
+
+     
+
+  //     const items = data.items.data;
+   
+    //formatting how products are displayed 
+  
+  
+//   return (
+//     <>
+
+//       {items.map((item) => {
+//       return (
+//       <li key={item.attributes.slug}>
+//       <div className="card">
+      
+//       <div className="body">
+//           <Link to={`/product/}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+//         <img className="image" src={item.attributes.image.data.attributes.formats.large.url} alt="book"/>
+//         <h1 className="title">{item.attributes.name}</h1>
+//         <p className="price">${item.attributes.price}</p>
+//          </Link>
+//         <p className="description">{item.attributes.description}</p>
+        
+       
+//         </div>
+      
+//       </div>
+//       </li>
+//     )
+//     })}
+//     </>
+//   )
+// }
+
+
+function ProductCard() {
+
+     //fetch products from strapi
+   const[results] = useQuery({ query: ITEM_QUERY });
+     
+   const { data, fetching, error } = results;
+
+   if (fetching) return <p>Loading...</p>;
+      if (error) return <p>Oh no... {error.message}</p>;
+
+      const items = data.items.data;
+      console.log(items);
+  
+  return (
+     <div className="wrapper">
           <Carousel
         swipeable={false}
         draggable={false}
@@ -51,93 +120,34 @@ function Product() {
   
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
+
+        
         
 >
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-          <ProductCard/>
-           </Carousel>
-        
-          
-        </div>
-    )
-}
 
-
-
-
-//Building model for product card so it can be populated with data later on refer to ProductItems.js for data structure
-function ProductCard() {
-
-  
-  
-  return (
-    <>
-
-      {ProductItems.map((item, index) => {
+      {items.map((item) => {
       return (
-      <li key={index}>
+      <div key={item.attributes.slug}>
       <div className="card">
       
       <div className="body">
-          <Link to={`/product/}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
-        <img className="image" src={item.image} alt="book"/>
-        <h1 className="title">{item.name}</h1>
-        <p className="price">{item.price}</p>
+          <Link to={`/product/${item.attributes.slug}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+        <img className="image" src={item.attributes.image.data.attributes.formats.medium.url} alt={item.attributes.name}/>
+        <h1 className="title">{item.attributes.name}</h1>
+        <p className="price">${item.attributes.price}</p>
          </Link>
-        <p className="description">{item.description}</p>
+        <p className="description">{item.attributes.description}</p>
         
        
         </div>
       
       </div>
-      </li>
+      </div>
     )
     })}
-    </>
+    </Carousel>
+    </div>
   )
 }
-
-
-// function ProductCard() {
-
-//      //fetch products from strapi
-//    const[results] = useQuery({ query: ITEM_QUERY });
-     
-//    const { data, fetching, error } = results;
-
-//    if (fetching) return <p>Loading...</p>;
-//       if (error) return <p>Oh no... {error.message}</p>;
-
-//       const items = data.items.data;
-//       console.log(items);
-  
-//   return (
-//     <>
-
-//       {items.map((item) => {
-//       return (
-//       <div key={item.attributes.slug}>
-//       <div className="card">
-      
-//       <div className="body">
-//           <Link to={`/product/${item.attributes.slug}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
-//         <img className="image" src={item.attributes.image.data.attributes.formats.medium.url} alt={item.attributes.name}/>
-//         <h1 className="title">{item.attributes.name}</h1>
-//         <p className="price">{item.attributes.price}</p>
-//          </Link>
-//         <p className="description">{item.attributes.description}</p>
-        
-       
-//         </div>
-      
-//       </div>
-//       </div>
-//     )
-//     })}
-//     </>
-//   )
-// }
 
 export default Product;
