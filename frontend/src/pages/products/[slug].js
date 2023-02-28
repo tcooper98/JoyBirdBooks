@@ -19,8 +19,8 @@ export default function SoloProduct () {
     return (
         <>
         <div className='soloproduct'>
-        <SoloProductCard/>
-{/*             
+        {/* <SoloProductCard/> */}
+            
             <div className="product-details">
              <img src="https://images.urbndata.com/is/image/UrbanOutfitters/80218514_000_b?$xlarge$&fit=constrain&qlt=80&wid=640" alt="book"/>
              <div className="product-info">
@@ -44,7 +44,7 @@ export default function SoloProduct () {
                 <button className='leftbutton'>Add to Cart</button>
                 <button className='rightbutton'>Buy Now</button>
             </div>
-            </div> */}
+            </div>
             
         </div>  
 
@@ -199,54 +199,54 @@ export default function SoloProduct () {
 
 
 
-function SoloProductCard() {
-    const { slug } = useParams();
+// function SoloProductCard() {
+//     const { slug } = useParams();
    
   
-   //fetch products from strapi
-   //const[results] = useQuery({ query: ITEM_QUERY });
-   const[results] = useQuery({ query: SINGLE_ITEM_QUERY2, variables: {slug} });
+//    //fetch products from strapi
+//    //const[results] = useQuery({ query: ITEM_QUERY });
+//    const[results] = useQuery({ query: SINGLE_ITEM_QUERY2, variables: {slug} });
      
-   const { data, fetching, error } = results;
+//    const { data, fetching, error } = results;
 
-   if (fetching) return <p>Loading...</p>;
-      if (error) return <p>Oh no... {error.message}</p>;
+//    if (fetching) return <p>Loading...</p>;
+//       if (error) return <p>Oh no... {error.message}</p>;
 
      
 
-      const items = data.items.data;
+//       const items = data.items.data;
    
-    //formatting how products are displayed 
-    return (
+//     //formatting how products are displayed 
+//     return (
        
-      <div className='soloproduct'>
-         {items.map((item) => (
+//       <div className='soloproduct'>
+//          {items.map((item) => (
           
-          <div key={item.attributes.slug} className="product-details">
-          <img src={item.attributes.image.data.attributes.formats.large.url} alt={item.attributes.name}/>
-          <div className="product-info">
-          <h1>{item.attributes.name}</h1>
-          <h3>By {item.attributes.author}</h3>
-          <Rating name="size-small" defaultValue={item.attributes.rating} size="small"/>
-         <p>{item.attributes.description}</p>
-         <h2>${item.attributes.price}</h2>
-          <input className="ship" type="radio" value=""></input>
-                        <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br/> <br/>
-                        <input className="buy" type="radio" value=""></input>   
-                        <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
+//           <div key={item.attributes.slug} className="product-details">
+//           <img src={item.attributes.image.data.attributes.formats.large.url} alt={item.attributes.name}/>
+//           <div className="product-info">
+//           <h1>{item.attributes.name}</h1>
+//           <h3>By {item.attributes.author}</h3>
+//           <Rating name="size-small" defaultValue={item.attributes.rating} size="small"/>
+//          <p>{item.attributes.description}</p>
+//          <h2>${item.attributes.price}</h2>
+//           <input className="ship" type="radio" value=""></input>
+//                         <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br/> <br/>
+//                         <input className="buy" type="radio" value=""></input>   
+//                         <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
               
-                <button className='leftbutton'>Add to Cart</button>
-                <button className='rightbutton'>Buy Now</button>
+//                 <button className='leftbutton'>Add to Cart</button>
+//                 <button className='rightbutton'>Buy Now</button>
         
-        </div>
-      </div>
-         ))}
+//         </div>
+//       </div>
+//          ))}
 
-      </div>
+//       </div>
      
-    )
+//     )
   
-  }
+//   }
 //  function SoloProductCard() {
 //   const { slug } = useParams();
 //   const { name }  = useParams();

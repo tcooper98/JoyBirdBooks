@@ -29,7 +29,7 @@ import { Provider, createClient } from 'urql';
 
 
 // connecting ql client to frontend
-const client = createClient({url: 'http://localhost:1337/graphql'});
+// const client = createClient({url: 'http://localhost:1337/graphql'});
 //connects backend server to frontend
 
 
@@ -38,7 +38,7 @@ function App() {
   <Router>
 
     {/* apollo wrapper */}
-    <Provider value={client}>
+    {/* <Provider value={client}> */}
    
     <ScrollToTop/>
     <Navbar />
@@ -60,8 +60,8 @@ function App() {
       <Route exact path='/refund-policy' element={<RefundPolicy/>}/>
       <Route exact path='/shipping-policy' element={<ShippingPolicy/>}/>
       <Route exact path='/return-policy' element={<ReturnPolicy/>}/>
-      {/* <Route exact path='/product}' element={<SoloProduct/>}/> */}
-       <Route exact path='/product/:slug' element={<SoloProduct/>}/>
+      <Route exact path='/product}' element={<SoloProduct/>}/>
+       {/* <Route exact path='/product/:slug' element={<SoloProduct/>}/> */}
       <Route exact path='/community' element={<Community/>}/>
       <Route exact path='/connected' element={<Connected/>}/>
     </Routes>
@@ -69,7 +69,7 @@ function App() {
   <Footer/>
 
  
-  </Provider>
+  {/* </Provider> */}
   </Router>
  
  
