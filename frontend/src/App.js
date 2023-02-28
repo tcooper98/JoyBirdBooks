@@ -22,12 +22,14 @@ import BlogReadMore from './pages/blog-read-more/blog-read-more';
 import SoloProduct from './pages/products/[slug]';
 import Community from './pages/community/community';
 import Connected from './pages/connected/connected';
-import { ApolloProvider } from "@apollo/react-hooks";
-import client from "./utils/apolloClient";
+// import { ApolloProvider } from "@apollo/react-hooks";
+// import client from "./utils/apolloClient";
+import { Provider, createClient } from 'urql';
+
 
 
 // connecting ql client to frontend
-// const client = createClient({url: 'http://localhost:1337/graphql'});
+const client = createClient({url: 'http://localhost:1337/graphql'});
 //connects backend server to frontend
 
 
@@ -36,7 +38,7 @@ function App() {
   <Router>
 
     {/* apollo wrapper */}
-    <ApolloProvider client={client}>
+    <Provider value={client}>
    
     <ScrollToTop/>
     <Navbar />
@@ -67,7 +69,7 @@ function App() {
   <Footer/>
 
  
-  </ApolloProvider>
+  </Provider>
   </Router>
  
  

@@ -45,7 +45,7 @@ export function ProductCard() {
       if (error) return <p>Oh no... {error.message}</p>;
 
       const items = data.items.data;
-      // console.log(items);
+      console.log(items);
    
     //formatting how products are displayed 
     return (
