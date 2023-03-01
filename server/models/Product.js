@@ -5,7 +5,7 @@ const reviewSchema = mongoose.Schema({
     rating: { type: Number, required: true },
     comment: { type: String, required: true },
     title: { type: String, required: true },
-    username: {type: String, required: true},
+    user: {type: mongoose.Schema.Types.ObjectId, required: true, ref: 'User'},
 })
 
 const ProductSchema = mongoose.Schema({
@@ -64,6 +64,10 @@ const ProductSchema = mongoose.Schema({
       numberofReviews:{
         type: Number,
         required: true
+    },
+    ProductIsNew:{
+        type: Boolean,
+        default: false
     },
 },{timestamps: true})
 

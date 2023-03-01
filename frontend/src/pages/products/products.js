@@ -5,7 +5,9 @@ import { ITEM_QUERY } from '../../lib/query'
 import { useQuery } from 'urql';
 import { Link } from 'react-router-dom'
 import Rating from '@mui/material/Rating';
-import { ProductItems } from '../../components/Products/ProductItems.js';
+import { useDispatch, useSelector } from 'react-redux';
+import { getProducts } from '../../redux/actions/productActions'
+import { useEffect } from 'react';
 
 
 //what is displayed on the products page
@@ -80,23 +82,32 @@ export default function Products() {
 //   }
 
 function ProductCard() {
+ const dispatch = useDispatch();
 
+  const productList = useSelector((state) => state.products);
+  const { loading, error, products } = productList;
+
+  useEffect(() => {
+    dispatch(getProducts());
+  }, [dispatch]);
+
+  console.log(products);
  
     return (
       <div className='productcontainer'>
-         {ProductItems.map((item, index) => (
+         {products.map((product) => (
          
-          <div key={index} className="product-card">
+          <div key={product._id} className="product-card">
           
            <div className="product_container" >
             {/* linking to individual product page */}
            <Link to={`/product}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
           <div className="product-body">
-          <img className="product-image" src={item.image} alt={item.name}/>
-          <h1 className="product-title">{item.name}</h1>
-          <Rating name="size-small" defaultValue={5} size="small"/>
-          <h3 className="product-author">By {item.author}</h3>
-         <p className="product-price">${item.price}</p>
+          <img className="product-image" src={product.image} alt={product.name}/>
+          <h1 className="product-title">{product.name}</h1>
+          <Rating name="size-small" defaultValue={product.rating} size="small"/>
+          <h3 className="product-author">By {product.author}</h3>
+         <p className="product-price">${product.price}</p>
         
         
         </div>

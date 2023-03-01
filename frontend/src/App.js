@@ -24,21 +24,19 @@ import Community from './pages/community/community';
 import Connected from './pages/connected/connected';
 // import { ApolloProvider } from "@apollo/react-hooks";
 // import client from "./utils/apolloClient";
-import { Provider, createClient } from 'urql';
+import store from './redux/store';
+import { Provider } from 'react-redux';
 
 
 
-// connecting ql client to frontend
-// const client = createClient({url: 'http://localhost:1337/graphql'});
-//connects backend server to frontend
 
 
 function App() {
   return( 
   <Router>
 
-    {/* apollo wrapper */}
-    {/* <Provider value={client}> */}
+ 
+     <Provider store={store}> 
    
     <ScrollToTop/>
     <Navbar />
@@ -69,7 +67,7 @@ function App() {
   <Footer/>
 
  
-  {/* </Provider> */}
+  </Provider> 
   </Router>
  
  
