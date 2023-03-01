@@ -24,8 +24,7 @@ import Community from './pages/community/community';
 import Connected from './pages/connected/connected';
 // import { ApolloProvider } from "@apollo/react-hooks";
 // import client from "./utils/apolloClient";
-import store from './redux/store';
-import { Provider } from 'react-redux';
+
 
 
 
@@ -36,7 +35,7 @@ function App() {
   <Router>
 
  
-     <Provider store={store}> 
+    
    
     <ScrollToTop/>
     <Navbar />
@@ -67,7 +66,6 @@ function App() {
   <Footer/>
 
  
-  </Provider> 
   </Router>
  
  
