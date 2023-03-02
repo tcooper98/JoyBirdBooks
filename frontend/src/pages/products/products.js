@@ -1,8 +1,6 @@
 import React from 'react'
 import './products.css'
 import Filter from '../../components/Filter/Filter'
-import { ITEM_QUERY } from '../../lib/query'
-import { useQuery } from 'urql';
 import { Link } from 'react-router-dom'
 import Rating from '@mui/material/Rating';
 import { useDispatch, useSelector } from 'react-redux';
