@@ -18,7 +18,7 @@ export default function SoloProduct () {
         <div className='soloproduct'>
         {/* <SoloProductCard/> */}
             
-            <div className="product-details">
+            {/* <div className="product-details">
              <img src="https://images.urbndata.com/is/image/UrbanOutfitters/80218514_000_b?$xlarge$&fit=constrain&qlt=80&wid=640" alt="book"/>
              <div className="product-info">
               <h1>A Cigarette Lit Backwards</h1>
@@ -41,7 +41,7 @@ export default function SoloProduct () {
                 <button className='leftbutton'>Add to Cart</button>
                 <button className='rightbutton'>Buy Now</button>
             </div>
-            </div>
+            </div> */}
             
         </div>  
 
