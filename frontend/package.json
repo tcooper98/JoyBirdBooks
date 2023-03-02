@@ -33,6 +33,7 @@
     "react-scripts": "^2.1.8",
     "react-social-media-embed": "^2.3.4",
     "react-switch": "^7.0.0",
+    "react-toastify": "^9.1.1",
     "reactstrap": "^9.1.5",
     "redux": "^4.2.1",
     "styled-components": "^5.3.6",
