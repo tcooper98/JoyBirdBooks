@@ -5,6 +5,10 @@ import Rating from '@mui/material/Rating';
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
 import { Link, useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { getProduct } from '../../redux/actions/productActions';
+
 
 
 
@@ -16,7 +20,7 @@ export default function SoloProduct () {
     return (
         <>
         <div className='soloproduct'>
-        {/* <SoloProductCard/> */}
+        <SoloProductCard/>
             
             {/* <div className="product-details">
              <img src="https://images.urbndata.com/is/image/UrbanOutfitters/80218514_000_b?$xlarge$&fit=constrain&qlt=80&wid=640" alt="book"/>
@@ -196,54 +200,46 @@ export default function SoloProduct () {
 
 
 
-// function SoloProductCard() {
-//     const { slug } = useParams();
+function SoloProductCard() {
    
-  
-//    //fetch products from strapi
-//    //const[results] = useQuery({ query: ITEM_QUERY });
-//    const[results] = useQuery({ query: SINGLE_ITEM_QUERY2, variables: {slug} });
-     
-//    const { data, fetching, error } = results;
-
-//    if (fetching) return <p>Loading...</p>;
-//       if (error) return <p>Oh no... {error.message}</p>;
+ 
 
      
-
-//       const items = data.items.data;
-   
-//     //formatting how products are displayed 
-//     return (
+    //formatting how products are displayed 
+    return (
        
-//       <div className='soloproduct'>
-//          {items.map((item) => (
+      // <div className='soloproduct'>
+      //    {product.map((product) => (
           
-//           <div key={item.attributes.slug} className="product-details">
-//           <img src={item.attributes.image.data.attributes.formats.large.url} alt={item.attributes.name}/>
-//           <div className="product-info">
-//           <h1>{item.attributes.name}</h1>
-//           <h3>By {item.attributes.author}</h3>
-//           <Rating name="size-small" defaultValue={item.attributes.rating} size="small"/>
-//          <p>{item.attributes.description}</p>
-//          <h2>${item.attributes.price}</h2>
-//           <input className="ship" type="radio" value=""></input>
-//                         <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br/> <br/>
-//                         <input className="buy" type="radio" value=""></input>   
-//                         <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
+      //     <div key={product._id} className="product-details">
+      //     <img src={product.image} alt={product.name}/>
+      //     <div className="product-info">
+      //     <h1>{product.name}</h1>
+      //     <h3>By {product.author}</h3>
+      //     <Rating name="size-small" defaultValue={product.rating} size="small"/>
+      //    <p>{product.description}</p>
+      //    <h2>${product.attributes.price}</h2>
+      //     <input className="ship" type="radio" value=""></input>
+      //                   <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br/> <br/>
+      //                   <input className="buy" type="radio" value=""></input>   
+      //                   <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
               
-//                 <button className='leftbutton'>Add to Cart</button>
-//                 <button className='rightbutton'>Buy Now</button>
+      //           <button className='leftbutton'>Add to Cart</button>
+      //           <button className='rightbutton'>Buy Now</button>
         
-//         </div>
-//       </div>
-//          ))}
+      //   </div>
+      // </div>
+      //    ))}
 
-//       </div>
-     
-//     )
+      // </div>
+
+      <div>
+       
+       <p>hi</p>
+     </div>
+    )
   
-//   }
+  }
 //  function SoloProductCard() {
 //   const { slug } = useParams();
 //   const { name }  = useParams();
