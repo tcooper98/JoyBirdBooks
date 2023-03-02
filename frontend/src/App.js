@@ -19,11 +19,10 @@ import ShippingPolicy from './pages/shipping-policy/shipping-policy';
 import ReturnPolicy from './pages/return-item/return-policy';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 import BlogReadMore from './pages/blog-read-more/blog-read-more';
-import SoloProduct from './pages/products/[slug]';
+import SoloProduct from './pages/products/[id]';
 import Community from './pages/community/community';
 import Connected from './pages/connected/connected';
-// import { ApolloProvider } from "@apollo/react-hooks";
-// import client from "./utils/apolloClient";
+
 
 
 
@@ -57,8 +56,8 @@ function App() {
       <Route exact path='/refund-policy' element={<RefundPolicy/>}/>
       <Route exact path='/shipping-policy' element={<ShippingPolicy/>}/>
       <Route exact path='/return-policy' element={<ReturnPolicy/>}/>
-      <Route exact path='/product}' element={<SoloProduct/>}/>
-       {/* <Route exact path='/product/:slug' element={<SoloProduct/>}/> */}
+      {/* <Route exact path='/product}' element={<SoloProduct/>}/> */}
+       <Route exact path='/product/:id' element={<SoloProduct/>}/>
       <Route exact path='/community' element={<Community/>}/>
       <Route exact path='/connected' element={<Connected/>}/>
     </Routes>

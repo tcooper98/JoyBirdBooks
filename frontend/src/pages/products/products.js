@@ -91,7 +91,7 @@ function ProductCard() {
     dispatch(getProducts());
   }, [dispatch]);
 
-  console.log(products);
+ 
  
     return (
       <div className='productcontainer'>
@@ -101,7 +101,7 @@ function ProductCard() {
           
            <div className="product_container" >
             {/* linking to individual product page */}
-           <Link to={`/product}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+           <Link to={`/product/${product._id}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
           <div className="product-body">
           <img className="product-image" src={product.image} alt={product.name}/>
           <h1 className="product-title">{product.name}</h1>

@@ -5,10 +5,7 @@ import Rating from '@mui/material/Rating';
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
 import { Link, useParams } from 'react-router-dom';
-import { SINGLE_ITEM_QUERY2 } from '../../lib/query'
-import { useQuery } from 'urql';
-import Query from '../../Query';
-import useFetch from '../../hooks/useFetch';
+
 
 
 
