@@ -8,6 +8,8 @@ import Rating from '@mui/material/Rating';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../redux/actions/productActions'
 import { useEffect } from 'react';
+import { Button } from '@mui/material';
+import LoadingButton from '@mui/lab/LoadingButton';
 
 
 //what is displayed on the products page
@@ -95,19 +97,23 @@ function ProductCard() {
  
     return (
       <div className='productcontainer'>
+        {loading ? (<p>loading</p>) : error ? (<p>error</p>) : (null)}
          {products.map((product) => (
-         
           <div key={product._id} className="product-card">
           
            <div className="product_container" >
             {/* linking to individual product page */}
            <Link to={`/product/${product._id}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
           <div className="product-body">
-          <img className="product-image" src={product.image} alt={product.name}/>
+            <div className='product-image-container' >
+          <img  className="product-image" src={product.image} alt={product.name}/>
+          </div>
           <h1 className="product-title">{product.name}</h1>
           <Rating name="size-small" defaultValue={product.rating} size="small"/>
           <h3 className="product-author">By {product.author}</h3>
          <p className="product-price">${product.price}</p>
+         <Button className="image_button" variant="outlined">Add to cart</Button>
+           
         
         
         </div>

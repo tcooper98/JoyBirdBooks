@@ -1,9 +1,13 @@
 import React from 'react'
-export default function Cart() {
-    return( 
-        <>
-    <h1>My Cart</h1>
+import { Link as ReactLink } from 'react-router-dom'
+import { Button } from '@mui/material'
+import { Rating } from '@mui/lab'
 
-    </>
+
+const Cart = () => {
+    return( 
+         <p>hi</p>
     )
 }
+
+export default Cart

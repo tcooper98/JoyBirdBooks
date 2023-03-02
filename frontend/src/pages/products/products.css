@@ -13,6 +13,10 @@
     margin-right: 15px
 }
 
+.image-button{
+    position: absolute;
+    
+}
 
 /* use once data is imported */
 .productcontainer{
