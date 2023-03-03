@@ -91,12 +91,14 @@ function ProductCard() {
     dispatch(getProducts());
   }, [dispatch]);
 
+
  
  
     return (
       <div className='productcontainer'>
-        {loading ? (<p>loading</p>) : error ? (<p>error</p>) : (null)}
-         {products.map((product) => (
+        {loading ? (<p>loading</p>) 
+        : error ? (<p>error</p>) 
+        : (products.map((product) => (
           <div key={product._id} className="product-card">
           
            <div className="product_container" >
@@ -118,7 +120,7 @@ function ProductCard() {
          </Link>
       </div> 
       </div>
-         ))}
+         )))}
 
       </div>
     )

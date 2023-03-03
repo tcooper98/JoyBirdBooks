@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProduct } from '../../redux/actions/productActions';
+import { getProducts } from '../../redux/actions/productActions';
 
 
 
@@ -201,78 +201,63 @@ export default function SoloProduct () {
 
 
 function SoloProductCard() {
-   
- 
+  const { id } = useParams();
+  console.log('product id from soloProductCard', id);
+   const dispatch = useDispatch();
+
+  const productList = useSelector((state) => state.products);
+  const { loading, error, products } = productList;
+
+  //useEffect(() => {
+  //  dispatch(getProducts());
+  //}, [dispatch]);
+
+  // we want one product
+  fetch(`/api/products/${id}`, {
+    method: 'GET',
+    
+  }).then((response) => {
+    response.json().then((data) => {
+      console.log('data from fetch', data);
+      //dispatch(getProduct(data));
+    })
+  });
+
+      
 
      
     //formatting how products are displayed 
     return (
        
-      // <div className='soloproduct'>
-      //    {product.map((product) => (
+      <div className='soloproduct'>
+         {products.map((product) => (
           
-      //     <div key={product._id} className="product-details">
-      //     <img src={product.image} alt={product.name}/>
-      //     <div className="product-info">
-      //     <h1>{product.name}</h1>
-      //     <h3>By {product.author}</h3>
-      //     <Rating name="size-small" defaultValue={product.rating} size="small"/>
-      //    <p>{product.description}</p>
-      //    <h2>${product.attributes.price}</h2>
-      //     <input className="ship" type="radio" value=""></input>
-      //                   <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br/> <br/>
-      //                   <input className="buy" type="radio" value=""></input>   
-      //                   <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
+          <div key={product._id} className="product-details">
+          <img src={product.image} alt={product.name}/>
+          <div className="product-info">
+          <h1>{product.name}</h1>
+          <h3>By {product.author}</h3>
+          <Rating name="size-small" defaultValue={product.rating} size="small"/>
+         <p>{product.description}</p>
+         <h2>${product.price}</h2>
+          <input className="ship" type="radio" value=""></input>
+                        <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br/> <br/>
+                        <input className="buy" type="radio" value=""></input>   
+                        <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
               
-      //           <button className='leftbutton'>Add to Cart</button>
-      //           <button className='rightbutton'>Buy Now</button>
+                <button className='leftbutton'>Add to Cart</button>
+                <button className='rightbutton'>Buy Now</button>
         
-      //   </div>
-      // </div>
-      //    ))}
+        </div>
+      </div>
+         ))}
 
-      // </div>
+      </div>
 
-      <div>
-       
-       <p>hi</p>
-     </div>
+  
+     
     )
   
   }
-//  function SoloProductCard() {
-//   const { slug } = useParams();
-//   const { name }  = useParams();
-//   const { loading, error, data } = useFetch('http://localhost:1337/api/items/' + slug, { method: 'GET'})
-  
-
-//   if (loading) return <div>Loading...</div>
-//   if (error) return <div>Oh no... {error.message}</div>
-//   console.log(data)
-//   return (
-//     <div className='soloproduct'>
-         
-//           <div key={data.data.attributes.slug} className="product-details">
-//           {/* <img src={data.data.image.data.attributes.formats.medium.url} alt={data.data.attributes.name}/> */}
-//           <div className="product-info">
-//           <h1>{data.data.attributes.name}</h1>
-//           <h3>By {data.data.attributes.author}</h3>
-//           <Rating name="size-small" defaultValue={data.data.attributes.rating} size="small"/>
-//          <p>{data.data.attributes.description}</p>
-//          <h2>${data.data.attributes.price}</h2>
-//           <input className="ship" type="radio" value=""></input>
-//                         <label for="ship">Ship This Item - Qualifies for Free Shipping</label> <br/> <br/>
-//                         <input className="buy" type="radio" value=""></input>   
-//                         <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
-              
-//                 <button className='leftbutton'>Add to Cart</button>
-//                 <button className='rightbutton'>Buy Now</button>
-        
-//         </div>
-//       </div>
-
-//       </div>
-//   )
-//  }
 
 
