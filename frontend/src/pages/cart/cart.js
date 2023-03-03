@@ -28,6 +28,7 @@ const getHeadingContent = () => (cart.length === 1 ? '(1 Item)' : `(${cart.lengt
           </Link>) 
         : (
              <div>{getHeadingContent()}
+             <h1 className='carttitle'>My Cart</h1>
              {cart.map((cartItem) => (
               <CartItem key={cartItem.id} CartItem={cartItem}/>
              ))}
