@@ -4,7 +4,8 @@ export const BookItems =[
         name:'Book Title',
         image: require ("./placeholder.jpg"),
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nisl.',
-        date: 'January 2023'
+        date: 'January 2023',
+        link: 'mary'
     },
 
     { 
@@ -12,7 +13,8 @@ export const BookItems =[
         name:'Book Title 2',
         image: require ("./placeholder.jpg"),
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nisl.',
-        date: 'January 2023'
+        date: 'January 2023',
+        link: 'sam'
     },
 
     { 
@@ -20,7 +22,8 @@ export const BookItems =[
         name:'Book Title 3',
         image: require ("./placeholder.jpg"),
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nisl.',
-        date: 'January 2023'
+        date: 'January 2023',
+        link: 'jane'
     },
 
     { 
@@ -28,6 +31,8 @@ export const BookItems =[
         name:'Book Title 4',
         image: require ("./placeholder.jpg"),
         description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nisl. Sed euismod, nunc vel tincidunt lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nisl.',
-        date: 'January 2023'
+        date: 'January 2023',
+        link: 'carson'
+
     }
 ]

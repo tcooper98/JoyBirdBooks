@@ -109,10 +109,9 @@ function ProductCard() {
           <img  className="product-image" src={product.image} alt={product.name}/>
           </div>
           <h1 className="product-title">{product.name}</h1>
-          <Rating name="size-small" defaultValue={product.rating} size="small"/>
+          <Rating name="size-small" defaultValue={product.rating} size="small" readOnly/>
           <h3 className="product-author">By {product.author}</h3>
          <p className="product-price">${product.price}</p>
-         <Button className="image_button" variant="outlined">Add to cart</Button>
            
         
         

@@ -49,123 +49,6 @@ export default function SoloProduct () {
             
         </div>  
 
-        <div className='reviews'>
-            <div className="review-menu">
-              <h1>Customer Reviews</h1> 
-              <Rating name="size-large" defaultValue={4} size="large"/> 
-              {/* I still havent figured out how to get the rating to display the number of stars so all these boxes will be replaced*/}
-              <Box
-                sx={{
-                width: 325,
-                margin: 'auto',
-                marginBottom: "20px",
-                height: 32,
-                backgroundColor: '#f2c202',
-                '&:hover': {
-                backgroundColor: 'gray',
-               opacity: [0.9, 0.8, 0.7],
-                 },
-                 }}
-                 />
-
-                  <Box
-                sx={{
-                width: 325,
-                margin: 'auto',
-                marginBottom: "20px",
-                height: 32,
-                backgroundColor: '#f2c202',
-                '&:hover': {
-                backgroundColor: 'gray',
-               opacity: [0.9, 0.8, 0.7],
-                 },
-                 }}
-                 />
-
-                  <Box
-                sx={{
-                width: 325,
-                margin: 'auto',
-                marginBottom: "20px",
-                height: 32,
-                backgroundColor: '#f2c202',
-                '&:hover': {
-                backgroundColor: 'gray',
-               opacity: [0.9, 0.8, 0.7],
-                 },
-                 }}
-                 />
-
-                  <Box
-                sx={{
-                width: 325,
-                margin: 'auto',
-                marginBottom: "20px",
-                height: 32,
-                backgroundColor: '#f2c202',
-                '&:hover': {
-                backgroundColor: 'gray',
-               opacity: [0.9, 0.8, 0.7],
-                 },
-                 }}
-                 />
-
-                  <Box
-                sx={{
-                width: 325,
-                margin: 'auto',
-                marginBottom: "20px",
-                height: 32,
-                backgroundColor: '#f2c202',
-                '&:hover': {
-                backgroundColor: 'gray',
-               opacity: [0.9, 0.8, 0.7],
-                 },
-                 }}
-                 />
-
-
-
-
-              <Divider variant="middle" />
-              <h2>Review this item</h2>
-                <p>Share your thoughts with the community</p>
-                <button className='product-review'>Write a product review</button>
-             </div>
-
-
-             <div className="review-info">
-                  <select name="rating" id="rating" className='ratingdropdown'>
-                  <option value="high">Sort by Highest Rating</option>
-                  <option value="low">Sort by Lowest Rating</option>
-                 </select>
-              
-              <div className='review-content'>
-               <h2>By She Treads Lightly</h2>
-                 <Rating name="size-small" defaultValue={3} size="small"/> 
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue, arcu a ornare dictum, nisl neque aliquet est,
-                 et ultricies arcu mauris vel velit. Curabitur porta feugiat imperdiet. Duis id turpis scelerisque, cursus mauris iaculis.</p>
-
-               <p className='review-date'>Reviewed on 22/22/2022</p>
-                
-
-               <h2>By She Treads Lightly</h2>
-                 <Rating name="size-small" defaultValue={3} size="small"/> 
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue, arcu a ornare dictum, nisl neque aliquet est,
-                 et ultricies arcu mauris vel velit. Curabitur porta feugiat imperdiet. Duis id turpis scelerisque, cursus mauris iaculis.</p>
-
-                  <p className='review-date'>Reviewed on 22/22/2022</p>
-
-               <h2>By She Treads Lightly</h2>
-                 <Rating name="size-small" defaultValue={3} size="small"/> 
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas congue, arcu a ornare dictum, nisl neque aliquet est,
-                 et ultricies arcu mauris vel velit. Curabitur porta feugiat imperdiet. Duis id turpis scelerisque, cursus mauris iaculis.</p>
-                 <p className='review-date'>Reviewed on 22/22/2022</p>
-              </div>
-              </div>
-
-        </div>
-
 
 
         
@@ -204,40 +87,52 @@ function SoloProductCard() {
   const { id } = useParams();
   console.log('product id from soloProductCard', id);
    const dispatch = useDispatch();
-
-  const productList = useSelector((state) => state.products);
-  const { loading, error, products } = productList;
+    
+   const [isLoading, setIsLoading] = useState(true);
+   
+   const [product, setProduct] = useState({});
+  //const productList = useSelector((state) => state.products);
+  //const { loading, error, products } = productList;
 
   //useEffect(() => {
   //  dispatch(getProducts());
   //}, [dispatch]);
 
   // we want one product
+  
+ useEffect(
+  () => {
   fetch(`/api/products/${id}`, {
     method: 'GET',
     
   }).then((response) => {
     response.json().then((data) => {
-      console.log('data from fetch', data);
-      //dispatch(getProduct(data));
-    })
-  });
-
+      setIsLoading(false);
+      setProduct(data)
       
+    });
+  })
+  },
+  []
+  );
 
-     
+  if(isLoading) {
+    return <p>Loading...</p>
+  }
+    
     //formatting how products are displayed 
     return (
        
       <div className='soloproduct'>
-         {products.map((product) => (
+         
           
+        
           <div key={product._id} className="product-details">
           <img src={product.image} alt={product.name}/>
           <div className="product-info">
           <h1>{product.name}</h1>
           <h3>By {product.author}</h3>
-          <Rating name="size-small" defaultValue={product.rating} size="small"/>
+          <Rating name="size-small" value={product.rating} size="small" readOnly/>
          <p>{product.description}</p>
          <h2>${product.price}</h2>
           <input className="ship" type="radio" value=""></input>
@@ -247,16 +142,53 @@ function SoloProductCard() {
               
                 <button className='leftbutton'>Add to Cart</button>
                 <button className='rightbutton'>Buy Now</button>
+                
         
         </div>
       </div>
-         ))}
+       
+                  <div className='reviews'>
+            <div className="review-menu">
+              <h1>Customer Reviews</h1> 
+             
+              <p>This book is rated {product.rating}/5 stars. This rating based on {product.numberOfReviews} reviews from our readers</p>
+        
+
+              <Divider variant="middle" />
+              <h2>Review this item</h2>
+                <p>Share your thoughts with the community</p>
+                <button className='product-review'>Write a product review</button>
+             </div>
+
+            {product.reviews.map((review) => (
+             <div className="review-info">
+                  <select name="rating" id="rating" className='ratingdropdown' >
+                  <option value="high">Sort by Highest Rating</option>
+                  <option value="low">Sort by Lowest Rating</option>
+                 </select>
+              
+              <div className='review-content'>
+               <h2>{review.title}</h2>
+                 <Rating name="size-small" defaultValue={review.rating} size="small" readOnly/> 
+               <p>{review.comment}</p>
+
+               <p className='review-date'>{review.createdAt}</p>
+                
+              </div>
+              </div>
+               ))}
+
+        </div>
+                
+               
 
       </div>
 
+      
   
      
     )
+  
   
   }
 

@@ -76,6 +76,9 @@ function Product() {
 
 function ProductCard() {
 
+   function refreshPage() {
+    window.location.reload(false);
+  }
     const dispatch = useDispatch();
 
   const productList = useSelector((state) => state.products);
@@ -117,7 +120,7 @@ function ProductCard() {
       <div className="card">
       
       <div className="body">
-          <Link to={`/product/${product._id}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+          <Link onClick={() => window.location.reload()} to={`/product/${product._id}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
         <img className="image" src={product.image} alt={product.name}/>
         <h1 className="title">{product.name}</h1>
         <p className="price">${product.price}</p>

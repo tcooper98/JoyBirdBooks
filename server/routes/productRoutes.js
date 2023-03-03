@@ -4,13 +4,13 @@ const productRoutes = express.Router();
 
 
 const getProducts = async (req, res) => {
+  console.log('getProducts');
   const products = await Product.find({});
   res.json(products);
 
 }
 
 const getProduct = async (req, res) => {
-  console.log(req);
   const product = await Product.findById(req.params.id);
 
   if(product) {

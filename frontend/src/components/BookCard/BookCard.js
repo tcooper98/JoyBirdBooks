@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './BookCard.css';
 import { useLocation } from 'react-router-dom';
 import { BookItems } from "./BookItems.js";
+import { Link } from 'react-router-dom';
 
 function BookCard () {
     return (
@@ -48,11 +49,11 @@ function Book () {
 
                         <div className="p-20">
 
-                            {/* <Link to={`/product}`} style={{ textDecoration: 'none', color: 'inherit' }}> */}
+                            <Link to={`/product}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <img className="image-card" src={item.image} alt="book"/>
                                 <h1 className="title">{item.name}</h1>
                                 <p className="description">{item.description}</p>
-                            {/* </Link> */}
+                            </Link>
 
                             <div className="spacing"></div>
 
