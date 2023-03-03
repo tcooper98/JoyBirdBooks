@@ -11,6 +11,8 @@ export const addCartItem = (id, qty) => async (dispatch) => {
       image: data.image,
       price: data.price,
       stock: data.stock,
+      author: data.author,
+      condition: data.condition,
       qty,
     };
     dispatch(cartItemAdd(itemToAdd));
