@@ -120,7 +120,7 @@ function ProductCard() {
       <div className="card">
       
       <div className="body">
-          <Link onClick={() => window.location.reload()} to={`/product/${product._id}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+          <Link to={`/product/${product._id}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
         <img className="image" src={product.image} alt={product.name}/>
         <h1 className="title">{product.name}</h1>
         <p className="price">${product.price}</p>

@@ -8,6 +8,7 @@ import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../redux/actions/productActions';
+import { addCartItem } from '../../redux/actions/cartActions';
 
 
 
@@ -91,14 +92,7 @@ function SoloProductCard() {
    const [isLoading, setIsLoading] = useState(true);
    
    const [product, setProduct] = useState({});
-  //const productList = useSelector((state) => state.products);
-  //const { loading, error, products } = productList;
-
-  //useEffect(() => {
-  //  dispatch(getProducts());
-  //}, [dispatch]);
-
-  // we want one product
+  
   
  useEffect(
   () => {
@@ -140,7 +134,7 @@ function SoloProductCard() {
                         <input className="buy" type="radio" value=""></input>   
                         <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
               
-                <button className='leftbutton'>Add to Cart</button>
+                <button className='leftbutton' onClick={()=>addCartItem(product._id)}>Add to Cart</button>
                 <button className='rightbutton'>Buy Now</button>
                 
         
