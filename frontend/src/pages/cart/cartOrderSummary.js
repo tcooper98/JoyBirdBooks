@@ -1,4 +1,4 @@
-import { Button, Chip } from "@mui/material";
+import { Button, Chip, Divider } from "@mui/material";
 import React from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
@@ -6,6 +6,7 @@ import { Link as ReactLink} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
+
 
 
 const CartOrderSummary = () => {
@@ -23,15 +24,17 @@ const CartOrderSummary = () => {
 
 
     return (
-        <div>
+        <div className="total">
+           <p className="totaltitle">ORDER SUMMARY</p>
             <div className="cartSummery">
-            <p>Order Summery</p>
-            </div>
+           
             <div className="cartSubtotal">
-            <p>subtotal: ${subtotal}</p> 
+            <Divider/>
+            <p className="cartBefore">Cart total {subtotal}</p> 
+            <Divider />
             </div>
             <div className="cartShipping">
-            <p>shipping</p>
+            <p>Shipping&nbsp;</p>
             {subtotal <= 50 ? (
                 standardShipping
             ): ( 
@@ -42,16 +45,16 @@ const CartOrderSummary = () => {
 
             <div className="cartTotal">
             
-           <h3>total: ${subtotal <= 50 ? Number(subtotal) + Number(standardShipping) :Number(subtotal)} </h3>
+           <h3>Total: ${subtotal <= 50 ? Number(subtotal) + Number(standardShipping) :Number(subtotal)} </h3>
             </div>
             
-            <Button as={ReactLink} to='/checkout' 
+            <button as={ReactLink} to='/checkout' 
             righticon={<ArrowCircleRightIcon/>}
             isloading={buttonLoading} 
-            onClick={() => checkoutHandler()}>Checkout</Button>
+            onClick={() => checkoutHandler()} className="SummaryButton" >Checkout</button>
           
             
-
+         </div>
         </div>
     )
 }

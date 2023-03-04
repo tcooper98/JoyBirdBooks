@@ -1,3 +1,62 @@
+/* cart summary css */
+div.total{
+    background-color: #292727;
+    padding: 30px;
+}
+
+div.cartSummery{
+    background-color: white;
+    padding: 15px;
+    margin-right: auto;
+}
+
+
+
+p.totaltitle{
+    color:white;
+    font-size: 30px; 
+    font-weight: 500;  
+   
+}
+
+div.cartShipping{
+    display:flex;
+    flex-direction: row;
+
+}
+
+p.cartBefore{
+    font-size: 25px;
+    font-weight: 300;
+    color:#292727
+}
+
+div.cartShipping{
+font-size: 25px;
+    font-weight: 300;
+    color: #292727;
+}
+
+div.cartTotal{
+    font-size: 25px;
+        font-weight: 500;
+        color: black;
+}
+
+button.SummaryButton{
+    background-color: #eac342;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+   
+}
+/* end of cart page css */
+
+
+/* this is the css for items in cart */
 img.cartimage{
     width: 150px;
     height: 150px;
@@ -51,6 +110,8 @@ div.cartInfoWrapper{
 div.cartQuantityWrapper{
     grid-area: 1 / 4 / 2 / 5;
     margin-top: 0px;
+    padding-left: 15px;
+
 }
 
 div.cartPriceWrapper{
@@ -63,3 +124,5 @@ h1.carttitle{
     color: #363636;
     font-weight: 400;
 }
+
+/* end of css for cart items */

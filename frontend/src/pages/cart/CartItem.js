@@ -10,6 +10,8 @@ const CartItem = ({ cartItem }) => {
    const {name, image, price, stock, qty, id, author, condition} = cartItem;
    const dispatch = useDispatch();
 
+   
+
     return (
         
         <div>
@@ -23,11 +25,11 @@ const CartItem = ({ cartItem }) => {
          <p className="cartcondition">Item Condition: {condition}</p>
          </div>
          <div className='cartQuantityWrapper'>
-            <FormControl  sx={{ minWidth: 120 }}>
+            
             <InputLabel id="demo-simple-select-label">Quantity</InputLabel>
                 <Select
                  labelId="demo-simple-select-label"
-                id="demo-simple-select"
+                 id="demo-simple-select"
                  label="Quantity"
                 value={qty}
                  onChange={(e) => {
@@ -40,7 +42,7 @@ const CartItem = ({ cartItem }) => {
                 ))}
             
               </Select>
-              </FormControl>
+             
          </div>
          <div className='cartPriceWrapper'>
          <h1 className="cartprice">${price}</h1>

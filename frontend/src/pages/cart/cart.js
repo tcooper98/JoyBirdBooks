@@ -39,7 +39,7 @@ const getHeadingContent = () => (cart.length === 1 ? '(1 Item)' : `(${cart.lengt
               
              ))}
              <div className='cartReceipt'> 
-              <CartOrderSummary/>
+              <CartOrderSummary className='cartReceipt'></CartOrderSummary>
              </div>
 
              </div>
