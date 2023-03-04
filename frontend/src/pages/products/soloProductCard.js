@@ -11,15 +11,13 @@ import React from 'react';
 import { Link as ReactLink} from "react-router-dom";
 
 
+
 const SoloProductCard = () => {
   const dispatch = useDispatch();
   const cartInfo = useSelector((state) => state.cart);
   const { cart } = cartInfo;
 
-const buyHandler = () => {
-    setButtonLoading(true);
-    navigate('/cart');
-  };
+
   
 const addBuyNow = (id) => {
     if(cart.some((cartItem) => cartItem.id === id)) {
@@ -86,8 +84,8 @@ const addBuyNow = (id) => {
                         <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
               
                 <button className='leftbutton' isDisabled={product.stock <= 0} onClick={()=>addItem(product._id)}>Add to Cart</button>
-                 <Link to={`/product/${product._id}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
-                <button className='rightbutton'isDisabled={product.stock <= 0} onClick={()=>{addBuyNow(product._id); buyHandler();}}
+                 <Link to={`/cart`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+                <button className='rightbutton'isDisabled={product.stock <= 0} onClick={()=>addBuyNow(product._id)}
                   >Buy Now</button>
                   </Link>
                 
