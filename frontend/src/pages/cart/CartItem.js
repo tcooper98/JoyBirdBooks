@@ -4,8 +4,8 @@ import './Cart.css';
 import { addCartItem } from '../../redux/actions/cartActions';
 import { Divider, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
-const CartItem = ({ CartItem }) => {
-   const {name, image, price, stock, qty, id, author, condition} = CartItem;
+const CartItem = ({ cartItem }) => {
+   const {name, image, price, stock, qty, id, author, condition} = cartItem;
    const dispatch = useDispatch();
 
     return (

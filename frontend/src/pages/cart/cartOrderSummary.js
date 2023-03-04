@@ -1,36 +1,58 @@
-import { Button } from "@mui/material";
+import { Button, Chip } from "@mui/material";
 import React from "react";
 import { useState } from "react";
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link as ReactLink} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import './Cart.css';
+import AutoStoriesIcon from '@mui/icons-material/AutoStories';
+import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 
 const CartOrderSummary = () => {
-    const [buttonLoading, setButtonLoading] = useState(false);
-    const standardShipping = Number(5.99).toFixed(2);
-    const cartItems = useSelector((state) => state.cart.cart);
-    const {subtotal} = cartItems
-    const navigate = useNavigate();
+  const [buttonLoading, setButtonLoading] = useState();
+  const standardShipping = Number(4.99).toFixed(2);
+  const cartItems = useSelector((state) => state.cart);
+  const { subtotal } = cartItems;
+  const navigate = useNavigate();
 
-    const checkoutHandler = () => {
-        setButtonLoading(true)
-        navigate('/checkout')
-    }
+
+  console.log('subtotal', subtotal);
+
+  const checkoutHandler = () => {
+    setButtonLoading(true);
+    navigate('/checkout');
+  };
 
 
     return (
         <div>
-            {subtotal <= 50? (
+            <div className="cartSummery">
+            <p>Order Summery</p>
+            </div>
+            <div className="cartSubtotal">
+            <h3>{subtotal}</h3> 
+            </div>
+            <div className="cartShipping">
+            {subtotal <= 50 ? (
                 standardShipping
-            ): (<p>Free shipping</p>)}
+            ): ( 
+            <Chip icon={<AutoStoriesIcon/>}
+             label="Free Shipping"/>
+             )}
+            </div>
 
-            {subtotal <= 50 ? Number(subtotal) + Number(standardShipping) : subtotal }
+            <div className="cartTotal">
+           <p>{subtotal <= 50 ? (subtotal) + (standardShipping) : subtotal} </p>
+            </div>
             
-            <Link to='/checkout'>
-            <Button isLoading={buttonLoading} onClick={() => checkoutHandler()}>Checkout</Button>
-            </Link>
+            <Button as={ReactLink} to='/checkout' 
+            rightIcon={<ArrowCircleRightIcon/>}
+            isLoading={buttonLoading} 
+            onClick={() => checkoutHandler()}>Checkout</Button>
+          
+            
+
         </div>
     )
 }

@@ -15,6 +15,9 @@ export default function SoloProductCard() {
   const cartInfo = useSelector((state) => state.cart);
   const { cart } = cartInfo;
 
+  const [open, setOpen] = useState(false);
+  const [message, setMessage] = useState('');
+
   const addItem = (id) => {
     if(cart.some((cartItem) => cartItem.id === id)) {
       alert('Item already in cart go to cart to update quantity');

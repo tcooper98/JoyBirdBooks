@@ -8,6 +8,7 @@ import CartOrderSummary from './cartOrderSummary';
 import './Cart.css';
 
 
+
 const Cart = () => {
  const cartInfo = useSelector((state) => state.cart)
  const { loading, error, cart } = cartInfo
@@ -29,9 +30,15 @@ const getHeadingContent = () => (cart.length === 1 ? '(1 Item)' : `(${cart.lengt
         : (
              <div>{getHeadingContent()}
              <h1 className='carttitle'>My Cart</h1>
+             
              {cart.map((cartItem) => (
-              <CartItem key={cartItem.id} CartItem={cartItem}/>
+              <CartItem key={cartItem.id} cartItem={cartItem}/>
+              
              ))}
+             <div> 
+              <CartOrderSummary/>
+             </div>
+
              </div>
             
              )
