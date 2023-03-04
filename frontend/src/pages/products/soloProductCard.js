@@ -10,13 +10,11 @@ import { addCartItem } from '../../redux/actions/cartActions';
 import React from 'react';
 
 
-export default function SoloProductCard() {
+const SoloProductCard = () => {
   const dispatch = useDispatch();
   const cartInfo = useSelector((state) => state.cart);
   const { cart } = cartInfo;
 
-  const [open, setOpen] = useState(false);
-  const [message, setMessage] = useState('');
 
   const addItem = (id) => {
     if(cart.some((cartItem) => cartItem.id === id)) {
@@ -75,7 +73,7 @@ export default function SoloProductCard() {
                         <input className="buy" type="radio" value=""></input>   
                         <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
               
-                <button className='leftbutton' onClick={()=>addItem(product._id)}>Add to Cart</button>
+                <button className='leftbutton' isDisabled={product.stock <= 0} onClick={()=>addItem(product._id)}>Add to Cart</button>
                 <button className='rightbutton'>Buy Now</button>
                 
         
@@ -126,3 +124,5 @@ export default function SoloProductCard() {
   
   
   }
+
+  export default SoloProductCard;

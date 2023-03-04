@@ -4,20 +4,17 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import { Link as ReactLink} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import './Cart.css';
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 
 
 const CartOrderSummary = () => {
   const [buttonLoading, setButtonLoading] = useState();
-  const standardShipping = Number(4.99).toFixed(2);
+  const standardShipping = Number(5.99).toFixed(2);
   const cartItems = useSelector((state) => state.cart);
   const { subtotal } = cartItems;
   const navigate = useNavigate();
 
-
-  console.log('subtotal', subtotal);
 
   const checkoutHandler = () => {
     setButtonLoading(true);
@@ -31,9 +28,10 @@ const CartOrderSummary = () => {
             <p>Order Summery</p>
             </div>
             <div className="cartSubtotal">
-            <h3>{subtotal}</h3> 
+            <p>subtotal: ${subtotal}</p> 
             </div>
             <div className="cartShipping">
+            <p>shipping</p>
             {subtotal <= 50 ? (
                 standardShipping
             ): ( 
@@ -43,12 +41,13 @@ const CartOrderSummary = () => {
             </div>
 
             <div className="cartTotal">
-           <p>{subtotal <= 50 ? (subtotal) + (standardShipping) : subtotal} </p>
+            
+           <h3>total: ${subtotal <= 50 ? Number(subtotal) + Number(standardShipping) :Number(subtotal)} </h3>
             </div>
             
             <Button as={ReactLink} to='/checkout' 
-            rightIcon={<ArrowCircleRightIcon/>}
-            isLoading={buttonLoading} 
+            righticon={<ArrowCircleRightIcon/>}
+            isloading={buttonLoading} 
             onClick={() => checkoutHandler()}>Checkout</Button>
           
             

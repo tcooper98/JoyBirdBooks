@@ -4,6 +4,8 @@ import './Cart.css';
 import { addCartItem } from '../../redux/actions/cartActions';
 import { Divider, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 
+
+
 const CartItem = ({ cartItem }) => {
    const {name, image, price, stock, qty, id, author, condition} = cartItem;
    const dispatch = useDispatch();
@@ -26,20 +28,17 @@ const CartItem = ({ cartItem }) => {
                 <Select
                  labelId="demo-simple-select-label"
                 id="demo-simple-select"
-                // value={age}
                  label="Quantity"
-                //  onChange={handleChange}
-                 >
-              <MenuItem value={1}>1</MenuItem>
-              <MenuItem value={2}>2</MenuItem>
-              <MenuItem value={3}>3</MenuItem>
-              <MenuItem value={4}>4</MenuItem>
-              <MenuItem value={5}>5</MenuItem>
-              <MenuItem value={6}>6</MenuItem>
-              <MenuItem value={7}>7</MenuItem>
-              <MenuItem value={8}>8</MenuItem>
-              <MenuItem value={9}>9</MenuItem>
-              <MenuItem value={10}>10</MenuItem>
+                value={qty}
+                 onChange={(e) => {
+                    dispatch(addCartItem(id, e.target.value));
+                 }}>
+                {[...Array(stock).keys()].map((x) => (
+              <MenuItem key={ x + 1} value={x + 1}>
+                {x + 1}
+                </MenuItem>
+                ))}
+            
               </Select>
               </FormControl>
          </div>

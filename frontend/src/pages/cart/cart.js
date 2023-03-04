@@ -11,9 +11,9 @@ import './Cart.css';
 
 const Cart = () => {
  const cartInfo = useSelector((state) => state.cart)
- const { loading, error, cart } = cartInfo
+ const { loading, error, cart } = cartInfo;
 
- console.log('cart', cart)
+
 
 const getHeadingContent = () => (cart.length === 1 ? '(1 Item)' : `(${cart.length} Items)`);
  
@@ -28,17 +28,21 @@ const getHeadingContent = () => (cart.length === 1 ? '(1 Item)' : `(${cart.lengt
           <Button>Your Cart is Empty. Check out our Book Selection</Button>
           </Link>) 
         : (
+             <div className='cartContainer'>
+              <div className='cartContent'>
              <div>{getHeadingContent()}
              <h1 className='carttitle'>My Cart</h1>
+              </div>
              
              {cart.map((cartItem) => (
               <CartItem key={cartItem.id} cartItem={cartItem}/>
               
              ))}
-             <div> 
+             <div className='cartReceipt'> 
               <CartOrderSummary/>
              </div>
 
+             </div>
              </div>
             
              )
