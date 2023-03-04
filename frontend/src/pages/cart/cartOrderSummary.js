@@ -30,11 +30,11 @@ const CartOrderSummary = () => {
            
             <div className="cartSubtotal">
             <Divider/>
-            <p className="cartBefore">Cart total {subtotal}</p> 
+            <p className="cartBefore">Cart total ${subtotal}</p> 
             <Divider />
             </div>
             <div className="cartShipping">
-            <p>Shipping&nbsp;</p>
+            <p>Shipping&nbsp; $</p>
             {subtotal <= 50 ? (
                 standardShipping
             ): ( 

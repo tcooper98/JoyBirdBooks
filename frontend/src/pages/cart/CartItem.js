@@ -1,8 +1,11 @@
 import React from 'react'
 import { useDispatch } from 'react-redux';
 import './Cart.css';
-import { addCartItem } from '../../redux/actions/cartActions';
-import { Divider, FormControl, InputLabel, MenuItem, Select } from '@mui/material';
+import { addCartItem, removeCartItem } from '../../redux/actions/cartActions';
+import { Divider, FormControl, IconButton, InputLabel, MenuItem, Select } from '@mui/material';
+import ClearIcon from '@mui/icons-material/Clear';
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -20,7 +23,9 @@ const CartItem = ({ cartItem }) => {
          <img className="cartimage" src={image} alt={name}/>
          </div>
          <div className='cartInfoWrapper'>
+           <Link to={`/product/${id}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
          <h1 className="cartname">{name}</h1>
+           </Link>
          <h1 className="cartauthor">By {author}</h1>
          <p className="cartcondition">Item Condition: {condition}</p>
          </div>
@@ -47,6 +52,13 @@ const CartItem = ({ cartItem }) => {
          <div className='cartPriceWrapper'>
          <h1 className="cartprice">${price}</h1>
          </div>
+         
+         <div className='cartDelete'>
+            <IconButton aria-label="delete" onClick={() => dispatch(removeCartItem(id))}>
+            <ClearIcon />
+          </IconButton>
+
+          </div>
 
         </div>  
         <Divider variant="middle"/> 

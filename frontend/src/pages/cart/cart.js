@@ -18,14 +18,14 @@ const Cart = () => {
 const getHeadingContent = () => (cart.length === 1 ? '(1 Item)' : `(${cart.length} Items)`);
  
     return( 
-         <div className='productcontainer'>
+         <div className='productCartcontainer'>
         {loading ? 
         (<p>loading</p>) 
         : error ? 
         (<p>error {error} </p>) 
         : cart.length <= 0 ? 
         (<Link to='/products'>
-          <Button>Your Cart is Empty. Check out our Book Selection</Button>
+          <Button variant="outlined">Your Cart is Empty. Click Here To Check out our Book Selection</Button>
           </Link>) 
         : (
              <div className='cartContainer'>

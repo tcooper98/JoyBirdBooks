@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addCartItem } from '../../redux/actions/cartActions';
 import React from 'react';
+import { Link as ReactLink} from "react-router-dom";
 
 
 const SoloProductCard = () => {
@@ -15,6 +16,17 @@ const SoloProductCard = () => {
   const cartInfo = useSelector((state) => state.cart);
   const { cart } = cartInfo;
 
+const buyHandler = () => {
+    setButtonLoading(true);
+    navigate('/cart');
+  };
+  
+const addBuyNow = (id) => {
+    if(cart.some((cartItem) => cartItem.id === id)) {
+    } else{
+      dispatch(addCartItem(id));
+  
+    }}
 
   const addItem = (id) => {
     if(cart.some((cartItem) => cartItem.id === id)) {
@@ -74,7 +86,10 @@ const SoloProductCard = () => {
                         <label for="buy">Pick up at store - 3018 Corrine Dr, Orlando, FL 32803</label><br/>
               
                 <button className='leftbutton' isDisabled={product.stock <= 0} onClick={()=>addItem(product._id)}>Add to Cart</button>
-                <button className='rightbutton'>Buy Now</button>
+                 <Link to={`/product/${product._id}`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+                <button className='rightbutton'isDisabled={product.stock <= 0} onClick={()=>{addBuyNow(product._id); buyHandler();}}
+                  >Buy Now</button>
+                  </Link>
                 
         
         </div>
