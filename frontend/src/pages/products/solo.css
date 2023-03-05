@@ -3,6 +3,14 @@
 
 }
 
+div.noReviews{
+    margin: 40px;
+}
+
+p.reviewResult{
+    text-align: right;
+}
+
 .product-details img {
     height: 709px;
     width: 512px;
@@ -27,10 +35,10 @@
     color: #489fb5;
 }
 
-.product-details p {
+.product-details p{
     margin-top: 10px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Nunito', sans-serif;
 }
 
@@ -335,7 +343,7 @@
 }
 
 .product-details p {
-    font-size: 20px;
+    font-size: 25px;
     
 }
 
