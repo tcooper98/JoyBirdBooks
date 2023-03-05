@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { setLoading, setError, cartItemAdd, cartItemRemoval, setExpressShipping, clearCart } from '../slices/cart';
 
-export const addCartItem = (id, qty) => async (dispatch) => {
+export const addCartItem = (id, qty = 1) => async (dispatch) => {
   dispatch(setLoading(true));
   try {
     const { data } = await axios.get(`/api/products/${id}`);
@@ -13,7 +13,7 @@ export const addCartItem = (id, qty) => async (dispatch) => {
       stock: data.stock,
       author: data.author,
       condition: data.condition,
-      qty,
+      qty: qty,
     };
     dispatch(cartItemAdd(itemToAdd));
   } catch (error) {

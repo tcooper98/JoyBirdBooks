@@ -62,9 +62,10 @@ const SearchResults = () => {
               </div>
             </div>
           </Link>
-           <h1 className="searchEnd">End of Results</h1>
+          
         </div>
-      ))
+        
+      ) )
     )}
      
     </div>

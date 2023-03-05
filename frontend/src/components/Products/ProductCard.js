@@ -76,9 +76,7 @@ function Product() {
 
 function ProductCard() {
 
-   function refreshPage() {
-    window.location.reload(false);
-  }
+  
     const dispatch = useDispatch();
 
   const productList = useSelector((state) => state.products);

@@ -45,7 +45,8 @@ const CartOrderSummary = () => {
 
             <div className="cartTotal">
             
-           <h3>Total: ${subtotal <= 50 ? Number(subtotal) + Number(standardShipping) :Number(subtotal)} </h3>
+           <h3>Total: ${(subtotal <= 50 ? Number(subtotal) + Number(standardShipping) :Number(subtotal) + Number(0)).toFixed(2)}</h3>
+
             </div>
             
             <button as={ReactLink} to='/checkout' 
