@@ -49,15 +49,15 @@ export default function Home() {
             <h2>TESTIMONIALS</h2>
             <div className="testimonials">
                 <div className='testimonials1'>
-                <p>"This is a testimonial This is a testimonial"</p>
+                <p>"In an ever-evolving digital age, it's so refreshing to see another small independent bookstore pop up in this area! It has the perfect mix of a little bit of everything" <br/> -Josh D.</p>
                 </div>
                 
                 <div className='testimonials2'>
-                <p>"This is a testimonial This is a testimonial"</p>
+                <p>"This place is awesome and so fun for children! They offer super resonably priced used books and new books from local authors. The store is designed with families in mind" <br/> -Hannah M.</p>
                 </div>
 
                 <div className='testimonials3'>
-                <p>"This is a testimonial This is a testimonial"</p>
+                <p>"Joybird Books is a delightful cozy used book and curio shop in the heart of the busy Corrine Drive commercial distract of Audubon park. The amazing selection seems curated and the space is very welcoming" <br/> -Cinna S.</p>
                 </div>
             </div>
 
