@@ -89,7 +89,7 @@ function ProductCard() {
 
   useEffect(() => {
     dispatch(getProducts());
-  }, [dispatch]);
+  }, [dispatch,]);
 
 
  

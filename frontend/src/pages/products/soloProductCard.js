@@ -43,21 +43,27 @@ const addBuyNow = (id) => {
    const [product, setProduct] = useState({});
   
   
- useEffect(
-  () => {
-  fetch(`/api/products/${id}`, {
-    method: 'GET',
-    
-  }).then((response) => {
-    response.json().then((data) => {
-      setIsLoading(false);
-      setProduct(data)
-      
-    });
-  })
-  },
-  []
-  );
+ 
+  useEffect(() => {
+    setIsLoading(true);
+    fetch(`/api/products/${id}`, {
+      method: 'GET',
+    })
+      .then((response) => {
+        response.json().then((data) => {
+          setIsLoading(false);
+          setProduct(data);
+        });
+      })
+      .catch((error) => {
+        console.error(error);
+        setIsLoading(false);
+      });
+  }, [id]);
+
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
 
   if(isLoading) {
     return <p>Loading...</p>

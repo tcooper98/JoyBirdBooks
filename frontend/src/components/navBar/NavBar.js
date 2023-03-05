@@ -5,7 +5,7 @@ import ConnectedDropdown from './ConnectedDropdown';
 import './Navbar.css'
 import Logo from './primarylogo.png';
 import SearchBar from './SearchBar';
-import { Route } from 'react-router-dom';
+
 
 function Navbar() {
     //toggle hamburger menu not visible on desktop
