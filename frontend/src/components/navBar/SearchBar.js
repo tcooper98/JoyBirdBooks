@@ -1,20 +1,37 @@
-// import React, { useState } from 'react';
-// import './Searchbar.css'
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Navbar.css'
 
-// function SearchBar() {
-//     return (
-//         <>
-//             <input
-//                 className="searchbar"
-//                 type="search"
-//                 placeholder="Search by Title, ISBN, Tag, Keyword...">
-//             </input>
+const SearchBar = () => {
+    const [keyword, setKeyword] = useState('')
+    const navigate = useNavigate();
 
-//             <button className="searchbutton" type="submit">
-//                 <i className="fas fa-search"></i>
-//             </button>
-//         </>
-//     )
-// }
+    const submitHandler = (e) => {
+        e.preventDefault();
+        if (keyword.trim()) {
+            navigate(`/search/${keyword}`)
+        } else {
+            navigate('/')
+        }
+    }
+    return (
+      <div className='searchcontainer'>
+                    <form onSubmit={submitHandler}>
+                    <input
+                        className="searchbar"
+                        type="text"
+                        name="q"
+                        onChange={(e) => setKeyword(e.target.value)}
+                        placeholder="Search by Title, Author, Genre..">
+                    </input>
 
-// export default SearchBar;
+                    <button className="searchbutton" type="submit">
+                        <i className="fas fa-search"></i>
+                    </button>
+                    </form>
+                </div>
+    )
+}
+
+
+export default SearchBar;

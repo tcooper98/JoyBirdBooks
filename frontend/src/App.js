@@ -22,6 +22,7 @@ import BlogReadMore from './pages/blog-read-more/blog-read-more';
 import SoloProduct from './pages/products/[id]';
 import Community from './pages/community/community';
 import Connected from './pages/connected/connected';
+import SearchResults from './pages/search/searchResults'
 
 
 
@@ -60,6 +61,7 @@ function App() {
        <Route exact path='/product/:id' element={<SoloProduct/>}/>
       <Route exact path='/community' element={<Community/>}/>
       <Route exact path='/connected' element={<Connected/>}/>
+      <Route path='/search/:keyword' element={<SearchResults/>}/>
     </Routes>
 
   <Footer/>

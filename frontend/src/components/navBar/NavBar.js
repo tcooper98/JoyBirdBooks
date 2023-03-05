@@ -4,6 +4,8 @@ import CommunityDropdown from './CommunityDropdown';
 import ConnectedDropdown from './ConnectedDropdown';
 import './Navbar.css'
 import Logo from './primarylogo.png';
+import SearchBar from './SearchBar';
+import { Route } from 'react-router-dom';
 
 function Navbar() {
     //toggle hamburger menu not visible on desktop
@@ -45,17 +47,7 @@ function Navbar() {
 
                 
 
-                <div className='searchcontainer'>
-                    <input
-                        className="searchbar"
-                        type="search"
-                        placeholder="Search by Title, ISBN, Tag, Keyword...">
-                    </input>
-
-                    <button className="searchbutton" type="submit">
-                        <i className="fas fa-search"></i>
-                    </button>
-                </div>
+                <SearchBar/>
 
                 <div className='nav-container'>
                     <div className='navbar'>

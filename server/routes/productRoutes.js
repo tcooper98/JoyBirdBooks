@@ -21,7 +21,25 @@ const getProduct = async (req, res) => {
   }
 }
 
+
+
 productRoutes.route('/').get(getProducts);
 productRoutes.route('/:id').get(getProduct);
+productRoutes.get('/search/:keyword', async (req, res) => {
+  const keyword = req.params.keyword;
+  const products = await Product.find({
+    $or: [
+     {name: { $regex: keyword, $options: 'i' } },
+      {description: { $regex: keyword, $options: 'i' } },
+      {author: { $regex: keyword, $options: 'i' } },
+      {condition: { $regex: keyword, $options: 'i' } },
+      {age: { $regex: keyword, $options: 'i' } },
+      {category: { $regex: keyword, $options: 'i' } },
+      {genre: { $regex: keyword, $options: 'i' } },
+    ],
+    });
+      res.json(products);
+});
+
 
 export default productRoutes;
