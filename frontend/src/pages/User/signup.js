@@ -25,6 +25,8 @@ const SignUp = () => {
            alert("Account Created");
        }
     }, [userInfo, redirect, error, navigate])
+
+    console.log(userInfo);
     return (
            <div>
         <Formik
@@ -41,7 +43,7 @@ const SignUp = () => {
           .oneOf([Yup.ref('password'), null], 'Passwords must match.'),
       })}
         onSubmit={(values) => {
-           dispatch(register(values.email, values.password, values.name));
+           dispatch(register(values.name, values.email, values.password));
         }}
         >
           {(formik) => (
