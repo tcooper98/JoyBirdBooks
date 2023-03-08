@@ -9,11 +9,53 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addCartItem } from '../../redux/actions/cartActions';
 import React from 'react';
 import { Link as ReactLink} from "react-router-dom";
-import { CircularProgress, Skeleton } from '@mui/material';
+import { CircularProgress, FormControl, Grid, Skeleton, TextField } from '@mui/material';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 
+
 const SoloProductCard = () => {
+  // allow users to add reviews
+const [comment, setComment] = useState('');
+const [rating, setRating] = useState(1);
+const [title, setTitle] = useState('');
+const [reviewBoxOpen, setReviewBoxOpen] = useState(false);
+
+const submitReview = (e) => {
+  e.preventDefault();
+  const review = { comment, rating, title };
+  fetch(`/api/products/${id}/reviews`, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(review),
+  })
+    .then((response) => {
+      if (response.ok) {
+        // handle successful review submission, e.g. show a success message to the user
+        console.log('Review submitted successfully!');
+      } else {
+        // handle error response from server
+        console.error('Failed to submit review:', response.statusText);
+      }
+    })
+    .catch((error) => {
+      // handle network error
+      console.error('Failed to submit review:', error);
+    })
+    .finally(() => {
+      // reset the form fields and close the review form
+      setComment('');
+      setRating(1);
+      setTitle('');
+      setReviewBoxOpen(false);
+    });
+};
+
+//  see if user is logged in
+const user = useSelector((state) => state.user);
+
   const dispatch = useDispatch();
   const cartInfo = useSelector((state) => state.cart);
   const { cart } = cartInfo;
@@ -110,7 +152,40 @@ const addBuyNow = (id) => {
               <Divider variant="middle" />
               <h2>Review this item</h2>
                 <p>Share your thoughts with the community</p>
-                <button className='product-review'>Write a product review</button>
+                <button className='product-review' onClick={() => setReviewBoxOpen(true)}>Write a product review</button>
+                {reviewBoxOpen && (
+                 <FormControl onSubmit={submitReview}>
+                  <div className='ReviewWrap'>
+                  <Grid>
+                  <Grid item>
+                  <label>
+                    Title
+                    </label>
+                    <br/>
+                    <TextField type="text" value={title} onChange={(e) => setTitle(e.target.value)} required fullWidth size='small'/>
+                  </Grid>
+                  <Grid item>
+                  <label>
+                     Rating
+                    </label>
+                    <br/>
+                     <Rating name="size-small" value={rating} size="medium" onChange={(e, value) => setRating(value)} required />
+                   
+                   </Grid>
+                    <Grid item>
+                   <label>
+                      Comment
+                    </label>
+                    <br/>
+                    <TextField  value={comment} onChange={(e) => setComment(e.target.value)} required fullWidth size='small'/>
+                    
+                    </Grid>
+                       <button type="submit">Submit</button>
+                       <button type="button" onClick={() => setReviewBoxOpen(false)}>Cancel</button>
+                       </Grid>
+                       </div>
+                     </FormControl>
+                          )}
              </div>
             {product.reviews.length ===0 ? (
               <div className='noReviews'>
