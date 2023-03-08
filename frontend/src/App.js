@@ -26,6 +26,7 @@ import SearchResults from './pages/search/searchResults';
 import Login from './pages/User/login';
 import SignUp from './pages/User/signup';
 import Account from './pages/User/account';
+import Checkout from './pages/checkout/checkout';
 
 
 
@@ -69,6 +70,7 @@ function App() {
       <Route exact path='/login' element={<Login/>}/>
       <Route exact path='/signup' element={<SignUp/>}/>
       <Route exact path='/account' element={<Account/>}/>
+      <Route exact path='/checkout' element={<Checkout/>}/>
     </Routes>
 
   <Footer/>

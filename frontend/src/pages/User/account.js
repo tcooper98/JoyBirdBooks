@@ -26,7 +26,6 @@ const Account = () => {
                 <CardContent>
                 <h3>You are currently logged in</h3>
                 </CardContent>
-                <MenuItem><AccountCircleIcon/>My Account</MenuItem>
                 <MenuItem><LocalShipping/>My Orders</MenuItem>
                 <Link to={`/login`} style={{ textDecoration: 'none', color: 'inherit'}}>
                 <MenuItem onClick={logoutHandler}><LogoutIcon/>Logout</MenuItem>
