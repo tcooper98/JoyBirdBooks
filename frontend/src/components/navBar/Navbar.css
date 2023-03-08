@@ -5,6 +5,13 @@
   margin-left: 50px;
 }
 
+i.fa-solid.fa-user-circle {
+  font-size: 40px;
+  color: #859C44;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .navbarcontainer {
   background-color: #292727;
   display: grid;

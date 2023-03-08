@@ -5,9 +5,19 @@ import ConnectedDropdown from './ConnectedDropdown';
 import './Navbar.css'
 import Logo from './primarylogo.png';
 import SearchBar from './SearchBar';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { logout } from "../../redux/actions/userActions"
 
 
 function Navbar() {
+    //changing link depending on if user is logged in or not
+    const user = useSelector((state) => state.user);
+    const { userInfo } = user;
+    const dispatch = useDispatch();
+
+    
     //toggle hamburger menu not visible on desktop
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false);
@@ -101,6 +111,17 @@ function Navbar() {
                         <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
                             <i className="fa-solid fa-cart-shopping"></i>
                         </Link>
+                        {userInfo ? (<> <Link to='/account' className='nav-links' onClick={closeMobileMenu}>
+                          <i className="fa-solid fa-user-circle"></i>
+                        </Link></>) 
+                        : ( <>
+                        
+                        <Link to='/login' className='nav-links' onClick={closeMobileMenu}>
+                          <i className="fa-solid fa-user-circle"></i>
+                        </Link>
+                        </>
+                        )
+                        }
                     </li>
                 </div>
             </nav>

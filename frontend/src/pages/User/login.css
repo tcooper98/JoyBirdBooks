@@ -1,0 +1,23 @@
+.login{
+    margin: 30px;
+}
+
+.login h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.login button{
+    width: 100%;
+    height: 40px;
+    background-color: #7e9e32;
+    color: #111;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+div.account{
+    margin:30px;
+}

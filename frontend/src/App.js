@@ -22,7 +22,11 @@ import BlogReadMore from './pages/blog-read-more/blog-read-more';
 import SoloProduct from './pages/products/[id]';
 import Community from './pages/community/community';
 import Connected from './pages/connected/connected';
-import SearchResults from './pages/search/searchResults'
+import SearchResults from './pages/search/searchResults';
+import Login from './pages/User/login';
+import SignUp from './pages/User/signup';
+import Account from './pages/User/account';
+
 
 
 
@@ -62,6 +66,9 @@ function App() {
       <Route exact path='/community' element={<Community/>}/>
       <Route exact path='/connected' element={<Connected/>}/>
       <Route path='/search/:keyword' element={<SearchResults/>}/>
+      <Route exact path='/login' element={<Login/>}/>
+      <Route exact path='/signup' element={<SignUp/>}/>
+      <Route exact path='/account' element={<Account/>}/>
     </Routes>
 
   <Footer/>
