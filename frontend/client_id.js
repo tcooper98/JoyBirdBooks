@@ -1,1 +1,0 @@
-export const PAYPAL_CLIENT_ID = 'Af_CWIFUeB1rPyRSBaM-E8spUT9O25mXsCXVa09yc8auXHOCKxO5dbyqcOtBG_K28julrnvMR90l6PuA'
