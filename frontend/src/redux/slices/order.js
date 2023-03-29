@@ -25,9 +25,9 @@ export const orderSlice = createSlice({
     clearOrder: (state) => {
       state = initialState;
     },
-   
   },
 });
+
 
 export const { setLoading, setError, shippingAddressAdd, clearOrder } = orderSlice.actions;
 export default orderSlice.reducer;

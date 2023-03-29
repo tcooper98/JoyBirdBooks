@@ -15,10 +15,14 @@ export const Checkout = () => {
 
 
    return userInfo ? (
-    <div className='check'>
-        <Link to={`/cart`} style={{ textDecoration: 'none', color: 'inherit'}}> 
+    <div className='checkout'>
+      <div>
+    <Link to={`/cart`} style={{ textDecoration: 'none', color: 'inherit'}}> 
       <KeyboardArrowLeftIcon fontSize="large"/>
       </Link>
+      </div>
+    <div className='check'>
+        
     <div className='shippingInfo'>
         
             
@@ -44,6 +48,7 @@ export const Checkout = () => {
                 </CardContent>
             </Card>
                 
+    </div>
     </div>
     </div>
   ) : (

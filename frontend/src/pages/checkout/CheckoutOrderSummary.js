@@ -1,16 +1,22 @@
 import React from 'react'
 import { useEffect, useState, useCallback } from 'react'
 import { Link } from 'react-router-dom'
-import { createOrder } from "../../redux/actions/orderActions"
+import { createOrder, resetOrder } from "../../redux/actions/orderActions"
+import { resetCart } from "../../redux/actions/cartActions"
 import { useDispatch, useSelector } from 'react-redux'
 import { Chip, Divider, Grid } from '@mui/material'
 import CheckoutItem from './CheckoutItem'
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import './checkout.css';
 import PayPalButton from '../../components/paypal/PayPalButton';
+import PaymentSuccessModal from './PaymentSuccessModal'
+import PaymentErrorModal from './PaymentErrorModal'
+import { useDisclosure } from '@mantine/hooks';
 
 
 const CheckoutOrderSummary = () => {
+   const { onClose: onErrorClose, onOpen: onErrorOpen, isOpen: isErrorOpen } = useDisclosure();
+   const { onClose: onSuccessClose, onOpen: onSuccessOpen, isOpen: isSuccessOpen } = useDisclosure();
     const cartItems = useSelector((state) => state.cart);
     const { cart, subtotal, expressShipping } = cartItems;
 
@@ -18,20 +24,25 @@ const CheckoutOrderSummary = () => {
     const { userInfo } = user;
 
     const shippingInfo = useSelector((state) => state.order);
-    const { error, shippingAddress } = cartItems;
+    const { error, shippingAddress } = shippingInfo;
+
+    console.log(shippingInfo)
 
     const [buttonDisabled, setButtonDisabled] = useState(false);
     const dispatch = useDispatch();
 
-    const shipping = useCallback(
-        () => (expressShipping === 'true' ? 14.99 : subtotal <= 50 ? 4.99: 0)
-        ,[expressShipping,subtotal]
-    );
+ const shipping = useCallback(
+  () => (cartItems.expressShipping ? 14.99 : subtotal <= 50 ? 5.99 : 0),
+  [cartItems.expressShipping, subtotal]
+);
 
-    const total = useCallback(
-    () => Number(shipping() === 0 ? Number(subtotal) : Number(subtotal) + shipping()).toFixed(2),
-    [shipping, subtotal]
-  );
+   const total = useCallback(() => {
+  const shippingCost = shipping();
+  const totalWithoutShipping = Number(subtotal);
+  const totalWithShipping = Number(totalWithoutShipping + shippingCost);
+
+  return totalWithShipping.toFixed(2);
+}, [shipping, subtotal]);
 
   useEffect(() => {
     if (!error) {
@@ -41,8 +52,20 @@ const CheckoutOrderSummary = () => {
     }
   }, [error, shippingAddress, total, expressShipping, shipping, dispatch]);
 
-   const onPaymentSuccess = async () => {
-    alert("Payment Successful");
+   const onPaymentSuccess = async (data) => {
+    dispatch(createOrder({
+      orderItems: cart,
+      shippingAddress,
+      paymentMethod: data.PaymentSource,
+      paymentDetails: data,
+      shippingPrice: shipping(),
+      totalPrice: total(),
+      userInfo,
+    })
+    );
+    dispatch(resetOrder());
+    dispatch(resetCart());
+    //confirmation page goes here
    }
 
    const onPaymentError = () => {
@@ -82,6 +105,9 @@ const CheckoutOrderSummary = () => {
                <PayPalButton total={total} onPaymentSuccess={onPaymentSuccess} onPaymentError={onPaymentError} disabled={buttonDisabled}/>
             </Grid>
             </div>
+            <PaymentErrorModal onClose={onErrorClose} onOpen={onErrorOpen} isOpen={isErrorOpen}/>
+            <PaymentSuccessModal onClose={onSuccessClose} onOpen={onSuccessOpen} isOpen={isSuccessOpen}/>
+
         </Grid>
     </div>
   )
