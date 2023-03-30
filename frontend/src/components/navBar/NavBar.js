@@ -5,17 +5,15 @@ import ConnectedDropdown from './ConnectedDropdown';
 import './Navbar.css'
 import Logo from './primarylogo.png';
 import SearchBar from './SearchBar';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
-import { logout } from "../../redux/actions/userActions"
+
+
 
 
 function Navbar() {
     //changing link depending on if user is logged in or not
     const user = useSelector((state) => state.user);
     const { userInfo } = user;
-    const dispatch = useDispatch();
 
     
     //toggle hamburger menu not visible on desktop
