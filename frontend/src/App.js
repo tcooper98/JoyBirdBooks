@@ -27,6 +27,7 @@ import Login from './pages/User/login';
 import SignUp from './pages/User/signup';
 import Account from './pages/User/account';
 import Checkout from './pages/checkout/checkout';
+import PaymentSuccessModal from './pages/checkout/PaymentSuccessModal';
 
 
 
@@ -71,6 +72,7 @@ function App() {
       <Route exact path='/signup' element={<SignUp/>}/>
       <Route exact path='/account' element={<Account/>}/>
       <Route exact path='/checkout' element={<Checkout/>}/>
+      <Route exact path='/paymentsuccess' element={<PaymentSuccessModal/>}/>
     </Routes>
 
   <Footer/>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState, useCallback } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { createOrder, resetOrder } from "../../redux/actions/orderActions"
 import { resetCart } from "../../redux/actions/cartActions"
 import { useDispatch, useSelector } from 'react-redux'
@@ -9,14 +9,12 @@ import CheckoutItem from './CheckoutItem'
 import AutoStoriesIcon from '@mui/icons-material/AutoStories';
 import './checkout.css';
 import PayPalButton from '../../components/paypal/PayPalButton';
-import PaymentSuccessModal from './PaymentSuccessModal'
-import PaymentErrorModal from './PaymentErrorModal'
-import { useDisclosure } from '@mantine/hooks';
+import PaymentSuccessModal from './PaymentSuccessModal';
+import PaymentErrorModal from './PaymentErrorModal';
+
 
 
 const CheckoutOrderSummary = () => {
-   const { onClose: onErrorClose, onOpen: onErrorOpen, isOpen: isErrorOpen } = useDisclosure();
-   const { onClose: onSuccessClose, onOpen: onSuccessOpen, isOpen: isSuccessOpen } = useDisclosure();
     const cartItems = useSelector((state) => state.cart);
     const { cart, subtotal, expressShipping } = cartItems;
 
@@ -29,6 +27,8 @@ const CheckoutOrderSummary = () => {
 
     const [buttonDisabled, setButtonDisabled] = useState(false);
     const dispatch = useDispatch();
+
+    const navigate = useNavigate();
 
  const shipping = useCallback(
   () => (cartItems.expressShipping ? 14.99 : subtotal <= 50 ? 5.99 : 0),
@@ -64,7 +64,7 @@ const CheckoutOrderSummary = () => {
     );
     dispatch(resetOrder());
     dispatch(resetCart());
-    //confirmation page goes here
+    navigate('/paymentsuccess');
    }
 
    const onPaymentError = () => {
@@ -104,8 +104,6 @@ const CheckoutOrderSummary = () => {
                <PayPalButton total={total} onPaymentSuccess={onPaymentSuccess} onPaymentError={onPaymentError} disabled={buttonDisabled}/>
             </Grid>
             </div>
-            <PaymentErrorModal onClose={onErrorClose} onOpen={onErrorOpen} isOpen={isErrorOpen}/>
-            <PaymentSuccessModal onClose={onSuccessClose} onOpen={onSuccessOpen} isOpen={isSuccessOpen}/>
 
         </Grid>
     </div>
