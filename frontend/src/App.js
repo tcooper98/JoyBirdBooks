@@ -28,6 +28,8 @@ import SignUp from './pages/User/signup';
 import Account from './pages/User/account';
 import Checkout from './pages/checkout/checkout';
 import PaymentSuccessModal from './pages/checkout/PaymentSuccessModal';
+import UserOrders from './pages/User/UserOrders';
+
 
 
 
@@ -73,6 +75,7 @@ function App() {
       <Route exact path='/account' element={<Account/>}/>
       <Route exact path='/checkout' element={<Checkout/>}/>
       <Route exact path='/paymentsuccess' element={<PaymentSuccessModal/>}/>
+       <Route exact path='/your-orders' element={<UserOrders/>}/>
     </Routes>
 
   <Footer/>

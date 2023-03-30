@@ -2,21 +2,18 @@ import React from 'react';
 import { logout } from "../../redux/actions/userActions";
 import { useDispatch } from 'react-redux';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
-import { Alert, Button, Snackbar, Typography } from '@mui/material';
+import { Button } from '@mui/material';
 import { Box } from '@mui/system';
-import { useState } from 'react';
 import './Success.css';
 
 const PaymentSuccessModal = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const [open, setOpen] = useState(true);
 
  
 
   const handleLogout = () => {
     dispatch(logout());
-    setOpen(false);
     navigate('/products');
   };
 
