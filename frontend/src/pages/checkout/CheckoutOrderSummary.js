@@ -26,7 +26,6 @@ const CheckoutOrderSummary = () => {
     const shippingInfo = useSelector((state) => state.order);
     const { error, shippingAddress } = shippingInfo;
 
-    console.log(shippingInfo)
 
     const [buttonDisabled, setButtonDisabled] = useState(false);
     const dispatch = useDispatch();

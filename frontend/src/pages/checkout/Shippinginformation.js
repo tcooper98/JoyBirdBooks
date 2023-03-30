@@ -5,10 +5,11 @@ import { useDispatch } from 'react-redux'
 import { setExpress } from "../../redux/actions/cartActions"
 import { useState } from 'react'
 import { setShippingAddress, setShippingAddressError } from '../../redux/actions/orderActions'
-import { Alert, AlertTitle, Card, CardActions, CardContent, FormControl, FormControlLabel, Grid, Radio, RadioGroup, TextField } from "@mui/material";
+import { Alert, AlertTitle, Card, CardActions, CardContent, FormControl, FormControlLabel, Grid, Radio, RadioGroup } from "@mui/material";
 import { ErrorMessage } from 'formik';
 import { resetExpressShipping } from '../../redux/slices/cart';
 import Tooltip from '@mui/material/Tooltip';
+import TextInput from './TextField'
 
 
 
@@ -55,15 +56,15 @@ const Shippinginformation = () => {
                 : setErrorState(true)
             }
           >
-             <TextField name='address' placeholder='Street Address' label='Street Address' margin="normal"/>
+             <TextInput name='address' placeholder='Street Address' label='Street Address' margin="normal"/>
             
 
             <Grid item>
-              <TextField name='postalCode' placeholder='Postal Code' label='Postal Code' margin="normal" />
-              <TextField name='city' placeholder='City' label='City' margin="normal" />
+              <TextInput name='postalCode' placeholder='Postal Code' label='Postal Code' margin="normal" />
+              <TextInput name='city' placeholder='City' label='City' margin="normal" />
             </Grid>
             <Grid item>
-              <TextField name='country' placeholder='Country' label='Country' fullWidth margin="normal" />
+              <TextInput name='country' placeholder='Country' label='Country' fullWidth margin="normal" />
             </Grid>
           </FormControl>
           <Grid item>
