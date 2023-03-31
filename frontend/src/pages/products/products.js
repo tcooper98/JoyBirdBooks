@@ -6,8 +6,8 @@ import Rating from '@mui/material/Rating';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../redux/actions/productActions'
 import { useEffect } from 'react';
-import { Button, CircularProgress } from '@mui/material';
-import LoadingButton from '@mui/lab/LoadingButton';
+import { CircularProgress } from '@mui/material';
+
 
 
 //what is displayed on the products page

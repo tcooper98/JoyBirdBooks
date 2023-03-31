@@ -63,7 +63,7 @@ const ProductSchema = mongoose.Schema({
      },
       numberofReviews:{
         type: Number,
-        required: true
+        required: false
     },
     ProductIsNew:{
         type: Boolean,
