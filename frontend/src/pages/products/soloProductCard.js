@@ -113,7 +113,7 @@ const addBuyNow = (id) => {
             <div className="review-menu">
               <h1>Customer Reviews</h1> 
              
-              <p>This book is rated {product.rating}/5 stars. This rating based on {product.numberOfReviews} reviews from our readers</p>
+              <p>This product is rated {product.rating}/5 stars. If you would like to share your thoughts <Link to={'/login'}>sign in</Link> to write a review</p>
         
 
               <Divider variant="middle" />
@@ -172,15 +172,16 @@ const addBuyNow = (id) => {
               </div>
             ):
             (product.reviews.map((review) => (
-             <div>
+             <div key={review._id}>
               <div className='review-content'>
                <h2>{review.title}</h2>
                  <Rating name="size-small" defaultValue={review.rating} size="small" readOnly/> 
                <p>{review.comment}</p>
 
-               <p className='review-date'>{review.createdAt}</p>
+               <p className='review-date'>Reviewed By: {review.name}</p>
                 
               </div>
+               <Divider/>
               </div>
                ))
               )}</div>

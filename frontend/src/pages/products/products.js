@@ -38,6 +38,8 @@ export default function Products() {
 function ProductCard() {
  const dispatch = useDispatch();
 
+ 
+
   const productList = useSelector((state) => state.products);
   const { loading, error, products } = productList;
 
