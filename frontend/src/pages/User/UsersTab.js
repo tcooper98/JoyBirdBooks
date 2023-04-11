@@ -8,6 +8,7 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ConfirmRemovalAlert from './ConfirmRemovalAlert';
 import { useDisclosure, useToast } from '@chakra-ui/react';
+import { grey } from '@mui/material/colors';
 
 
 const UsersTab = () => {
@@ -118,7 +119,7 @@ const UsersTab = () => {
                       {user.isAdmin === "true" ? <CheckCircleIcon style={{fill: "green"}}/> : <HighlightOffIcon style={{fill: "red"}}/>}
                     </TableCell>
                     <TableCell>
-                     <Button disabled={user._id === userInfo.id} onClick={() => openDeleteConfirmBox(user)}><DeleteIcon style={{fill: "black"}}/></Button>
+                     <Button variant="outlined" color="error" disabled={user._id === userInfo._id} onClick={() => openDeleteConfirmBox(user)}><DeleteIcon style={{fill: "grey"}}/></Button>
                     </TableCell>
                   </TableRow>
                 ))}

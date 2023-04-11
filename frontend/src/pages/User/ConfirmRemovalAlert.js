@@ -19,7 +19,7 @@ const ConfirmRemovalAlert = ({ isOpen, onClose, cancelRef, itemToDelete, deleteA
       </DialogContent>
       <DialogActions>
         <Button ref={cancelRef} onClick={onClose} style={{color: "black", background: '#d3d3d3'}}>Cancel</Button>
-        <Button onClick={onDeleteItem} ml={3} variant="outlined" style={{color: "red", background: '#ffcccb'}}>
+        <Button onClick={onDeleteItem} ml={3} variant="outlined" color="error">
           Delete {itemToDelete.name}
         </Button>
       </DialogActions>
