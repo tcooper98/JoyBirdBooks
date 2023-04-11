@@ -72,7 +72,7 @@ const UserOrders = () => {
                     <TableCell>{order._id}</TableCell>
                     <TableCell>{new Date(order.createdAt).toDateString()}</TableCell>
                     <TableCell>
-                      ${order.totalPrice} via {order.paymentMethod}
+                      ${order.totalPrice}
                     </TableCell>
                     <TableCell>
                       <List>
