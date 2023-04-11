@@ -8,6 +8,7 @@ import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import LocalShipping from "@mui/icons-material/LocalShipping";
 import LogoutIcon from '@mui/icons-material/Logout';
 import './login.css';
+import BuildCircleIcon from '@mui/icons-material/BuildCircle';
 
 
 
@@ -28,6 +29,15 @@ const Account = () => {
                 </CardContent>
                 <Link to={`/your-orders`} style={{ textDecoration: 'none', color: 'inherit'}}>
                 <MenuItem><LocalShipping/>My Orders</MenuItem>
+                {userInfo.isAdmin === 'true' && (
+                    <>
+                    <Link to={`/admin`} style={{ textDecoration: 'none', color: 'inherit'}}>
+                    <MenuItem>
+                   <BuildCircleIcon/> Admin Menu
+                    </MenuItem>
+                    </Link>
+                    </>
+                )}
                 </Link>
                 <Link to={`/login`} style={{ textDecoration: 'none', color: 'inherit'}}>
                 <MenuItem onClick={logoutHandler}><LogoutIcon/>Logout</MenuItem>
