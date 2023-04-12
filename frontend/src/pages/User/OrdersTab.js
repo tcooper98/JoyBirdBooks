@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getAllOrders, deleteOrder, setDelivered, resetErrorAndRemoval } from '../../redux/actions/adminActions';
 import { Alert, Box, Button, CircularProgress, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ConfirmRemovalAlert from './ConfirmRemovalAlert';
 import { useDisclosure, useToast } from '@chakra-ui/react';
