@@ -2,13 +2,13 @@ import React, { useRef } from 'react';
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllUsers, deleteUser, resetErrorAndRemoval } from '../../redux/actions/adminActions';
-import { Alert, Box, Button, CircularProgress, List, ListItem, ListItemText, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typography } from "@mui/material";
+import { Alert, Box, Button, CircularProgress, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ConfirmRemovalAlert from './ConfirmRemovalAlert';
 import { useDisclosure, useToast } from '@chakra-ui/react';
-import { grey } from '@mui/material/colors';
+
 
 
 const UsersTab = () => {
@@ -56,7 +56,7 @@ const UsersTab = () => {
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
-            ID Number
+            User ID 
             </TableCell>
                   <TableCell 
                   style={{
@@ -99,7 +99,7 @@ const UsersTab = () => {
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
-            Action
+            Delete
             </TableCell>
             
                 </TableRow>

@@ -4,6 +4,9 @@ export const initialState = {
   error: null,
   userList: null,
   userRemoval: false,
+  orders: null,
+  orderRemoval: false,
+  deliveredFlag: false,
 };
 
 export const adminSlice = createSlice({
@@ -22,6 +25,11 @@ export const adminSlice = createSlice({
       state.error = null;
       state.loading = false;
     },
+    getOrders: (state, { payload }) => {
+      state.orders = payload;
+      state.error = null;
+      state.loading = false;
+    },
     userDelete: (state) => {
       state.error = null;
       state.loading = false;
@@ -31,11 +39,23 @@ export const adminSlice = createSlice({
       state.error = null;
       state.loading = false;
       state.userRemoval = false;
+      state.deliveredFlag = false;
+      state.orderRemoval = false;
     },
-  },
+    orderDelete: (state) => {
+      state.error = null;
+      state.loading = false;
+      state.orderRemoval = true;
+    },
+    
+     setDeliveredFlag: (state) => {
+      state.deliveredFlag = true;
+      state.loading = false;
+    },
+  }
 });
 
-export const { setLoading, setError, getUsers, userDelete, resetError } =
+export const { setLoading, setError, getUsers, userDelete, resetError, orderDelete, getOrders, setDeliveredFlag } =
   adminSlice.actions;
 export default adminSlice.reducer;
 
