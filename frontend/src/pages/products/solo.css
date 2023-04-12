@@ -467,8 +467,8 @@ p.reviewResult {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
         flex-direction: column;
         align-content: space-around;
 
@@ -476,6 +476,7 @@ p.reviewResult {
 
     .review-info {
         width: 250px;
+        margin-left: 0px;
 
     }
 
@@ -497,7 +498,7 @@ p.reviewResult {
     .product-details img {
         height: 500px;
         object-fit: cover;
-        width: 60%;
+        width: 100%;
         align-content: center;
         padding: 0;
         margin-right: 0px;
