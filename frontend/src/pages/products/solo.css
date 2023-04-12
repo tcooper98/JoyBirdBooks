@@ -158,7 +158,7 @@ p.reviewResult {
 
 .review-info {
     max-width: max-content;
-    margin-right: 100px;
+    margin-left: 150px;
     display: grid;
     grid-area: info;
 
