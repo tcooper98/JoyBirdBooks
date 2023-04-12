@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 
 const AddNewProduct = () => {
     const dispatch = useDispatch();
+    
 
     const [name, setName] = useState('')
     const [price, setPrice] = useState('')
@@ -18,6 +19,7 @@ const AddNewProduct = () => {
     const [description, setDescription] = useState('')
     const [stock, setStock] = useState('')
     const [status, setStatus] = useState('')
+
 
     const createNewProduct =  () => {
         dispatch(uploadProduct({
@@ -38,6 +40,7 @@ const AddNewProduct = () => {
 
   return (
     <div>
+        
      <TableContainer>
                      <Table>
               <TableHead style={{
