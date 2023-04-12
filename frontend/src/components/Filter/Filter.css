@@ -5,12 +5,15 @@
 } */
 
 .filter h1 {
-    font-size: 30px;
+    font-size: 34px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
-.genre h3 {
+.filter .genre h3 {
     font-size: 30px;
     color: #292727;
+    margin-bottom: 5px;
 }
 
 .filter h2 {
@@ -21,6 +24,7 @@
 .filter legend {
     font-size: 25px;
     color: #292727;
+
 
 }
 
@@ -45,6 +49,7 @@
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
     border: 1px solid #292727;
+    margin-bottom: 10px;
 }
 
 .filter option {
@@ -98,7 +103,8 @@
 
         display: none;
     }
-    .filter-icon-container{
+
+    .filter-icon-container {
         display: none;
     }
 }
