@@ -6,6 +6,7 @@ import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { useState } from "react";
 import './admin.css';
 import UsersTab from "./UsersTab";
+import OrdersTab from "./OrdersTab";
 
 
 const Admin = () => {
@@ -16,23 +17,21 @@ const Admin = () => {
     const [currentTabIndex, setCurrentTabIndex] = useState(0);
  
   const handleTabChange = (e, tabIndex) => {
-    console.log(tabIndex);
     setCurrentTabIndex(tabIndex);
-    const Users = "Tab 1";
   };
    
 
     return userInfo && userInfo.isAdmin === 'true' ? (
-        <Card variant="outlined" style={{maxWidth:1000, margin:"0 auto",padding:"20px 5px"}}>
+        <Card variant="outlined">
             <CardContent>
             <h3>Admin Menu</h3>
             </CardContent>
 
-            <TabContext>
+            {/* <TabContext> */}
             
             <React.Fragment>
              <Tabs value={currentTabIndex} onChange={handleTabChange}>
-                <Tab label="Users"/>
+                <Tab className="users" label="Users"/>
                 <Tab label="Products"/>
                 <Tab label="Reviews"/>
                 <Tab label="Orders"/>
@@ -67,12 +66,12 @@ const Admin = () => {
       {/* Orders Info */}
       {currentTabIndex === 3 && (
         <Box sx={{ p: 3 }}>
-          <Typography variant='h5'>Orders</Typography>
+          <OrdersTab/>
           
         </Box>
       )}
     </React.Fragment>
-            </TabContext>
+            {/* </TabContext> */}
 
         </Card>
     ): (

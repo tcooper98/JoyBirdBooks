@@ -8,7 +8,7 @@ import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ConfirmRemovalAlert from './ConfirmRemovalAlert';
 import { useDisclosure, useToast } from '@chakra-ui/react';
-import { grey } from '@mui/material/colors';
+
 
 
 const UsersTab = () => {
@@ -56,7 +56,7 @@ const UsersTab = () => {
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
-            ID Number
+            User ID 
             </TableCell>
                   <TableCell 
                   style={{
@@ -99,7 +99,7 @@ const UsersTab = () => {
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
-            Action
+            Delete
             </TableCell>
             
                 </TableRow>

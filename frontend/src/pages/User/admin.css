@@ -5,3 +5,9 @@
 .Mui-selected {
     color: #F2C202 !important;
 }
+
+
+.Ordersprice p{
+    font-weight: bold;
+    font-size: 20px;
+}
