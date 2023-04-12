@@ -31,6 +31,7 @@ import PaymentSuccessModal from './pages/checkout/PaymentSuccessModal';
 import UserOrders from './pages/User/UserOrders';
 import Admin from './pages/User/admin';
 import UsersTab from './pages/User/UsersTab';
+import ProductsTab from './pages/User/productsTab';
 
 
 
@@ -80,6 +81,8 @@ function App() {
        <Route exact path='/your-orders' element={<UserOrders/>}/>
        <Route eact path='/admin' element={<Admin/>}/>
         <Route eact path='/users' element={<UsersTab/>}/>
+        <Route eact path='/admin-products' element={<ProductsTab/>}/>
+        
     </Routes>
 
   <Footer/>

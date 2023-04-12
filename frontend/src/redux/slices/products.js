@@ -51,6 +51,7 @@ export const productsSlice = createSlice({
       state.reviewRemoval = true;
       state.loading = false;
     },
+    
   },
 });
 

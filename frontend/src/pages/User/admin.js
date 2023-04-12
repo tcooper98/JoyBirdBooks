@@ -6,6 +6,7 @@ import { useState } from "react";
 import './admin.css';
 import UsersTab from "./UsersTab";
 import OrdersTab from "./OrdersTab";
+import ProductsTab from "./productsTab";
 
 
 const Admin = () => {
@@ -49,7 +50,7 @@ const Admin = () => {
       {/* Products info */}
       {currentTabIndex === 1 && (
         <Box sx={{ p: 3 }}>
-          <Typography variant='h5'>Products</Typography>
+          <ProductsTab/>
           
         </Box>
       )}

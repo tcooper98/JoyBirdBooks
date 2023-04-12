@@ -36,7 +36,7 @@ export default function Donate() {
                 </div>
                 <div className="donate-form-column">
                     {/*Trade Books Radio Button */}
-                    <label for="trade" className="donate-radiobuttons">Trade Books</label>                      
+                    <label for="trade" className="donate-radiobuttons">Trade In Books</label>                      
                     <input type="radio" name="donateTrade" id="accent-color" value="no" />
                 </div>
             </div>
