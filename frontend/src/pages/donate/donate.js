@@ -114,7 +114,7 @@ class Donate extends React.Component {
                                     type="radio"
                                     name="donateTrade"
                                     id="accent-color"
-                                    value="no"
+                                    value="no" 
                                     onChange={(event) => this.setState({ donateOrTrade: event.target.value })}
                                 />
                             </div>
