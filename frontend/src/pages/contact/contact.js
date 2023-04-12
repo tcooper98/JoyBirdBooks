@@ -11,6 +11,7 @@ class ContactUs extends Component {
     subject: '',
     message: '',
     success: false,
+    showSuccessMessage: false,
   };
 
   handleSubmit = async (event) => {
@@ -42,10 +43,10 @@ class ContactUs extends Component {
         subject: '',
         message: '',
         success: true,
+        showSuccessMessage: true,
       });
 
-      // Redirect to the success page
-      window.location.href = '/success.js';
+
     } catch (error) {
       console.error(error);
     }
@@ -138,6 +139,11 @@ class ContactUs extends Component {
               </div>
             </div>
           )}
+          {this.state.showSuccessMessage && (
+            <div className="success-message">
+              Thanks for contacting us! We will be in touch with you soon.
+            </div>
+          )}
 
           <div className="contact-heading">
             <h5 className="h5-contact">
@@ -145,6 +151,7 @@ class ContactUs extends Component {
             </h5>
           </div>
         </form>
+
       </div>
     );
   }
