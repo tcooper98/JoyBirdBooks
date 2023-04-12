@@ -4,6 +4,13 @@ textarea {
   /* width: 500px; */
 }
 
+.success-message {
+  font-size: large;
+  font-weight: 700;
+  text-align: center;
+  color: #859C44;
+
+}
 
 .contact-heading {
   padding-top: 25px;
