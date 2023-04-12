@@ -141,7 +141,8 @@ class ContactUs extends Component {
           )}
           {this.state.showSuccessMessage && (
             <div className="success-message">
-              Thanks for contacting us! We will be in touch with you soon.
+              Thanks for contacting us! 
+              We will be in touch with you soon.
             </div>
           )}
 
