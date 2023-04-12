@@ -2,7 +2,7 @@ import express from 'express';
 import Product from '../models/Product.js';
 import asyncHandler from 'express-async-handler';
 import User from '../models/User.js';
-import { protectRoute } from '../middleware/authMiddleware.js';
+import { protectRoute, admin } from '../middleware/authMiddleware.js';
 
 const productRoutes = express.Router();
 
@@ -59,6 +59,69 @@ const createProductReview = asyncHandler(async (req, res) => {
   }
 });
 
+const createNewProduct = asyncHandler(async (req, res) => {
+  const { brand, name, category, stock, price, image, productIsNew, description, status } = req.body;
+
+  const newProduct = await Product.create({
+    brand,
+    name,
+    category,
+    stock,
+    price,
+    image: '/images/' + image,
+    productIsNew,
+    description,
+    status,
+  });
+  await newProduct.save();
+
+  const products = await Product.find({});
+
+  if (newProduct) {
+    res.json(products);
+  } else {
+    res.status(404);
+    throw new Error('Product could not be added.');
+  }
+});
+
+const deleteProduct = asyncHandler(async (req, res) => {
+  const product = await Product.findByIdAndDelete(req.params.id);
+
+  if (product) {
+    res.json(product);
+  } else {
+    res.status(404);
+    throw new Error('Product not found');
+  }
+});
+
+const updateProduct = asyncHandler(async (req, res) => {
+  const { name, image, category, stock, price, id, productIsNew, description, status, author, genre, age, condition,  } = req.body;
+
+  const product = await Product.findById(id);
+
+  if (product) {
+    product.name = name;
+    product.price = price;
+    product.description = description;
+    product.image = '/images/' + image;
+    product.category = category;
+    product.stock = stock;
+    product.productIsNew = productIsNew;
+    product.status = status;
+    product.author = author;
+    product.genre = genre;
+    product.age = age;
+    product.condition = condition;
+
+    const updatedProduct = await product.save();
+    res.json(updatedProduct);
+  } else {
+    res.status(404);
+    throw new Error('Product not found.');
+  }
+});
 
 productRoutes.route('/').get(getProducts);
 productRoutes.route('/:id').get(getProduct);
@@ -79,6 +142,9 @@ productRoutes.get('/search/:keyword', async (req, res) => {
 });
 productRoutes.route('/reviews/:id').post(protectRoute, createProductReview);
 productRoutes.route('/:id/reviews').post(getProduct);
+productRoutes.route('/').put(protectRoute, admin, updateProduct);
+productRoutes.route('/:id').delete(protectRoute, admin, deleteProduct);
+productRoutes.route('/').post(protectRoute, admin, createNewProduct);
 
 
 export default productRoutes;
