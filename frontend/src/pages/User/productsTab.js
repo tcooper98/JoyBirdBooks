@@ -13,6 +13,7 @@ import PendingIcon from '@mui/icons-material/Pending';
 import { getProducts, resetProductError } from '../../redux/actions/productActions';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { deleteProduct } from '../../redux/actions/adminActions';
+import AddNewProduct from './AddNewProduct';
 
 const ProductsTab = () => {
    const { isOpen, onOpen, onClose } = useDisclosure();
@@ -52,7 +53,7 @@ const ProductsTab = () => {
           <h2>Add New Product</h2>
         </AccordionSummary>
         <AccordionDetails>
-
+         <AddNewProduct/>
         </AccordionDetails>
          </Accordion>
 
@@ -69,7 +70,7 @@ const ProductsTab = () => {
                      <Table>
               <TableHead style={{
               padding: "18px 36px",
-              backgroundColor: "#F2c202",
+              backgroundColor: "#489fb5",
            }}>
                 <TableRow>
               <TableCell 
