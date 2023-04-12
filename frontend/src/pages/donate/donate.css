@@ -255,6 +255,13 @@ textarea {
     padding: 3px;
 }
 
+.success {
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+    color: #859C44;
+}
+
 
 @media (max-width: 700px) {
     .donate-container {
