@@ -60,10 +60,9 @@ const createProductReview = asyncHandler(async (req, res) => {
 });
 
 const createNewProduct = asyncHandler(async (req, res) => {
-  const { brand, name, category, stock, price, image, productIsNew, description, status } = req.body;
+  const { name, image, category, stock, price, productIsNew, description, status, author, genre, age, condition,  } = req.body;
 
   const newProduct = await Product.create({
-    brand,
     name,
     category,
     stock,
@@ -72,6 +71,10 @@ const createNewProduct = asyncHandler(async (req, res) => {
     productIsNew,
     description,
     status,
+    author,
+    genre,
+    age,
+    condition,
   });
   await newProduct.save();
 

@@ -56,12 +56,12 @@ const OrdersTab = () => {
             <Table>
               <TableHead style={{
               padding: "18px 36px",
-              backgroundColor: "#F2c202",
+              backgroundColor: "#16697a",
            }}>
                 <TableRow>
               <TableCell 
                   style={{
-                  color: "black",
+                  color: "white",
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
@@ -71,7 +71,7 @@ const OrdersTab = () => {
 
                   <TableCell
                  style={{
-                  color: "black",
+                  color: "white",
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
@@ -80,7 +80,7 @@ const OrdersTab = () => {
 
                   <TableCell
                   style={{
-                  color: "black",
+                  color: "white",
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
@@ -89,7 +89,7 @@ const OrdersTab = () => {
 
                   <TableCell
                   style={{
-                  color: "black",
+                  color: "white",
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
@@ -97,7 +97,7 @@ const OrdersTab = () => {
             </TableCell>
              <TableCell
                   style={{
-                  color: "black",
+                  color: "white",
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
@@ -105,7 +105,7 @@ const OrdersTab = () => {
             </TableCell>
             <TableCell
                   style={{
-                  color: "black",
+                  color: "white",
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
@@ -113,7 +113,7 @@ const OrdersTab = () => {
             </TableCell>
             <TableCell
                   style={{
-                  color: "black",
+                  color: "white",
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
@@ -121,7 +121,7 @@ const OrdersTab = () => {
             </TableCell>
             <TableCell
                   style={{
-                  color: "black",
+                  color: "white",
                   fontSize: '20px',
                   fontWeight: 'bold',
            }}>
