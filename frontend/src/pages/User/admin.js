@@ -1,7 +1,7 @@
 import React from "react";
 import { Navigate, useLocation } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { Box, Card, CardContent, Tab, Tabs, Typography } from "@mui/material";
+import { Box, Card, CardContent, Tab, Tabs } from "@mui/material";
 import { useState } from "react";
 import './admin.css';
 import UsersTab from "./UsersTab";

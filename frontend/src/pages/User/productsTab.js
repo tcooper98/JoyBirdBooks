@@ -1,15 +1,11 @@
 import React, { useRef } from 'react'
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getAllOrders, deleteOrder, setDelivered, resetErrorAndRemoval } from '../../redux/actions/adminActions';
 import { Accordion, AccordionDetails, AccordionSummary, Alert, Box, Button, CircularProgress, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from "@mui/material";
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ConfirmRemovalAlert from './ConfirmRemovalAlert';
 import { useDisclosure, useToast } from '@chakra-ui/react';
 import "./admin.css";
-import LocalShippingIcon from '@mui/icons-material/LocalShipping';
-import PendingIcon from '@mui/icons-material/Pending';
 import { getProducts, resetProductError } from '../../redux/actions/productActions';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { deleteProduct } from '../../redux/actions/adminActions';
