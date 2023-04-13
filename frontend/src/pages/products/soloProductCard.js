@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addCartItem } from '../../redux/actions/cartActions';
 import React from 'react';
-import { Button, CircularProgress, FormControl, Grid, Skeleton, TextField, Tooltip, Typography } from '@mui/material';
+import { Button, CircularProgress, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, FormControl, Grid, Skeleton, TextField, Tooltip, Typography } from '@mui/material';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import { getProduct } from '../../redux/actions/productActions';
 import { createProductReview, resetProductError } from '../../redux/actions/productActions';
@@ -20,7 +20,7 @@ const SoloProductCard = () => {
   const [rating, setRating] = useState(1);
   const [title, setTitle] = useState('');
   const [reviewBoxOpen, setReviewBoxOpen] = useState(false);
-  const [snackbarOpen, setSnackbarOpen] = useState(false);
+  
   let { id } = useParams();
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products);
@@ -40,14 +40,20 @@ const SoloProductCard = () => {
     }
   }
 
+  const [dialogOpen, setDialogOpen] = useState(false);
+
   const addItem = (id) => {
     if (cart.some((cartItem) => cartItem.id === id)) {
-      alert('Item already in cart go to cart to update quantity');
+      alert('Item already in cart. Go to cart to update quantity.');
     } else {
+      setDialogOpen(true);
       dispatch(addCartItem(id));
-      alert('Item added to cart');
     }
   }
+
+  const handleClose = () => {
+    setDialogOpen(false);
+  };
 
 
 
@@ -81,6 +87,17 @@ const SoloProductCard = () => {
       ) : (
         product && (
           <div className='soloproduct-container'>
+            <Dialog open={dialogOpen} onClose={handleClose}>
+                    <DialogTitle>Confirmation</DialogTitle>
+                    <DialogContent>
+                    <DialogContentText>
+                      Item added to cart
+                    </DialogContentText>
+                    </DialogContent>
+                    <DialogActions>
+                    <Button onClick={handleClose}>OK</Button>
+                      </DialogActions>
+                      </Dialog>
             <Link to={`/products`} style={{ textDecoration: 'none', color: 'inherit' }}>
               <KeyboardArrowLeftIcon fontSize="large" />
             </Link>
@@ -105,7 +122,8 @@ const SoloProductCard = () => {
                   <button className='rightbutton' isDisabled={product.stock <= 0} onClick={() => addBuyNow(product._id)}
                   >Buy Now</button>
                 </Link>
-
+               
+                    
 
               </div>
             </div>

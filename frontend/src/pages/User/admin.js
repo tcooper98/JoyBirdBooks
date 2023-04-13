@@ -7,6 +7,7 @@ import './admin.css';
 import UsersTab from "./UsersTab";
 import OrdersTab from "./OrdersTab";
 import ProductsTab from "./productsTab";
+import ReviewsTab from "./ReviewsTab";
 
 
 const Admin = () => {
@@ -58,7 +59,7 @@ const Admin = () => {
       {/* Reviews Info */}
       {currentTabIndex === 2 && (
         <Box sx={{ p: 3 }}>
-          <Typography variant='h5'>Reviews</Typography>
+          <ReviewsTab/>
           
         </Box>
       )}
