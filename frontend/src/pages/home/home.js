@@ -4,6 +4,7 @@ import Product from '../../components/Products/ProductCard'
 import './home.css'
 import { Link } from 'react-router-dom'
 import BookSpotlight from '../../components/BookSpotlight/BookSpotlight'
+import News from '../../components/newsletter/news'
 
 export default function Home() {
     const handleClick = () => {
@@ -76,7 +77,7 @@ export default function Home() {
                </div>
             </div>
 
-            <div className="newsletter">
+            {/* <div className="newsletter">
               <h1>SUBSCRIBE TO OUR NEWSLETTER!</h1>
               
               <label>
@@ -86,7 +87,9 @@ export default function Home() {
 
                 <button>SEND</button>
             
-            </div>
+            </div> */}
+
+            <News/>
             
             {/* I need to find a way to embed instagram feed without access to token maybe a widget or something */}
             <div className="instagram">
