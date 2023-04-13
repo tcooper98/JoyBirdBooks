@@ -1,16 +1,16 @@
 /* cart summary css */
-div.productCartcontainer{
+div.productCartcontainer {
     display: flex;
-        justify-content: center;
-    
+    justify-content: center;
+
 }
 
-div.total{
+div.total {
     background-color: #292727;
     padding: 30px;
 }
 
-div.cartSummery{
+div.cartSummery {
     background-color: white;
     padding: 15px;
     margin-right: auto;
@@ -18,38 +18,38 @@ div.cartSummery{
 
 
 
-p.totaltitle{
-    color:white;
-    font-size: 30px; 
-    font-weight: 500;  
-   
+p.totaltitle {
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+
 }
 
-div.cartShipping{
-    display:flex;
+div.cartShipping {
+    display: flex;
     flex-direction: row;
 
 }
 
-p.cartBefore{
+p.cartBefore {
     font-size: 25px;
     font-weight: 300;
-    color:#292727
+    color: #292727
 }
 
-div.cartShipping{
-font-size: 25px;
+div.cartShipping {
+    font-size: 25px;
     font-weight: 300;
     color: #292727;
 }
 
-div.cartTotal{
+div.cartTotal {
     font-size: 25px;
-        font-weight: 500;
-        color: black;
+    font-weight: 500;
+    color: black;
 }
 
-button.SummaryButton{
+button.SummaryButton {
     background-color: #eac342;
     color: black;
     font-size: 20px;
@@ -57,46 +57,47 @@ button.SummaryButton{
     margin-top: 20px;
     padding: 10px;
     cursor: pointer;
-   
+
 }
+
 /* end of cart page css */
 
 
 /* this is the css for items in cart */
-img.cartimage{
+img.cartimage {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    
+
 }
 
-h1.cartname{
+h1.cartname {
     font-size: 30px;
     color: #16697A;
     font-weight: 500;
-    
+
 }
 
-h1.cartauthor{
+h1.cartauthor {
     font-size: 20px;
     color: #707070;
     font-weight: 300;
 }
 
-p.cartcondition{
+p.cartcondition {
     font-size: 15px;
     color: #707070;
     font-weight: 300;
 }
 
-h1.cartprice{
+h1.cartprice {
     font-size: 26px;
     color: black;
     font-weight: 400;
 }
 
-div.cartitemWrapper{
-display: grid;
+div.cartitemWrapper {
+    display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
@@ -104,35 +105,57 @@ display: grid;
     padding: 15px;
 }
 
-div.cartImageWrapper{
+div.cartImageWrapper {
     grid-area: 1 / 1 / 2 / 2;
 }
 
-div.cartInfoWrapper{
-   padding-left: 15px;
-   grid-area: 1 / 2 / 2 / 5;
+div.cartInfoWrapper {
+    padding-left: 15px;
+    grid-area: 1 / 2 / 2 / 5;
 }
 
-div.cartQuantityWrapper{
+div.cartQuantityWrapper {
     grid-area: 1 / 5 / 2 / 6;
     margin-top: 0px;
     padding-left: 15px;
 
 }
 
-div.cartPriceWrapper{
+div.cartPriceWrapper {
     grid-area: 1 / 6 / 2 / 7;
 
 }
 
-div.cartDelete{
+div.cartDelete {
     grid-area: 1 / 7 / 2 / 8;
 }
 
-h1.carttitle{
+h1.carttitle {
     font-size: 40px;
     color: #363636;
     font-weight: 400;
+}
+
+@media (max-width: 580px) {
+    div.cartInfoWrapper {
+        grid-area: 2 / 1/ 2 / 6;
+        padding-left: 0px;
+    }
+
+    div.cartQuantityWrapper {
+        grid-area: 1 / 3 / 2 / 6;
+    }
+
+    div.cartitemWrapper {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    h1.carttitle {
+        margin-left: 10px;
+    }
+
+
+
 }
 
 /* end of css for cart items */

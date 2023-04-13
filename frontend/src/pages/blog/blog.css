@@ -10,6 +10,10 @@
     padding-bottom: 60px;
 }
 
+.blog-description p {
+    text-align: justify;
+}
+
 .past-spotlights {
     padding-top: 30px;
     text-align: center;
@@ -90,7 +94,7 @@
 
 /*grids for local author spotlight section*/
 .col-blog-text {
-    width: 75%;
+    width: 100%;
 }
 
 .col-image {
@@ -138,7 +142,7 @@
     }
 
     .col-blog-text {
-        width: 60%;
+        width: 100%;
     }
 
     .col-image {
@@ -155,6 +159,7 @@
     .img {
         padding-top: 0px;
         padding-bottom: 0px;
+        margin-right: 40px;
         height: 350px;
         width: 200px;
     }
@@ -164,7 +169,7 @@
     .blog-title {
         padding: 20px;
     }
-    
+
     .description {
         font-weight: 200px;
         width: 100%;
@@ -173,14 +178,22 @@
 
     .author-spotlight-row {
         align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     .col-image {
         width: 52%;
+        width: 100%;
+        align-content: center;
+        flex-wrap: wrap;
     }
 
     .img {
         height: 400px;
-        width: 160px;
+        width: 250px;
+        margin-right: 0px;
+        margin-bottom: 20px;
+
     }
 }
