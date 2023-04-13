@@ -5,7 +5,7 @@ import { setProducts, setLoading, setError, setProduct, productReviewed, resetEr
 export const getProducts = () => async (dispatch) => {
   dispatch(setLoading(true));
   try {
-    const { data } = await axios.get('/api/products');
+    const { data } = await axios.get('/api/products' + window.location.search);
     dispatch(setProducts(data));
   } catch (error) {
     dispatch(

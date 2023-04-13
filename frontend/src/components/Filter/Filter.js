@@ -13,6 +13,8 @@ function Filter({ onApply }) {
     age: [],
   });
 
+  console.log(filters)
+
   const toggleFilter = () => {
     setShowFilter(!showFilter);
   };
@@ -21,6 +23,7 @@ function Filter({ onApply }) {
     setShowFilter(false);
   };
 
+  
   const handleApply = (e) => {
     if (e && e.preventDefault) {
       e.preventDefault();

@@ -7,13 +7,33 @@ import { protectRoute, admin } from '../middleware/authMiddleware.js';
 const productRoutes = express.Router();
 
 const getProducts = async (req, res) => {
-  console.log('getProducts');
-  const products = await Product.find({});
-  res.json(products);
+  const { genre, category, age } = req.query;
 
+  console.log(req.query);
+
+  const query = {};
+
+  if (genre) {
+    query.genre = { $regex: genre, $options: 'i' };
+  }
+
+  if (category) {
+    query.category = { $regex: category, $options: 'i' };
+  }
+
+  if (age) {
+    query.age = { $regex: age, $options: 'i' };
+  }
+
+  const products = await Product.find(query);
+
+  console.log(products);
+
+  res.json(products);
 }
 
 const getProduct = async (req, res) => {
+  
   const product = await Product.findById(req.params.id);
 
   if(product) {
