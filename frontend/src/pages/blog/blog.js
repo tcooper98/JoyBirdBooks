@@ -28,7 +28,7 @@ export default function Blog() {
                     <div className="author-spotlight page-spacing">
                         <div>
                             <h2 className='subheading'>Local Author Spotlight</h2>
-                            <p className="subheading2">Author Name</p>
+                            <p className="subheading2">David James Possiant</p>
                         </div>
 
                         <div className="row author-spotlight-row">

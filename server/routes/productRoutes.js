@@ -183,6 +183,7 @@ productRoutes.get('/search/:keyword', async (req, res) => {
       {age: { $regex: keyword, $options: 'i' } },
       {category: { $regex: keyword, $options: 'i' } },
       {genre: { $regex: keyword, $options: 'i' } },
+      {status: { $regex: keyword, $options: 'i' } },
     ],
     });
       res.json(products);
