@@ -32,10 +32,10 @@ const responsive = {
   }
 };
 
-function Product() {
+function Local() {
     return (
       <div>
-          <ProductCard/>
+          <LocalCard/>
        </div> 
     )
 }
@@ -74,16 +74,16 @@ function Product() {
 // }
 
 
-function ProductCard() {
+function LocalCard() {
 
   
-  
+     const { keyword } = useParams();
   const [isLoading, setIsLoading] = useState(true);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     setIsLoading(true);
-    fetch(`/api/products/search/fresh`, {
+    fetch(`/api/products/search/local`, {
       method: 'GET',
     }).then((response) => {
       response.json().then((data) => {
@@ -97,6 +97,7 @@ function ProductCard() {
     return <p>Loading...</p>;
   }
 
+ 
   
   return (
      <div className="wrapper">
@@ -147,4 +148,4 @@ function ProductCard() {
   )
 }
 
-export default Product;
+export default Local;

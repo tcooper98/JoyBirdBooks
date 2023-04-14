@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../../redux/actions/productActions';
 import { addCartItem } from '../../redux/actions/cartActions';
+import Local from '../../components/Products/localCard';
 
 
 
@@ -47,8 +48,8 @@ export default function SoloProduct () {
         </div>
 
         <div className='similar'>
-        <h2 className='similar'>Similar Products</h2>
-        <Product/>
+        <h2 className='similar'>From Local Authors</h2>
+        <Local/>
         </div>
         </>
     )

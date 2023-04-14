@@ -5,6 +5,7 @@ import './home.css'
 import { Link } from 'react-router-dom'
 import BookSpotlight from '../../components/BookSpotlight/BookSpotlight'
 import News from '../../components/newsletter/news'
+import Turner from '../../components/Products/turnerCard'
 
 export default function Home() {
     const handleClick = () => {
@@ -45,7 +46,7 @@ export default function Home() {
             <div className="turner">
             <h2>PAGE TURNERS</h2>
             </div>
-            <Product/>
+            <Turner/>
             
             <h2>TESTIMONIALS</h2>
             <div className="testimonials">
