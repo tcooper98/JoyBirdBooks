@@ -27,7 +27,7 @@ const getProducts = async (req, res) => {
 
   const products = await Product.find(query);
 
-  console.log(products);
+  // console.log(products);
 
   res.json(products);
 }
