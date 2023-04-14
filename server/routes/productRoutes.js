@@ -9,7 +9,7 @@ const productRoutes = express.Router();
 const getProducts = async (req, res) => {
   const { genre, category, age } = req.query;
 
-  console.log(req.query);
+  // console.log(req.query);
 
   const query = {};
 

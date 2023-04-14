@@ -45,11 +45,11 @@ function Book () {
 
                 return (
                     /*sets className variable*/
-                    <li key={index} className={className}>
+                    <div key={index} className={className}>
 
                         <div className="p-20">
 
-                            <Link to={`/product}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+                            <Link to={`/${item.link}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                                 <img className="image-card" src={item.image} alt="book"/>
                                 <h1 className="title">{item.name}</h1>
                                 <p className="description">{item.description}</p>
@@ -60,7 +60,7 @@ function Book () {
                             <p className="date">{item.date}</p>
                         </div>
 
-                    </li>
+                    </div>
                 )
             })}
         </>

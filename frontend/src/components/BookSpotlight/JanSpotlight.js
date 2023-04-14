@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './BookSpotlight.css';
 import { Link } from 'react-router-dom';
 
-export default function BookSpotlight() {
+export default function JanSpotlight() {
     const [isMobile, setMobile] = useState(window.innerWidth <= 1190);
 
     const updateScreenSize = () => {
@@ -21,17 +21,12 @@ export default function BookSpotlight() {
                 <>  
                     <div className="row book-spotlight pt-70">
                         <div className="col-spotlight">
-                            <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
+                            <img className="book-spotlight-img" src="images/indyjenny.jpg" alt="Indy and Jenny cover" />
                     
                             <div>
-                                <h1>Lake Life</h1>
-                                <h2>By David James Possiant</h2>
-                                <p> The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
-                                    Their son, a salesperson, lives in Dallas, with his elementary school teacher wife, Diane. Michael's brother, Thad, an aspiring poet makes
-                                    his home in New York City with his famous painter boyfriend, Jake. For years they've traveled to North Carolina to share a summer vacation
-                                    at the family's lake house. The tradition is coming to an end, as Richard and Lisa have decided to sell the lake house. But what should be
-                                    joyous farewell takes a nightmarish turn when the family witnesses a tragedy that triggers a series of dramatic revelation among the
-                                    Starlings-alcoholism, infidelity, and a shocking secret that will change the family forever.
+                                <h1>Indy + Jenny</h1>
+                                <h2>Charlie Griffen</h2>
+                                <p> Charlie Griffin is a local Florida author who in cooperation with Indy’s owner wrote to tell the story of Indy and Jenny. Indy and Jenny is about Indy, a rescued pit bull who is able to overcome the changes he faces along with Jenny, his caregiver. Jenny, who was new to the city, found her best friend, Indy, showing her to be strong and the ability to overcome challenging obstacles with a smile. This illustrated children's book 
                                 </p>
                             </div>
                         </div>
@@ -50,7 +45,7 @@ export default function BookSpotlight() {
                             </div> */}
 
                             <div className="col-buttons">
-                                <Link to='/product/6438ba529edd9b9a97faf167' className="book-spotlight-button">
+                                <Link to='/product/6369860d9540445b3c45e6b1' className="book-spotlight-button">
                                     <h3>ADD TO CART</h3>
                                 </Link>
                                 <Link to="/cart" className="book-spotlight-button-last">
@@ -64,16 +59,11 @@ export default function BookSpotlight() {
             ) : (
                 <>
                     <div className="book-spotlight pt-70">
-                        <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
+                        <img className="book-spotlight-img" src="images/indyjenny.jpg" alt="Indy and Jenny Cover" />
                         <div>
-                            <h1>Lake Life</h1>
-                            <h2>By David James Possiant</h2>
-                            <p> The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
-                                Their son, a salesperson, lives in Dallas, with his elementary school teacher wife, Diane. Michael's brother, Thad, an aspiring poet makes
-                                his home in New York City with his famous painter boyfriend, Jake. For years they've traveled to North Carolina to share a summer vacation
-                                at the family's lake house. The tradition is coming to an end, as Richard and Lisa have decided to sell the lake house. But what should be
-                                joyous farewell takes a nightmarish turn when the family witnesses a tragedy that triggers a series of dramatic revelation among the
-                                Starlings-alcoholism, infidelity, and a shocking secret that will change the family forever. </p>
+                            <h1>Indy + Jenny</h1>
+                            <h2>By Charlie Griffen</h2>
+                            <p> Charlie Griffin is a local Florida author who in cooperation with Indy’s owner wrote to tell the story of Indy and Jenny. Indy and Jenny is about Indy, a rescued pit bull who is able to overcome the changes he faces along with Jenny, his caregiver. Jenny, who was new to the city, found her best friend, Indy, showing her to be strong and the ability to overcome challenging obstacles with a smile. This illustrated children's book  </p>
 
                             {/* <div className="pickup">
                                 <input className="ship" type="radio" value=""></input>
@@ -83,7 +73,7 @@ export default function BookSpotlight() {
                             </div> */}
 
                             <div className="col-buttons">
-                                <Link to='/product/6438ba529edd9b9a97faf167' className="book-spotlight-button">
+                                <Link to='/product/6369860d9540445b3c45e6b1' className="book-spotlight-button">
                                     <h3>Learn More</h3>
                                 </Link>
                                 {/* <Link to="/cart" className="book-spotlight-button-last">

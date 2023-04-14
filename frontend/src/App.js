@@ -18,7 +18,7 @@ import RefundPolicy from './pages/refund-policy/refund-policy';
 import ShippingPolicy from './pages/shipping-policy/shipping-policy';
 import ReturnPolicy from './pages/return-item/return-policy';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
-import BlogReadMore from './pages/blog-read-more/blog-read-more';
+// import BlogReadMore from './pages/blog-read-more/blog-read-more';
 import SoloProduct from './pages/products/[id]';
 import Community from './pages/community/community';
 import Connected from './pages/connected/connected';
@@ -32,6 +32,10 @@ import UserOrders from './pages/User/UserOrders';
 import Admin from './pages/User/admin';
 import UsersTab from './pages/User/UsersTab';
 import ProductsTab from './pages/User/productsTab';
+import BlogMarch from './pages/blog/blog-march';
+import BlogFeb from './pages/blog/blog-feb';
+import BlogJan from './pages/blog/blog-jan';
+import BlogDec from './pages/blog/blog-dec';
 
 
 
@@ -57,7 +61,7 @@ function App() {
       <Route exact path='/products' element={<Products/>}/>
       <Route exact path='/donate' element={<Donate/>}/>
       <Route exact path='/blog' element={<Blog/>}/>
-      <Route exact path='/blog-read-more' element={<BlogReadMore/>}/>
+      {/* <Route exact path='/blog-read-more' element={<BlogReadMore/>}/> */}
       <Route exact path='/calender' element={<Calender/>}/>
       <Route exact path='/newsletter' element={<News/>}/>
       <Route exact path='/contact' element={<Contact/>}/>
@@ -82,6 +86,10 @@ function App() {
        <Route eact path='/admin' element={<Admin/>}/>
         <Route eact path='/users' element={<UsersTab/>}/>
         <Route eact path='/admin-products' element={<ProductsTab/>}/>
+        <Route exact path='/blog-march' element={<BlogMarch/>}/>
+        <Route exact path='/blog-feb' element={<BlogFeb/>}/>
+        <Route exact path='/blog-jan' element={<BlogJan/>}/>
+        <Route exact path='/blog-dec' element={<BlogDec/>}/>
         
     </Routes>
 

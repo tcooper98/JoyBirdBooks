@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './BookSpotlight.css';
 import { Link } from 'react-router-dom';
 
-export default function BookSpotlight() {
+export default function MarchSpotlight() {
     const [isMobile, setMobile] = useState(window.innerWidth <= 1190);
 
     const updateScreenSize = () => {
@@ -21,17 +21,14 @@ export default function BookSpotlight() {
                 <>  
                     <div className="row book-spotlight pt-70">
                         <div className="col-spotlight">
-                            <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
+                            <img className="book-spotlight-img" src="images/voodoo.jpg" alt="Hot Voodoo cover" />
                     
                             <div>
-                                <h1>Lake Life</h1>
-                                <h2>By David James Possiant</h2>
-                                <p> The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
-                                    Their son, a salesperson, lives in Dallas, with his elementary school teacher wife, Diane. Michael's brother, Thad, an aspiring poet makes
-                                    his home in New York City with his famous painter boyfriend, Jake. For years they've traveled to North Carolina to share a summer vacation
-                                    at the family's lake house. The tradition is coming to an end, as Richard and Lisa have decided to sell the lake house. But what should be
-                                    joyous farewell takes a nightmarish turn when the family witnesses a tragedy that triggers a series of dramatic revelation among the
-                                    Starlings-alcoholism, infidelity, and a shocking secret that will change the family forever.
+                                <h1>Hot Voodoo</h1>
+                                <h2>By Nicole M. Namara</h2>
+                                <p> Nicole M. Namara is a local Florida author who recently published her very first book, Hot Voodoo. She is a full time mom finding time in-between to explore her passions in writing novels. She also enjoys going out to our local coffee shops. She has hosted several events at these coffee shops, like Qreate, where she talks about her work and meets more people in the book-loving community.
+	Hot Voodoo is a thriller romance book for young adults. It has a mystery with the main character, Casey's little sister being kidnapped. Casey has to find her sister with practically no evidence to lead off from while also dealing with her unpredictable mother. Casey has to balance the changes of going back to her hometown in New Orleans, finding her missing sister, and hating the feeling of being alone.
+	Namara’s Instagram is how she connects with her followers, posts her own book reviews, shares events she's hosting, and updates her own personal writing. As a local Orlando, Florida author herself, Namara also enjoys sharing local authors she finds. Check out her Instagram to find new authors or read our Past Local Author Spotlight blogs posts.
                                 </p>
                             </div>
                         </div>
@@ -50,7 +47,7 @@ export default function BookSpotlight() {
                             </div> */}
 
                             <div className="col-buttons">
-                                <Link to='/product/6438ba529edd9b9a97faf167' className="book-spotlight-button">
+                                <Link to='/product/6438b2739edd9b9a97faef06' className="book-spotlight-button">
                                     <h3>ADD TO CART</h3>
                                 </Link>
                                 <Link to="/cart" className="book-spotlight-button-last">
@@ -64,16 +61,13 @@ export default function BookSpotlight() {
             ) : (
                 <>
                     <div className="book-spotlight pt-70">
-                        <img className="book-spotlight-img" src="images/lakelife.jpg" alt="David James Poissant Lake Life" />
+                        <img className="book-spotlight-img" src="images/voodoo.jpg" alt="Hot Voodoo Cover" />
                         <div>
                             <h1>Lake Life</h1>
-                            <h2>By David James Possiant</h2>
-                            <p> The Starling family is scattered across the country. Parents Richard and Lisa live in Ithaca, New York, and work at Cornell University.
-                                Their son, a salesperson, lives in Dallas, with his elementary school teacher wife, Diane. Michael's brother, Thad, an aspiring poet makes
-                                his home in New York City with his famous painter boyfriend, Jake. For years they've traveled to North Carolina to share a summer vacation
-                                at the family's lake house. The tradition is coming to an end, as Richard and Lisa have decided to sell the lake house. But what should be
-                                joyous farewell takes a nightmarish turn when the family witnesses a tragedy that triggers a series of dramatic revelation among the
-                                Starlings-alcoholism, infidelity, and a shocking secret that will change the family forever. </p>
+                            <h2>By Nicole M. Namara</h2>
+                            <p> Nicole M. Namara is a local Florida author who recently published her very first book, Hot Voodoo. She is a full time mom finding time in-between to explore her passions in writing novels. She also enjoys going out to our local coffee shops. She has hosted several events at these coffee shops, like Qreate, where she talks about her work and meets more people in the book-loving community.
+	Hot Voodoo is a thriller romance book for young adults. It has a mystery with the main character, Casey's little sister being kidnapped. Casey has to find her sister with practically no evidence to lead off from while also dealing with her unpredictable mother. Casey has to balance the changes of going back to her hometown in New Orleans, finding her missing sister, and hating the feeling of being alone.
+	Namara’s Instagram is how she connects with her followers, posts her own book reviews, shares events she's hosting, and updates her own personal writing. As a local Orlando, Florida author herself, Namara also enjoys sharing local authors she finds. Check out her Instagram to find new authors or read our Past Local Author Spotlight blogs posts. </p>
 
                             {/* <div className="pickup">
                                 <input className="ship" type="radio" value=""></input>
@@ -83,7 +77,7 @@ export default function BookSpotlight() {
                             </div> */}
 
                             <div className="col-buttons">
-                                <Link to='/product/6438ba529edd9b9a97faf167' className="book-spotlight-button">
+                                <Link to='/product/6438b2739edd9b9a97faef06' className="book-spotlight-button">
                                     <h3>Learn More</h3>
                                 </Link>
                                 {/* <Link to="/cart" className="book-spotlight-button-last">

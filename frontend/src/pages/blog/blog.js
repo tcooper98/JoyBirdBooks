@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 // import { useRef } from 'react';
 import BookCard from '../../components/BookCard/BookCard';
 import './blog.css';
-import { Link } from 'react-router-dom';
+import { Drawer } from '@mui/material';
+import BookSpotlight from '../../components/BookSpotlight/BookSpotlight';
 
 export default function Blog() {
     const [isMobile, setMobile] = useState(window.innerWidth <= 820);
@@ -15,6 +16,8 @@ export default function Blog() {
         window.addEventListener("resize", updateScreenSize);
         return () => window.removeEventListener("resize", updateScreenSize);
     })
+
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     return (
         <>
@@ -39,14 +42,19 @@ export default function Blog() {
                             <div className="col-blog-text">
 
                                 <p className="blog-description">
-                                    Lorem ipsum dolor sit amet. A amet provident id reprehenderit repellendus qui quam perspiciatis aut neque sint ea quia voluptas aut modi velit. Ut optio nihil ut asperiores tenetur et galisum facilis sit corporis possimus qui voluptas possimus ut recusandae molestiae ex quia architecto? Ut maxime suscipit rem obcaecati blanditiis aut facere suscipit aut sequi perspiciatis ea illum nihil sit mollitia dignissimos.
-
-                                    Nam consectetur ratione ut tenetur quia et unde iure sed maxime iusto quo tenetur officiis non voluptatum voluptatem sed omnis incidunt. Non iste nostrum vel consequatur internos a eaque natus in alias atque est voluptatem quibusdam aut repellat nulla qui laudantium consectetur? Qui neque laborum et laborum quis ea minima temporibus. Qui quaerat omnis cum quis similique in quam dolores sed explicabo amet.
+                                   David James Possiant is an award-winning author, finalist for the LA Times Book Prize, and a professor for UCF’s MFA program. He is one of our cherished local Orlando, Florida authors. Possiant has had his works displayed in a variety of prestigious settings such as The Atlantic Monthly, The Chicago Tribune, The New York Times, One Story, Ploughshares, and The Southern Review. He only released his passion and desire to become a writer until after his college days. He taught high school English where he wrote in the summer. This time spent during his summers made his passion grow more and more. He wanted more time spent writing, which encouraged him to go back to college for an English degree. Poissant has been writing ever since his major life change.
+He made his novel debut with the release of Lake Life in July 2020. Lake Life is a fiction novel for adults showcasing what it means to be a true family. It takes place in North Carolina at their family lake house and illustrates how complicated and intertwined family matters become. Troubled relationships, confrontation, and acceptance create empathy for Poissant’s characters as each reader has someone they can relate to. Lake Life is both heart-wrenching and hilarious with Poissant perfecting this memorable story.
+Possiant shares his new endeavors on his own personal website. He has two released books, book reviews, a contact me, and a spot for events he plans on having. If you are interested in fiction novels for adults, check out Lake Life or some of our catalog of recommended fiction novels. 
                                 </p>
 
-                                <Link to='/blog-read-more'>
+                                {/* <Link to='/blog-read-more'>
                                     <p className="btn">Read More</p>
-                                </Link>
+                                </Link> */}
+                                <button className='btn' onClick={() => setIsDrawerOpen(true)}>Read More</button>
+                            <Drawer anchor='bottom' open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+                                <BookSpotlight/>
+
+                            </Drawer>
                             </div>
                         </div>
                     </div>
@@ -69,29 +77,31 @@ export default function Blog() {
                         <div className="col-blog-text">
                             <h1>Blog</h1>
                             <h2 className='subheading'>Local Author Spotlight</h2>
-                            <p className='subheading2'>Date Text</p>
+                            <p className='subheading2'>April 2023</p>
 
                             <div className="p-30"></div>
 
-                            <h2 className='subheading'>Title Text</h2>
+                            <h2 className='subheading'>From Professor to Author</h2>
                             <p className="blog-description">
-                                Description text description text description text description text description text description text
-                                description text description text description text description text description text description text
-                                description text description text description text description text description text description text
-                                description text description text description text description text description text description text
-                                description text description text description text description text description text description text
-                                description text description text description text description text description text description text
+                               David James Possiant is an award-winning author, finalist for the LA Times Book Prize, and a professor for UCF’s MFA program. He is one of our cherished local Orlando, Florida authors. Possiant has had his works displayed in a variety of prestigious settings such as The Atlantic Monthly, The Chicago Tribune, The New York Times, One Story, Ploughshares, and The Southern Review. He only released his passion and desire to become a writer until after his college days. He taught high school English where he wrote in the summer. This time spent during his summers made his passion grow more and more. He wanted more time spent writing, which encouraged him to go back to college for an English degree. Poissant has been writing ever since his major life change.
+He made his novel debut with the release of Lake Life in July 2020. Lake Life is a fiction novel for adults showcasing what it means to be a true family. It takes place in North Carolina at their family lake house and illustrates how complicated and intertwined family matters become. Troubled relationships, confrontation, and acceptance create empathy for Poissant’s characters as each reader has someone they can relate to. Lake Life is both heart-wrenching and hilarious with Poissant perfecting this memorable story.
+Possiant shares his new endeavors on his own personal website. He has two released books, book reviews, a contact me, and a spot for events he plans on having. If you are interested in fiction novels for adults, check out Lake Life or some of our catalog of recommended fiction novels. 
                             </p>
                         </div>
 
                         <div className="col-image">
-                            <h2 className="subheading">Author Name</h2>
-                            <p className="author-description">Author Text</p>
+                            <h2 className="subheading">David James Poissant</h2>
+                            <p className="author-description">Award Winning Author</p>
                             <img className="img" src="images/Poissant.jpg" alt="author" />
 
-                            <Link to='/blog-read-more' className="btn">
+                            {/* <Link to='/blog-read-more' className="btn">
                                 <p>Read More</p>
-                            </Link>
+                            </Link> */}
+                            <button className='btn' onClick={() => setIsDrawerOpen(true)}>Read More</button>
+                            <Drawer anchor='bottom' open={isDrawerOpen} onClose={() => setIsDrawerOpen(false)}>
+                                <BookSpotlight/>
+
+                            </Drawer>
                         </div>
 
                     </div>
