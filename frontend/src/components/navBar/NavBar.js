@@ -15,7 +15,7 @@ function Navbar() {
     const user = useSelector((state) => state.user);
     const { userInfo } = user;
 
-    
+
     //toggle hamburger menu not visible on desktop
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false);
@@ -53,56 +53,75 @@ function Navbar() {
                 </div>
                 <div className='nav-bar-mid'>
 
-                
 
-                <SearchBar/>
 
-                <div className='nav-container'>
-                    <div className='navbar'>
+                    <SearchBar />
 
-                        <div className='menu-icon' onClick={handleClick}>
-                            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                    <div className='nav-container'>
+                        <div className='navbar'>
+
+                            <div className='menu-icon' onClick={handleClick}>
+                                <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+                            </div>
+
+                            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+
+                                <li className='nav-item'>
+                                    <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
+                                        PRODUCTS
+                                    </Link>
+                                </li>
+
+                                <li className='nav-item'>
+                                    <Link to='/donate' className='nav-links' onClick={closeMobileMenu}>
+                                        DONATE/TRADE
+                                    </Link>
+                                </li>
+
+                                <li className='nav-item'
+                                    onMouseEnter={onMouseEnter}
+                                    onMouseLeave={onMouseLeave}
+                                >
+                                    <Link to='/community' className='nav-links' onClick={closeMobileMenu}>
+                                        COMMUNITY <i className='fas fa-caret-down' />
+                                    </Link>
+
+                                    {dropdown && <CommunityDropdown />}
+                                </li>
+
+                                <li className='nav-item-end'
+                                    onMouseEnter={onMouseEnter}
+                                    onMouseLeave={onMouseLeave}
+                                >
+                                    <Link to='/connected' className='nav-links' onClick={closeMobileMenu}>
+                                        GET CONNECTED <i className='fas fa-caret-down' />
+                                    </Link>
+                                    {dropdown && <ConnectedDropdown />}
+                                </li>
+
+                                <li className='nav-item-last'>
+                                    <div className='cart-icon-mobile'>
+                                        <Link to='/cart' className='nav-links' onClick={closeMobileMenu}>
+                                            <i className="fa-solid fa-cart-shopping"></i>
+                                        </Link>
+                                        {userInfo ? (
+                                            <>
+                                                <Link to='/account' className='nav-links' onClick={closeMobileMenu}>
+                                                    <i className="fa-solid fa-user-circle"></i>
+                                                </Link>
+                                            </>
+                                        ) : (
+                                            <>
+                                                <Link to='/login' className='nav-links' onClick={closeMobileMenu}>
+                                                    <i className="fa-solid fa-user-circle"></i>
+                                                </Link>
+                                            </>
+                                        )}
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-
-                        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-
-                            <li className='nav-item'>
-                                <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                                    PRODUCTS
-                                </Link>
-                            </li>
-
-                            <li className='nav-item'>
-                                <Link to='/donate' className='nav-links' onClick={closeMobileMenu}>
-                                    DONATE/TRADE
-                                </Link>
-                            </li>
-
-                            <li className='nav-item'
-                                onMouseEnter={onMouseEnter}
-                                onMouseLeave={onMouseLeave}
-                            >
-                                <Link to='/community' className='nav-links' onClick={closeMobileMenu}>
-                                    COMMUNITY <i className='fas fa-caret-down' />
-                                </Link>
-
-                                {dropdown && <CommunityDropdown />}
-                            </li>
-
-                            <li className='nav-item-end'
-                                onMouseEnter={onMouseEnter}
-                                onMouseLeave={onMouseLeave}
-                            >
-                                <Link to='/connected' className='nav-links' onClick={closeMobileMenu}>
-                                    GET CONNECTED <i className='fas fa-caret-down' />
-                                </Link>
-                                {dropdown && <ConnectedDropdown />}
-                            </li>
-
-                            
-                        </ul>
                     </div>
-                </div>
                 </div>
                 <div className='cart-icon'>
                     <li className='nav-item-last'>
@@ -110,15 +129,15 @@ function Navbar() {
                             <i className="fa-solid fa-cart-shopping"></i>
                         </Link>
                         {userInfo ? (<> <Link to='/account' className='nav-links' onClick={closeMobileMenu}>
-                          <i className="fa-solid fa-user-circle"></i>
-                        </Link></>) 
-                        : ( <>
-                        
-                        <Link to='/login' className='nav-links' onClick={closeMobileMenu}>
-                          <i className="fa-solid fa-user-circle"></i>
-                        </Link>
-                        </>
-                        )
+                            <i className="fa-solid fa-user-circle"></i>
+                        </Link></>)
+                            : (<>
+
+                                <Link to='/login' className='nav-links' onClick={closeMobileMenu}>
+                                    <i className="fa-solid fa-user-circle"></i>
+                                </Link>
+                            </>
+                            )
                         }
                     </li>
                 </div>

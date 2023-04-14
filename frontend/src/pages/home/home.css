@@ -14,6 +14,14 @@
     .spotlight {
         background-color: #292727;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+
+    .spotlight-text {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .spotlight img {
@@ -48,9 +56,10 @@
     .spotlight button {
         background-color: #489fb5;
         width: 315px;
-        height: 87px;
-        font-size: 34px;
+        height: 60px;
+        font-size: 28px;
         color: white;
+
     }
 
     .testimonials {
@@ -61,7 +70,7 @@
 
     .testimonials p {
         font-family: 'Nunito', sans-serif;
-        font-size: 25px;
+        font-size: 20px;
         text-align: left;
         padding: 10px;
     }
@@ -95,7 +104,11 @@
     }
 
     .learn {
-        padding: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .community {
@@ -123,13 +136,13 @@
 
     .community p {
         color: white;
-        font-size: 30px;
+        font-size: 25px;
         padding: 0;
         margin: 0;
         margin-left: 40px;
         margin-right: 10px;
         font-family: 'Nunito', sans-serif;
-        font-weight: 600;
+        font-weight: 500;
         text-align: left;
         width: auto;
         height: auto;
@@ -161,7 +174,7 @@
         padding: 20px;
         margin: 40px;
     }
-        
+
     .instaposts iframe {
         padding: 10px;
     }
@@ -233,7 +246,7 @@
 
     .testimonials p {
         font-family: 'Nunito', sans-serif;
-        font-size: 32px;
+        font-size: 20px;
         text-align: center;
         padding: 10px;
     }
@@ -334,7 +347,7 @@
         padding: 20px;
         margin: 40px;
     }
-    
+
     .instaposts iframe {
         padding: 10px;
     }
@@ -372,8 +385,8 @@
     }
 
     .spotlight button {
-        width: 153px;
-        height: 33px;
+        width: 200px;
+        height: 45px;
         font-size: 22px;
     }
 
@@ -395,6 +408,7 @@
         height: 112px;
         margin-bottom: 20px;
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     .testimonials2 {
@@ -402,6 +416,7 @@
         height: 112px;
         margin-bottom: 20px;
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     .testimonials3 {
@@ -409,10 +424,13 @@
         height: 112px;
         margin-bottom: 20px;
         margin-left: 20px;
+        margin-right: 20px;
     }
 
     .learn {
-        padding: 25px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0px;
     }
 
     .community {
@@ -443,13 +461,19 @@
         margin-right: 5px;
     }
 
-    .community button{
+    .calender-button {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .community button {
         width: 153px;
         height: 33px;
         font-size: 22px;
         margin-left: 40px;
         margin-top: 25px;
         margin-bottom: 20px;
+        margin-left: 0px;
     }
 
     .instagram {
@@ -457,11 +481,11 @@
         flex-direction: column;
         padding: 20px;
     }
-    
+
     .instaposts {
         margin: auto;
     }
-    
+
     .instaposts iframe {
         padding: 10px;
     }
@@ -510,13 +534,19 @@
     }
 
     .spotlight button {
-        width: 150px;
-        height: 35px;
+
+        width: 170px;
+        height: 45px;
         font-size: 20px;
+        font-weight: 600;
     }
 
     .learn {
-        padding-left: 40px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .turner h2 {
@@ -571,13 +601,15 @@
         flex-direction: row;
         width: auto;
         height: auto;
+        padding: 20px;
+        flex-wrap: wrap;
     }
 
     .community img {
-        width: 250px;
+        width: 100%;
         height: 250px;
         object-fit: cover;
-        padding: 20px;
+        padding: 0px;
         margin-top: 70px;
     }
 
@@ -603,14 +635,21 @@
         text-align: left;
     }
 
+    .calender-button {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     .community button {
         background-color: #489fb5;
         color: white;
-        width: 150px;
-        height: 35px;
+        width: 170px;
+        height: 45px;
         font-size: 20px;
+        font-weight: 600;
         margin-top: 0;
         margin-bottom: 10px;
+        margin-left: 0px;
     }
 
     .instagram {
@@ -624,7 +663,7 @@
         margin: auto;
     }
 
-    .instaposts iframe{
+    .instaposts iframe {
         margin-bottom: 20px;
     }
 }
