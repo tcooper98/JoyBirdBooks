@@ -1,4 +1,23 @@
 /* cart summary css */
+div.cartEmpty h1{
+    font-size: 40px;
+    color: #489FB5;
+    font-weight: 900;
+
+}
+
+div.cartEmpty {
+   background-color: #292727;
+
+}
+
+div.cartEmpty h2 {
+    font-size: 20px;
+    color: #489FB5;
+    font-weight: 300;
+
+}
+
 div.productCartcontainer {
     display: flex;
     justify-content: center;
@@ -156,6 +175,12 @@ h1.carttitle {
 
 
 
+}
+
+div.cartEmpty img{
+    height: auto;
+    object-fit: cover;
+    max-width: 50%;
 }
 
 /* end of css for cart items */

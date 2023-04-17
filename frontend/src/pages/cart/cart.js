@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Link as ReactLink } from 'react-router-dom';
-import { Button, Snackbar, Alert } from '@mui/material';
+import { Button, Snackbar, Alert, Paper, Box } from '@mui/material';
 import { Rating } from '@mui/lab';
 import { useSelector } from 'react-redux';
 import CartItem from './CartItem';
@@ -24,9 +24,26 @@ const getHeadingContent = () => (cart.length === 1 ? '(1 Item)' : `(${cart.lengt
         : error ? 
         (<p>error {error} </p>) 
         : cart.length <= 0 ? 
-        (<Link to='/products'>
-          <Button variant="outlined">Your Cart is Empty. Click Here To Check out our Book Selection</Button>
-          </Link>) 
+        (
+        <>
+        <Box className='cartEmpty'>
+         <Paper elevation={3}  style={{maxWidth:'1000px', alignContent:'center', justifyContent: "center", alignItems: "center",textAlign: "center", verticalAlign: "middle"}}>
+          <Box>
+            <img src="images/empty.png"></img>
+         
+         <Box>
+          <h1>Your Cart is Empty!</h1>
+          <h2>It looks like you have not added anything to your cart yet.</h2>
+          <Link to='/products'>
+          <Button variant="outlined" style={{margin:"20px", color:"#489FB5", width:"500px"}}>Go Shopping</Button>
+          </Link>
+          </Box>
+           </Box>
+          </Paper>
+          </Box>
+         
+          </>
+          ) 
         : (
              <div className='cartContainer'>
               <div className='cartContent'>
