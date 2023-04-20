@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "client": "cd frontend && npm start",
-    "server": "node server/index.js",
-    "app": "concurrently \"npm run server\" \"npm run client\""
+    "start": "node server/index.js",
+    "app": "concurrently \"npm run start\" \"npm run client\"",
+    "build": "cd frontend && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",

@@ -27,7 +27,8 @@ const loginUser = asyncHandler(async (req, res) => {
       createdAt: user.createdAt,
     });
   } else {
-    res.status(401).send('Cannot find user with that email or password.');
+    res.status(401).send('Cannot find user with that email or password.')
+    throw new Error('Invalid email or password.');
   }
 });
 
@@ -37,7 +38,7 @@ const registerUser = asyncHandler(async (req, res) => {
 
   const userExists = await User.findOne({ email });
   if (userExists) {
-    res.status(400)
+    res.status(400).send('Account with this email already exists.')
     throw new Error('An account with this email already exists. Please login in or use a different email address.');
   }
 
@@ -56,7 +57,7 @@ const registerUser = asyncHandler(async (req, res) => {
       token: genToken(user._id),
     });
   } else {
-    res.status(400)
+    res.status(400).send('Something went wrong. Please check your data and try again.')
     throw new Error('Something went wrong. Please check your data and try again.');
   }
 });

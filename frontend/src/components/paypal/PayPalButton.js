@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import {PAYPAL_CLIENT_ID} from "../../client_id";
+import axios from "axios";
+import { CircularProgress } from "@mui/material";
 
-export default function PayPalButton({total, onPaymentSuccess, onPaymentError, disabled}) {
+const PayPalButton = ({total, onPaymentSuccess, onPaymentError, disabled}) => {
+
+    const [paypalClient, setPaypalClient] = useState(null);
+
+    
+    useEffect(() => {
+        const paypalKey = async () => {
+            const {data : clientId} = await axios.get('/api/config/paypal');
+            setPaypalClient(clientId);
+        };
+        paypalKey();
+    }, [paypalClient]);
     return (
-        <PayPalScriptProvider options={{ "client-id": PAYPAL_CLIENT_ID }}>
+        !paypalClient ? (
+            <CircularProgress/>
+        ) :
+        <PayPalScriptProvider options={{ "client-id": paypalClient }}>
             <PayPalButtons
             disabled={disabled}
-            forceReRender={[total()]}
+            forceReRender={[total(), paypalClient]}
                 createOrder={(data, actions) => {
                     return actions.order.create({
                         purchase_units: [
@@ -31,3 +46,5 @@ export default function PayPalButton({total, onPaymentSuccess, onPaymentError, d
         </PayPalScriptProvider>
     );
 }
+
+export default PayPalButton;

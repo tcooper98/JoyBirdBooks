@@ -1,8 +1,10 @@
 import dotenv from 'dotenv';
+dotenv.config();
 import connectToDatabase from './database.js';
 import express from 'express';
 import Contact from './models/contact.js';
 import Donate from './models/donate.js';
+import path from 'path';
 
 //Routes
 import productRoutes from './routes/productRoutes.js';
@@ -11,19 +13,32 @@ import orderRoutes from './routes/orderRoutes.js';
 import contactRoutes from './routes/contactRoutes.js';
 import donateRoutes from './routes/donateRoutes.js';
 
-dotenv.config();
+
+
 connectToDatabase();
 const app = express();
 
 app.use(express.json());
-
-const port = process.env.PORT || 5000
 
 app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/contact', contactRoutes);
 app.use('/api/donate', donateRoutes);
+
+app.get('/api/config/paypal', (req, res) => res.send(process.env.PAYPAL_CLIENT_ID));
+
+const port = process.env.PORT || 5000
+
+const __dirname = path.resolve();
+app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
+
+if(process.env.NODE_ENV == 'production') {
+    app.use(express.static(path.join(__dirname, '/frontend/build')));
+    app.get('*', (req, res) => res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html')));
+}
+
+
 
 
 // rout handels for form submissions
