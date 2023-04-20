@@ -6,7 +6,7 @@ import { Formik } from "formik";
 import * as Yup from "yup";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, Link as ReactLink, useLocation } from "react-router-dom";
-import { Alert, AlertTitle, Card, CardActions, CardContent, FormControl, Grid, TextField } from "@mui/material";
+import { Alert, AlertTitle, Button, Card, CardActions, CardContent, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, FormControl, Grid, TextField } from "@mui/material";
 import { login } from "../../redux/actions/userActions";
 import Inputfield from "../../components/input/Textfield";
 import Passwordfield from "../../components/input/PasswordText";
@@ -19,17 +19,20 @@ const Login = () => {
 
     const user = useSelector((state) => state.user);
     const { error, userInfo, loading } = user;
+    const [open, setOpen] = useState(false);
+
 
     useEffect(() => {
-        if (userInfo) {
-            if(location.state && location.state.from){
-                navigate(location.state.from)
-        } else {
-            navigate(redirect)
-        }
-        alert("You are logged in");
+  if (userInfo) {
+    if (location.state && location.state.from) {
+      navigate(location.state.from);
+    } else {
+      navigate(redirect);
     }
-    }, [userInfo, redirect, error, navigate, location.state])
+    setOpen(true);
+  }
+}, [userInfo, redirect, error, navigate, location.state]);
+
     return (
         <div>
         <Formik
@@ -48,6 +51,17 @@ const Login = () => {
             <div className="login">
             <Card variant="outlined" style={{maxWidth:450, margin:"0 auto",padding:"20px 5px"}}>
              <CardContent>
+                  <Dialog open={open} onClose={() => setOpen(false)}>
+                  <DialogTitle>You are logged in</DialogTitle>
+                   <DialogContent>
+                    <DialogContentText>
+                      You have successfully logged in to your account.
+                    </DialogContentText>
+                    </DialogContent>
+                     <DialogActions>
+                     <Button onClick={() => setOpen(false)}>OK</Button>
+                     </DialogActions>
+                     </Dialog>
               <Grid>
                     <Grid item>
                         <h1 className="login-title">Login</h1>
@@ -78,7 +92,7 @@ const Login = () => {
                     </FormControl>
                 
                 </Grid>
-                    
+                  
               </Grid>
              </CardContent>
            

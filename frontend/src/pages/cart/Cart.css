@@ -173,6 +173,14 @@ h1.carttitle {
         margin-left: 10px;
     }
 
+    div.product-details img{
+        width:275px;
+        height:300px;
+        object-fit: cover;
+        margin: 0px;
+        
+    }
+
 
 
 }
