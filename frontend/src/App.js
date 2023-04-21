@@ -36,7 +36,6 @@ import BlogMarch from './pages/blog/blog-march';
 import BlogFeb from './pages/blog/blog-feb';
 import BlogJan from './pages/blog/blog-jan';
 import BlogDec from './pages/blog/blog-dec';
-import {Helmet} from "react-helmet";
 
 
 
@@ -48,14 +47,7 @@ import {Helmet} from "react-helmet";
 
 function App() {
   return( 
-    
   <Router>
-
-    <Helmet>
-                <meta charSet="utf-8" />
-                <title>Joybird</title>
-                 <meta name="description" content="We are Orlandos very own used bookseller, focused on bringing together local authors and artists to share their work and celebrate the spirit of art, literacy, and community in a collaborative space." />
-            </Helmet>
 
  
     

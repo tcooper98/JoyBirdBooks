@@ -103,9 +103,6 @@ p.reviewResult {
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr auto;
     grid-template-areas: "menu info";
-    margin: auto;
-    justify-content: center;
-  align-items: center;
 }
 
 .review-menu {
@@ -216,7 +213,7 @@ p.reviewResult {
     float: left;
 }
 
-/* .donate-link {
+.donate-link {
     background-color: #FFF4DA;
     height: 486px;
 }
@@ -248,7 +245,7 @@ p.reviewResult {
     margin-left: 200px;
     margin-bottom: 30px;
     text-align: center;
-} */
+}
 
 .tradebutton {
     height: 80px;
@@ -393,9 +390,6 @@ p.reviewResult {
 
     .reviews {
         margin-top: 80px;
-        margin: auto;
-        justify-content: center;
-  align-items: center;
 
     }
 
@@ -418,7 +412,7 @@ p.reviewResult {
     }
 
 
-/* 
+
     .donate-link h1 {
         font-size: 50px;
     }
@@ -437,7 +431,7 @@ p.reviewResult {
         margin-left: 450px;
         margin-bottom: 30px;
         text-align: center;
-    } */
+    }
 
 
 
@@ -472,15 +466,11 @@ p.reviewResult {
     .reviews {
         display: flex;
         flex-wrap: wrap;
-       
-        /* margin-left: 10px;
-        margin-right: 10px; */
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
         flex-direction: column;
         align-content: space-around;
-        margin: auto;
-        justify-content: center;
-  align-items: center;
-        
 
     }
 
