@@ -29,7 +29,7 @@ export default function SoloProduct () {
 
 
 
-        
+{/*         
         <div className='donate-link'>
             <h1>You can now donate and trade</h1>
             <p>You can now trade or donate books in a very easy and intuitive way. Please refer to our trading policy in our
@@ -45,7 +45,7 @@ export default function SoloProduct () {
               </Link>
 
 
-        </div>
+        </div> */}
 
         <div className='similar'>
         <h2 className='similar'>From Local Authors</h2>

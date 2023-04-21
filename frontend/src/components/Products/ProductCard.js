@@ -10,18 +10,23 @@ import { useEffect } from 'react';
 
 // this determines how many items on page by screen size
 const responsive = {
+  extraLargeDesktop: {
+    breakpoint: { max: 6000, min: 2250 },
+    items: 5,
+    slidesToSlide: 5 // optional, default to 1
+  },
     superLargeDesktop: {
-    breakpoint: { max: 4000, min: 2240 },
+    breakpoint: { max: 2250, min: 2097 },
     items: 4,
     slidesToSlide: 4 // optional, default to 1
   },
   desktop: {
-    breakpoint: { max: 2239, min: 1024 },
+    breakpoint: { max: 2096, min: 1288 },
     items: 3,
     slidesToSlide: 3 // optional, default to 1.
   },
   tablet: {
-    breakpoint: { max: 1024, min: 900 },
+    breakpoint: { max: 1287, min: 900 },
     items: 2,
     slidesToSlide: 2 // optional, default to 1.
   },
