@@ -1,15 +1,15 @@
 import React from 'react'
 import './solo.css'
-import Product from '../../components/Products/ProductCard';
+// import Product from '../../components/Products/ProductCard';
 import SoloProductCard from './soloProductCard';
-import Rating from '@mui/material/Rating';
-import Divider from '@mui/material/Divider';
-import Box from '@mui/material/Box';
-import { Link, useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getProducts } from '../../redux/actions/productActions';
-import { addCartItem } from '../../redux/actions/cartActions';
+// import Rating from '@mui/material/Rating';
+// import Divider from '@mui/material/Divider';
+// import Box from '@mui/material/Box';
+// import { Link, useParams } from 'react-router-dom';
+// import { useEffect, useState } from 'react';
+// import { useDispatch, useSelector } from 'react-redux';
+// import { getProducts } from '../../redux/actions/productActions';
+// import { addCartItem } from '../../redux/actions/cartActions';
 import Local from '../../components/Products/localCard';
 
 
@@ -30,7 +30,7 @@ export default function SoloProduct () {
 
 
         
-        <div className='donate-link'>
+        {/* <div className='donate-link'>
             <h1>You can now donate and trade</h1>
             <p>You can now trade or donate books in a very easy and intuitive way. Please refer to our trading policy in our
                 trade/donate page. Trading a book will allow you to have access to our library without spending money overhead.
@@ -45,7 +45,7 @@ export default function SoloProduct () {
               </Link>
 
 
-        </div>
+        </div> */}
 
         <div className='similar'>
         <h2 className='similar'>From Local Authors</h2>
