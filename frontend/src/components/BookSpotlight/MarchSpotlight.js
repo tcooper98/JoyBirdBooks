@@ -48,11 +48,9 @@ export default function MarchSpotlight() {
 
                             <div className="col-buttons">
                                 <Link to='/product/6438b2739edd9b9a97faef06' className="book-spotlight-button">
-                                    <h3>ADD TO CART</h3>
+                                    <h3>Learn More</h3>
                                 </Link>
-                                <Link to="/cart" className="book-spotlight-button-last">
-                                    <h3>BUY NOW</h3>
-                                </Link>
+                                
                             </div>
 
                         </div>

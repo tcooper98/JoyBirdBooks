@@ -46,11 +46,9 @@ export default function DecSpotlight() {
 
                             <div className="col-buttons">
                                 <Link to='/product/6369863c9540445b3c45e6b3' className="book-spotlight-button">
-                                    <h3>ADD TO CART</h3>
+                                    <h3>Learn More</h3>
                                 </Link>
-                                <Link to="/cart" className="book-spotlight-button-last">
-                                    <h3>BUY NOW</h3>
-                                </Link>
+                                
                             </div>
 
                         </div>

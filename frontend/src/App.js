@@ -36,6 +36,7 @@ import BlogMarch from './pages/blog/blog-march';
 import BlogFeb from './pages/blog/blog-feb';
 import BlogJan from './pages/blog/blog-jan';
 import BlogDec from './pages/blog/blog-dec';
+import NewsPage from './pages/newsletter/newsletter';
 
 
 
@@ -63,7 +64,7 @@ function App() {
       <Route exact path='/blog' element={<Blog/>}/>
       {/* <Route exact path='/blog-read-more' element={<BlogReadMore/>}/> */}
       <Route exact path='/calender' element={<Calender/>}/>
-      <Route exact path='/newsletter' element={<News/>}/>
+      <Route exact path='/newsletter' element={<NewsPage/>}/>
       <Route exact path='/contact' element={<Contact/>}/>
       <Route exact path='/about' element={<About/>}/>
       <Route exact path='/partner' element={<Partner/>}/>
