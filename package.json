@@ -8,7 +8,7 @@
     "client": "cd frontend && npm start",
     "start": "node server/index.js",
     "app": "concurrently \"npm run start\" \"npm run frontend\"",
-    "build": "cd frontend && npm i react-scripts@5 && npm run build"
+    "build": "npm install && cd frontend && npm i react-scripts@5 && npm run build"
   },
   "author": "",
   "license": "ISC",
