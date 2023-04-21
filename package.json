@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "client": "cd frontend && npm start",
-    "start": "node server/index.js",
+    "start": "node server/index",
     "app": "concurrently \"npm run start\" \"npm run frontend\"",
-    "build": "npm install && cd frontend && npm i react-scripts@5 && npm run build"
+    "build": "cd frontend && npm i react-scripts@5 && npm run build"
   },
   "author": "",
   "license": "ISC",
