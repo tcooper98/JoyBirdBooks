@@ -33,7 +33,7 @@ export default function Connected() {
         variant="outlined" 
          style={{
         width: "300px",
-        backgroundColor: "##7E9E32",
+        backgroundColor: "#7E9E32",
         padding: "18px 36px",
         fontSize: "18px",
         color: "#ffffff",
