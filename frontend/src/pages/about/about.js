@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import News from "../../components/newsletter/news";
 
 function About() {
 
@@ -24,13 +25,14 @@ function About() {
         </div>
       </div>
 
-      <div className="newsletter">
+      {/* <div className="newsletter">
         <h1>SUBSCRIBE TO OUR NEWSLETTER!</h1>    
         <label>              
           <input type="text" name="email" placeholder="Enter Your Email"></input>
         </label>
         <button>SEND</button>
-      </div> 
+      </div>  */}
+      <News/>
 
     </>
   );

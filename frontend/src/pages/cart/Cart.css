@@ -181,6 +181,11 @@ h1.carttitle {
         
     }
 
+    div.cartEmpty h2{
+        font-size: 15px;
+
+    }
+
 
 
 }

@@ -24,10 +24,7 @@ export default function BlogFeb() {
             {/*Renders image and text below each other if mobile screen size*/}
             {isMobile ? (
                 <>
-                    <div>
-                        <h1 className="blog-title">Blog</h1>
-                    </div>
-
+                   
                     <div className="author-spotlight page-spacing">
                         <div>
                             <h2 className='subheading'>Local Author Spotlight</h2>

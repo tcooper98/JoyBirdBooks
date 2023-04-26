@@ -33,7 +33,7 @@ const getHeadingContent = () => (cart.length === 1 ? '(1 Item)' : `(${cart.lengt
          
          <Box>
           <h1>Your Cart is Empty!</h1>
-          <h2>It looks like you have not added anything to your cart yet.</h2>
+          <h2 className='empty'>It looks like you have not added anything to your cart yet.</h2>
           <Link to='/products'>
           <Button variant="outlined" style={{margin:"20px", color:"#489FB5", width:"500px"}}>Go Shopping</Button>
           </Link>

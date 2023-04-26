@@ -847,28 +847,66 @@
 
 @media (max-width: 480px) {
     .newsletter {
-        background-color: #292727;
-        color: #fff4da;
-        width: auto;
-        justify-content: center;
-        display: flex;
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr); */
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
     }
 
     .newsletter h1 {
         font-size: 15px;
         text-align: center;
         margin-top: 20px;
+        grid-area: 1 / 1 / 2 / 3;
     }
 
+    form.newsinput{
+        padding-left: 30px;
+    }
+    
+
     .newsletter input {
-        width: auto;
+       
         font-size: 12px;
-        margin-top: 20px;
+        margin-top: 5px;
     }
 
     .newsletter button {
-        margin-top: 20px;
+        margin-top: 5px;
         width: auto;
         font-size: 15px;
+    }
+
+    div.instagram{
+        display: none;
+    }
+
+    .testimonials1 {
+        width: 350px;
+        height: 100px;
+    }
+
+     .testimonials1 p{
+        font-size: 12px;
+    }
+
+    .testimonials2 {
+        width: 350px;
+        height: 100px;
+    }
+
+    .testimonials2 p{
+        font-size: 12px;
+    }
+
+    .testimonials3 {
+        width: 350px;
+        height: 100px;
+    }
+
+    .testimonials3 p{
+        font-size: 12px;
     }
 }

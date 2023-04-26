@@ -34,7 +34,7 @@ const responsive = {
 
 function Turner() {
     return (
-      <div>
+      <div className="productSlide">
           <TurnerCard/>
        </div> 
     )

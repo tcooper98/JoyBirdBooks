@@ -34,7 +34,7 @@ const responsive = {
 
 function Local() {
     return (
-      <div>
+      <div className="productSlide">
           <LocalCard/>
        </div> 
     )

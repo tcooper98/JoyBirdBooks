@@ -28,16 +28,19 @@ const PaymentSuccessModal = () => {
               <h1>Payment Successful!</h1>
             
           </Box>
-          <Box mt={4} display='flex' justifyContent='center' alignItems='center'>
+          <div className='suc'>
             <Button style={{
+              width: "400px",
                color: "#489fb5",
               padding: "18px 36px",
-              fontSize: "18px"
+              fontSize: "18px",
+              minWidth: "10px"
            }} variant='outlined' component={RouterLink} to='/your-orders'>
-              Your Order
+              Your Orders
             </Button>
             <Box ml={2}>
               <Button style={{
+                width: "400px",
                color: "#489fb5",
               padding: "18px 36px",
               fontSize: "18px"
@@ -47,6 +50,7 @@ const PaymentSuccessModal = () => {
             </Box>
             <Box ml={2}>
               <Button style={{
+                width: "400px",
                color: "#489fb5",
               padding: "18px 36px",
               fontSize: "18px"
@@ -54,7 +58,7 @@ const PaymentSuccessModal = () => {
                 Logout
               </Button>
             </Box>
-          </Box>
+          </div>
     
     </Box>
     </div>

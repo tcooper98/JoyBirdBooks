@@ -34,7 +34,7 @@ const responsive = {
 
 function Product() {
     return (
-      <div>
+      <div className="productSlide">
           <ProductCard/>
        </div> 
     )

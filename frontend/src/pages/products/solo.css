@@ -662,3 +662,24 @@ p.reviewResult {
     padding: 20px;
     margin-top: 30px;
 }
+
+@media (max-width: 480px) {
+    .review-menu{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .review-menu p{
+    text-align: center;
+    width: 400px;
+    font-size: 30px;
+}
+
+div.review-content{
+    margin-left: 20px;
+}
+
+h2.similar{
+    font-size: 30px;
+}
+
+}

@@ -24,9 +24,9 @@ export default function Blog() {
             {/*Renders image and text below each other if mobile screen size*/}
             {isMobile ? (
                 <>
-                    <div>
+                    {/* <div>
                         <h1 className="blog-title">Blog</h1>
-                    </div>
+                    </div> */}
 
                     <div className="author-spotlight page-spacing">
                         <div>
