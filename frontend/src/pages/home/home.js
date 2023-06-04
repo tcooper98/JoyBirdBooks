@@ -28,17 +28,19 @@ export default function Home() {
                 <div className="spotlight">
                     <img src="images/Poissant.jpg" alt="David James Poissant" />
                     <div className="spotlight-text">
-                        <h1>Local Author Spotlight</h1>
+                        <h1 className='spot1'>local author</h1>
+                        <h1 className='spot2'>spotlight.</h1>
+                    </div>
+                        <div>
                         <p>DAVID JAMES POISSANT is the author of the story collection The Heaven of Animals, in print in five languages, winner of the GLCA
                             New Writers Award, and a finalist for the Los Angeles Times Book Prize. He teaches the MFA program at the University of Central Florida
                             and lives in Orlando with his wife and daughters. His debut novel, Lake Life will be published by Simon & Schuster on July 7, 2020.
                         </p>
                         <div className="learn">
-                            <Link to={`/blog`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                <button >Learn More</button>
-                            </Link>
+                          
                         </div>
-                    </div>
+                        </div>
+                    
                 </div>
 
                 <BookSpotlight />
@@ -48,7 +50,7 @@ export default function Home() {
                 </div>
                 <Turner />
 
-                <h2>TESTIMONIALS</h2>
+                {/* <h2>TESTIMONIALS</h2>
                 <div className="testimonials">
                     <div className='testimonials1'>
                         <p>"In an ever-evolving digital age, it's so refreshing to see another small independent bookstore pop up in this area! It has the perfect mix of a little bit of everything" <br /> -Josh D.</p>
@@ -61,10 +63,9 @@ export default function Home() {
                     <div className='testimonials3'>
                         <p>"Joybird Books is a delightful cozy used book and curio shop in the heart of the busy Corrine Drive commercial distract of Audubon park. The amazing selection seems curated and the space is very welcoming" <br /> -Cinna S.</p>
                     </div>
-                </div>
+                </div> */}
 
-                <div className="community">
-                    <img src="images/community.jpg" alt="Band playing at community event" />
+                <div className="community">  
                     <div className="communitytext">
                         <h1>COMMUNITY</h1>
                         <p>We are Orlando's very own used bookseller, focused on bringing together local authors and artists to share their work and celebrate
@@ -76,6 +77,11 @@ export default function Home() {
                         </Link>
                             {/* <button>CALENDER</button> */}
                         </div>
+                    </div>
+                    <img className="comimg" src="images/community.jpg" alt="Band playing at community event" />
+                    <div>
+                        <img className='comimg1' src="images/community.jpg" alt="Band playing at community event" />
+                        <img className='comimg2' src="images/community.jpg" alt="Band playing at community event" />
                     </div>
                 </div>
 

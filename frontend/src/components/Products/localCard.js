@@ -11,26 +11,27 @@ import { useEffect } from 'react';
 // this determines how many items on page by screen size
 const responsive = {
     superLargeDesktop: {
-    breakpoint: { max: 4000, min: 2240 },
+    breakpoint: { max: 4000, min: 1287 },
     items: 4,
     slidesToSlide: 4 // optional, default to 1
   },
   desktop: {
-    breakpoint: { max: 2239, min: 1024 },
+    breakpoint: { max: 1286, min: 481 },
     items: 3,
     slidesToSlide: 3 // optional, default to 1.
   },
   tablet: {
-    breakpoint: { max: 1024, min: 900 },
+    breakpoint: { max: 899, min: 481 },
     items: 2,
     slidesToSlide: 2 // optional, default to 1.
   },
   mobile: {
-    breakpoint: { max: 899, min: 0 },
+    breakpoint: { max: 481, min: 0 },
     items: 1,
     slidesToSlide: 1 // optional, default to 1.
   }
 };
+
 
 function Local() {
     return (

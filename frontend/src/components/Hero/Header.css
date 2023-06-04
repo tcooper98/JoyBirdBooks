@@ -1,118 +1,24 @@
-@media (max-width: 1886px) {
-.banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/hero.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 600px;
-    width: auto;
-    
-}
-}
-
-@media (max-width: 1887px) {
-.banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/hero.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 700px;
-    width: auto;
-    
-}
-}
-
-@media (max-width: 1094px) {
-.banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/hero.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 400px;
-    width: auto;
-    
-}
-}
-
-@media (max-width: 1002px) {
-.banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/hero.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 350px;
-    width: auto;
-    
-}
-}
-
-@media (max-width: 900px) {
-.banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/hero.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 150px;
-    width: auto;
-    
-}
-}
-
-@media (max-width: 1382px) {
-.banner{
-    margin: 0;
-    padding: 0;
-    background-image: url('../../images/hero.png');
-    background-size: contain;
-    background-position: top;
-    background-repeat: no-repeat;
-    height: 500px;
-    width: auto;
-    
-}
-}
-
-@media (min-width: 1888px) {
-    .banner {
-            margin: 0;
-            padding: 0;
-            background-image: url('../../images/hero.png');
-            background-size: contain;
-            background-position: top;
-            background-repeat: no-repeat;
-            height: 850px;
-            width: auto;
-}
+div.header-container{
+    background-color: #292727;
+    display: flex;
 }
 
 
-
-@media (max-width: 480px) {
-    .banner {
-            margin: 0;
-            padding: 0;
-            background-image: url('../../images/mobilecover.png');
-            background-size: contain;
-            background-position: top;
-            background-repeat: no-repeat;
-            height: 200px;
-            width: auto;
-}
+img.hero {
+   max-height: 40vw;
+   margin-left: -25%;
+   opacity: .75;
 }
 
-h1{
-    font-size: 72px;
-    font-family: 'Saira', sans-serif;
-    
+h1.head1 {
+    font-size: 15vw;
+    margin-left: 10%;
+    color: white;
 }
 
+h1.head2 {
+    font-size: 13vw;
+    margin-left: 10%;
+    color: #82c0cc;
+    margin-top: -18%;
+}
