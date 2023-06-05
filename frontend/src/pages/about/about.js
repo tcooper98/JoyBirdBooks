@@ -10,13 +10,14 @@ function About() {
 
   return (
     <>
-    
+    <div className="aboutbackground">
       <div className="about-us-container">
         <div className="image-container1">
+          <h1 className="h1-aboutus">US</h1>
           <img src={require("./joybirdaboutus.jpg")} alt="About Us" className="img-aboutus"/>
         </div>
         <div className="text-container">
-          <h1 className="h1-aboutus">About Us</h1>
+          
           <p className="p-aboutus">
             We are Orlando’s very own used bookseller, focused on bringing
             together local authors and artists to share their work and celebrate
@@ -33,7 +34,7 @@ function About() {
         <button>SEND</button>
       </div>  */}
       <News/>
-
+    </div>
     </>
   );
 }

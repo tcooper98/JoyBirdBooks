@@ -3,6 +3,7 @@ import './BookCard.css';
 import { useLocation } from 'react-router-dom';
 import { BookItems } from "./BookItems.js";
 import { Link } from 'react-router-dom';
+import { Divider } from '@mui/material';
 
 function BookCard () {
     return (
@@ -40,6 +41,7 @@ function Book () {
 
     return (
         <>
+        
             {/*rename the styles here to what i created*/}
             {BookItems.map((item, index) => {
 
@@ -47,17 +49,23 @@ function Book () {
                     /*sets className variable*/
                     <div key={index} className={className}>
 
-                        <div className="p-20">
+                        <div className="blogCont">
 
                             <Link to={`/${item.link}`} style={{ textDecoration: 'none', color: 'inherit' }}>
-                                <img className="image-card" src={item.image} alt="book"/>
-                                <h1 className="title">{item.name}</h1>
-                                <p className="description">{item.description}</p>
+                                 <div>
+                                <img className="blogIMG" src={item.image} alt="book"/>
+                                
+                                </div>
+                                <div>
+                                <h1 className="blogtitle">{item.name}</h1>
+                                 <p className="blogdate">{item.date}</p>
+                                <p className="blogDes">{item.description}</p>
+                                </div>
+                               
                             </Link>
 
-                            <div className="spacing"></div>
-
-                            <p className="date">{item.date}</p>
+                        <Divider orientation="vertical" flexItem />
+                           
                         </div>
 
                     </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import CommunityDropdown from './CommunityDropdown';
 import ConnectedDropdown from './ConnectedDropdown';
 import './Navbar.css'
-import Logo from './primarylogo.png';
+import Logo from './joybirdlogo.png';
 import SearchBar from './SearchBar';
 import { useSelector } from 'react-redux';
 

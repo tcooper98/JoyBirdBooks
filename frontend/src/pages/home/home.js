@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import BookSpotlight from '../../components/BookSpotlight/BookSpotlight'
 import News from '../../components/newsletter/news'
 import Turner from '../../components/Products/turnerCard'
+import { Insta } from '../../components/insta/insta'
 
 export default function Home() {
     const handleClick = () => {
@@ -101,20 +102,9 @@ export default function Home() {
 
                 {/* I need to find a way to embed instagram feed without access to token maybe a widget or something */}
                 <div className="instagram">
-                    <h2>INSTAGRAM FEED</h2>
+                    <h2>#JOYBIRDBOOKS</h2>
 
-                    <div className='instaposts'>
-                        <iframe src="https://www.instagram.com/p/CnFDthIOc-H/embed"
-                            width="400" height="400" frameborder="0" scrolling="no" allowtransparency="true" title='insta1'></iframe>
-
-                        <iframe src="https://www.instagram.com/p/CmM0m6xOszI/embed"
-                            width="400" height="400" frameborder="0" scrolling="no" allowtransparency="true" title='insta2'></iframe>
-
-                        <iframe src="https://www.instagram.com/p/CmHrvoQuDOU/embed"
-                            width="400" height="400" frameborder="0" scrolling="no" allowtransparency="true" title='insta3'></iframe>
-
-
-                    </div>
+                    <Insta/>
 
                 </div>
 

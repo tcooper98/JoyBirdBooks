@@ -1,0 +1,47 @@
+div.insta img{
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    opacity: .65;
+    filter: grayscale(100%);
+}
+
+div.insta img:hover{
+    opacity: 1;
+    filter: grayscale(0%);
+    cursor: pointer;
+}
+
+div.insta {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.instaText{
+    display: flex;
+}
+
+div.instaText h1{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #82C0CC;
+    font-size: 25px;
+    margin-top: -5px;
+}
+
+div.instaWrap{
+    margin: 2vw;
+}
+
+@media only screen and (max-width: 830px) {
+   div.insta img{
+    width: 30vw;
+    height: 30vw;
+   }
+
+    div.instaWrap{
+    margin: 1vw;
+}
+   
+}

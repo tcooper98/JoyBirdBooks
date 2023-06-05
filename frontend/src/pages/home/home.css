@@ -1,3 +1,27 @@
+.newsletter{
+    display: flex;
+    background-color: #292727;
+    padding: 40px;
+}
+
+.newsletter h1{
+    color: white;
+    font-size: 3vw;
+    font-weight: 800;
+    margin-right: 10%;
+    
+}
+
+  .newsletter input {
+       
+        font-size: 12px;
+        margin-top: 5px;
+        width: 17vw;
+        height: 6vh;
+        margin-top: 3%;
+        margin-bottom: auto;
+    }
+
 @media (max-width: 1504px) {
     div.fresh-off-press h2 {
         text-align: center;
@@ -106,7 +130,7 @@
     }
 
    .community {
-        background-color: #489fb5;
+        background-color: #82C0CC;
         display: flex;
         
     }
@@ -144,7 +168,7 @@
     }
 
     .community h1 {
-        color: #16697A;
+        color: #489FB5;
         font-size: 6vw;
         padding: 0;
         margin-left: 80px;
@@ -166,7 +190,7 @@
     }
 
      .community button {
-        background-color: #16697a;
+        background-color: #489FB5;
         width: 15vw;
         height: 3vw;
         font-size: 1.7vw;
@@ -183,13 +207,13 @@
     .instagram {
         display: flex;
         flex-direction: column;
-        background-color: #16697A;
+        background-color: #489FB5;
         padding: 40px;
     }
 
     .instagram h2 {
-        font-size: 50px;
-        color: #f2c202;
+        font-size: 3vw;
+        color: #82C0CC;
     }
 
     .instaposts {
@@ -308,7 +332,7 @@
     }
 
     .community {
-        background-color: #489fb5;
+        background-color: #82C0CC;
         display: flex;
         
     }
@@ -346,7 +370,7 @@
     }
 
     .community h1 {
-        color: #16697A;
+        color: #489FB5;
         font-size: 6vw;
         padding: 0;
         margin-left: 80px;
@@ -368,7 +392,7 @@
     }
 
     .community button {
-        background-color: #16697a;
+        background-color: #489FB5;
         width: 15vw;
         height: 3vw;
         font-size: 1.7vw;
@@ -385,13 +409,13 @@
     .instagram {
         display: flex;
         flex-direction: column;
-        background-color: #16697A;
+        background-color: #489FB5;
         padding: 40px;
     }
 
     .instagram h2 {
-        font-size: 50px;
-        color: #f2c202;
+        font-size: 4vw;
+        color: #82C0CC;
     }
 
     .instaposts {
@@ -730,10 +754,6 @@
         font-size: 20px;
     }
 
-    .newsletter h1 {
-        font-size: 40px;
-    }
-
     .visit img {
         width: 500px;
         height: 500px;
@@ -743,163 +763,8 @@
 }
 
 
-/*newsletter*/
-@media (min-width: 1900px) {
-    .newsletter {
-        background-color: #292727;
-        color: #fff4da;
-        display: flex;
-        height: 200px;
-        justify-content: center;
-        align-items: center;
-    }
 
-    .newsletter h1 {
-        font-size: 60px;
-        margin-top: 20px;
-        margin-right: 100px;
-    }
 
-    .newsletter input {
-        height: 60px;
-        width: 491px;
-        margin-top: 25px;
-        font-size: 15px;
-    }
-
-    .newsletter button {
-        height: 60px;
-        width: 200px;
-        margin-top: 25px;
-        font-size: 35px;
-        background-color: grey;
-    }
-}
-
-@media (max-width: 1899px) {
-    .newsletter {
-        background-color: #292727;
-        color: #fff4da;
-        display: flex;
-        height: 100px;
-        justify-content: center;
-    }
-
-    .newsletter h1 {
-        font-size: 40px;
-        margin-top: 20px;
-        margin-right: 100px;
-    }
-
-    .newsletter input {
-        height: 50px;
-        width: 300px;
-        margin-top: 25px;
-        font-size: 15px;
-    }
-
-    .newsletter button {
-        height: 50px;
-        width: 125px;
-        margin-top: 25px;
-        font-size: 30px;
-        background-color: grey;
-    }
-}
-
-@media (max-width: 1400px) {
-    .newsletter {
-        background-color: #292727;
-        color: #fff4da;
-        display: flex;
-        height: 90px;
-        justify-content: center;
-    }
-
-    .newsletter h1 {
-        font-size: 35px;
-        margin-top: 20px;
-        margin-right: 100px;
-    }
-
-    .newsletter input {
-        height: 50px;
-        width: 300px;
-        margin-top: 25px;
-        font-size: 15px;
-    }
-
-    .newsletter button {
-        height: 50px;
-        width: 125px;
-        margin-top: 25px;
-        font-size: 25px;
-        background-color: grey;
-    }
-}
-
-@media (max-width: 1150px) {
-    .newsletter {
-        background-color: #292727;
-        color: #fff4da;
-        display: flex;
-        height: auto;
-        justify-content: center;
-    }
-
-    .newsletter h1 {
-        font-size: 25px;
-        margin-top: 20px;
-        margin-right: auto;
-        margin-left: 30px;
-        margin-bottom: 10px;
-    }
-
-    .newsletter input {
-        height: 50px;
-        width: 500px;
-        margin-top: 40px;
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .newsletter button {
-        height: 50px;
-        width: 125px;
-        margin-top: 40px;
-        font-size: 20px;
-        background-color: grey;
-        margin-right: 30px;
-    }
-}
-
-@media (max-width: 900px) {
-    .newsletter input {
-        height: 50px;
-        width: 400px;
-        margin-top: 40px;
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-}
-
-@media (max-width: 650px) {
-    .newsletter h1 {
-        font-size: 15px;
-    }
-
-    .newsletter input {
-        height: 50px;
-        width: 300px;
-        margin-top: 40px;
-        font-size: 12px;
-        margin-bottom: 10px;
-    }
-
-    .newsletter button {
-        font-size: 15px;
-    }
-}
 
 @media (max-width: 480px) {
       div.fresh-off-press h2 {
@@ -919,15 +784,13 @@
     }
 
     .newsletter h1 {
-        font-size: 25px;
+        font-size: 21px;
         text-align: center;
         margin-top: 20px;
         grid-area: 1 / 1 / 2 / 3;
     }
 
-    form.newsinput{
-        padding-left: 30px;
-    }
+ 
     
 
     .newsletter input {
@@ -935,6 +798,7 @@
         font-size: 12px;
         margin-top: 5px;
         width: 85vw;
+        
     }
 
     .newsletter button {

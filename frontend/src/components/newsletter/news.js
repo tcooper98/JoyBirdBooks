@@ -32,7 +32,7 @@ export const News = () => {
       <h1>SUBSCRIBE TO OUR NEWSLETTER!</h1>
       <form ref={form} onSubmit={sendEmail} className='newsinput'>
         <input className='newsInfo' type="email" name="user_email" placeholder='whoareyou@joybird.com' />
-        <input className='sendNews' type="submit" value="Send" style={{backgroundColor:'#F2C202', fontFamily:'Saira'}}/>
+        <input className='sendNews' type="submit" value="Send" style={{backgroundColor:'#7E9E32', fontFamily:'Saira'}}/>
       </form>
     
 

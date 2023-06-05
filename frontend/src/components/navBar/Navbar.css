@@ -78,7 +78,7 @@ i.fa-solid.fa-user-circle {
 }
 
 .navbarcontainer img {
-  width: 180px;
+  width: 90px;
 }
 
 .fa-firstdraft {
@@ -157,7 +157,7 @@ i.fa-solid.fa-user-circle {
 }
 
 .searchbutton {
-  background-color: #f2c202;
+  background-color: #82C0CC;
   height: 35px;
   width: 45px;
   border-radius: 0px 2px 2px 0px;
@@ -177,7 +177,7 @@ i.fa-solid.fa-user-circle {
 
 @media screen and (max-width: 1365px) {
   .logo img {
-    width: 155px;
+    width: 90px;
   }
 
   .searchbar {
@@ -276,7 +276,7 @@ i.fa-solid.fa-user-circle {
   }
 
   .logo img {
-    width: 150px;
+    width: 90px;
   }
 
   /* this one effects items appearing outside of mobile menu */
